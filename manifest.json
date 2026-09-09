@@ -1,0 +1,746 @@
+[
+  {
+    "Path": "installed/AddOns/ModManager/metadata.json",
+    "Origin": "installed",
+    "Bytes": 169,
+    "SHA256": "082AA5C3F6B5A555973FB8E46BAC247E4D755BE0BA223065565F22EC6E13C177"
+  },
+  {
+    "Path": "installed/AddOns/ModManager/ModManagerAddon.dll",
+    "Origin": "installed",
+    "Bytes": 21504,
+    "SHA256": "41BC3C564E1E3B0EB0873CB07C83F8186C0CA2F7FC07559D00B5F7134702B5CC"
+  },
+  {
+    "Path": "installed/AddOns/SPMod/0Harmony.dll",
+    "Origin": "installed",
+    "Bytes": 204800,
+    "SHA256": "1A21CC03424FC82C3DD1346905D16494536B9595AE4162228D99FB7C285C1031"
+  },
+  {
+    "Path": "installed/AddOns/SPMod/config.json",
+    "Origin": "installed",
+    "Bytes": 783,
+    "SHA256": "E4E62B3C8ACB5EF36A92A65A8EEEAD4A49060D376DD33E725206D42E0D1EA3C9"
+  },
+  {
+    "Path": "installed/AddOns/SPMod/metadata.json",
+    "Origin": "installed",
+    "Bytes": 158,
+    "SHA256": "B3AE96BFE10AE5653461B0941DD869251FC6335DE7C47F2001ADE25F53995269"
+  },
+  {
+    "Path": "installed/AddOns/SPMod/Mono.Cecil.dll",
+    "Origin": "installed",
+    "Bytes": 339456,
+    "SHA256": "7AE470288FFF4A402899C254D0A76CEFEF55877F5C54F96E83C797CC5BB6E2F6"
+  },
+  {
+    "Path": "installed/AddOns/SPMod/Mono.Cecil.Mdb.dll",
+    "Origin": "installed",
+    "Bytes": 43008,
+    "SHA256": "5896D1898F616701FFF18F3B2C71E6B844D2390EF9F41E1C5FCCCE8CB27C698E"
+  },
+  {
+    "Path": "installed/AddOns/SPMod/Mono.Cecil.Pdb.dll",
+    "Origin": "installed",
+    "Bytes": 86528,
+    "SHA256": "174DB44A067F58561510AF746F3CAEB032037762C57A31C8D9EE32DB25174984"
+  },
+  {
+    "Path": "installed/AddOns/SPMod/Mono.Cecil.Rocks.dll",
+    "Origin": "installed",
+    "Bytes": 27648,
+    "SHA256": "54AC539FB5DDC8B44C0E9ACD0FCB7324F89D1A072EDF8EBC1B06DD691E3D3927"
+  },
+  {
+    "Path": "installed/AddOns/SPMod/MonoMod.RuntimeDetour.dll",
+    "Origin": "installed",
+    "Bytes": 105984,
+    "SHA256": "40E49BB314391CD7BDDC2644F8553EEBA92C194B940836B103DF16955C464E0C"
+  },
+  {
+    "Path": "installed/AddOns/SPMod/MonoMod.Utils.dll",
+    "Origin": "installed",
+    "Bytes": 187904,
+    "SHA256": "9D1495F147AC93C4F81F84538C1A326E8F8A6AEFC78D6289D798F3CE1162C5E9"
+  },
+  {
+    "Path": "installed/AddOns/SPMod/SPMod.dll",
+    "Origin": "installed",
+    "Bytes": 843264,
+    "SHA256": "1A6CD5594D646516FBE5C159269A391D0C68860F5A600005F288B0B4A6F4C15D"
+  },
+  {
+    "Path": "installed/BepInEx/config/BepInEx.cfg",
+    "Origin": "installed",
+    "Bytes": 5564,
+    "SHA256": "8443D78F427027C263511CF66EEC454DDF96DEE397D042B4F8E00673D3653719"
+  },
+  {
+    "Path": "installed/BepInEx/config/codex.sephiria.hidden-room-hints.cfg",
+    "Origin": "installed",
+    "Bytes": 5982,
+    "SHA256": "DBEA4FA8F3EF06783490C92E052A485A06CE19A84B0DB55967F4BF19CDFC9D7A"
+  },
+  {
+    "Path": "installed/BepInEx/config/com.bepis.bepinex.configurationmanager.cfg",
+    "Origin": "installed",
+    "Bytes": 946,
+    "SHA256": "1A7753AA949C72879D4C31D5B3E3CDC0E1C027D94353BE27CBE9B99AD23FF141"
+  },
+  {
+    "Path": "installed/BepInEx/config/com.codex.sephiria.bondartifactwishes.cfg",
+    "Origin": "installed",
+    "Bytes": 348,
+    "SHA256": "845534C6069D2E54612160B4095219E2C3CA80725D6261280CDF30BBC9EC065A"
+  },
+  {
+    "Path": "installed/BepInEx/config/com.codex.sephiria.talent-customizer.cfg",
+    "Origin": "installed",
+    "Bytes": 489,
+    "SHA256": "FBAFE77D4C6E4CF5C2063194C97AB993AB1FC5B2264C16E414712EFF9D31B884"
+  },
+  {
+    "Path": "installed/BepInEx/config/com.sephiria.assistant.cfg",
+    "Origin": "installed",
+    "Bytes": 6385,
+    "SHA256": "699B968C6947A5D6F90BD3B63612F8ED60287A7ED7B3B2A1BF2DAA666602063B"
+  },
+  {
+    "Path": "installed/BepInEx/config/com.sephiria.backpack-organizer.cfg",
+    "Origin": "installed",
+    "Bytes": 17131,
+    "SHA256": "7F1DBEA1E0F34A0A3574FACEFE384A172EC3C8275BF9A529D62AA01EBC774890"
+  },
+  {
+    "Path": "installed/BepInEx/config/com.sephiria.backpack-organizer.cfg.bak-20260825-before-v2.5.2",
+    "Origin": "installed",
+    "Bytes": 14651,
+    "SHA256": "1032DD1987595A32DE2156B2CE14B59CBC5871FD7100A746E93AB48007CE4EAE"
+  },
+  {
+    "Path": "installed/BepInEx/config/com.sephiria.crossbow-auto-reload.cfg",
+    "Origin": "installed",
+    "Bytes": 470,
+    "SHA256": "B437413BD4C174A1ABC75B5DB001920674E7DAAFDA5964C3CDB606808E0858AD"
+  },
+  {
+    "Path": "installed/BepInEx/config/com.sephiria.itemlab.cfg",
+    "Origin": "installed",
+    "Bytes": 455,
+    "SHA256": "F6ACA88D71922F5008FA0F91F8B2692442C08BE961FA5FEE657E85249115E7EE"
+  },
+  {
+    "Path": "installed/BepInEx/config/com.sephiria.unifiedmodpanel.cfg",
+    "Origin": "installed",
+    "Bytes": 1429,
+    "SHA256": "FEA4E8B05742F94FD5FDE5DE3D0E97D6F7EDFA9C75AEF3692122FDEA677DA9BD"
+  },
+  {
+    "Path": "installed/BepInEx/plugins/BepinEx配置面板/ConfigurationManager.dll",
+    "Origin": "installed",
+    "Bytes": 61952,
+    "SHA256": "78ECFF9DCC17D7B78015554122A113F3701C359F242442F096069402F0A41E3D"
+  },
+  {
+    "Path": "installed/BepInEx/plugins/BepinEx配置面板/ConfigurationManager.xml",
+    "Origin": "installed",
+    "Bytes": 10397,
+    "SHA256": "0ADAD622C8604ACF61062D58B6685954E90A19085063EC26B20DB16C2D16B625"
+  },
+  {
+    "Path": "installed/BepInEx/plugins/BepinEx配置面板/ConfigurationManagerAttributes.cs",
+    "Origin": "installed",
+    "Bytes": 6723,
+    "SHA256": "088559BE2453576AAF4C6957277A5D965CD2D775982E95546E12E385FBC91768"
+  },
+  {
+    "Path": "installed/BepInEx/plugins/BepinEx配置面板/LICENSE",
+    "Origin": "installed",
+    "Bytes": 7817,
+    "SHA256": "7D3A95E5E06978064ED3F8E2B7C8F845E7FD8A405294727CC708F94CB83B8059"
+  },
+  {
+    "Path": "installed/BepInEx/plugins/BepinEx配置面板/README.md",
+    "Origin": "installed",
+    "Bytes": 7245,
+    "SHA256": "F439E0D629A1234D8C2924D46F116DA9E1D7F0082FD6B4C5DE7D6960A687D233"
+  },
+  {
+    "Path": "installed/BepInEx/plugins/SephiriaBackpackOrganizer/SephiriaBackpackOrganizer.dll",
+    "Origin": "installed",
+    "Bytes": 128512,
+    "SHA256": "A175E003808FCD749E235DCF36C94C8C52EA03559AD88EAD8C1DE2D9B4AB8C50"
+  },
+  {
+    "Path": "installed/BepInEx/plugins/SephiriaBondArtifactWishes/SephiriaBondArtifactWishes.dll",
+    "Origin": "installed",
+    "Bytes": 17920,
+    "SHA256": "ADEEC09CAC38A7E3C5EEEED3B2D67AD0D9987ACF777C8070DDB781B53F26C81B"
+  },
+  {
+    "Path": "installed/BepInEx/plugins/SephiriaCrossbowAutoReload/SephiriaCrossbowAutoReload.dll",
+    "Origin": "installed",
+    "Bytes": 19456,
+    "SHA256": "9FB4F49455AF559FAD213EDC3C22746B647E1D7F6099255F431D8DAF9CBC51AF"
+  },
+  {
+    "Path": "installed/BepInEx/plugins/SephiriaCrossbowAutoReload/SephiriaCrossbowAutoReload.dll.bak-before-standalone-gameplay-ui",
+    "Origin": "installed",
+    "Bytes": 13824,
+    "SHA256": "619F7A3A1B1017C8035D783F83DC7544FBA6BACBD92BDE327BBD4343D62D331F"
+  },
+  {
+    "Path": "installed/BepInEx/plugins/SephiriaCrossbowAutoReload/SephiriaCrossbowAutoReload.dll.bak-before-text-fix",
+    "Origin": "installed",
+    "Bytes": 17920,
+    "SHA256": "D983F4BDC1B0FB07FC203B9B03EBEE85419074DB563043A2E6DD491BDFAA0786"
+  },
+  {
+    "Path": "installed/BepInEx/plugins/SephiriaCrossbowAutoReload/SephiriaCrossbowAutoReload.dll.bak-before-v1.1.0",
+    "Origin": "installed",
+    "Bytes": 18432,
+    "SHA256": "01F4D7B5D745CF0D38A2B5208F1FA72F744A75A57BC37ECD563161AEA6DDF743"
+  },
+  {
+    "Path": "installed/BepInEx/plugins/SephiriaHardModeUnlocker/CHANGELOG.txt",
+    "Origin": "installed",
+    "Bytes": 435,
+    "SHA256": "5B24AC29E3526ECD606DF1B3B3B3E2685DB025674733789E2C92DF2E09CD10B2"
+  },
+  {
+    "Path": "installed/BepInEx/plugins/SephiriaHardModeUnlocker/LICENSE.txt",
+    "Origin": "installed",
+    "Bytes": 1105,
+    "SHA256": "AFE0A6B36FE4DE2EEBA741A654855520D99B0D245446B597F59EA3079575DEB4"
+  },
+  {
+    "Path": "installed/BepInEx/plugins/SephiriaHardModeUnlocker/README.txt",
+    "Origin": "installed",
+    "Bytes": 1913,
+    "SHA256": "074576F2235CDCE4A2199DDE3D551AB2C97FE00D165193CB8BC414457403C505"
+  },
+  {
+    "Path": "installed/BepInEx/plugins/SephiriaHardModeUnlocker/SephiriaHardModeUnlocker.dll",
+    "Origin": "installed",
+    "Bytes": 12288,
+    "SHA256": "5BCF8B01894AFD9DE32A8621FF4FAE68E19D1B44A31E1BEB5FE92C9E9A454111"
+  },
+  {
+    "Path": "installed/BepInEx/plugins/SephiriaHiddenRoomHints/SephiriaHiddenRoomHints.dll",
+    "Origin": "installed",
+    "Bytes": 24576,
+    "SHA256": "10A9FCBC552DA296197A97F4053C80143A0CB856BA68E771EA8DB73334D99FB4"
+  },
+  {
+    "Path": "installed/BepInEx/plugins/SephiriaItemLab/CHANGELOG.txt",
+    "Origin": "installed",
+    "Bytes": 7104,
+    "SHA256": "FD8D858B03EC394361D0C428C8819B2A72F1EC4E481EEAF48743603540CE667F"
+  },
+  {
+    "Path": "installed/BepInEx/plugins/SephiriaItemLab/LICENSE.txt",
+    "Origin": "installed",
+    "Bytes": 2574,
+    "SHA256": "3DB75E1324D4205612E058AB8C309AE2AFF0DB3238D97EDE8FA5D76B8B7075DF"
+  },
+  {
+    "Path": "installed/BepInEx/plugins/SephiriaItemLab/Localization/TRANSLATION_TEMPLATE.xml",
+    "Origin": "installed",
+    "Bytes": 9510,
+    "SHA256": "AD2A9031DCA7D0D8FAA870CFA358557441CAC4F90FD18E087BA45EBC405A8E8C"
+  },
+  {
+    "Path": "installed/BepInEx/plugins/SephiriaItemLab/README.txt",
+    "Origin": "installed",
+    "Bytes": 4176,
+    "SHA256": "1D466FB5BC75918AC43B8DBE9ACAEB5476A7267EAD08259B8D7C2B44183A3B98"
+  },
+  {
+    "Path": "installed/BepInEx/plugins/SephiriaItemLab/SephiriaItemLab.dll",
+    "Origin": "installed",
+    "Bytes": 136704,
+    "SHA256": "A374A06E4181231D3AA25B63798F5298D421CD00067229026088D29C61227266"
+  },
+  {
+    "Path": "installed/BepInEx/plugins/SephiriaItemLabTweaks/README.md",
+    "Origin": "installed",
+    "Bytes": 1138,
+    "SHA256": "D9B88FF0D8159DBB60993B56830AB7B511FDF3269384D9A99FF4DE83D3204A4F"
+  },
+  {
+    "Path": "installed/BepInEx/plugins/SephiriaItemLabTweaks/SephiriaItemLabTweaks.dll",
+    "Origin": "installed",
+    "Bytes": 22528,
+    "SHA256": "AFF38A5BA1ECF284921A7C98A46FDD016BC78D3A2784B72BE1ADD29A0DCCB1A8"
+  },
+  {
+    "Path": "installed/BepInEx/plugins/SephiriaTalentCustomizer/SephiriaTalentCustomizer.dll",
+    "Origin": "installed",
+    "Bytes": 17408,
+    "SHA256": "CA596712205EE9A0B9E214118270F8449E5F20042EF96CCB64B2E7DC3070B7CB"
+  },
+  {
+    "Path": "installed/BepInEx/plugins/SephiriaTalentSPCompat/SephiriaTalentSPCompat.dll",
+    "Origin": "installed",
+    "Bytes": 9216,
+    "SHA256": "DB602F4BE5BC5829FEE5C34B2354450D82B100B981D94D5D82C26FB1F45E664F"
+  },
+  {
+    "Path": "installed/BepInEx/plugins/SephiriaUnifiedModPanel/SephiriaUnifiedModPanel.dll",
+    "Origin": "installed",
+    "Bytes": 29184,
+    "SHA256": "81F33BB5501E6EBB9B1B3F1F5A18FBBF5D32D74041636D5D1F8F38B8B95FC5C3"
+  },
+  {
+    "Path": "installed/BepInEx/plugins/SephiriaUnifiedModPanel/SephiriaUnifiedModPanel.dll.backup-20260909-230833-142",
+    "Origin": "installed",
+    "Bytes": 31232,
+    "SHA256": "B6FAF6F291788BF7628B1D27608E91D1E8898F5D2FA757BA7739CB45941FCB4A"
+  },
+  {
+    "Path": "workspace/_compare-upstream-backpack-2.4.9/.gitignore",
+    "Origin": "workspace",
+    "Bytes": 181,
+    "SHA256": "4A6B84A1306C58D7C1836657DB8A02F8D5459C964793BFFBC20549BB7998B6B1"
+  },
+  {
+    "Path": "workspace/_compare-upstream-backpack-2.4.9/analysis/REVERSE-ENGINEERING-NOTES.md",
+    "Origin": "workspace",
+    "Bytes": 17390,
+    "SHA256": "53D93BA7A547542880395F3E1103600B99AEEA2E920F612DBC9E17A63E26583E"
+  },
+  {
+    "Path": "workspace/_compare-upstream-backpack-2.4.9/docs/README.en.md",
+    "Origin": "workspace",
+    "Bytes": 9245,
+    "SHA256": "4BA42C4BE70FF69A01DF3CF0584E0D6F2FEFD9005E5542BDC1A4BED9AA7148DB"
+  },
+  {
+    "Path": "workspace/_compare-upstream-backpack-2.4.9/docs/README.ko.md",
+    "Origin": "workspace",
+    "Bytes": 10221,
+    "SHA256": "46AFECB1F9E3DF327804D8ABE9810114AC83BE1A21AC8D00C1872C01BAA3D65D"
+  },
+  {
+    "Path": "workspace/_compare-upstream-backpack-2.4.9/docs/README.md",
+    "Origin": "workspace",
+    "Bytes": 8487,
+    "SHA256": "BF86E989893A301F9BFD8F01C3272EF57409266401C870C4DBE84FC585D3559C"
+  },
+  {
+    "Path": "workspace/_compare-upstream-backpack-2.4.9/LICENSE",
+    "Origin": "workspace",
+    "Bytes": 1093,
+    "SHA256": "51AA4C90B8C78DB73495A2C153BAD7A0D2D01AE184FC0F45D92B55B08DE08AC5"
+  },
+  {
+    "Path": "workspace/_compare-upstream-backpack-2.4.9/plugin/InventorySorter.cs",
+    "Origin": "workspace",
+    "Bytes": 232241,
+    "SHA256": "7B66ED4796940B8E192BF106EB3CA5C8177302F9C000F4D27D0FAE6612E6AF5F"
+  },
+  {
+    "Path": "workspace/_compare-upstream-backpack-2.4.9/plugin/Plugin.cs",
+    "Origin": "workspace",
+    "Bytes": 27491,
+    "SHA256": "39ED74314A3526479E6CC183CA4387DBB6A65CB6EC9E2E3764DA416E172F428B"
+  },
+  {
+    "Path": "workspace/_compare-upstream-backpack-2.4.9/plugin/SephiriaBackpackOrganizer.BepInEx5.csproj",
+    "Origin": "workspace",
+    "Bytes": 3093,
+    "SHA256": "9D1C28C7CF34D5F6A6E2C845C562EBDBC35F0AA00AF22256FFB18116F7B55DF5"
+  },
+  {
+    "Path": "workspace/_compare-upstream-backpack-2.4.9/plugin/SephiriaBackpackOrganizer.csproj",
+    "Origin": "workspace",
+    "Bytes": 2973,
+    "SHA256": "A74839F8054C3DF4F6238927ABB5352575A24ADBB13FC824899724DD02E0E980"
+  },
+  {
+    "Path": "workspace/_compare-upstream-backpack-2.4.9/screenshots/after.png",
+    "Origin": "workspace",
+    "Bytes": 390219,
+    "SHA256": "91938F906E0284C84CCDBCB342F550D501A92A7FAF1DA8B5A3DB274FDD6EA1C8"
+  },
+  {
+    "Path": "workspace/_compare-upstream-backpack-2.4.9/screenshots/before.png",
+    "Origin": "workspace",
+    "Bytes": 439551,
+    "SHA256": "ADA2B272127C9CCD960FA373852846F088E2B8501A53C03D74D7C008651DF462"
+  },
+  {
+    "Path": "workspace/.gitignore",
+    "Origin": "workspace",
+    "Bytes": 24,
+    "SHA256": "FCC4771F73223821AA4E742369B745321ED4FDA6D3645E064F8C674328A73F4B"
+  },
+  {
+    "Path": "workspace/backpack-organizer-performance/.baseline-v2.5.3/com.sephiria.backpack-organizer.cfg",
+    "Origin": "workspace",
+    "Bytes": 15068,
+    "SHA256": "CD7C099750EDECEDD0F81806BC4D7E3C2D3C1AD47D7BBDEBAE9F381560AE5A67"
+  },
+  {
+    "Path": "workspace/backpack-organizer-performance/.baseline-v2.5.3/InventorySorter.cs",
+    "Origin": "workspace",
+    "Bytes": 227505,
+    "SHA256": "FFAF5E32798B2EECB2777F3F73C49B4774F9723329FEAEB3BCACE7BE31EAA00B"
+  },
+  {
+    "Path": "workspace/backpack-organizer-performance/.baseline-v2.5.3/Plugin.cs",
+    "Origin": "workspace",
+    "Bytes": 28464,
+    "SHA256": "509F85E700F95E66111027DA4D80C11DA30C65DD8D528ECEB37DE8DFCCF7048E"
+  },
+  {
+    "Path": "workspace/backpack-organizer-performance/.baseline-v2.5.3/SephiriaBackpackOrganizer.BepInEx5.csproj",
+    "Origin": "workspace",
+    "Bytes": 3053,
+    "SHA256": "217794ABB36BC39009B683DAFBACD019DE1FF59BD22FF53F16C6F5D6BC808BF0"
+  },
+  {
+    "Path": "workspace/backpack-organizer-performance/bin5/Release/SephiriaBackpackOrganizer.dll",
+    "Origin": "workspace",
+    "Bytes": 120832,
+    "SHA256": "918079533DA08CF6BF40B67F40CE7ADE7C738EC5873C9085BA1C529C9E2F0154"
+  },
+  {
+    "Path": "workspace/backpack-organizer-performance/com.sephiria.backpack-organizer.cfg",
+    "Origin": "workspace",
+    "Bytes": 16326,
+    "SHA256": "23EB5ADB878D70330F3C00A4634F9CA419AC8DBBFFA55B5D7A99F937072E8BC5"
+  },
+  {
+    "Path": "workspace/backpack-organizer-performance/InventorySorter.cs",
+    "Origin": "workspace",
+    "Bytes": 240838,
+    "SHA256": "C57B2C5D319B9DA4F5CAF4828158455E08126C657D8666FF8927EC7A68576BE0"
+  },
+  {
+    "Path": "workspace/backpack-organizer-performance/ManualPriority.cs",
+    "Origin": "workspace",
+    "Bytes": 8258,
+    "SHA256": "0CF5E943E9903106AA52009A976F5DBC493BD6D11C6A23B29E526F6CE7D576FF"
+  },
+  {
+    "Path": "workspace/backpack-organizer-performance/NuGet.Config",
+    "Origin": "workspace",
+    "Bytes": 125,
+    "SHA256": "5256A7E3E07D2C5C94F7A1E6C45F39AAB011C659C5E2D53E452DEA525CE04575"
+  },
+  {
+    "Path": "workspace/backpack-organizer-performance/Plugin.cs",
+    "Origin": "workspace",
+    "Bytes": 30964,
+    "SHA256": "A3489ED2BBCF4DFB7B0B570F19EF78B6ACB6E7AE5079625E44FB36D075EBA076"
+  },
+  {
+    "Path": "workspace/backpack-organizer-performance/SephiriaBackpackOrganizer.BepInEx5.csproj",
+    "Origin": "workspace",
+    "Bytes": 3814,
+    "SHA256": "78A23BDE98002EFA4AF5B1D9F16BBD94780B8920529E0312944C30CF9AAD1B9F"
+  },
+  {
+    "Path": "workspace/bin/Release/netstandard2.1/SephiriaBondArtifactWishes.dll",
+    "Origin": "workspace",
+    "Bytes": 18432,
+    "SHA256": "1D3209404C745905403B9BBBC7A3FE514C48D38A93432392E2FF149E1288B8EC"
+  },
+  {
+    "Path": "workspace/BondFilterPatches.cs",
+    "Origin": "workspace",
+    "Bytes": 5605,
+    "SHA256": "5F6758187DCBF0F47E0A3585EE43E400710D87F42FC059BE6D71229DEFE0B4DD"
+  },
+  {
+    "Path": "workspace/crossbow-auto-reload/.gitignore",
+    "Origin": "workspace",
+    "Bytes": 23,
+    "SHA256": "9C94C2EFBC2E7D132A5F476E91C13665EBD39EBB65C18A9E75A5E6455B4C5B1E"
+  },
+  {
+    "Path": "workspace/crossbow-auto-reload/bin/Release/SephiriaCrossbowAutoReload.dll",
+    "Origin": "workspace",
+    "Bytes": 19456,
+    "SHA256": "187C5ADC998697B6DC5297DA1EED1A1014564BD59D31A34917405405218ACE18"
+  },
+  {
+    "Path": "workspace/crossbow-auto-reload/LICENSE",
+    "Origin": "workspace",
+    "Bytes": 1056,
+    "SHA256": "1126322E2CC8D165ADC4C792EEB195717DE2BCC7B39BE1CE77959D78E87EF685"
+  },
+  {
+    "Path": "workspace/crossbow-auto-reload/Plugin.cs",
+    "Origin": "workspace",
+    "Bytes": 10985,
+    "SHA256": "F8BD2FF9D60F8E83E3F5730F7CD31F27844F2C440608A484089875C1312BB712"
+  },
+  {
+    "Path": "workspace/crossbow-auto-reload/README.md",
+    "Origin": "workspace",
+    "Bytes": 1080,
+    "SHA256": "E057DAA5552B3DD30E3B6AEC2D2FA6CD566FF44970EA27E6370DC0DECF0CEE57"
+  },
+  {
+    "Path": "workspace/crossbow-auto-reload/SephiriaCrossbowAutoReload.csproj",
+    "Origin": "workspace",
+    "Bytes": 1839,
+    "SHA256": "8C5A93E98C8727873535E5B2CE30B53A7CC1861FE91D962FFF875C9C6D33D25D"
+  },
+  {
+    "Path": "workspace/crossbow-auto-reload/SephiriaCrossbowAutoReload.dll",
+    "Origin": "workspace",
+    "Bytes": 19456,
+    "SHA256": "9FB4F49455AF559FAD213EDC3C22746B647E1D7F6099255F431D8DAF9CBC51AF"
+  },
+  {
+    "Path": "workspace/dist/SephiriaBondArtifactWishes.dll",
+    "Origin": "workspace",
+    "Bytes": 18432,
+    "SHA256": "1D3209404C745905403B9BBBC7A3FE514C48D38A93432392E2FF149E1288B8EC"
+  },
+  {
+    "Path": "workspace/HANDOFF_MODSETTINGS_UI.md",
+    "Origin": "workspace",
+    "Bytes": 7756,
+    "SHA256": "58E9B36E941D8736A084827D70776DAAFC2DDE267DCCD6E2528FDFBA9F31D95E"
+  },
+  {
+    "Path": "workspace/mod-settings/.gitignore",
+    "Origin": "workspace",
+    "Bytes": 23,
+    "SHA256": "9C94C2EFBC2E7D132A5F476E91C13665EBD39EBB65C18A9E75A5E6455B4C5B1E"
+  },
+  {
+    "Path": "workspace/mod-settings/bin/Release/SephiriaModSettings.dll",
+    "Origin": "workspace",
+    "Bytes": 38912,
+    "SHA256": "EBD9CD977B159228A2C589BACBA69A31EC2D353D24B4F070511363CDBE7B0F07"
+  },
+  {
+    "Path": "workspace/mod-settings/LICENSE",
+    "Origin": "workspace",
+    "Bytes": 1056,
+    "SHA256": "1126322E2CC8D165ADC4C792EEB195717DE2BCC7B39BE1CE77959D78E87EF685"
+  },
+  {
+    "Path": "workspace/mod-settings/Plugin.cs",
+    "Origin": "workspace",
+    "Bytes": 37445,
+    "SHA256": "A94781894C813CC8EA6198D6477DED77E6570DA78791EF11ECC5DB5F32E2CB71"
+  },
+  {
+    "Path": "workspace/mod-settings/README.md",
+    "Origin": "workspace",
+    "Bytes": 4784,
+    "SHA256": "1C0313AC2AA9F2A2043BC092F85854F8419699E818D2524C9B1118F02C908301"
+  },
+  {
+    "Path": "workspace/mod-settings/SephiriaModSettings.csproj",
+    "Origin": "workspace",
+    "Bytes": 2243,
+    "SHA256": "C33AEEC0EBCBFB33DDBDFF327F6CF557FBEA38C883B966379ED16C1A582CBED0"
+  },
+  {
+    "Path": "workspace/NuGet.Config",
+    "Origin": "workspace",
+    "Bytes": 126,
+    "SHA256": "8867F395F9DDD6E93E63B5BF694982167ECA7423767725DFAC19C82EF5B64733"
+  },
+  {
+    "Path": "workspace/Plugin.cs",
+    "Origin": "workspace",
+    "Bytes": 1409,
+    "SHA256": "38902C97E221634728C337420CEB596E34A64D6B4DA6AD6CBDB7D3314F28678B"
+  },
+  {
+    "Path": "workspace/README.md",
+    "Origin": "workspace",
+    "Bytes": 44370,
+    "SHA256": "39FF76CA69B7F94A6E941A700151E79D1F35C8EDD694B798CD2E1CEA2424853C"
+  },
+  {
+    "Path": "workspace/SephiriaBackpackOrganizer-fork/.gitignore",
+    "Origin": "workspace",
+    "Bytes": 191,
+    "SHA256": "A9C81EF004BC5948E6B2DF18A5CB921E87C4CD59F66ED549A73C4423DE6DB66F"
+  },
+  {
+    "Path": "workspace/SephiriaBackpackOrganizer-fork/analysis/REVERSE-ENGINEERING-NOTES.md",
+    "Origin": "workspace",
+    "Bytes": 17390,
+    "SHA256": "53D93BA7A547542880395F3E1103600B99AEEA2E920F612DBC9E17A63E26583E"
+  },
+  {
+    "Path": "workspace/SephiriaBackpackOrganizer-fork/docs/README.en.md",
+    "Origin": "workspace",
+    "Bytes": 10065,
+    "SHA256": "750EF21BA205E251CE6D415971F20D38F2032CC63148DF735F0E8BC44338C006"
+  },
+  {
+    "Path": "workspace/SephiriaBackpackOrganizer-fork/docs/README.ko.md",
+    "Origin": "workspace",
+    "Bytes": 11244,
+    "SHA256": "3AEA5986F9DA55A7261BB25EDE974E835C825B60E5F8BF2D1FF09C6CB09962F4"
+  },
+  {
+    "Path": "workspace/SephiriaBackpackOrganizer-fork/docs/README.md",
+    "Origin": "workspace",
+    "Bytes": 9197,
+    "SHA256": "AF1AAB6C0BCA72D265CA6C985A09D50C94CF697E12F45D4F2308C78E21C46987"
+  },
+  {
+    "Path": "workspace/SephiriaBackpackOrganizer-fork/LICENSE",
+    "Origin": "workspace",
+    "Bytes": 1093,
+    "SHA256": "51AA4C90B8C78DB73495A2C153BAD7A0D2D01AE184FC0F45D92B55B08DE08AC5"
+  },
+  {
+    "Path": "workspace/SephiriaBackpackOrganizer-fork/plugin/bin5/Release/SephiriaBackpackOrganizer.dll",
+    "Origin": "workspace",
+    "Bytes": 120832,
+    "SHA256": "82ABD64E87F53DBB6C46EBDB8FC0174A9F42A77792A7CA89BE1558153DF116F2"
+  },
+  {
+    "Path": "workspace/SephiriaBackpackOrganizer-fork/plugin/InventorySorter.cs",
+    "Origin": "workspace",
+    "Bytes": 241963,
+    "SHA256": "E50F3C2841EC470B81E80997CCF4F0DE93562C03027346AB367316F475197EDA"
+  },
+  {
+    "Path": "workspace/SephiriaBackpackOrganizer-fork/plugin/ManualPriority.cs",
+    "Origin": "workspace",
+    "Bytes": 8258,
+    "SHA256": "0CF5E943E9903106AA52009A976F5DBC493BD6D11C6A23B29E526F6CE7D576FF"
+  },
+  {
+    "Path": "workspace/SephiriaBackpackOrganizer-fork/plugin/Plugin.cs",
+    "Origin": "workspace",
+    "Bytes": 31101,
+    "SHA256": "39DA23A440C3BCA869B7D99FE6DE200F979564E6E73E6FB24635531D5B6337B5"
+  },
+  {
+    "Path": "workspace/SephiriaBackpackOrganizer-fork/plugin/SephiriaBackpackOrganizer.BepInEx5.csproj",
+    "Origin": "workspace",
+    "Bytes": 3865,
+    "SHA256": "AAC38BBB53FD92829EAE27974FB90D3362BE472BA62EA11275D96EFE58644961"
+  },
+  {
+    "Path": "workspace/SephiriaBackpackOrganizer-fork/plugin/SephiriaBackpackOrganizer.csproj",
+    "Origin": "workspace",
+    "Bytes": 3559,
+    "SHA256": "DB5B385FBC47DE21BBA955C110648FCECC7F11E320AD04793990874AAF799E1B"
+  },
+  {
+    "Path": "workspace/SephiriaBackpackOrganizer-fork/screenshots/after.png",
+    "Origin": "workspace",
+    "Bytes": 390219,
+    "SHA256": "91938F906E0284C84CCDBCB342F550D501A92A7FAF1DA8B5A3DB274FDD6EA1C8"
+  },
+  {
+    "Path": "workspace/SephiriaBackpackOrganizer-fork/screenshots/before.png",
+    "Origin": "workspace",
+    "Bytes": 439551,
+    "SHA256": "ADA2B272127C9CCD960FA373852846F088E2B8501A53C03D74D7C008651DF462"
+  },
+  {
+    "Path": "workspace/SephiriaBondArtifactWishes.csproj",
+    "Origin": "workspace",
+    "Bytes": 2092,
+    "SHA256": "3717070F86AED93DD3E557301180BE5EC92E4CEC1319011304ED127E99E20C67"
+  },
+  {
+    "Path": "workspace/talent-spmod-compat/bin/Release/net471/SephiriaTalentSPCompat.dll",
+    "Origin": "workspace",
+    "Bytes": 9216,
+    "SHA256": "DB602F4BE5BC5829FEE5C34B2354450D82B100B981D94D5D82C26FB1F45E664F"
+  },
+  {
+    "Path": "workspace/talent-spmod-compat/Plugin.cs",
+    "Origin": "workspace",
+    "Bytes": 4383,
+    "SHA256": "5EA3622974F964491F547315AE019E09A46796CCBFBA5BCC92FCFAF87EC4F494"
+  },
+  {
+    "Path": "workspace/talent-spmod-compat/README.md",
+    "Origin": "workspace",
+    "Bytes": 2181,
+    "SHA256": "EF331753EDE0A7396D4DC5B87F9F9990CE3656E4D534513061103909AA52B9F7"
+  },
+  {
+    "Path": "workspace/talent-spmod-compat/SephiriaTalentSPCompat.csproj",
+    "Origin": "workspace",
+    "Bytes": 1277,
+    "SHA256": "75F1180FBC8025E4325AAB6588A01E02DA8072124D319E20378DA8D68F010BD9"
+  },
+  {
+    "Path": "workspace/unified-mod-panel/AddonFiles.cs",
+    "Origin": "workspace",
+    "Bytes": 1388,
+    "SHA256": "624CF71DD95A69E6748A90B454CA452A41956C89427D1CAE882B5D36404D9A97"
+  },
+  {
+    "Path": "workspace/unified-mod-panel/bin/Release/SephiriaUnifiedModPanel.dll",
+    "Origin": "workspace",
+    "Bytes": 29184,
+    "SHA256": "81F33BB5501E6EBB9B1B3F1F5A18FBBF5D32D74041636D5D1F8F38B8B95FC5C3"
+  },
+  {
+    "Path": "workspace/unified-mod-panel/Install.ps1",
+    "Origin": "workspace",
+    "Bytes": 1670,
+    "SHA256": "BBC6126F54B690E123663DB19F24FB023836060F74E7B43B31CB06E2650D829B"
+  },
+  {
+    "Path": "workspace/unified-mod-panel/Plugin.cs",
+    "Origin": "workspace",
+    "Bytes": 16382,
+    "SHA256": "7D777337CCDBE8DFF2C35471808F1F65453B1891116B36CC7DE3D63B3507428B"
+  },
+  {
+    "Path": "workspace/unified-mod-panel/PluginFiles.cs",
+    "Origin": "workspace",
+    "Bytes": 6857,
+    "SHA256": "7D9DFE4BE7D526E146CF5E563FB30F670FF42CB1EB8FB250A4595F93725A2450"
+  },
+  {
+    "Path": "workspace/unified-mod-panel/README.md",
+    "Origin": "workspace",
+    "Bytes": 4165,
+    "SHA256": "4046024CC38AB6F2D4B2591E9FDF60640100DCF5D6888CCFF8F99D2CDAEB459B"
+  },
+  {
+    "Path": "workspace/unified-mod-panel/SephiriaUnifiedModPanel.csproj",
+    "Origin": "workspace",
+    "Bytes": 2249,
+    "SHA256": "9413B00B5FA1F7AB93B79E1C1667E376F70E14E657A244C85FC1CF97E3F653DA"
+  },
+  {
+    "Path": "workspace/unified-mod-panel/Test-AddonFiles.ps1",
+    "Origin": "workspace",
+    "Bytes": 2131,
+    "SHA256": "ABADB7B3E30F03F03B9455F8A6DD32EDCE108C13B80281A174BF9C629D27DFFA"
+  },
+  {
+    "Path": "workspace/unified-mod-panel/Test-PluginFiles.ps1",
+    "Origin": "workspace",
+    "Bytes": 5163,
+    "SHA256": "F4786CE3A680AE69BBE8E39F4EED7420C7C93A11BC7DB6A28A6C34184B44ADB0"
+  },
+  {
+    "Path": "workspace/WishCost.cs",
+    "Origin": "workspace",
+    "Bytes": 3534,
+    "SHA256": "878C4B00AB036C59F05F96D1E81E20E6AC6B9134D207D9A5CEDD5FAF3578D2AB"
+  },
+  {
+    "Path": "workspace/WishingFountainPatches.cs",
+    "Origin": "workspace",
+    "Bytes": 7815,
+    "SHA256": "23FC670FF6145E8B39D9A3ABBB9A16EBEFD4E84138535BC42104E932316F0C73"
+  }
+]

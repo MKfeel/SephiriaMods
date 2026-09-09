@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <AssemblyName>SephiriaBondArtifactWishes</AssemblyName>
+    <RootNamespace>SephiriaBondArtifactWishes</RootNamespace>
+    <Version>0.2.0</Version>
+    <GameDirectory Condition="'$(GameDirectory)' == ''">E:\steam\steamapps\common\Sephiria</GameDirectory>
+    <ManagedDirectory>$(GameDirectory)\Sephiria_Data\Managed</ManagedDirectory>
+    <BepInExCoreDirectory>$(GameDirectory)\BepInEx\core</BepInExCoreDirectory>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="unified-mod-panel\**\*.cs" />
+    <Compile Remove="talent-spmod-compat\**\*.cs" />
+    <Reference Include="BepInEx">
+      <HintPath>$(BepInExCoreDirectory)\BepInEx.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(BepInExCoreDirectory)\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(ManagedDirectory)\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Mirror">
+      <HintPath>$(ManagedDirectory)\Mirror.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(ManagedDirectory)\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(ManagedDirectory)\UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>$(ManagedDirectory)\UnityEngine.UI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <Target Name="CreateDistribution" AfterTargets="Build">
+    <MakeDir Directories="$(MSBuildProjectDirectory)\dist" />
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(MSBuildProjectDirectory)\dist" />
+  </Target>
+</Project>

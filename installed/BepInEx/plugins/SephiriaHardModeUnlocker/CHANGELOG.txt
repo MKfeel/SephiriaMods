@@ -1,0 +1,10 @@
+1.0.0
+-----
+- Unlock every hard-mode reward tier up to the completed difficulty.
+- Backfill missing tiers from an existing highest-clear record.
+- Preserve unknown reward records and use the native multiplayer reward path.
+
+- 根据实际通关难度一次性解锁此前的全部困难模式奖励档位。
+- 根据已有最高通关记录补齐遗漏奖励。
+- 保留未知奖励记录，并使用游戏原生联机奖励流程。
+

@@ -1,0 +1,339 @@
+## Settings file was created by plugin Sephiria Backpack Organizer v2.4.8
+## Plugin GUID: com.sephiria.backpack-organizer
+
+[Burden]
+
+## 负面藏品未待在负等级格子时的扣分（强制塞负格；0=关闭）
+# Setting type: Single
+# Default value: 20000
+# Acceptable value range: From 0 to 100000
+NegativeCellPenalty = 20000
+
+## 负面藏品识别：LocalizedString key（逗号分隔多个）。识别到的物品会被塞进背包最差的（负等级）格子。默认心之重担(Item_MindBurden_Name)
+# Setting type: String
+# Default value: Item_MindBurden_Name
+ItemKeys = Item_MindBurden_Name
+
+[Debug]
+
+## 自检模式（仅主机可用）：按热键时先把背包随机打乱再整理，对比前后评分，用于验证优化器是否有效
+# Setting type: Boolean
+# Default value: false
+SelfTest = false
+
+[Enhanced]
+
+## 增强模式的模拟退火迭代次数（v2.0 为全离线评估，毫秒级，可放心调大）
+# Setting type: Int32
+# Default value: 3000
+# Acceptable value range: From 10 to 50000
+Iterations = 3000
+
+## 增强模式的随机重启次数（每次重启从当前最优继续搜索）
+# Setting type: Int32
+# Default value: 3
+# Acceptable value range: From 1 to 10
+Restarts = 3
+
+## 增强模式的初始温度（越大越倾向接受次优解，越容易跳出局部最优，但可能更“乱”）
+# Setting type: Single
+# Default value: 800
+# Acceptable value range: From 1 to 50000
+Temperature = 800
+
+## 每次整理的独立搜索轮数（每轮不同随机种子，取全局最优）。相当于自动重复按 F8 多次；默认 4 轮，34格满包约 200~300ms
+# Setting type: Int32
+# Default value: 4
+# Acceptable value range: From 1 to 10
+SearchRounds = 4
+
+[General]
+
+## 触发背包整理的快捷键（游戏使用新输入系统，插件会同时兼容新旧输入）
+# Setting type: KeyboardShortcut
+# Default value: F8
+Hotkey = F8
+
+## 整理模式：
+## Vanilla = 调用游戏内置的自动排列（任意模式可用，含联机作为客户端时）；
+## Enhanced = 增强版模拟退火优化（更彻底，仅主机/单机可用，非主机时自动回退到 Vanilla）。
+# Setting type: SortMode
+# Default value: Enhanced
+# Acceptable values: Vanilla, Enhanced
+SortMode = Enhanced
+
+## 是否在游戏内显示整理结果提示（屏幕系统消息）
+# Setting type: Boolean
+# Default value: true
+ShowNotifications = true
+
+## 进入会话后自动整理一次背包（默认关闭，可在配置里开启）
+# Setting type: Boolean
+# Default value: false
+AutoSortOnSessionStart = false
+
+## 进入会话后等待背包初始化完成的秒数（期间按 F8 会提示稍后再试，防止背包未就绪时整理导致物品丢失）
+# Setting type: Single
+# Default value: 3
+# Acceptable value range: From 0 to 30
+SessionStableDelay = 3
+
+## 额外需固定在整理前原行的物品 LocalizedString key（逗号分隔）。凯尔萨德尼钥匙无需填写：插件会自动按当前最多的坚固/余烬/冰川/魔法科技羁绊选择周期行
+# Setting type: String
+# Default value: 
+RowLockedItems = 
+
+[Mystic]
+
+## 神秘标签联动：神秘藏品≥2个时 1 个神秘地块等级×2，≥5个时共 4 个地块×2（ComboEffect_Mystic）。启用后插件会优先把高价值护符放到×2地块上
+# Setting type: Boolean
+# Default value: true
+Enable = true
+
+## 神秘标签名（游戏内分类 key，本地化显示为“神秘”）
+# Setting type: String
+# Default value: Mystic
+Category = Mystic
+
+## 神秘地块等级倍率
+# Setting type: Single
+# Default value: 2
+# Acceptable value range: From 1 to 10
+Multiplier = 2
+
+[Priority]
+
+## 藏品优先级系统：1级(最高)→4级(最低)。默认：传说=1、羁绊(永恒)=1、稀有=2、高级=3、普通=4。高优先级藏品优先满足等级与位置需求，必要时低级藏品被牺牲进负格
+# Setting type: Boolean
+# Default value: true
+Enable = true
+
+## 普通(Common)优先级（1最高~4最低）
+# Setting type: Int32
+# Default value: 4
+# Acceptable value range: From 1 to 4
+Common = 4
+
+## 高级(Uncommon)优先级
+# Setting type: Int32
+# Default value: 3
+# Acceptable value range: From 1 to 4
+Uncommon = 3
+
+## 稀有(Rare)优先级
+# Setting type: Int32
+# Default value: 2
+# Acceptable value range: From 1 to 4
+Rare = 2
+
+## 传说(Legend)优先级
+# Setting type: Int32
+# Default value: 1
+# Acceptable value range: From 1 to 4
+Legend = 1
+
+## 羁绊/永恒(Eternal)优先级
+# Setting type: Int32
+# Default value: 1
+# Acceptable value range: From 1 to 4
+Eternal = 1
+
+## 强制最高优先级(1级)的特定藏品 LocalizedString key（逗号分隔）。默认：冰冷的锁、丢弃的金戒指、绝对戒指、红茶叶袋、冰星（效果重要，即使稀有度不高）
+# Setting type: String
+# Default value: Item_ColdLock_Name,Item_SweepRange_Name,Item_SweepRange_Enhanced_Name,Item_MiniBossFight_Name,Item_FrostRelicStack_Name
+FixedHighPriorityItems = Item_ColdLock_Name,Item_SweepRange_Name,Item_SweepRange_Enhanced_Name,Item_MiniBossFight_Name,Item_FrostRelicStack_Name
+
+## 强制指定优先级的藏品（格式 key:优先级，逗号分隔多个；1最高~4最低，覆盖稀有度映射与强制1级配置）。默认：贝鲁特之镰降为3级（其效果依赖暴击溢出，权重不高）；暴风雪之锤升为2级；故障探测针降为4级（普通）
+# Setting type: String
+# Default value: Item_ScytheOfBerut_Name:3,Item_IceHammer_Name:2,Item_FaultfinderNeedle_Name:4
+ForcedPriorityItems = Item_ScytheOfBerut_Name:3,Item_IceHammer_Name:2,Item_FaultfinderNeedle_Name:4
+
+## 优先利用豁免格（IgnoreCriteria 解锁石板解除位置限制）的藏品 LocalizedString key（逗号分隔）。默认：冰冷的锁——只要背包里有解锁石板就尽可能站豁免格（可上高等级格），其次才考虑其自然限制位置。其他有位置限制的物品则相反：先考虑自然满足位置，不行再用豁免格
+# Setting type: String
+# Default value: Item_ColdLock_Name
+IgnoreCellPreferredItems = Item_ColdLock_Name
+
+## 1级藏品等级分权重
+# Setting type: Single
+# Default value: 1.5
+# Acceptable value range: From 0.5 to 3
+Weight1 = 1.5
+
+## 2级藏品等级分权重
+# Setting type: Single
+# Default value: 1.25
+# Acceptable value range: From 0.5 to 3
+Weight2 = 1.25
+
+## 3级藏品等级分权重
+# Setting type: Single
+# Default value: 1.1
+# Acceptable value range: From 0.5 to 3
+Weight3 = 1.1
+
+## 4级藏品等级分权重
+# Setting type: Single
+# Default value: 1
+# Acceptable value range: From 0.5 to 3
+Weight4 = 1
+
+## 被北向的金色针（指北针 Charm_UpCharmDamage）锁定的目标神器强制最高优先级(1级)：无论稀有度，优先拉满等级。整理前已经配对的针才生效
+# Setting type: Boolean
+# Default value: true
+CompassTargetForcedHigh = true
+
+## 等级价值低的藏品 LocalizedString key（逗号分隔，支持护符类名如 Charm_ShadowEye）：这些藏品升级收益极低，等级分按 LowValueLevelFactor 打折，且优先级降为4级（最晚选格）。默认：闪烁的眼睛、蜥蜴板甲（只保证启用，不追求高等级）
+# Setting type: String
+# Default value: Item_ShadowEye_Name,Item_PlateArmor_Name
+LowLevelValueItems = Item_ShadowEye_Name,Item_PlateArmor_Name
+
+## 低等级价值藏品的等级分保留比例（0=等级完全无价值，仍保证启用）
+# Setting type: Single
+# Default value: 0.1
+# Acceptable value range: From 0 to 1
+LowLevelValueFactor = 0.1
+
+## 必须优先达到指定最低等级的藏品（格式 key=等级，逗号分隔多个）。命中后强制最高优先级(1级)，启用时有效等级低于目标每级额外扣分，保证优先拉满该等级。默认：谱子「银河」=2（Level2 效果关键）
+# Setting type: String
+# Default value: Item_SuperPlanet_Name=2
+MinLevelItems = Item_SuperPlanet_Name=2
+
+[Smart]
+
+## 启用智能初始布局：石板贪心摆位（正覆盖最大化、负等级推出背包外或压到非护符下）、受限护符优先放满足位置条件的格子或豁免格（解除限制的石板格）
+# Setting type: Boolean
+# Default value: true
+EnableSmartStart = true
+
+## 多起点搜索：退火从 智能初始/原始/随机 多个起点跑，取全局最优（离线评估极快，开销可忽略）
+# Setting type: Boolean
+# Default value: true
+EnableRandomStarts = true
+
+## 引导评分中位置条件满足/不满足的奖惩（0=关闭）
+# Setting type: Single
+# Default value: 150
+# Acceptable value range: From 0 to 5000
+CriteriaWeight = 150
+
+## 引导评分中护符站上负等级格子的额外惩罚（0=关闭）
+# Setting type: Single
+# Default value: 80
+# Acceptable value range: From 0 to 2000
+NegativeWeight = 80
+
+## 退火中“受限护符定向跳转到满足条件格子”的移动概率（0=关闭）
+# Setting type: Single
+# Default value: 0.15
+# Acceptable value range: From 0 to 1
+CriteriaMoveChance = 0.15
+
+[Synergy]
+
+## 行星望远镜(Charm_PlanetModule)启用时，周围八格每颗启用行星藏品的加成奖励（0=关闭）。该值代表“行星聚拢到望远镜旁”的权重：应明显高于行星自身单级等级分(10000)才会让搜索优先聚拢
+# Setting type: Single
+# Default value: 40000
+# Acceptable value range: From 0 to 200000
+PlanetBonus = 40000
+
+## 虽是行星分类但不参与望远镜聚簇的藏品 LocalizedString key（逗号分隔）。默认：乐谱银河（谱子「银河」）、红色行星观察日志——它们是行星但不需放在望远镜周围
+# Setting type: String
+# Default value: Item_SuperPlanet_Name,Item_FlamePlanet_Name
+PlanetClusterExcludedItems = Item_SuperPlanet_Name,Item_FlamePlanet_Name
+
+## 和谐之晶类藏品 LocalizedString key（逗号分隔）：周围8格内神器每1级伤害放大+1%——整理会尽量把高等级护符聚到它周围8格（须启用才生效）
+# Setting type: String
+# Default value: Item_NearLevelDamage_Name
+HarmonyCrystalItems = Item_NearLevelDamage_Name
+
+## 和谐之晶周围8格每级护符有效等级的评分奖励（0=关闭）
+# Setting type: Single
+# Default value: 2000
+# Acceptable value range: From 0 to 50000
+HarmonyLevelBonus = 2000
+
+## 奉献徽章类藏品 LocalizedString key（逗号分隔；默认类识别已覆盖奉献徽章）。效果：加成同一横排的同伴藏品
+# Setting type: String
+# Default value: Item_CompanionChaos_Name
+DedicationBadgeItems = Item_CompanionChaos_Name
+
+## 奉献徽章同一横排内每个同伴藏品的评分奖励（0=关闭）。同伴按 ICompanionCharm 接口自动识别（金色手铃/迷你弩炮/灵魂粉末×3/采矿臂章等）
+# Setting type: Single
+# Default value: 3000
+# Acceptable value range: From 0 to 50000
+DedicationCompanionBonus = 3000
+
+## 发光的沙漏类藏品 LocalizedString key（逗号分隔；默认类识别已覆盖 Charm_RightSpellCooldownHelper）。效果：使右边一格的魔法书（Charm_Magic）CD 恢复速度 +30/60/100%（按沙漏等级）
+# Setting type: String
+# Default value: 
+HourglassItems = 
+
+## 沙漏右边有魔法书时，按魔法书 CD 秒数的评分奖励（0=关闭）。CD 越长奖励越高 → 搜索会把沙漏放到 CD 最长的魔法书左边
+# Setting type: Single
+# Default value: 6000
+# Acceptable value range: From 0 to 50000
+HourglassBonus = 6000
+
+## 雷伊星碎片类藏品 LocalizedString key（逗号分隔，也支持类名 token）。效果：放在耗蓝量最高的魔法书右侧（与沙漏方向相反）
+# Setting type: String
+# Default value: Item_DoubleMagic_Name
+RayShardItems = Item_DoubleMagic_Name
+
+## 雷伊星碎片左侧有魔法书时，按魔法书耗蓝量的评分奖励（0=关闭）。耗蓝越高奖励越高 → 搜索会把碎片放到耗蓝最高的魔法书右侧
+# Setting type: Single
+# Default value: 4000
+# Acceptable value range: From 0 to 50000
+RayShardBonus = 4000
+
+## 永恒蚀类藏品 LocalizedString key（逗号分隔；默认类识别已覆盖 Charm_FireIceWeapon）。摆位规则：背包中冰霜武具(FROST)藏品多于太阳剑(FLAMESWORD)时放右三列，少于时放左三列，相等/皆无则不限
+# Setting type: String
+# Default value: 
+EclipseItems = 
+
+## 对立之秤类藏品 LocalizedString key（逗号分隔；默认类识别已覆盖 Charm_FireIce）。摆位规则：冰川(GLACIER)藏品多于余烬(EMBER)时放最右列，少于时放最左列，相等/皆无时只能最左或最右列
+# Setting type: String
+# Default value: 
+OpposingScaleItems = 
+
+## 白纸夹在两件同连击神器中间时的补位评分权重（0=关闭）。优先当前数量最大但尚未达到最高效果档位的连击；例如坚固 9/10 时优先用白纸补到 10
+# Setting type: Single
+# Default value: 5000
+# Acceptable value range: From 0 to 100000
+WhitePaperComboBonus = 5000
+
+## 指北针(Charm_UpCharmDamage)维持整理前原目标时的评分奖励（0=不额外加分，原目标绑定仍始终生效）。整理前已配对的针会锁定同一个物品实例并随它移动；只有原先未配对的针才自动寻找伤害类藏品/指北针
+# Setting type: Single
+# Default value: 12000
+# Acceptable value range: From 0 to 50000
+CompassBonus = 12000
+
+## 指北针未配对（上方无伤害类/指北针）时其等级分的保留比例。游戏里指北针效果只在配对时生效，未配对等级分应视为虚分（0.1=保留一成）
+# Setting type: Single
+# Default value: 0.1
+# Acceptable value range: From 0 to 1
+CompassUnpairedFactor = 0.1
+
+## 多用途腰带类藏品 LocalizedString key（逗号分隔；类识别已覆盖 Charm_WoodenBox，木箱也会命中）。效果：背包最上行(y=0)每有一件神器，效果叠加一次——启用后整理会尽量把神器堆满第一行
+# Setting type: String
+# Default value: Item_Belt_Name
+BeltItems = Item_Belt_Name
+
+## 腰带启用时，第一行每件神器的评分奖励（0=关闭）
+# Setting type: Single
+# Default value: 2500
+# Acceptable value range: From 0 to 50000
+BeltRowBonus = 2500
+
+[Vanilla]
+
+## 游戏内置自动排列的最大迭代次数（原版默认 4，越大效果越好但耗时略增）
+# Setting type: Int32
+# Default value: 30
+# Acceptable value range: From 1 to 500
+MaxIterations = 30
+
+## 是否允许自动旋转石板以匹配加成覆盖范围
+# Setting type: Boolean
+# Default value: true
+AllowTabletRotation = true
+

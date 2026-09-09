@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net471</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>SephiriaUnifiedModPanel</AssemblyName>
+    <Version>0.2.0</Version>
+    <GameDirectory Condition="'$(GameDirectory)' == ''">E:\steam\steamapps\common\Sephiria</GameDirectory>
+    <ManagedDirectory>$(GameDirectory)\Sephiria_Data\Managed</ManagedDirectory>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BepInEx"><HintPath>$(GameDirectory)\BepInEx\core\BepInEx.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Mono.Cecil"><HintPath>$(GameDirectory)\BepInEx\core\Mono.Cecil.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="0Harmony"><HintPath>$(GameDirectory)\BepInEx\core\0Harmony.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Assembly-CSharp"><HintPath>$(ManagedDirectory)\Assembly-CSharp.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Newtonsoft.Json"><HintPath>$(ManagedDirectory)\Newtonsoft.Json.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine"><HintPath>$(ManagedDirectory)\UnityEngine.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.CoreModule"><HintPath>$(ManagedDirectory)\UnityEngine.CoreModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.UI"><HintPath>$(ManagedDirectory)\UnityEngine.UI.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.UIModule"><HintPath>$(ManagedDirectory)\UnityEngine.UIModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.TextRenderingModule"><HintPath>$(ManagedDirectory)\UnityEngine.TextRenderingModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Unity.InputSystem"><HintPath>$(ManagedDirectory)\Unity.InputSystem.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Unity.TextMeshPro"><HintPath>$(ManagedDirectory)\Unity.TextMeshPro.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+</Project>

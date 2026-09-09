@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net471</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>SephiriaCrossbowAutoReload</AssemblyName>
+    <RootNamespace>SephiriaCrossbowAutoReload</RootNamespace>
+    <Version>1.1.0</Version>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <DebugType>embedded</DebugType>
+    <PathMap>$(MSBuildProjectDirectory)=SephiriaCrossbowAutoReload</PathMap>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="BepInEx">
+      <HintPath>E:\steam\steamapps\common\Sephiria\BepInEx\core\BepInEx.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>E:\steam\steamapps\common\Sephiria\BepInEx\core\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>E:\steam\steamapps\common\Sephiria\Sephiria_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>E:\steam\steamapps\common\Sephiria\Sephiria_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>E:\steam\steamapps\common\Sephiria\Sephiria_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>E:\steam\steamapps\common\Sephiria\Sephiria_Data\Managed\UnityEngine.UI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

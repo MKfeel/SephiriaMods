@@ -1,0 +1,7 @@
+﻿{
+  "modName": "MOD Manager",
+  "modVersion": "1.0.0",
+  "modAuthor": "TeleAgent",
+  "dllFile": "ModManagerAddon.dll",
+  "entryClass": "SephiriaModManager.Plugin"
+}

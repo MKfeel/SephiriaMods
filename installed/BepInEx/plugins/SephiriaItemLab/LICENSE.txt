@@ -1,0 +1,59 @@
+Sephiria Assistant Custom License
+
+Copyright (c) 2026 Sephiria Assistant contributors. All rights reserved except
+for the permissions expressly granted below.
+
+You may download and use unmodified compiled releases of Sephiria Assistant
+and Sephiria Cheat Lab for personal, non-commercial gameplay and testing.
+
+You may show the mods in screenshots, videos, reviews, and livestreams. Credit
+and a link to the original Nexus Mods page are appreciated but not required.
+
+You may not, without prior written permission:
+
+- redistribute or rehost the files, in whole or in part;
+- sell the files or access to them;
+- distribute modified builds or derivative versions;
+- bundle the files inside another mod, installer, collection archive, or modpack;
+- use the project code or assets in commercial products.
+
+Nexus Mods Collections may reference the original Nexus Mods download page,
+but must not bundle or mirror the files.
+
+The software is provided "as is", without warranty of any kind. The authors
+are not liable for save data loss, multiplayer consequences, incompatibility,
+or any other damages arising from use of the software.
+
+Sephiria, its game files, names, trademarks, and visual assets belong to their
+respective owners. BepInEx is a separate project and is not included in these
+release archives.
+
+赛菲莉娅助手自定义许可
+
+版权所有 (c) 2026 Sephiria Assistant contributors。除下述明确授权外，
+保留所有权利。
+
+你可以下载并使用未经修改的 Sephiria Assistant 与 Sephiria Cheat Lab
+编译发行版，用于个人、非商业的游戏与测试。
+
+你可以在截图、视频、评测和直播中展示这些模组。欢迎但不强制注明作者并
+链接到原 Nexus Mods 页面。
+
+未经事先书面许可，你不得：
+
+- 以完整或部分形式重新分发、转载或镜像这些文件；
+- 销售这些文件或对其访问权收费；
+- 分发修改后的构建或衍生版本；
+- 将这些文件捆绑进其他模组、安装器、合集压缩包或整合包；
+- 将项目代码或素材用于商业产品。
+
+Nexus Mods Collections 可以引用原 Nexus Mods 下载页面，但不得捆绑或
+镜像文件。
+
+本软件按“原样”提供，不附带任何形式的保证。作者不对存档丢失、多人游戏
+后果、兼容性问题或使用本软件产生的其他损失承担责任。
+
+Sephiria 及其游戏文件、名称、商标与视觉素材归各自权利人所有。BepInEx
+是独立项目，未包含在这些发行压缩包中。
+
+如英中文本存在解释差异，以英文条款为准。

@@ -1,0 +1,120 @@
+1.0.1
+- Uses Sephiria's current-language TextMesh Pro font and native fallback chain.
+- Fixed Thai community translations appearing as square boxes.
+- 使用游戏当前语言的 TextMesh Pro 字体与 fallback 字体链，修复泰语翻译显示为方框的问题。
+
+1.0.0
+- First stable release of Sephiria Cheat Lab: the official Item Box extension and guarded debug toolkit.
+- 首个稳定版：完整的官方物品箱扩展与安全门控调试工具集。
+
+0.7.2
+- Item Lab tab prewarming now waits for a valid local avatar and local session.
+- 调试标签仅在本地角色与单人会话就绪后预加载。
+
+0.7.1
+- Prebuilds and preserves the native debug tab so opening Item Lab no longer flashes another tab first.
+- 预先构建并保留原生调试标签，减少首次打开卡顿并消除标签闪现。
+
+0.7.0
+- Added native artifact-reward, tablet-reward, and repeatable-enchant debug flows.
+- Added controls to add or remove one active backpack slot.
+- 新增原生神器奖励、石板奖励、可重复附魔入口与背包格增减调试功能。
+
+0.6.0
+- Added a zero-cost debug entry for the game's native tablet-fusion panel.
+- It uses the official fusion UI, validation, inventory operation, rotations,
+  naming, and result data without requiring the fourth-floor fusion event.
+- 新增零费用的原生“石板融合”调试入口，无需推进到第四层；完整复用本体的融合
+  界面、条件检查、旋转、命名、库存结算与融合结果数据。
+
+0.5.1
+- Replaced the debug drawer with a compact third tab inside the official Item Box.
+- Added the complete ECustomStat list with bilingual readable labels and direct
+  value controls; no internal key names are required.
+- Added low-overhead infinite HP/MP, base-weapon reset, native weapon/miracle
+  icons, and restoration of the last tab, debug section, and scroll position.
+- Fixed tab injection failures, delayed reinjection, oversized trash-button
+  clones, and frame drops while infinite resources are enabled.
+- Unsupported game languages now fall back to English instead of Simplified
+  Chinese. External XML packs translate mod text, while item types, rarities,
+  names, descriptions, sets, weapons, miracles, and tooltips use game localization.
+- 将调试抽屉改为官方物品箱内的紧凑第三标签；完整列出 ECustomStat 并提供中英可读
+  名称与直接数值设置，无需用户了解内部键名。
+- 新增低开销无限生命/蓝量、基础武器重置、武器/奇迹原生图标，以及外层标签、调试
+  子页面和滚动位置恢复；修复标签注入、延迟出现、巨型垃圾桶按钮和帧率下降问题。
+- 修复非英文语言错误回退简体中文的问题；缺失语言统一回退英文，支持外部 XML 翻译包，
+  物品类型、稀有度及其他游戏原生字段直接跟随游戏语言。
+
+0.5.0
+- Replaced the custom catalog with the official training-school Item Box and
+  combined it with the native backpack/control stack.
+- Added an injected bilingual drawer for character resources and stats, weapons
+  and official enhancement, miracles, test resources, and optional internal items.
+- Preserved the official item tabs, grouping, tooltips, favorites, controller
+  navigation, generation, batch favorites, and debug-item cleanup.
+- Replaced all write permissions with a shared single-player/local-host safety gate.
+- 以官方训练场物品箱替代自绘目录并接入原生背包控制栈；保留官方分类、分组、详情、
+  收藏、控制器导航、生成与调试物品清理。
+- 注入中英双语调试抽屉，支持角色资源与属性、测试资源、武器与官方强化、奇迹及可选
+  内部物品；所有写操作统一限制为至多一个连接的单人本地服务器/本地主机。
+
+0.4.4
+- Rebuilt responsive layout logic with separate wide three-column and narrow
+  stacked modes; no minimum-width fallback uses Unity default control sizes.
+- Added a compact filter bar, adaptive 2-5 column catalog, bottom detail panel,
+  stable interaction colors, and slower mouse-wheel scrolling.
+- 重写响应式布局，分别提供宽屏三栏与窄屏纵向模式，不再因逻辑宽度不足而回退到 Unity 默认控件尺寸。
+- 新增紧凑筛选栏、自适应 2-5 列目录、底部详情区、稳定交互配色，并降低滚轮滚动速度。
+
+0.4.3
+- Replaced unsuitable stretched game-window sprites with stable opaque runtime
+  surfaces while retaining the game font, item rarity frames, icons, and tooltips.
+- Added a conventional full-window background and consistent inner panels.
+- 将不适合拉伸的游戏窗口贴图替换为稳定、不透明的运行时界面表面，同时保留游戏字体、物品稀有度框、图标和提示框。
+- 增加常规完整窗口背景与统一的内部面板。
+
+0.4.2
+- Restored the IMGUI key-event fallback for O and added explicit native-host
+  and open-gate diagnostics.
+- 恢复 O 的 IMGUI 按键事件兜底，并增加门控与原生宿主诊断日志。
+
+0.4.1
+- Changed the key from F7 to O and restricted opening to the main scene while
+  the game's control stack is empty; O or Escape closes the panel.
+- Registered Item Lab in the game's HUD/UIBase hierarchy, fixing cursor order.
+- Added responsive HUD-space columns, dynamic item-grid counts, and brighter styling.
+- 快捷键改为 O，仅在主要场景且没有其他控制面板时打开；接入原生 UIBase
+  控制栈，修复光标层级，并采用响应式三栏、动态网格与更明亮的样式。
+
+0.4.0
+- Rebuilt Item Lab as a responsive full-screen native-style catalog.
+- Added the game's native artifact, stone-tablet, and item tooltips on pointer
+  hover and controller selection.
+- Uses runtime game UI resources without bundling any game asset.
+- 将 Item Lab 重做为全屏原生风格目录，支持鼠标悬浮与手柄选中时显示游戏原生
+  神器、石板及普通物品详情；不在模组中打包任何游戏资产。
+
+0.3.3
+- Improved F7/F8 coexistence with Sephiria Assistant through an independent
+  IMGUI input fallback and toggle diagnostics.
+- Blocked pointer input from passing through Item Lab into underlying game UI.
+- 增强与 Sephiria Assistant 同时安装时的快捷键兼容性及切换诊断日志。
+- 阻止 Item Lab 窗口内的点击和滚轮穿透到底层游戏界面。
+
+0.3.2
+- Added English runtime UI, labels, and operation messages (en-US/en_us).
+- Improved English search-bar spacing.
+- 新增英文运行时界面、标签与操作消息（en-US/en_us）。
+- 改进英文搜索栏间距。
+
+0.3.1
+- Virtualized item catalog with search and filters.
+- Game icons, rarity colors, localized names, and descriptions.
+- One-click generation of one selected item.
+- Single-player/local-host safety restriction.
+- Text wrapping and viewport clipping fixes.
+- 虚拟化物品目录、搜索与筛选。
+- 显示游戏图标、稀有度颜色、本地化名称与说明。
+- 单击生成一个所选物品。
+- 限制为单人/本地主机生成。
+- 修复文本换行与视口截断。
