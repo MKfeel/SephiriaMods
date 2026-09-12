@@ -1,11 +1,13 @@
 # 我的赛菲莉娅 Mod 备份
 
-这是 MKfeel 的私人跨电脑备份仓库，包含本地开发资料与游戏中已安装的模组。2026-09-09 按“保存本地所有 mod”的要求创建，包含背包整理和未稳定的 UI 开发版本；这次私有备份授权不代表公开发布授权。
+这是 MKfeel 的跨电脑 Mod 备份仓库，包含本地开发资料与游戏模组备份。2026-09-09 创建时为私有仓库；2026-09-12 核对时仓库已公开。
+
+**当前安装状态请看 [Mod 清单（2026-09-12）](MODS.md)**：8 个 BepInEx 插件及已禁用的 SPMod，包含隐藏房间提示 0.6.0 和 Item Lab 扩展 1.1.0。本次仅更新清单和说明；下列 `installed`、`workspace` 与 `manifest.json` 仍为历史备份，版本和插件数量可能与当前清单不同。
 
 ## 内容
 
-- `installed/BepInEx/plugins`：当前游戏中的 11 个插件 DLL，以及说明、许可证和旧版本备份。
-- `installed/BepInEx/config`：当前 BepInEx 和模组配置。
+- `installed/BepInEx/plugins`：旧备份中的 11 个插件 DLL，以及说明、许可证和旧版本备份。
+- `installed/BepInEx/config`：旧备份中的 BepInEx 和模组配置。
 - `installed/AddOns`：ModManager、SPMod 及所需依赖和配置。
 - `workspace`：羁绊神器许愿泉、模组设置页、弩自动装填、天赋兼容、统一模组面板、背包整理性能版与 fork，以及上游对照资料；保留已有模组编译产物和许可证。
 - `manifest.json`：每个备份文件的相对路径、来源、大小和 SHA-256。
@@ -14,7 +16,7 @@
 
 ## 在另一台电脑使用
 
-先安装游戏及适配的 BepInEx 5。登录有权访问此私有仓库的 GitHub 账号，然后：
+先安装游戏及适配的 BepInEx 5，然后获取仓库：
 
 ```powershell
 gh repo clone MKfeel/SephiriaMods
