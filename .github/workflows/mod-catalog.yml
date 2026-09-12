@@ -1,0 +1,17 @@
+name: Validate mod manager catalog
+on:
+  push:
+    paths: ['catalog/**', 'packages/**', 'scripts/Validate-ModCatalog.ps1', '.github/workflows/mod-catalog.yml']
+  pull_request:
+    paths: ['catalog/**', 'packages/**', 'scripts/Validate-ModCatalog.ps1', '.github/workflows/mod-catalog.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate catalog, ZIP payload and hashes
+        shell: pwsh
+        run: ./scripts/Validate-ModCatalog.ps1

@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "mods": [
+    {
+      "id": "com.sephiria.backpack-organizer",
+      "name": "背包整理",
+      "loader": "BepInEx",
+      "description": "自动整理背包，支持手动优先级。",
+      "versions": [
+        {
+          "version": "2.5.3",
+          "channel": "stable",
+          "notes": "2026-09-13：管理器标准安装包；保留本地配置及启用状态，支持同版本修复。",
+          "url": "https://raw.githubusercontent.com/MKfeel/SephiriaMods/main/packages/com.sephiria.backpack-organizer/2.5.3-4699b09f471d.zip",
+          "size": 72825,
+          "sha256": "4699B09F471DF41FAB3CB0B8BAEAE8DF429C2B6C0F3A950A9A077B6363EED1F8",
+          "compatibility": "Sephiria；BepInEx 5 / AddOn（按模组类型）；游戏内效果待验收"
+        }
+      ]
+    },
+    {
+      "id": "com.codex.sephiria.bondartifactwishes",
+      "name": "羁绊神器许愿泉",
+      "loader": "BepInEx",
+      "description": "Sephiria Bond Artifact Wishes",
+      "versions": [
+        {
+          "version": "0.2.0",
+          "channel": "stable",
+          "notes": "2026-09-13：管理器标准安装包；保留本地配置及启用状态，支持同版本修复。",
+          "url": "https://raw.githubusercontent.com/MKfeel/SephiriaMods/main/packages/com.codex.sephiria.bondartifactwishes/0.2.0-95dd292dc4b6.zip",
+          "size": 9014,
+          "sha256": "95DD292DC4B6F8E9178CE4D26BED07BAC14E0777EF916BBE7A1424201D56B6D7",
+          "compatibility": "Sephiria；BepInEx 5 / AddOn（按模组类型）；游戏内效果待验收"
+        }
+      ]
+    },
+    {
+      "id": "com.sephiria.itemlab",
+      "name": "Item Lab",
+      "loader": "BepInEx",
+      "description": "Sephiria Cheat Lab",
+      "versions": [
+        {
+          "version": "1.0.1",
+          "channel": "stable",
+          "notes": "2026-09-13：管理器标准安装包；保留本地配置及启用状态，支持同版本修复。",
+          "url": "https://raw.githubusercontent.com/MKfeel/SephiriaMods/main/packages/com.sephiria.itemlab/1.0.1-d11f22e61fd2.zip",
+          "size": 69136,
+          "sha256": "D11F22E61FD25C7DF657DB6FA3F37748FA9DA6073B1BB4E124C8A851C0D196C1",
+          "compatibility": "Sephiria；BepInEx 5 / AddOn（按模组类型）；游戏内效果待验收"
+        }
+      ]
+    },
+    {
+      "id": "com.sephiria.crossbow-auto-reload",
+      "name": "弩自动上弹",
+      "loader": "BepInEx",
+      "description": "Sephiria Crossbow Auto Reload",
+      "versions": [
+        {
+          "version": "1.1.0",
+          "channel": "stable",
+          "notes": "2026-09-13：管理器标准安装包；保留本地配置及启用状态，支持同版本修复。",
+          "url": "https://raw.githubusercontent.com/MKfeel/SephiriaMods/main/packages/com.sephiria.crossbow-auto-reload/1.1.0-59a7892aaad5.zip",
+          "size": 12993,
+          "sha256": "59A7892AAAD542E6CD81D4EBB617F7EBA588206E664A7582109FF77CFB004826",
+          "compatibility": "Sephiria；BepInEx 5 / AddOn（按模组类型）；游戏内效果待验收"
+        }
+      ]
+    },
+    {
+      "id": "com.sephiria.hardmoderewardunlocker",
+      "name": "困难模式奖励解锁",
+      "loader": "BepInEx",
+      "description": "Sephiria Hard Mode Reward Unlocker",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "channel": "stable",
+          "notes": "2026-09-13：管理器标准安装包；保留本地配置及启用状态，支持同版本修复。",
+          "url": "https://raw.githubusercontent.com/MKfeel/SephiriaMods/main/packages/com.sephiria.hardmoderewardunlocker/1.0.0-c26ce101a3e7.zip",
+          "size": 8845,
+          "sha256": "C26CE101A3E7495944F136D241F326E81C3DB60EBDCEC14848C6BF6DADC419F4",
+          "compatibility": "Sephiria；BepInEx 5 / AddOn（按模组类型）；游戏内效果待验收"
+        }
+      ]
+    },
+    {
+      "id": "codex.sephiria.hidden-room-hints",
+      "name": "隐藏房间提示",
+      "loader": "BepInEx",
+      "description": "隐藏房间提示与真实墙格边界显示。",
+      "versions": [
+        {
+          "version": "0.6.0",
+          "channel": "stable",
+          "notes": "2026-09-13：管理器标准安装包；保留本地配置及启用状态，支持同版本修复。",
+          "url": "https://raw.githubusercontent.com/MKfeel/SephiriaMods/main/packages/codex.sephiria.hidden-room-hints/0.6.0-3b5605e5a1b4.zip",
+          "size": 14243,
+          "sha256": "3B5605E5A1B474E22A26998245EDB7397BE0D70B25F2D51479585FFFB5EBFCF4",
+          "compatibility": "Sephiria；BepInEx 5 / AddOn（按模组类型）；游戏内效果待验收"
+        }
+      ]
+    },
+    {
+      "id": "com.codex.sephiria.itemlab-tweaks",
+      "name": "Item Lab 面板扩展",
+      "loader": "BepInEx",
+      "description": "Item Lab 扩展，含额外天赋点与 SPMod 兼容；已替代旧天赋插件。",
+      "versions": [
+        {
+          "version": "1.1.0",
+          "channel": "stable",
+          "notes": "2026-09-13：管理器标准安装包；保留本地配置及启用状态，支持同版本修复。",
+          "url": "https://raw.githubusercontent.com/MKfeel/SephiriaMods/main/packages/com.codex.sephiria.itemlab-tweaks/1.1.0-c08a294e6490.zip",
+          "size": 19273,
+          "sha256": "C08A294E649029EC94EDBB005AF8DFD2379623D3C47A77A303851B978076C5E9",
+          "compatibility": "Sephiria；BepInEx 5 / AddOn（按模组类型）；游戏内效果待验收"
+        }
+      ]
+    },
+    {
+      "id": "com.sephiria.unifiedmodpanel",
+      "name": "统一模组加载面板",
+      "loader": "BepInEx",
+      "description": "Sephiria Unified Mod Panel",
+      "versions": [
+        {
+          "version": "0.2.0",
+          "channel": "stable",
+          "notes": "2026-09-13：管理器标准安装包；保留本地配置及启用状态，支持同版本修复。",
+          "url": "https://raw.githubusercontent.com/MKfeel/SephiriaMods/main/packages/com.sephiria.unifiedmodpanel/0.2.0-e5b13bebb16a.zip",
+          "size": 15314,
+          "sha256": "E5B13BEBB16AEA62F96C0EFBDD307C6BE16124A0F68D4C8550BAADF30EF68EAF",
+          "compatibility": "Sephiria；BepInEx 5 / AddOn（按模组类型）；游戏内效果待验收"
+        }
+      ]
+    },
+    {
+      "id": "addon:StarSephiriaMod",
+      "name": "SPMod",
+      "loader": "AddOn",
+      "description": "Star's SephiriaMod Mod",
+      "versions": [
+        {
+          "version": "2.4.3",
+          "channel": "stable",
+          "notes": "2026-09-13：管理器标准安装包；保留本地配置及启用状态，支持同版本修复。",
+          "url": "https://raw.githubusercontent.com/MKfeel/SephiriaMods/main/packages/addon_StarSephiriaMod/2.4.3-18c33bbdae4a.zip",
+          "size": 740602,
+          "sha256": "18C33BBDAE4ADD1F6EBC443EB7F52946E4527D52B6F117510454E03D09D7AD84",
+          "compatibility": "Sephiria；BepInEx 5 / AddOn（按模组类型）；游戏内效果待验收"
+        }
+      ]
+    }
+  ]
+}
