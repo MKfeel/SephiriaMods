@@ -4,6 +4,8 @@
 
 已于 2026-09-13 接入管理器。默认配置为 `MKfeel/SephiriaMods` / `main` / `catalog/mods.json`。
 
+SPMod 2.4.7 已加入管理器更新目录，保留 2.4.3 历史包。已验证管理器导入、逐文件哈希及配置保留，游戏内功能待用户验收。
+
 更新页可查看远端版本、单项安装或覆盖；“一键覆盖本地”支持同版本修复，保留配置和启用状态。首批发布 9 个当前模组，包含隐藏房间提示 0.6.0、Item Lab 面板扩展 1.1.0；不会装回旧管理器、Talent Customizer 或独立 SPMod 天赋补丁。
 
 [发布协议与后续维护](catalog/README.md) · [更新索引](catalog/mods.json)

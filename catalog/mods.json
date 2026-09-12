@@ -151,6 +151,15 @@
           "size": 740602,
           "sha256": "18C33BBDAE4ADD1F6EBC443EB7F52946E4527D52B6F117510454E03D09D7AD84",
           "compatibility": "Sephiria；BepInEx 5 / AddOn（按模组类型）；游戏内效果待验收"
+        },
+        {
+          "version": "2.4.7",
+          "channel": "stable",
+          "notes": "SPMod 2.4.7；来源为用户提供的 SPMod2.4.7.rar。管理器实际导入及文件哈希验证通过，保留本地配置与启用状态。游戏内功能尚待验收。",
+          "url": "https://raw.githubusercontent.com/MKfeel/SephiriaMods/main/packages/addon_StarSephiriaMod/2.4.7-bff308aa05ce.zip",
+          "size": 750083,
+          "sha256": "BFF308AA05CEA91C55E7A5110E623ED3B5E13311D7201044A91E3A5C053F1426",
+          "compatibility": "Sephiria AddOn；含所需依赖 DLL，游戏内功能待验收"
         }
       ]
     }
