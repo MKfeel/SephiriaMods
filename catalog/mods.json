@@ -162,6 +162,23 @@
           "compatibility": "Sephiria AddOn；含所需依赖 DLL，游戏内功能待验收"
         }
       ]
+    },
+    {
+      "id": "com.codex.sephiria.talent-effects",
+      "name": "天赋效果修改",
+      "loader": "BepInEx",
+      "description": "生存20：每10点最大生命值增加1%伤害放大；智慧10：小Boss1个骰子、大Boss2个骰子。",
+      "versions": [
+        {
+          "version": "0.2.0",
+          "channel": "stable",
+          "notes": "生命上限变化时立即更新；智慧保留其他原有效果，沿用原生Boss奖励。构建及23项隔离检查通过，游戏内待验收。",
+          "url": "https://raw.githubusercontent.com/MKfeel/SephiriaMods/main/packages/com.codex.sephiria.talent-effects/0.2.0-5b37a3747dae.zip",
+          "size": 9158,
+          "sha256": "5B37A3747DAE97561BFC06D1052AEAC241DFB0DA1AC41D975308EEDFDDAEB2AC",
+          "compatibility": "Sephiria / BepInEx 5；游戏内与联机效果待验收"
+        }
+      ]
     }
   ]
 }

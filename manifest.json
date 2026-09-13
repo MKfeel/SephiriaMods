@@ -282,6 +282,12 @@
     "SHA256": "CA596712205EE9A0B9E214118270F8449E5F20042EF96CCB64B2E7DC3070B7CB"
   },
   {
+    "Path": "installed/BepInEx/plugins/SephiriaTalentEffects/SephiriaTalentEffects.dll",
+    "Origin": "installed",
+    "Bytes": 13824,
+    "SHA256": "CE87CDF731747F1E55DF94B9186258210323C7277E642DC62B7AF35A6E46DD59"
+  },
+  {
     "Path": "installed/BepInEx/plugins/SephiriaTalentSPCompat/SephiriaTalentSPCompat.dll",
     "Origin": "installed",
     "Bytes": 9216,
@@ -652,6 +658,54 @@
     "Origin": "workspace",
     "Bytes": 2092,
     "SHA256": "3717070F86AED93DD3E557301180BE5EC92E4CEC1319011304ED127E99E20C67"
+  },
+  {
+    "Path": "workspace/talent-effects/bin/Release/net471/SephiriaTalentEffects.dll",
+    "Origin": "workspace",
+    "Bytes": 13824,
+    "SHA256": "CE87CDF731747F1E55DF94B9186258210323C7277E642DC62B7AF35A6E46DD59"
+  },
+  {
+    "Path": "workspace/talent-effects/Plugin.cs",
+    "Origin": "workspace",
+    "Bytes": 9084,
+    "SHA256": "C86188AC1AEAEB2D99C00E1180EF3ED5771E3C317A364276B4CE8B49089DE439"
+  },
+  {
+    "Path": "workspace/talent-effects/README.md",
+    "Origin": "workspace",
+    "Bytes": 3330,
+    "SHA256": "425DD1F77CC1B2F08B8F4270E641E859D9DB492BB5F2A7D6405C7A282F0DB96D"
+  },
+  {
+    "Path": "workspace/talent-effects/SephiriaTalentEffects.csproj",
+    "Origin": "workspace",
+    "Bytes": 949,
+    "SHA256": "4F706A4CF8574B4E1944B69C68B43EBBE032E976BAB45DCD44FF03647A74950B"
+  },
+  {
+    "Path": "workspace/talent-effects/tests/Regression.cs",
+    "Origin": "workspace",
+    "Bytes": 6100,
+    "SHA256": "F3016ECBC2A799CBE04CC2B5C2CD524FA3F6D15FBB670EFB811B6501977B0268"
+  },
+  {
+    "Path": "workspace/talent-effects/tests/Regression.csproj",
+    "Origin": "workspace",
+    "Bytes": 225,
+    "SHA256": "2F3310D92FDE4D3DF862A182FAA6F3DB2B90B283FD6C920BCF0CB16812B0FEEF"
+  },
+  {
+    "Path": "workspace/talent-effects/tests/Stubs.cs",
+    "Origin": "workspace",
+    "Bytes": 4138,
+    "SHA256": "BE05A492BB3834644D222C09B07085F9D114DD767DAEF731D4B6577842537902"
+  },
+  {
+    "Path": "workspace/talent-effects/Verify-Game.ps1",
+    "Origin": "workspace",
+    "Bytes": 3355,
+    "SHA256": "FE9A24A4D9CBD56EA3AF0405C838594C4A9AEEC2DE859B43AECE182CFA552DD1"
   },
   {
     "Path": "workspace/talent-spmod-compat/bin/Release/net471/SephiriaTalentSPCompat.dll",

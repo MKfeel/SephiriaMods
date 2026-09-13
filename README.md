@@ -1,5 +1,7 @@
 # 赛菲莉娅 Mod 仓库
 
+天赋效果修改 **0.2.0** 已发布：生存 20 点每 10 最大生命值增加 1% 伤害放大；智慧 10 点小 Boss 奖励 1 个骰子、大 Boss 奖励 2 个。支持管理器安装。[源码与说明](workspace/talent-effects/README.md)。构建、23 项隔离检查及安装哈希验证通过，游戏内待验收。
+
 ## Windows 模组管理器
 
 已于 2026-09-13 接入管理器。默认配置为 `MKfeel/SephiriaMods` / `main` / `catalog/mods.json`。

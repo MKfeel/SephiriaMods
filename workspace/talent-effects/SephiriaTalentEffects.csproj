@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net471</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Version>0.2.0</Version>
+    <GameDirectory Condition="'$(GameDirectory)' == ''">E:\steam\steamapps\common\Sephiria</GameDirectory>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="tests\**\*.cs" />
+    <Reference Include="$(GameDirectory)\BepInEx\core\BepInEx.dll" Private="false" />
+    <Reference Include="$(GameDirectory)\BepInEx\core\0Harmony.dll" Private="false" />
+    <Reference Include="$(GameDirectory)\Sephiria_Data\Managed\Assembly-CSharp.dll" Private="false" />
+    <Reference Include="$(GameDirectory)\Sephiria_Data\Managed\Mirror.dll" Private="false" />
+    <Reference Include="$(GameDirectory)\Sephiria_Data\Managed\UnityEngine.dll" Private="false" />
+    <Reference Include="$(GameDirectory)\Sephiria_Data\Managed\UnityEngine.CoreModule.dll" Private="false" />
+  </ItemGroup>
+</Project>
