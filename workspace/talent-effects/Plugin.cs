@@ -8,14 +8,14 @@ using UnityEngine;
 
 namespace SephiriaTalentEffects
 {
-    [BepInPlugin("com.codex.sephiria.talent-effects", "Sephiria Talent Effects", "0.2.0")]
+    [BepInPlugin("com.codex.sephiria.talent-effects", "Sephiria Talent Effects", "0.2.1")]
     public sealed class Plugin : BaseUnityPlugin
     {
         private void Awake()
         {
             new Harmony("com.codex.sephiria.talent-effects").PatchAll(typeof(Plugin).Assembly);
             WisdomRewardDefinition.Apply();
-            Logger.LogInfo("Survival 20: +1% all damage per full 10 maximum HP (on change). Wisdom 10: miniboss 1 dice; native boss reward 2 dice; other effects retained.");
+            Logger.LogInfo("Survival 20: +1% all damage per full 10 maximum HP (on change). Wisdom 10: miniboss 1 dice; native boss reward 2 dice; legacy unique-pair effect removed.");
         }
 
         internal static bool IsSurvival20(Component component)
@@ -46,12 +46,8 @@ namespace SephiriaTalentEffects
                 || wisdom.lv10PerkPrefab == null) return;
             var status = wisdom.lv10PerkPrefab.GetComponent<PassiveObject_StatusInstance>();
             if (status == null || !Plugin.IsWisdom10(status)) return;
-            // Change the source value so the native status lifecycle, keywords and boss
-            // reward spawners all see 2. Preserve UNIQUE_PAIR and every other status.
-            var stats = (string[])status.stats.Clone();
-            for (int i = 0; i < stats.Length; i++)
-                if (stats[i] == "BOSS_REWARD_DICE/1") stats[i] = "BOSS_REWARD_DICE/2";
-            status.stats = stats;
+            // Replace the entire perk effect; native status lifecycle still owns removal.
+            status.stats = new[] { "BOSS_REWARD_DICE/2" };
         }
     }
 
@@ -108,18 +104,16 @@ namespace SephiriaTalentEffects
 
         private static bool Prefix(PassiveObjectMetadata __instance, ref string __result)
         {
+            if (Plugin.IsWisdom10(__instance))
+            {
+                __result = "击败迷你Boss时获得1个骰子，击败Boss时获得2个骰子。";
+                return false;
+            }
             if (!Plugin.IsSurvival20(__instance)) return true;
             __result = "每 10 点最大生命值提供 1% 伤害放大（不足 10 点的部分不计）。";
             return false;
         }
 
-        private static void Postfix(PassiveObjectMetadata __instance, ref string __result)
-        {
-            const string extension = "骰子奖励：小 Boss 1 个，大 Boss 2 个。";
-            // The derived metadata may call the base method; append only once.
-            if (Plugin.IsWisdom10(__instance) && !(__result ?? "").Contains(extension))
-                __result += "\n" + extension;
-        }
     }
 
     public sealed class SurvivalDamage : MonoBehaviour

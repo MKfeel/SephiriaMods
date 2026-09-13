@@ -17,7 +17,7 @@
 | 隐藏房间提示 | 0.6.0 | 启用 | 路线节点提前标记隐藏房；支持沙漠生成器；按原生开墙规则绘制实际墙格边界；系统消息、地图、墙标记、屏幕提示开启，测试模式关闭 | `SephiriaHiddenRoomHints/SephiriaHiddenRoomHints.dll` |
 | Item Lab（Cheat Lab） | 1.0.1 | 启用 | O 打开原生物品箱及调试工具；写操作限单人／本地主机条件 | `SephiriaItemLab/SephiriaItemLab.dll` |
 | Item Lab 面板扩展 | 1.1.0 | 启用 | 神器满附魔／还原、蓝宝石、角色页额外天赋点；当前额外 90 点；内置 SPMod 天赋兼容 | `SephiriaItemLabTweaks/SephiriaItemLabTweaks.dll` |
-| 天赋效果修改 | 0.2.0 | 启用 | 生存20：每10最大生命值增加1%伤害放大，变化时立即更新；智慧10：小Boss1个骰子、大Boss2个，保留其他效果 | `SephiriaTalentEffects/SephiriaTalentEffects.dll` |
+| 天赋效果修改 | 0.2.1 | 启用 | 生存20：每10最大生命值增加1%伤害放大；智慧10：迷你Boss1个骰子、Boss2个，移除旧神器效果 | `SephiriaTalentEffects/SephiriaTalentEffects.dll` |
 | 统一模组加载面板 | 0.2.0 | 启用 | F1；管理下次启动的加载状态；切换后需完全重启游戏 | `SephiriaUnifiedModPanel/SephiriaUnifiedModPanel.dll` |
 
 ## AddOn
@@ -29,6 +29,8 @@
 ModSettings 1.0.11 为本地未安装开发项目，不计入当前安装数量。Harmony、Mono.Cecil 等依赖库及旧版本 DLL 备份不作为独立模组计数。
 
 ## 最近变更
+
+- 天赋效果修改 **0.2.1**：移除智慧旧神器独特合并效果，完整替换描述，统一迷你Boss术语；25项隔离检查及部署哈希核对通过。
 
 - 天赋效果修改 **0.2.0** 已部署，DLL SHA-256 与构建产物一致；23 项隔离检查通过，未启动游戏。源码、安装 DLL 与管理器标准包均已加入仓库。
 

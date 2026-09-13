@@ -80,17 +80,17 @@ static class Regression
         status.stats = new[] { "UNIQUE_PAIR/1", "BOSS_REWARD_DICE/1" };
         PassiveDatabase.data = new System.Collections.Generic.Dictionary<ulong, PassiveEntity> { [8] = new PassiveEntity { lv10PerkPrefab = wisdom } };
         WisdomRewardDefinition.Apply(); WisdomRewardDefinition.Apply();
-        Check(status.stats[0] == "UNIQUE_PAIR/1" && status.stats[1] == "BOSS_REWARD_DICE/2", "native boss reward becomes 2 without stacking or changing unique pair");
+        Check(status.stats.Length == 1 && status.stats[0] == "BOSS_REWARD_DICE/2", "legacy unique pair removed; only two boss dice remain");
         second.bossDiceStat = 2;
         Die(new UnitAvatar { monsterType = EMonsterType.Miniboss });
         Check(second.diceRequests == 3, "miniboss reward remains 1 when native boss stat is 2");
         Check((bool)Call(typeof(EnablePatch), "Prefix", status, first), "wisdom native enable preserved");
         Check((bool)Call(typeof(DisablePatch), "Prefix", status), "wisdom native disable preserved");
         object[] description = { metadata, "original unique pair and boss dice" };
-        Call(typeof(DescriptionPatch), "Postfix", description);
+        Check(!(bool)Call(typeof(DescriptionPatch), "Prefix", description), "wisdom description skips native branch");
         string once = (string)description[1];
-        Call(typeof(DescriptionPatch), "Postfix", description);
-        Check(once.StartsWith("original unique pair and boss dice") && once == (string)description[1], "native description retained; derived/base calls append once");
+        Check(!(bool)Call(typeof(DescriptionPatch), "Prefix", description), "wisdom description skips native branch");
+        Check(once == "击败迷你Boss时获得1个骰子，击败Boss时获得2个骰子。" && once == (string)description[1], "description fully replaced without legacy or duplicate wording");
         Console.WriteLine($"PASS {checks} isolated behavior checks against actual Plugin.cs. Not a Unity/Harmony runtime test.");
     }
 }

@@ -284,8 +284,8 @@
   {
     "Path": "installed/BepInEx/plugins/SephiriaTalentEffects/SephiriaTalentEffects.dll",
     "Origin": "installed",
-    "Bytes": 13824,
-    "SHA256": "CE87CDF731747F1E55DF94B9186258210323C7277E642DC62B7AF35A6E46DD59"
+    "Bytes": 13312,
+    "SHA256": "89862F1CDE00038DC7A3AA1B131350C2E18CCDECC73798CD973A945921E90DEB"
   },
   {
     "Path": "installed/BepInEx/plugins/SephiriaTalentSPCompat/SephiriaTalentSPCompat.dll",
@@ -662,32 +662,32 @@
   {
     "Path": "workspace/talent-effects/bin/Release/net471/SephiriaTalentEffects.dll",
     "Origin": "workspace",
-    "Bytes": 13824,
-    "SHA256": "CE87CDF731747F1E55DF94B9186258210323C7277E642DC62B7AF35A6E46DD59"
+    "Bytes": 13312,
+    "SHA256": "89862F1CDE00038DC7A3AA1B131350C2E18CCDECC73798CD973A945921E90DEB"
   },
   {
     "Path": "workspace/talent-effects/Plugin.cs",
     "Origin": "workspace",
-    "Bytes": 9084,
-    "SHA256": "C86188AC1AEAEB2D99C00E1180EF3ED5771E3C317A364276B4CE8B49089DE439"
+    "Bytes": 8632,
+    "SHA256": "CAFAAA2C84B68E6C988DCA554372E7C95AA89C31655786F8F4067F65EF5B5F4D"
   },
   {
     "Path": "workspace/talent-effects/README.md",
     "Origin": "workspace",
-    "Bytes": 3330,
-    "SHA256": "425DD1F77CC1B2F08B8F4270E641E859D9DB492BB5F2A7D6405C7A282F0DB96D"
+    "Bytes": 1709,
+    "SHA256": "2D50C5DB6578A5071EC595C21B2D993EFF79153FD84DDF55DFFA52C2DD1EE607"
   },
   {
     "Path": "workspace/talent-effects/SephiriaTalentEffects.csproj",
     "Origin": "workspace",
     "Bytes": 949,
-    "SHA256": "4F706A4CF8574B4E1944B69C68B43EBBE032E976BAB45DCD44FF03647A74950B"
+    "SHA256": "3FDC197E646EC2B02BCDA7895F6F0142E56E1D016F27CA569CAD153A947F83C4"
   },
   {
     "Path": "workspace/talent-effects/tests/Regression.cs",
     "Origin": "workspace",
-    "Bytes": 6100,
-    "SHA256": "F3016ECBC2A799CBE04CC2B5C2CD524FA3F6D15FBB670EFB811B6501977B0268"
+    "Bytes": 6214,
+    "SHA256": "A5B741548CC8048F628093293FB96A675EAA798F68760D05DAE2EE8EE4B9B4D7"
   },
   {
     "Path": "workspace/talent-effects/tests/Regression.csproj",

@@ -167,7 +167,7 @@
       "id": "com.codex.sephiria.talent-effects",
       "name": "天赋效果修改",
       "loader": "BepInEx",
-      "description": "生存20：每10点最大生命值增加1%伤害放大；智慧10：小Boss1个骰子、大Boss2个骰子。",
+      "description": "生存20：每10点最大生命值增加1%伤害放大；智慧10：迷你Boss1个骰子、Boss2个骰子。",
       "versions": [
         {
           "version": "0.2.0",
@@ -177,6 +177,15 @@
           "size": 9158,
           "sha256": "5B37A3747DAE97561BFC06D1052AEAC241DFB0DA1AC41D975308EEDFDDAEB2AC",
           "compatibility": "Sephiria / BepInEx 5；游戏内与联机效果待验收"
+        },
+        {
+          "version": "0.2.1",
+          "channel": "stable",
+          "notes": "完整替换智慧10点旧效果及提示，移除神器独特合并效果；统一迷你Boss术语。25项隔离检查通过，游戏内待验收。",
+          "url": "https://raw.githubusercontent.com/MKfeel/SephiriaMods/main/packages/com.codex.sephiria.talent-effects/0.2.1-b3e60dfc8a97.zip",
+          "size": 8158,
+          "sha256": "B3E60DFC8A97992C252764C69B673925F5BDB7EF9BB6D39D38264B039473241F",
+          "compatibility": "Sephiria / BepInEx 5；完整重启后生效，游戏内待验收"
         }
       ]
     }
