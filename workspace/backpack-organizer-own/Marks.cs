@@ -69,7 +69,7 @@ namespace SephiriaBackpackOrganizer
                 if (icon != null && icon.gameObject.scene.IsValid() && ManualPriorityBadge.GetOrCreate(icon).Refresh()) shown++;
             return shown;
         }
-        internal static string Label(int rank) => rank == 1 ? "max" : rank == 2 ? "↑" : rank == 3 ? "-" : rank == 4 ? "↓" : "";
+        internal static string Label(int rank) => rank == 1 ? "↑↑" : rank == 2 ? "↑" : rank == 3 ? "↓" : rank == 4 ? "↓↓" : "";
     }
 
     [HarmonyPatch(typeof(UI_NewInventoryIcon), "OnPointerClick")]

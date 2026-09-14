@@ -18,7 +18,7 @@ namespace SephiriaBackpackOrganizer
         }
         internal static ItemMark Next(ItemMark current, bool control) => control
             ? current == ItemMark.Enable ? ItemMark.Negative : current == ItemMark.Negative ? ItemMark.None : ItemMark.Enable
-            : current == ItemMark.Max ? ItemMark.Raise : current == ItemMark.Raise ? ItemMark.None : ItemMark.Max;
+            : current == ItemMark.Raise ? ItemMark.Max : current == ItemMark.Max ? ItemMark.None : ItemMark.Raise;
         internal void Clear() => overrides.Clear();
     }
 

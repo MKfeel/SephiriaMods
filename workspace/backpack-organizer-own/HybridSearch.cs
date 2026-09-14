@@ -30,52 +30,78 @@ namespace SephiriaBackpackOrganizer
             var best = CloneSlots(original);
             var bestScore = Objective(ctx, best);
             before = bestScore.Ordinary;
-            long deadline = Stopwatch.GetTimestamp() + (long)(Math.Max(50, plugin.SearchTimeBudgetMs.Value == 0 ? 300 : plugin.SearchTimeBudgetMs.Value) * Stopwatch.Frequency / 1000.0);
+            long deadline = CreateSearchDeadline(plugin.SearchTimeBudgetMs.Value);
             var random = new Random(Environment.TickCount);
-            var current = CloneSlots(original);
-            var currentScore = bestScore;
-            if (plugin.EnableSmartStart.Value && !ctx.cancelled)
+            var smart = plugin.EnableSmartStart.Value ? BuildSmartStart(ctx) : CloneSlots(original);
+            var candidate = CloneSlots(original);
+            // Independent starts explore different basins; keep the best globally.
+            for (int start = 0; start < 8 && !ctx.cancelled && !SearchDeadlineReached(deadline); start++)
             {
-                var smart = BuildSmartStart(ctx);
-                if (RestoreCompassBindings(ctx, smart) && CompassBindingsSatisfied(ctx, smart))
+                ctx.annealStarts++;
+                var current = CloneSlots(start == 0 ? original : start == 1 ? smart : start % 2 == 0 ? original : best);
+                if (start >= 2)
                 {
-                    var smartScore = Objective(ctx, smart);
-                    if (smartScore.CompareTo(bestScore) > 0) { best = CloneSlots(smart); bestScore = smartScore; }
+                    // Include empty cells so random starts can relocate the entire arrangement.
+                    for (int i = current.Count - 1; i > 0; i--) SwapSlots(current, i, random.Next(i + 1));
+                    ScrambleForSearch(ctx, current, random);
                 }
-                current = CloneSlots(best); currentScore = bestScore;
+                if (!RestoreCompassBindings(ctx, current) || !CompassBindingsSatisfied(ctx, current)) continue;
+                var currentScore = Objective(ctx, current);
+                if (currentScore.CompareTo(bestScore) > 0) { CopySlots(current, best); bestScore = currentScore; }
+                double observedLoss = 1;
+                for (int step = 0; step < 18000 && !ctx.cancelled && !SearchDeadlineReached(deadline); step++)
+                {
+                    CopySlots(current, candidate);
+                    EvaluateLayout(ctx, current);
+                    int move = random.Next(100);
+                    if (move < 20 && TryMoveBoundGroup(ctx, candidate, random)) { }
+                    else if (move < 42) ShuffleNeighborhood(ctx, candidate, random);
+                    else Mutate(ctx, candidate, random);
+                    if (!RestoreCompassBindings(ctx, candidate) || !CompassBindingsSatisfied(ctx, candidate)) continue;
+                    var score = Objective(ctx, candidate);
+                    ctx.annealEvaluations++;
+                    if (score.CompareTo(bestScore) > 0) { CopySlots(candidate, best); bestScore = score; }
+                    double delta = score.FirstDifference(currentScore);
+                    if (delta < 0) observedLoss = observedLoss * 0.95 + Math.Min(100, -delta) * 0.05;
+                    double temperature = Math.Max(0.001, observedLoss * Math.Pow(1.0 - step / 18000.0, 3));
+                    if (delta >= 0 || random.NextDouble() < Math.Exp(delta / temperature))
+                    {
+                        var old = current; current = candidate; candidate = old; currentScore = score;
+                    }
+                }
+                if (!ctx.cancelled && !SearchDeadlineReached(deadline)) ctx.annealStartsCompleted++;
             }
-            var candidate = CloneSlots(current);
-            int count = 0;
-            double observedLoss = 1.0;
-            while (!ctx.cancelled && Stopwatch.GetTimestamp() < deadline && count < 144000)
+            // Deterministic finishing: test every swap and every movable tablet's
+            // destination+rotation together, which single random mutations often miss.
+            for (int pass = 0; pass < 64 && !ctx.cancelled && !SearchDeadlineReached(deadline); pass++)
             {
-                count++;
-                CopySlots(current, candidate);
-                // Recompute grids for the actual current candidate before directed moves.
-                EvaluateLayout(ctx, current);
-                int move = random.Next(100);
-                if (move < 20 && TryMoveBoundGroup(ctx, candidate, random)) { }
-                else if (move < 42) ShuffleNeighborhood(ctx, candidate, random);
-                else Mutate(ctx, candidate, random);
-                if (!RestoreCompassBindings(ctx, candidate) || !CompassBindingsSatisfied(ctx, candidate)) continue;
-                var candidateScore = Objective(ctx, candidate);
-                ctx.annealEvaluations++;
-                if (candidateScore.CompareTo(bestScore) > 0)
+                bool improved = false;
+                for (int i = 0; i < best.Count && !ctx.cancelled && !SearchDeadlineReached(deadline); i++)
                 {
-                    CopySlots(candidate, best); bestScore = candidateScore;
+                    if (!best[i].hasItem) continue;
+                    int rotations = ctx.itemByInstance.TryGetValue(best[i].instanceID, out var info) && info.isStele && info.tabletRotatable ? 4 : 1;
+                    for (int j = 0; j < best.Count && !ctx.cancelled && !SearchDeadlineReached(deadline); j++)
+                    {
+                        for (int rotation = 0; rotation < rotations && !ctx.cancelled && !SearchDeadlineReached(deadline); rotation++)
+                        {
+                            CopySlots(best, candidate);
+                            SwapSlots(candidate, i, j);
+                            if (rotations == 4) candidate[j].rotation = rotation;
+                            if (!RestoreCompassBindings(ctx, candidate) || !CompassBindingsSatisfied(ctx, candidate)) continue;
+                            var score = Objective(ctx, candidate);
+                            ctx.annealEvaluations++;
+                            if (score.CompareTo(bestScore) <= 0) continue;
+                            CopySlots(candidate, best); bestScore = score; improved = true;
+                            // The item at i changed; reevaluate its rotation eligibility.
+                            break;
+                        }
+                        if (improved) break;
+                    }
+                    if (improved) break;
                 }
-                double delta = candidateScore.FirstDifference(currentScore);
-                if (delta < 0) observedLoss = observedLoss * 0.95 + Math.Min(100, -delta) * 0.05;
-                double phase = (count % 600) / 600.0;
-                double temperature = Math.Max(0.03, observedLoss * (1 - phase));
-                if (delta >= 0 || random.NextDouble() < Math.Exp(delta / temperature))
-                {
-                    var old = current; current = candidate; candidate = old; currentScore = candidateScore;
-                }
-                if (count % 600 == 0) { CopySlots(best, current); currentScore = bestScore; }
+                if (!improved) break;
             }
-            ctx.annealStarts = ctx.annealStartsCompleted = 1;
-            ctx.searchBudgetReached = Stopwatch.GetTimestamp() >= deadline;
+            ctx.searchBudgetReached = SearchDeadlineReached(deadline);
             after = bestScore.Ordinary;
             return best;
         }

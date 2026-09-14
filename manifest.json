@@ -170,8 +170,8 @@
   {
     "Path": "installed/BepInEx/plugins/SephiriaBackpackOrganizer/SephiriaBackpackOrganizer.dll",
     "Origin": "installed",
-    "Bytes": 129536,
-    "SHA256": "1798AE22DEC808C3A6448A37DFA22150C512CC02067BA7629417A9450F8208D9"
+    "Bytes": 136704,
+    "SHA256": "481EC3AEB607E632D114BF4655446DDCBA4D84B11F3BEB18F57F4825AA8B25AB"
   },
   {
     "Path": "installed/BepInEx/plugins/SephiriaBondArtifactWishes/SephiriaBondArtifactWishes.dll",
@@ -806,14 +806,14 @@
   {
     "Path": "installed/BepInEx/plugins/SephiriaBackpackOrganizer/README.md",
     "Origin": "installed",
-    "Bytes": 923,
-    "SHA256": "5F830621E5BC5620ED623FA2E4B14D8C1D6EFB5A37D9767453A1627D547E8A88"
+    "Bytes": 7228,
+    "SHA256": "221E46FFDEBE719FAD7816501272ED55E4F1EF32EDBF4B67586C07546DD682C4"
   },
   {
     "Path": "workspace/backpack-organizer-own/HybridSearch.cs",
     "Origin": "workspace",
-    "Bytes": 7481,
-    "SHA256": "C64C1D994BA1CDBAC20636B368C9692411659B04A6A27F12EB129E327F7CDA4F"
+    "Bytes": 9545,
+    "SHA256": "81E0D47BDDDEF71980B9151A03EB990DA942CB242F61BBA6A92A3C15EC377587"
   },
   {
     "Path": "workspace/backpack-organizer-own/Install.ps1",
@@ -836,32 +836,32 @@
   {
     "Path": "workspace/backpack-organizer-own/MarkArrow.cs",
     "Origin": "workspace",
-    "Bytes": 1255,
-    "SHA256": "CC133CAAEBE264C9B7C2ABD96E6190ABF2E314D94D9E824874E07B7565AD52E0"
+    "Bytes": 1856,
+    "SHA256": "678F3580627D5E3075DD8E83BEB68AC1F7694D22F9640B94BD66C49CE49877C4"
   },
   {
     "Path": "workspace/backpack-organizer-own/MarkRules.cs",
     "Origin": "workspace",
-    "Bytes": 4385,
-    "SHA256": "EE9BC36AEE4B7C7FF496B6E795324000FDD090031D2B9E8BEF78E421EC7F082B"
+    "Bytes": 4473,
+    "SHA256": "C14C96906957C3CBB736C4D2230AEE299CD02D6BA2BD6556A40374FAEA0A11E5"
   },
   {
     "Path": "workspace/backpack-organizer-own/Marks.cs",
     "Origin": "workspace",
-    "Bytes": 5119,
-    "SHA256": "A3E0E898D092BE6F5DBA2451862A85FB8D8B06441C05FBB91EDF64CD75334707"
+    "Bytes": 5233,
+    "SHA256": "B8D8A6E0DDA1DEF9D8FC7C825C8C0ED0BBC1D766118D60664652841A5CCEDE7D"
   },
   {
     "Path": "workspace/backpack-organizer-own/Organizer.cs",
     "Origin": "workspace",
-    "Bytes": 176653,
-    "SHA256": "9FAE33FC09B33E7308286F350DAABDEED1A6C542C7E3CECC3CDB5676BC04EB13"
+    "Bytes": 176863,
+    "SHA256": "E685364D93091F71E093B6883EAD5D0C4FF8EA1C476647447DBD4F307C44063B"
   },
   {
     "Path": "workspace/backpack-organizer-own/README.md",
     "Origin": "workspace",
-    "Bytes": 6044,
-    "SHA256": "ADF38B1713059A0717385A2D9A7A74B2071264DB0AAE6BB0F03B8366E033F519"
+    "Bytes": 7228,
+    "SHA256": "221E46FFDEBE719FAD7816501272ED55E4F1EF32EDBF4B67586C07546DD682C4"
   },
   {
     "Path": "workspace/backpack-organizer-own/Rollback.ps1",
@@ -878,8 +878,8 @@
   {
     "Path": "workspace/backpack-organizer-own/SortRequests.cs",
     "Origin": "workspace",
-    "Bytes": 4780,
-    "SHA256": "00FEC3D5AB6FDF3CEC79A4B23CA64AFB82FD8D9B1F0A2B87CE668D8E0525BD7B"
+    "Bytes": 6735,
+    "SHA256": "1F2B0F573BAE7386487B696FA9D38658595A7B485969263BA124D6AAB729C34A"
   },
   {
     "Path": "workspace/backpack-organizer-own/reference/API-NOTES.md",
@@ -890,14 +890,14 @@
   {
     "Path": "workspace/backpack-organizer-own/tests/Program.cs",
     "Origin": "workspace",
-    "Bytes": 5628,
-    "SHA256": "792BF119B95E85DEFBB6553F634BBC58E167A4BB33CFB5F283F812B43F0D4073"
+    "Bytes": 6981,
+    "SHA256": "20783E5B58D0B1F871084566CEA1CEF8E380B00243C86D86F6AC02EE6D1CD98D"
   },
   {
     "Path": "workspace/backpack-organizer-own/tests/RulesTests.csproj",
     "Origin": "workspace",
-    "Bytes": 323,
-    "SHA256": "CC5D8AEF30A53AD1EDA0BB96011C4642F20BAA2C1404AA0EB4842BE3D47DBAAB"
+    "Bytes": 390,
+    "SHA256": "28558F7B5EB749F5B16A6BBE0DA62D81E56424D314E36BC7480C6105347DA259"
   },
   {
     "Path": "workspace/hidden-room-hints/EntranceResolver.cs",
@@ -1012,5 +1012,29 @@
     "Origin": "workspace",
     "Bytes": 4476,
     "SHA256": "5F6213CF67E3832176286DFB1E3DE9B6394ED1198C1660F5A619CBC3146E18BD"
+  },
+  {
+    "Path": "workspace/backpack-organizer-own/InventoryScope.cs",
+    "Origin": "workspace",
+    "Bytes": 505,
+    "SHA256": "713F81EF4DB948A913E90831DF9A19A3CBC74E84E0DD95106EC0EB7F2C4511EB"
+  },
+  {
+    "Path": "workspace/backpack-organizer-own/SortDiagnostics.cs",
+    "Origin": "workspace",
+    "Bytes": 4506,
+    "SHA256": "D059B739EAE55B87DBDA9B5B3E6A32C7D1AE7B7FEAFC1B42CB19A9B479C9DF63"
+  },
+  {
+    "Path": "workspace/backpack-organizer-own/search-tests/Program.cs",
+    "Origin": "workspace",
+    "Bytes": 3863,
+    "SHA256": "398A9A160074D317B79310C0BAA620583A24264A59D687EDB7B663F215311869"
+  },
+  {
+    "Path": "workspace/backpack-organizer-own/search-tests/SearchTests.csproj",
+    "Origin": "workspace",
+    "Bytes": 380,
+    "SHA256": "153F7F55DAEF39CBBBF6A8BB64FDE6E71FB3C2F150A6ACCAEB48196DD5BE89B7"
   }
 ]

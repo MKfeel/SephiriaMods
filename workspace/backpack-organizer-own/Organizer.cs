@@ -349,6 +349,8 @@ namespace SephiriaBackpackOrganizer
 
 		private sealed class PendingEnhancedSort
 		{
+            public string diagnosticId = Guid.NewGuid().ToString("N").Substring(0, 12);
+            public LayoutObjective diagnosticBefore;
             public int marksRevision;
             public int inventoryRevision;
 			public GridInventory inv;
@@ -3491,17 +3493,12 @@ namespace SephiriaBackpackOrganizer
 			try
 			{
 				int currentInventoryStorage = inv.CurrentInventoryStorage;
-				int height = inv.GetHeight(currentInventoryStorage);
 				HashSet<int> hashSet = new HashSet<int>();
 				foreach (KeyValuePair<ItemPosition, NewItemOwnInstance> item in inv.inventoryMatrix)
 				{
-					if (item.Value != null && item.Key.y >= 0 && item.Key.y < height)
+					if (item.Value != null && InventoryScope.IsMainCell(item.Key.x, item.Key.y, currentInventoryStorage))
 					{
-						int num = inv.PosToIdx(item.Key);
-						if (num >= 0 && num < currentInventoryStorage)
-						{
-							hashSet.Add(item.Value.InstanceID);
-						}
+						hashSet.Add(item.Value.InstanceID);
 					}
 				}
 				HashSet<int> hashSet2 = new HashSet<int>();
@@ -3724,6 +3721,7 @@ namespace SephiriaBackpackOrganizer
 				frameBudgetMs = Math.Max(0.25, plugin.ApplyFrameBudgetMs.Value),
 				acknowledgementTimeoutMs = Math.Max(250, plugin.ApplyAckTimeoutMs.Value)
 			};
+            LogSortDiagnostics(pendingEnhanced, original, "开始");
 			pendingSearch = Task.Run(delegate
 			{
 				double beforeScore;
@@ -3868,6 +3866,7 @@ namespace SephiriaBackpackOrganizer
 				}
 				return;
 			}
+            LogSortDiagnostics(state, list, "结束");
 			float num = SafeScore(state.inv);
 			double num2 = EvaluateLayout(state.ctx, list);
 			if (plugin.VerboseDiagnostics.Value)
@@ -3876,7 +3875,7 @@ namespace SephiriaBackpackOrganizer
 				LogLayoutAnalysis(state.ctx, list, state.rollingBack ? "回滚" : "整理");
 			}
 			state.stopwatch.Stop();
-			Plugin.Log.LogInfo($"增强整理完成（后台+分帧总耗时 {state.stopwatch.ElapsedMilliseconds}ms）：" + $"离线评分 {state.outcome.beforeScore:F0} -> {num2:F0}（搜索最优 {state.outcome.bestScore:F0}）；" + $"游戏评分 {state.beforeGameScore:F0} -> {num:F0}；" + $"搜索 {state.ctx.annealEvaluations} 候选/启动 {state.ctx.annealStartsCompleted}/{state.ctx.annealStarts}" + string.Format("；{0}；布局 {1} 件", state.rollingBack ? "已安全回滚" : "落地校验一致", state.ctx.items.Count));
+			Plugin.Log.LogInfo($"增强整理完成 #{state.diagnosticId}（后台+分帧总耗时 {state.stopwatch.ElapsedMilliseconds}ms）：" + $"离线评分 {state.outcome.beforeScore:F0} -> {num2:F0}（本次最佳普通分 {state.outcome.bestScore:F0}）；" + $"游戏评分 {state.beforeGameScore:F0} -> {num:F0}；" + $"搜索 {state.ctx.annealEvaluations} 候选/启动 {state.ctx.annealStartsCompleted}/{state.ctx.annealStarts}" + string.Format("；{0}；布局 {1} 件", state.rollingBack ? "已安全回滚" : "落地校验一致", state.ctx.items.Count));
 			state.applying = false;
 			pendingEnhanced = null;
 			pendingSearch = null;
@@ -4874,7 +4873,7 @@ namespace SephiriaBackpackOrganizer
 
 		private void Notify(string msg)
         {
-            if (msg != "整理完成")
+            if (msg != "整理完成" && msg != "整理中…" && msg != "整理失败")
             {
                 Plugin.Log.LogInfo(msg);
                 if (msg.Contains("失败") || msg.Contains("超时") || msg.Contains("未能安全")) msg = "整理失败";
@@ -4943,7 +4942,7 @@ namespace SephiriaBackpackOrganizer
                 var arrowRect = (RectTransform)arrowObject.transform;
                 arrowRect.anchorMin = Vector2.zero; arrowRect.anchorMax = Vector2.one; arrowRect.offsetMin = arrowRect.offsetMax = Vector2.zero;
                 arrow = arrowObject.GetComponent<MarkArrow>(); arrow.raycastTarget = false;
-                label.text = "max";
+                label.text = "";
 				label.color = new Color(1f, 0.82f, 0.2f, 1f);
 				label.fontStyle = FontStyles.Bold;
 				label.alignment = TextAlignmentOptions.Center;
@@ -4969,11 +4968,11 @@ namespace SephiriaBackpackOrganizer
 			badgeRoot.SetActive(flag);
 			if (flag)
 			{
-				bool isArrow = num == 2 || num == 4;
-                label.text = isArrow ? "" : ManualPriorityManager.Label(num);
-                arrow.gameObject.SetActive(isArrow);
-                arrow.Down = num == 4;
-                arrow.color = num == 4 ? new Color(0.5f, 0.75f, 1f, 1f) : new Color(1f, 0.82f, 0.2f, 1f);
+				label.text = "";
+                arrow.gameObject.SetActive(true);
+                arrow.Down = num == 3 || num == 4;
+                arrow.Double = num == 1 || num == 4;
+                arrow.color = arrow.Down ? new Color(0.5f, 0.75f, 1f, 1f) : new Color(1f, 0.82f, 0.2f, 1f);
                 arrow.SetVerticesDirty();
 				badgeRoot.transform.SetAsLastSibling();
 			}
@@ -5171,7 +5170,7 @@ namespace SephiriaBackpackOrganizer
 			RowLockedItems = base.Config.Bind("General", "RowLockedItems", "", "额外需固定在整理前原行的物品 LocalizedString key（逗号分隔）。凯尔萨德尼钥匙无需填写：插件会自动按当前最多的坚固/余烬/冰川/魔法科技羁绊选择周期行");
 			VanillaIterations = base.Config.Bind("Vanilla", "MaxIterations", 30, new ConfigDescription("游戏内置自动排列的最大迭代次数（原版默认 4，越大效果越好但耗时略增）", new AcceptableValueRange<int>(1, 500)));
 			AllowTabletRotation = base.Config.Bind("Vanilla", "AllowTabletRotation", defaultValue: true, "是否允许自动旋转石板以匹配加成覆盖范围");
-			SearchTimeBudgetMs = base.Config.Bind("Enhanced", "SearchTimeBudgetMs", 300, new ConfigDescription("后台搜索时间预算（毫秒），默认 300；0 也使用 300ms。达到预算保留当前最佳方案。快照与预计算不计入此预算。", new AcceptableValueRange<int>(0, 1000)));
+			SearchTimeBudgetMs = base.Config.Bind("Enhanced", "SearchTimeBudgetMs", 0, new ConfigDescription("后台搜索时间预算（毫秒）；0=完成多起点搜索及局部精修（默认，质量优先）。正数达到预算后保留最佳方案。快照与预计算不计入预算。", new AcceptableValueRange<int>(0, 1000)));
 			ApplySwapsPerFrame = base.Config.Bind("Apply", "SwapsPerFrame", 2, new ConfigDescription("每帧最多执行的背包交换次数。数值越低越平滑，默认 2", new AcceptableValueRange<int>(1, 10)));
 			ApplyRotationClicksPerFrame = base.Config.Bind("Apply", "RotationClicksPerFrame", 4, new ConfigDescription("每帧最多执行的石板旋转点击次数。默认 4", new AcceptableValueRange<int>(1, 12)));
 			ApplyFrameBudgetMs = base.Config.Bind("Apply", "FrameBudgetMs", 2f, new ConfigDescription("每帧应用整理操作的时间预算（毫秒），默认 2", new AcceptableValueRange<float>(0.25f, 10f)));

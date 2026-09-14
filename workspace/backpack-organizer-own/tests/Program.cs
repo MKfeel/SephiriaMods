@@ -13,19 +13,36 @@ static class Program
     }
     static void Main()
     {
+        // Potion belt is stored in the same native dictionary at y=100. It must
+        // not invalidate readiness or enter the grid's charm/tablet counts.
+        var mixed = new[] { (x:0,y:0), (x:3,y:5), (x:4,y:5), (x:0,y:100), (x:5,y:100), (x:0,y:-100) };
+        var main = mixed.Where(p => InventoryScope.IsMainCell(p.x,p.y,34)).ToArray();
+        Check(main.SequenceEqual(new[] { (x:0,y:0),(x:3,y:5) }), "main grid ignores potion belt and unused last-row cells");
+        Check(!InventoryScope.IsMainCell(-1,1,34), "negative x must not alias previous row");
+        Check(!InventoryScope.IsMainCell(6,0,34), "x beyond width must not alias next row");
+        Check(!InventoryScope.IsMainCell(0,0,0), "empty storage");
+        Check(!InventoryScope.IsMainCell(0,0,34,0), "invalid width");
+        Check(!InventoryScope.IsMainCell(0,int.MaxValue,34), "coordinate multiplication does not overflow");
+        foreach (int capacity in new[] { 24, 29, 34, 42 })
+        {
+            int total = 0;
+            for (int y = -1; y <= 101; y++)
+                for (int x = -1; x <= 6; x++) if (InventoryScope.IsMainCell(x,y,capacity)) total++;
+            Check(total == capacity, "scope exactly matches native main-grid capacity");
+        }
         var store = new MarkStore();
         Check(store.Resolve(1, true) == ItemMark.Max, "favorite supplies max");
         Check(store.Resolve(2, false) == ItemMark.None, "unfavorite default");
-        Check(store.Toggle(2, false, false) == ItemMark.Max, "middle first");
-        Check(store.Toggle(2, false, false) == ItemMark.Raise, "middle second");
+        Check(store.Toggle(2, false, false) == ItemMark.Raise, "middle first");
+        Check(store.Toggle(2, false, false) == ItemMark.Max, "middle second");
         Check(store.Toggle(2, false, false) == ItemMark.None, "middle third");
         Check(store.Resolve(2, true) == ItemMark.None, "manual unmark survives favorite sync");
         Check(store.Toggle(1, true, true) == ItemMark.Enable, "control replaces auto max");
         Check(store.Toggle(1, true, true) == ItemMark.Negative, "control second");
         Check(store.Toggle(1, true, true) == ItemMark.None, "control third");
         Check(store.Resolve(1, true) == ItemMark.None, "manual default does not resurrect");
-        Check(store.Toggle(1, true, false) == ItemMark.Max, "switch from default to max");
-        Check(store.Resolve(1, false) == ItemMark.Max, "unfavorite preserves explicit max");
+        Check(store.Toggle(1, true, false) == ItemMark.Raise, "switch from default to raise");
+        Check(store.Resolve(1, false) == ItemMark.Raise, "unfavorite preserves explicit raise");
         Check(store.Resolve(3, true) == ItemMark.Max && store.Resolve(3, false) == ItemMark.None, "remove automatic max");
         Check(store.Resolve(4, true) == ItemMark.Max, "duplicate instance independent");
         store.Clear();
