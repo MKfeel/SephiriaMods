@@ -170,8 +170,8 @@
   {
     "Path": "installed/BepInEx/plugins/SephiriaBackpackOrganizer/SephiriaBackpackOrganizer.dll",
     "Origin": "installed",
-    "Bytes": 128512,
-    "SHA256": "A175E003808FCD749E235DCF36C94C8C52EA03559AD88EAD8C1DE2D9B4AB8C50"
+    "Bytes": 129536,
+    "SHA256": "1798AE22DEC808C3A6448A37DFA22150C512CC02067BA7629417A9450F8208D9"
   },
   {
     "Path": "installed/BepInEx/plugins/SephiriaBondArtifactWishes/SephiriaBondArtifactWishes.dll",
@@ -796,5 +796,107 @@
     "Origin": "workspace",
     "Bytes": 7815,
     "SHA256": "23FC670FF6145E8B39D9A3ABBB9A16EBEFD4E84138535BC42104E932316F0C73"
+  },
+  {
+    "Path": "installed/BepInEx/plugins/SephiriaBackpackOrganizer/LICENSE",
+    "Origin": "installed",
+    "Bytes": 1093,
+    "SHA256": "51AA4C90B8C78DB73495A2C153BAD7A0D2D01AE184FC0F45D92B55B08DE08AC5"
+  },
+  {
+    "Path": "installed/BepInEx/plugins/SephiriaBackpackOrganizer/README.md",
+    "Origin": "installed",
+    "Bytes": 923,
+    "SHA256": "5F830621E5BC5620ED623FA2E4B14D8C1D6EFB5A37D9767453A1627D547E8A88"
+  },
+  {
+    "Path": "workspace/backpack-organizer-own/HybridSearch.cs",
+    "Origin": "workspace",
+    "Bytes": 7481,
+    "SHA256": "C64C1D994BA1CDBAC20636B368C9692411659B04A6A27F12EB129E327F7CDA4F"
+  },
+  {
+    "Path": "workspace/backpack-organizer-own/Install.ps1",
+    "Origin": "workspace",
+    "Bytes": 2832,
+    "SHA256": "363A0E3FE5E83F6CA9B5617337D9F3D1BA73970EFE792F5758FBF077F7B7EF79"
+  },
+  {
+    "Path": "workspace/backpack-organizer-own/InventoryObserver.cs",
+    "Origin": "workspace",
+    "Bytes": 1629,
+    "SHA256": "795901E02631958017A618AFC3D7ACFC2BC415FF8000E88AB4994A850B581B5A"
+  },
+  {
+    "Path": "workspace/backpack-organizer-own/LICENSE",
+    "Origin": "workspace",
+    "Bytes": 1093,
+    "SHA256": "51AA4C90B8C78DB73495A2C153BAD7A0D2D01AE184FC0F45D92B55B08DE08AC5"
+  },
+  {
+    "Path": "workspace/backpack-organizer-own/MarkArrow.cs",
+    "Origin": "workspace",
+    "Bytes": 1255,
+    "SHA256": "CC133CAAEBE264C9B7C2ABD96E6190ABF2E314D94D9E824874E07B7565AD52E0"
+  },
+  {
+    "Path": "workspace/backpack-organizer-own/MarkRules.cs",
+    "Origin": "workspace",
+    "Bytes": 4385,
+    "SHA256": "EE9BC36AEE4B7C7FF496B6E795324000FDD090031D2B9E8BEF78E421EC7F082B"
+  },
+  {
+    "Path": "workspace/backpack-organizer-own/Marks.cs",
+    "Origin": "workspace",
+    "Bytes": 5119,
+    "SHA256": "A3E0E898D092BE6F5DBA2451862A85FB8D8B06441C05FBB91EDF64CD75334707"
+  },
+  {
+    "Path": "workspace/backpack-organizer-own/Organizer.cs",
+    "Origin": "workspace",
+    "Bytes": 176653,
+    "SHA256": "9FAE33FC09B33E7308286F350DAABDEED1A6C542C7E3CECC3CDB5676BC04EB13"
+  },
+  {
+    "Path": "workspace/backpack-organizer-own/README.md",
+    "Origin": "workspace",
+    "Bytes": 6044,
+    "SHA256": "ADF38B1713059A0717385A2D9A7A74B2071264DB0AAE6BB0F03B8366E033F519"
+  },
+  {
+    "Path": "workspace/backpack-organizer-own/Rollback.ps1",
+    "Origin": "workspace",
+    "Bytes": 1839,
+    "SHA256": "79684306B839E6A4FCC3E8630BCA98D1E96FB166BAC658E28D4ED617BDA8A27E"
+  },
+  {
+    "Path": "workspace/backpack-organizer-own/SephiriaBackpackOrganizer.Own.csproj",
+    "Origin": "workspace",
+    "Bytes": 4075,
+    "SHA256": "3F6375035E7F860C04AC60295CA4D3D70247E2CBD8A44259A424021C01A6047A"
+  },
+  {
+    "Path": "workspace/backpack-organizer-own/SortRequests.cs",
+    "Origin": "workspace",
+    "Bytes": 4780,
+    "SHA256": "00FEC3D5AB6FDF3CEC79A4B23CA64AFB82FD8D9B1F0A2B87CE668D8E0525BD7B"
+  },
+  {
+    "Path": "workspace/backpack-organizer-own/reference/API-NOTES.md",
+    "Origin": "workspace",
+    "Bytes": 1240,
+    "SHA256": "0625787A309262BBC1F754398A83E69D3AB77EA2BB8A1CB353CD8CA9AA358893"
+  },
+  {
+    "Path": "workspace/backpack-organizer-own/tests/Program.cs",
+    "Origin": "workspace",
+    "Bytes": 5628,
+    "SHA256": "792BF119B95E85DEFBB6553F634BBC58E167A4BB33CFB5F283F812B43F0D4073"
+  },
+  {
+    "Path": "workspace/backpack-organizer-own/tests/RulesTests.csproj",
+    "Origin": "workspace",
+    "Bytes": 323,
+    "SHA256": "CC5D8AEF30A53AD1EDA0BB96011C4642F20BAA2C1404AA0EB4842BE3D47DBAAB"
   }
 ]

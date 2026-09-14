@@ -11,7 +11,7 @@
 | 模组 | 版本 | 状态 | 当前功能与入口 | 安装路径 |
 | --- | --- | --- | --- | --- |
 | 羁绊神器许愿泉 | 0.2.0 | 启用 | 许愿泉加入已解锁羁绊神器；费用为 9 | `SephiriaBondArtifactWishes/SephiriaBondArtifactWishes.dll` |
-| 背包整理 | 2.5.3 | 启用 | F8；Enhanced 模式；手动优先级、方向绑定开启 | `SephiriaBackpackOrganizer/SephiriaBackpackOrganizer.dll` |
+| 背包整理 | 2.5.4 | 启用 | F8；max/↑/-/↓、收藏同步、分层整理；沿用原插件 ID | `SephiriaBackpackOrganizer/SephiriaBackpackOrganizer.dll` |
 | 弩自动上弹 | 1.1.0 | 启用 | 设置 → 游戏性；当前 Original，原版 1.5 秒 | `SephiriaCrossbowAutoReload/SephiriaCrossbowAutoReload.dll` |
 | 困难模式奖励解锁 | 1.0.0 | 启用 | 根据已通关难度补齐不高于该难度的奖励；无配置界面 | `SephiriaHardModeUnlocker/SephiriaHardModeUnlocker.dll` |
 | 隐藏房间提示 | 0.6.0 | 启用 | 路线节点提前标记隐藏房；支持沙漠生成器；按原生开墙规则绘制实际墙格边界；系统消息、地图、墙标记、屏幕提示开启，测试模式关闭 | `SephiriaHiddenRoomHints/SephiriaHiddenRoomHints.dll` |
@@ -29,6 +29,8 @@
 ModSettings 1.0.11 为本地未安装开发项目，不计入当前安装数量。Harmony、Mono.Cecil 等依赖库及旧版本 DLL 备份不作为独立模组计数。
 
 ## 最近变更
+
+- 2026-09-14：背包整理 2.5.4 已部署与发布；统一 ID，F8。源码、标准包及 installed 目录同步更新；2.5.3 历史包保留。
 
 - 天赋效果修改 **0.2.1**：移除智慧旧神器独特合并效果，完整替换描述，统一迷你Boss术语；25项隔离检查及部署哈希核对通过。
 

@@ -5,7 +5,7 @@
       "id": "com.sephiria.backpack-organizer",
       "name": "背包整理",
       "loader": "BepInEx",
-      "description": "自动整理背包，支持手动优先级。",
+      "description": "F8 背包整理；max/↑/-/↓ 标记、日志收藏自动 max、分层优化与组合重排。",
       "versions": [
         {
           "version": "2.5.3",
@@ -15,6 +15,15 @@
           "size": 72825,
           "sha256": "4699B09F471DF41FAB3CB0B8BAEAE8DF429C2B6C0F3A950A9A077B6363EED1F8",
           "compatibility": "Sephiria；BepInEx 5 / AddOn（按模组类型）；游戏内效果待验收"
+        },
+        {
+          "version": "2.5.4",
+          "channel": "stable",
+          "notes": "2026-09-14：统一原插件 ID，F8；四种标记与日志收藏同步，分层目标、组合移动及局部重排；取消首次固定 3 秒等待，补齐克里顿的印章优先级 2。构建与隔离检查通过，游戏内/联机待验收。独立 .own 开发版须先停用。",
+          "url": "https://raw.githubusercontent.com/MKfeel/SephiriaMods/main/packages/com.sephiria.backpack-organizer/2.5.4-ecfa32352ae3.zip",
+          "size": 75543,
+          "sha256": "ECFA32352AE3F68727D82AD60138A775BEF8FC046B673369EC4674098C3E4108",
+          "compatibility": "Sephiria / BepInEx 5；替换旧背包整理，不能与 .own 开发版同时使用；游戏内待验收"
         }
       ]
     },
