@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net8.0</TargetFramework><EnableDefaultCompileItems>false</EnableDefaultCompileItems></PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../HintRules.cs" Link="HintRules.cs" />
+    <Compile Include="../EntranceResolver.cs" Link="EntranceResolver.cs" />
+    <Compile Include="../PortalResolver.cs" Link="PortalResolver.cs" />
+    <Compile Include="PortalRegression.cs" />
+    <Compile Include="../OpeningGeometry.cs" Link="OpeningGeometry.cs" />
+    <Compile Include="OpeningRegression.cs" />
+    <Compile Include="ResolverStubs.cs" /><Compile Include="Regression.cs" />
+  </ItemGroup>
+</Project>

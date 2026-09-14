@@ -230,8 +230,8 @@
   {
     "Path": "installed/BepInEx/plugins/SephiriaHiddenRoomHints/SephiriaHiddenRoomHints.dll",
     "Origin": "installed",
-    "Bytes": 24576,
-    "SHA256": "10A9FCBC552DA296197A97F4053C80143A0CB856BA68E771EA8DB73334D99FB4"
+    "Bytes": 31232,
+    "SHA256": "B5E9D4968D7CBB81072DCC832E04BFCB4C9FC6616AB6342DD764188E0F7EE39F"
   },
   {
     "Path": "installed/BepInEx/plugins/SephiriaItemLab/CHANGELOG.txt",
@@ -898,5 +898,119 @@
     "Origin": "workspace",
     "Bytes": 323,
     "SHA256": "CC5D8AEF30A53AD1EDA0BB96011C4642F20BAA2C1404AA0EB4842BE3D47DBAAB"
+  },
+  {
+    "Path": "workspace/hidden-room-hints/EntranceResolver.cs",
+    "Origin": "workspace",
+    "Bytes": 5699,
+    "SHA256": "99BAC5C651496DCE08B378DDFE2625965BE5B59D6B71971BFBA878876023C2DB"
+  },
+  {
+    "Path": "workspace/hidden-room-hints/HintRules.cs",
+    "Origin": "workspace",
+    "Bytes": 867,
+    "SHA256": "AAE06E8A431406F12966BF493EEC4AE28F834AF531ECC609F32A49DBA1086764"
+  },
+  {
+    "Path": "workspace/hidden-room-hints/Install.ps1",
+    "Origin": "workspace",
+    "Bytes": 2149,
+    "SHA256": "E41DDDE500179A9EA14AEA94426FE3A65B40D03F6306391B8770E7B503A7EA70"
+  },
+  {
+    "Path": "workspace/hidden-room-hints/OpeningGeometry.cs",
+    "Origin": "workspace",
+    "Bytes": 3445,
+    "SHA256": "0532DBE29F74E9899A08C94378EB0B1759D5687370061BD23720AAA2BF6F575D"
+  },
+  {
+    "Path": "workspace/hidden-room-hints/OpeningTiles.cs",
+    "Origin": "workspace",
+    "Bytes": 4405,
+    "SHA256": "A0D33A19872094A6BD9A67CBBD0A62DB7289141CE9EE2C90B5AC09706D3294BB"
+  },
+  {
+    "Path": "workspace/hidden-room-hints/Plugin.cs",
+    "Origin": "workspace",
+    "Bytes": 12226,
+    "SHA256": "32F052D9ECF00FC2F405413ECCE8B20E75D8A0679AD752D80B370723802FFCAE"
+  },
+  {
+    "Path": "workspace/hidden-room-hints/PortalHints.cs",
+    "Origin": "workspace",
+    "Bytes": 8157,
+    "SHA256": "CA7667D5D6DB0F37F91D32EBA65DFE924B9E654AB98AE7EBCDC809D9EEFACA1B"
+  },
+  {
+    "Path": "workspace/hidden-room-hints/PortalResolver.cs",
+    "Origin": "workspace",
+    "Bytes": 2978,
+    "SHA256": "841D891ED6F65C1359CF4D3FB4C5BF5A56544D0814CA62E2D141429018FFC16B"
+  },
+  {
+    "Path": "workspace/hidden-room-hints/README.md",
+    "Origin": "workspace",
+    "Bytes": 2973,
+    "SHA256": "FB0D995C154C2010C924761D3A1BB84C57E27274B05D9FD95B804F65E072F8E7"
+  },
+  {
+    "Path": "workspace/hidden-room-hints/SephiriaHiddenRoomHints.csproj",
+    "Origin": "workspace",
+    "Bytes": 2291,
+    "SHA256": "32B1FD0FB65A83110371B2D93BB574FAC8EEC8C1D47235A6F9946AE20E926896"
+  },
+  {
+    "Path": "workspace/hidden-room-hints/Test-GameContract.ps1",
+    "Origin": "workspace",
+    "Bytes": 3593,
+    "SHA256": "68D36A40A88361CBB35B9D9DD6D2127A76D3865F094B59A8E53AF438BDF1EA93"
+  },
+  {
+    "Path": "workspace/hidden-room-hints/Testing.cs",
+    "Origin": "workspace",
+    "Bytes": 3685,
+    "SHA256": "DA93A62A63FFEBCF58B350DE6271A9F6FB90F00B1CECDB768D4DB03AAABA7EE4"
+  },
+  {
+    "Path": "workspace/hidden-room-hints/analysis/floor-prefabs.json",
+    "Origin": "workspace",
+    "Bytes": 5699,
+    "SHA256": "69DAA713024779897EF0F13C3130FD522E4C1E3EA0343D8AD115C9F52CAB0171"
+  },
+  {
+    "Path": "workspace/hidden-room-hints/analysis/inspect_floor_assets.py",
+    "Origin": "workspace",
+    "Bytes": 1138,
+    "SHA256": "51EA0E73D73B2EC349983DBDCDDE628E6EDA09B49BA60664A9BC30D09BB78E82"
+  },
+  {
+    "Path": "workspace/hidden-room-hints/tests/OpeningRegression.cs",
+    "Origin": "workspace",
+    "Bytes": 3344,
+    "SHA256": "8238281CE6A9DF19834A9F87B31B66D5A6772F5A77FDBA0F57EA0FC8FBABDEB9"
+  },
+  {
+    "Path": "workspace/hidden-room-hints/tests/PortalRegression.cs",
+    "Origin": "workspace",
+    "Bytes": 2906,
+    "SHA256": "47BA856E95CEE80CE892D4CAF2E78E138F3C87F069170006B0AF1AC99D36069E"
+  },
+  {
+    "Path": "workspace/hidden-room-hints/tests/Regression.cs",
+    "Origin": "workspace",
+    "Bytes": 3552,
+    "SHA256": "0C3EBD2A3CAC5F07FA777DA5D6F3C15CB603F35F1F1AF0EA1E3EA8F9CE6DCF25"
+  },
+  {
+    "Path": "workspace/hidden-room-hints/tests/Regression.csproj",
+    "Origin": "workspace",
+    "Bytes": 692,
+    "SHA256": "DEBAF8C93CE597D2A9D825B4AD1C870E4750592B488B4FD1F7E0E2C5157A924B"
+  },
+  {
+    "Path": "workspace/hidden-room-hints/tests/ResolverStubs.cs",
+    "Origin": "workspace",
+    "Bytes": 4476,
+    "SHA256": "5F6213CF67E3832176286DFB1E3DE9B6394ED1198C1660F5A619CBC3146E18BD"
   }
 ]

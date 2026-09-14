@@ -99,7 +99,7 @@
       "id": "codex.sephiria.hidden-room-hints",
       "name": "隐藏房间提示",
       "loader": "BepInEx",
-      "description": "隐藏房间提示与真实墙格边界显示。",
+      "description": "隐藏入口统一黄色感叹号，支持沙漠传送石、破墙入口和路线预告。",
       "versions": [
         {
           "version": "0.6.0",
@@ -109,6 +109,15 @@
           "size": 14243,
           "sha256": "3B5605E5A1B474E22A26998245EDB7397BE0D70B25F2D51479585FFFB5EBFCF4",
           "compatibility": "Sephiria；BepInEx 5 / AddOn（按模组类型）；游戏内效果待验收"
+        },
+        {
+          "version": "0.7.1",
+          "channel": "stable",
+          "notes": "2026-09-14：补充沙漠传送石入口识别；场景及完整地图统一黄色感叹号，打开后清除。读取游戏原生入口状态，保留路线预告。48项模拟检查通过，游戏内待验收。",
+          "url": "https://raw.githubusercontent.com/MKfeel/SephiriaMods/main/packages/codex.sephiria.hidden-room-hints/0.7.1-c431bb4901f3.zip",
+          "size": 16611,
+          "sha256": "C431BB4901F3EE0071072E0C774741C61A68CB737BA75765E841544F0C55EF0F",
+          "compatibility": "Sephiria / BepInEx 5；完整重启后生效，游戏内与联机待验收"
         }
       ]
     },
