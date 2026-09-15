@@ -1,6 +1,6 @@
 # Sephiria Item Lab Tweaks
 
-Version 1.0.2
+Version 1.0.4
 
 Requires Sephiria Cheat Lab / Item Lab 1.0.1 and BepInEx 5.
 
@@ -21,3 +21,7 @@ State-changing actions are restricted to a single-player game or local host with
 - 直接设置当前显示的蓝宝石总数，并保存对应的持久蓝宝石数据。
 
 所有写操作只允许在单人游戏或连接数不超过一个的本地主机中执行。附魔还原快照只保存在内存中；插件卸载或游戏会话变化后会清除。
+
+## 1.0.4
+
+修正训练场外通过 O 键物品箱领取的物品被标记为训练物品的问题，覆盖单件领取和收藏批量领取。保留训练场标记、原生入包检查与同步流程。旧物品的训练标记不自动清除，请重新领取。

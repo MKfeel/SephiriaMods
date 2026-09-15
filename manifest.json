@@ -266,14 +266,14 @@
   {
     "Path": "installed/BepInEx/plugins/SephiriaItemLabTweaks/README.md",
     "Origin": "installed",
-    "Bytes": 1138,
-    "SHA256": "D9B88FF0D8159DBB60993B56830AB7B511FDF3269384D9A99FF4DE83D3204A4F"
+    "Bytes": 1402,
+    "SHA256": "C7247D2AE9B5CE46FA6B28B9DD0A800D8896AF86AD1508CFFCF85CBF30336870"
   },
   {
     "Path": "installed/BepInEx/plugins/SephiriaItemLabTweaks/SephiriaItemLabTweaks.dll",
     "Origin": "installed",
-    "Bytes": 22528,
-    "SHA256": "AFF38A5BA1ECF284921A7C98A46FDD016BC78D3A2784B72BE1ADD29A0DCCB1A8"
+    "Bytes": 25600,
+    "SHA256": "57B02169461BAB9084A1DB69F3953C323415DA1D2E823B67B940D96C8953AF65"
   },
   {
     "Path": "installed/BepInEx/plugins/SephiriaTalentCustomizer/SephiriaTalentCustomizer.dll",
