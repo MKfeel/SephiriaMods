@@ -2,7 +2,7 @@
 
 核对日期：2026-09-20。依据本机游戏插件元数据与安装路径重新扫描。
 
-当前共 **12 个模组／管理工具：9 个 BepInEx 插件、3 个 AddOn**。9 个 BepInEx 插件与根之进在磁盘上允许加载，SPMod 与锻体已禁用。“启用”表示下次启动允许加载，不代表已完成游戏内验收。
+当前共 **12 个模组／管理工具：9 个 BepInEx 插件、3 个 AddOn**。仓库统一按默认启用方式提供，不区分本机启用状态；不代表已完成游戏内验收。
 
 ## BepInEx 插件
 
@@ -22,11 +22,11 @@
 
 ## AddOn
 
-| 模组 | 版本 | 状态 | 当前安装路径 |
+| 模组 | 版本 | 状态 | 默认安装路径 |
 | --- | --- | --- | --- |
 | 根之进（NegativeRoots） | 0.1.5 | 启用 | 游戏目录下 `AddOns/NegativeRoots/` |
-| 锻体（BodyForge） | 2.8.24 | **禁用** | 游戏目录下 `AddOns_Disabled/BodyForge/` |
-| SPMod（Star's SephiriaMod Mod） | 2.5.3 | **禁用** | 游戏目录下 `AddOns_Disabled/SPMod/` |
+| 锻体（BodyForge） | 2.8.24 | 启用 | 游戏目录下 `AddOns/BodyForge/` |
+| SPMod（Star's SephiriaMod Mod） | 2.5.3 | 启用 | 游戏目录下 `AddOns/SPMod/` |
 
 ModSettings 1.0.11 为本地未安装开发项目，不计入当前安装数量。Harmony、Mono.Cecil 等依赖库及旧版本 DLL 备份不作为独立模组计数。
 
