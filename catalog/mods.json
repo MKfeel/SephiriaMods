@@ -178,6 +178,15 @@
           "size": 750083,
           "sha256": "BFF308AA05CEA91C55E7A5110E623ED3B5E13311D7201044A91E3A5C053F1426",
           "compatibility": "Sephiria AddOn；含所需依赖 DLL，游戏内功能待验收"
+        },
+        {
+          "version": "2.5.3",
+          "channel": "stable",
+          "notes": "2026-09-20：同步当前版本至管理器更新目录；新安装默认启用，更新保留已有配置及启用状态。",
+          "url": "https://raw.githubusercontent.com/MKfeel/SephiriaMods/main/packages/addon_StarSephiriaMod/2.5.3-1e64bdc0dd70.zip",
+          "size": 755153,
+          "sha256": "1E64BDC0DD70003B3599DEE91855221651DFA404E19293C547E0B5CED0D72534",
+          "compatibility": "Sephiria；BepInEx 5 / AddOn（按模组类型）；游戏内效果待验收"
         }
       ]
     },
@@ -204,6 +213,40 @@
           "size": 8158,
           "sha256": "B3E60DFC8A97992C252764C69B673925F5BDB7EF9BB6D39D38264B039473241F",
           "compatibility": "Sephiria / BepInEx 5；完整重启后生效，游戏内待验收"
+        }
+      ]
+    },
+    {
+      "id": "addon:BodyForgeMod",
+      "name": "锻体",
+      "loader": "AddOn",
+      "description": "锻体",
+      "versions": [
+        {
+          "version": "2.8.24",
+          "channel": "stable",
+          "notes": "2026-09-20：同步当前版本至管理器更新目录；新安装默认启用，更新保留已有配置及启用状态。",
+          "url": "https://raw.githubusercontent.com/MKfeel/SephiriaMods/main/packages/addon_BodyForgeMod/2.8.24-d47d1284022f.zip",
+          "size": 509826,
+          "sha256": "D47D1284022F4CB5ABA5C7A16C4B2B3F6FB1EA764EBD55E281593BFF161432CD",
+          "compatibility": "Sephiria；BepInEx 5 / AddOn（按模组类型）；游戏内效果待验收"
+        }
+      ]
+    },
+    {
+      "id": "addon:NegativeRoots.Core",
+      "name": "根之进",
+      "loader": "AddOn",
+      "description": "根之进",
+      "versions": [
+        {
+          "version": "0.1.5",
+          "channel": "stable",
+          "notes": "2026-09-20：同步当前版本至管理器更新目录；新安装默认启用，更新保留已有配置及启用状态。",
+          "url": "https://raw.githubusercontent.com/MKfeel/SephiriaMods/main/packages/addon_NegativeRoots.Core/0.1.5-95bc564cc636.zip",
+          "size": 881905,
+          "sha256": "95BC564CC6361AF512A6F8FBAFDF9C88193BD020F74E75C032BEF8131795D282",
+          "compatibility": "Sephiria；BepInEx 5 / AddOn（按模组类型）；游戏内效果待验收"
         }
       ]
     }

@@ -19,7 +19,7 @@ SPMod 2.4.7 已加入管理器更新目录，保留 2.4.3 历史包。已验证�
 下面保留历史备份说明。日常更新请使用上方管理器发布目录，历史 installed/workspace 不代表当前版本。
 ## 当前 Mod 文件
 
-2026-09-20 已同步 [SPMod 2.5.3](installed/AddOns/SPMod/) 与 [锻体 2.8.24](installed/AddOns/BodyForge/) 的完整文件（含依赖、配置和随附说明）。共 22 个文件，逐文件 SHA-256 已核对并写入 manifest.json。仓库统一按默认启用方式存放于 installed/AddOns；复制到游戏 AddOns 后允许加载。仓库清单统一显示默认启用，不沿用本机禁用状态。管理器 catalog 的版本未随本次备份更新。
+2026-09-20 已同步 [SPMod 2.5.3](installed/AddOns/SPMod/) 与 [锻体 2.8.24](installed/AddOns/BodyForge/) 的完整文件（含依赖、配置和随附说明）。共 22 个文件，逐文件 SHA-256 已核对并写入 manifest.json。仓库统一按默认启用方式存放于 installed/AddOns；复制到游戏 AddOns 后允许加载。仓库清单统一显示默认启用，不沿用本机禁用状态。管理器更新目录已同步 SPMod 2.5.3、锻体 2.8.24、根之进 0.1.5，共 12 个远端模组。
 
 ## 历史备份
 
