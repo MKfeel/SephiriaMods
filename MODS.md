@@ -1,8 +1,8 @@
 # 当前 Mod 清单
 
-核对日期：2026-09-16。依据本机游戏插件元数据与安装路径重新扫描。
+核对日期：2026-09-20。依据本机游戏插件元数据与安装路径重新扫描。
 
-当前共 **11 个模组／管理工具：9 个 BepInEx 插件、2 个 AddOn**。9 个 BepInEx 插件与根之进在磁盘上允许加载，SPMod 已禁用。“启用”表示下次启动允许加载，不代表已完成游戏内验收。
+当前共 **12 个模组／管理工具：9 个 BepInEx 插件、3 个 AddOn**。9 个 BepInEx 插件与根之进在磁盘上允许加载，SPMod 与锻体已禁用。“启用”表示下次启动允许加载，不代表已完成游戏内验收。
 
 ## BepInEx 插件
 
@@ -24,12 +24,15 @@
 
 | 模组 | 版本 | 状态 | 当前安装路径 |
 | --- | --- | --- | --- |
-| 根之进（NegativeRoots） | 0.1.2 | 启用 | 游戏目录下 `AddOns/NegativeRoots/` |
-| SPMod（Star's SephiriaMod Mod） | 2.4.8 | **禁用** | 游戏目录下 `AddOns_Disabled/SPMod/` |
+| 根之进（NegativeRoots） | 0.1.5 | 启用 | 游戏目录下 `AddOns/NegativeRoots/` |
+| 锻体（BodyForge） | 2.8.24 | **禁用** | 游戏目录下 `AddOns_Disabled/BodyForge/` |
+| SPMod（Star's SephiriaMod Mod） | 2.5.3 | **禁用** | 游戏目录下 `AddOns_Disabled/SPMod/` |
 
 ModSettings 1.0.11 为本地未安装开发项目，不计入当前安装数量。Harmony、Mono.Cecil 等依赖库及旧版本 DLL 备份不作为独立模组计数。
 
 ## 最近变更
+
+- 2026-09-20：重新扫描当前安装，共 12 个模组；根之进更新为 0.1.5，SPMod 为 2.5.3（禁用），新增锻体 2.8.24（禁用）。9 个 BepInEx 插件版本及启用状态未变。本次同步清单与首页说明。
 
 - 2026-09-16：重新扫描当前安装，新增根之进 0.1.2，SPMod 为 2.4.8（禁用）；9 个 BepInEx 插件均允许加载。本次更新清单与首页说明。
 
