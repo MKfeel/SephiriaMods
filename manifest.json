@@ -596,8 +596,8 @@
   {
     "Path": "workspace/SephiriaBondArtifactWishes.csproj",
     "Origin": "workspace",
-    "Bytes": 2092,
-    "SHA256": "3717070F86AED93DD3E557301180BE5EC92E4CEC1319011304ED127E99E20C67"
+    "Bytes": 2142,
+    "SHA256": "D2A3C8FC48DABF5BC8ED9AA9AE20105531903858CDBBC65541F1125B892A321C"
   },
   {
     "Path": "workspace/talent-effects/bin/Release/net471/SephiriaTalentEffects.dll",
@@ -1108,5 +1108,65 @@
     "Origin": "installed",
     "Bytes": 880128,
     "SHA256": "42285787D6D89F3D5F2E4C5396E04CF92A7875B0B8FB189BF0488BDF842D5A22"
+  },
+  {
+    "Path": "installed/BepInEx/plugins/SephiriaDirectConnect/README.md",
+    "Origin": "installed",
+    "Bytes": 4504,
+    "SHA256": "8CEB2ABD2A0E6F80EA1F9BD0211BAF506608F7AB8C7BAF4175154A4756CD5C62"
+  },
+  {
+    "Path": "installed/BepInEx/plugins/SephiriaDirectConnect/SephiriaDirectConnect.dll",
+    "Origin": "installed",
+    "Bytes": 47616,
+    "SHA256": "9AC0FD64B9098BDDE7537C7F0B3B46229D0B6188EA8BEB8665B6292DB5E5BFFD"
+  },
+  {
+    "Path": "workspace/direct-connect/Install-Local.ps1",
+    "Origin": "workspace",
+    "Bytes": 1903,
+    "SHA256": "A99A4F12BDA1DAF03958AC973D45CE5FC17941ACF54C2D605B4EFAB1E2764CFF"
+  },
+  {
+    "Path": "workspace/direct-connect/Plugin.cs",
+    "Origin": "workspace",
+    "Bytes": 41881,
+    "SHA256": "7A3C873D68303890C5F9193225AE2E45630FF434B8B11CC16E71D3D066F352C3"
+  },
+  {
+    "Path": "workspace/direct-connect/README.md",
+    "Origin": "workspace",
+    "Bytes": 4504,
+    "SHA256": "8CEB2ABD2A0E6F80EA1F9BD0211BAF506608F7AB8C7BAF4175154A4756CD5C62"
+  },
+  {
+    "Path": "workspace/direct-connect/SephiriaDirectConnect.csproj",
+    "Origin": "workspace",
+    "Bytes": 2989,
+    "SHA256": "525B0C3C867D7688E28B5C393B991311C156A3BDBCC0629909F5AC2F94A9298E"
+  },
+  {
+    "Path": "workspace/direct-connect/SessionFlow.cs",
+    "Origin": "workspace",
+    "Bytes": 15226,
+    "SHA256": "A19AED7D867013EA57D8EBF1FE30948CFE39D55F87D3ADD66E3B08D99AA997D9"
+  },
+  {
+    "Path": "workspace/direct-connect/SessionOperation.cs",
+    "Origin": "workspace",
+    "Bytes": 2689,
+    "SHA256": "00983B73B60819760A590C7C67B0FCFDCE5AB9ABD3293FA476F3B99ED1E1D480"
+  },
+  {
+    "Path": "workspace/direct-connect/tests/Program.cs",
+    "Origin": "workspace",
+    "Bytes": 4672,
+    "SHA256": "23F5B1D53601BDC80985FFB4CBE6CCC01813E3577CDE743F7C933E24BE619C93"
+  },
+  {
+    "Path": "workspace/direct-connect/tests/Regression.csproj",
+    "Origin": "workspace",
+    "Bytes": 258,
+    "SHA256": "2C268433F339429738C17DDB0D802BF9CDA27F2F43FC25DEEB0451650EFC5E78"
   }
 ]

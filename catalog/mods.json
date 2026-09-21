@@ -249,6 +249,23 @@
           "compatibility": "Sephiria；BepInEx 5 / AddOn（按模组类型）；游戏内效果待验收"
         }
       ]
+    },
+    {
+      "id": "dev.dreamyao.sephiria.directconnect",
+      "name": "IP 直连",
+      "loader": "BepInEx",
+      "description": "联机石板 IP 创建／加入；复用原版 Mirror 与 UDP/KCP，支持超时取消、认证与进场检查、旧房间清理。",
+      "versions": [
+        {
+          "version": "0.4.0",
+          "channel": "stable",
+          "notes": "2026-09-21：基于 0.3.9 的本地维护版；增加阶段超时、取消与失败恢复，用真实就绪替换固定等待，认证和角色进场完成才视为成功，切换房间前清理旧连接。10 项离线回归通过，双机验收待完成。",
+          "url": "https://raw.githubusercontent.com/MKfeel/SephiriaMods/main/packages/dev.dreamyao.sephiria.directconnect/0.4.0-051ee9cc7e9f.zip",
+          "size": 25721,
+          "sha256": "051EE9CC7E9FCE39CBB8FBD46EFC7E44B518E638309A8B662BA05A83281A3881",
+          "compatibility": "Sephiria / BepInEx 5；需要完全退出游戏后安装；UDP 端口须可达；游戏内与双机验证待完成"
+        }
+      ]
     }
   ]
 }

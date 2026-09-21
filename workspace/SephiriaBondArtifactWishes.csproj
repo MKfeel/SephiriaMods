@@ -13,6 +13,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="direct-connect\**\*.cs" />
     <Compile Remove="unified-mod-panel\**\*.cs" />
     <Compile Remove="talent-spmod-compat\**\*.cs" />
     <Reference Include="BepInEx">
@@ -50,3 +51,4 @@
     <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(MSBuildProjectDirectory)\dist" />
   </Target>
 </Project>
+

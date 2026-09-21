@@ -1,8 +1,8 @@
 # 当前 Mod 清单
 
-核对日期：2026-09-20。依据本机游戏插件元数据与安装路径重新扫描。
+核对日期：2026-09-21。依据本机游戏插件元数据与安装路径重新扫描。
 
-当前共 **12 个模组／管理工具：9 个 BepInEx 插件、3 个 AddOn**。仓库统一按默认启用方式提供，不区分本机启用状态；不代表已完成游戏内验收。
+当前共 **13 个模组／管理工具：10 个 BepInEx 插件、3 个 AddOn**。仓库统一按默认启用方式提供，不区分本机启用状态；不代表已完成游戏内验收。
 
 ## BepInEx 插件
 
@@ -10,6 +10,7 @@
 
 | 模组 | 版本 | 状态 | 当前功能与入口 | 安装路径 |
 | --- | --- | --- | --- | --- |
+| IP 直连 | 0.4.0（本地维护版） | 启用 | 联机石板 IP 创建／加入；超时、取消、认证与进场判断、旧连接清理 | `SephiriaDirectConnect/SephiriaDirectConnect.dll` |
 | 羁绊神器许愿泉 | 0.2.0 | 启用 | 许愿泉加入已解锁羁绊神器；费用为 9 | `SephiriaBondArtifactWishes/SephiriaBondArtifactWishes.dll` |
 | 背包整理 | 2.5.4 | 启用 | F8；收藏同步、分层整理；沿用原插件 ID | `SephiriaBackpackOrganizer/SephiriaBackpackOrganizer.dll` |
 | 弩自动上弹 | 1.1.0 | 启用 | 设置 → 游戏性；支持原版与自动上弹模式 | `SephiriaCrossbowAutoReload/SephiriaCrossbowAutoReload.dll` |
@@ -31,6 +32,8 @@
 ModSettings 1.0.11 为本地未安装开发项目，不计入当前安装数量。Harmony、Mono.Cecil 等依赖库及旧版本 DLL 备份不作为独立模组计数。
 
 ## 最近变更
+
+- 2026-09-21：发布 IP 直连 0.4.0 本地维护版，源码、DLL、标准包与目录索引同步。10 项离线回归通过，双机游戏验收待完成。
 
 - 2026-09-20：重新扫描当前安装，共 12 个模组；根之进更新为 0.1.5，SPMod 为 2.5.3（禁用），新增锻体 2.8.24（禁用）。9 个 BepInEx 插件版本及启用状态未变。本次同步清单与首页说明。
 
@@ -54,3 +57,4 @@ ModSettings 1.0.11 为本地未安装开发项目，不计入当前安装数量�
 **本表记录当前本机安装状态。日常安装和更新以 catalog/mods.json 为准；installed/workspace 与 manifest.json 按各次发布分别维护，可能保留历史文件，不能视为与本表完全一致的安装快照。**
 
 本表版本采用 BepInPlugin／AddOn 元数据，不能仅凭程序集文件版本判断。游戏内显示、输入和联机行为由使用者验证。
+
