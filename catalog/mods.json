@@ -118,6 +118,15 @@
           "size": 16611,
           "sha256": "C431BB4901F3EE0071072E0C774741C61A68CB737BA75765E841544F0C55EF0F",
           "compatibility": "Sephiria / BepInEx 5；完整重启后生效，游戏内与联机待验收"
+        },
+        {
+          "version": "0.7.3",
+          "channel": "stable",
+          "notes": "2026-09-22：移除隐藏房功能定时全局扫描，改用入口生命周期、楼层生成完成和传送石同步事件；缓存入口位置，修复屏幕外标记反复启停。48 项模拟回归及生命周期契约检查通过，实际性能与联机待验收。",
+          "url": "https://raw.githubusercontent.com/MKfeel/SephiriaMods/main/packages/codex.sephiria.hidden-room-hints/0.7.3-ea2f05f063d3.zip",
+          "size": 17542,
+          "sha256": "EA2F05F063D363FF8B15F384AAF15A6AE490E8E2CF6CBC4ECA317A605DFC5ABC",
+          "compatibility": "Sephiria / BepInEx 5；完全重启游戏生效；不支持局中热加载补登记"
         }
       ]
     },

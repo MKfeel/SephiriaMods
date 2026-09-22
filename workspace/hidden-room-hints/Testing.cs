@@ -46,10 +46,10 @@ namespace SephiriaHiddenRoomHints { public sealed partial class HiddenRoomHintPl
 			{
 				return;
 			}
-			EnhancedProceduralFloorGenerator[] array = UnityEngine.Object.FindObjectsByType<EnhancedProceduralFloorGenerator>(FindObjectsSortMode.None);
-			foreach (EnhancedProceduralFloorGenerator enhancedProceduralFloorGenerator in array)
+			var array = FloorGenerator.FloorGenerators;
+			foreach (var generator in array)
 			{
-				if (!enhancedProceduralFloorGenerator || enhancedProceduralFloorGenerator.GenerateSuccess)
+				if (!(generator is EnhancedProceduralFloorGenerator enhancedProceduralFloorGenerator) || !enhancedProceduralFloorGenerator || enhancedProceduralFloorGenerator.GenerateSuccess)
 				{
 					continue;
 				}

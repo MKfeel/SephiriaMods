@@ -2,12 +2,13 @@
   <PropertyGroup>
     <TargetFramework>net471</TargetFramework>
     <LangVersion>latest</LangVersion>
-    <Version>0.7.1</Version>
+    <Version>0.7.3</Version>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <GameDirectory Condition="'$(GameDirectory)' == ''">E:\steam\steamapps\common\Sephiria</GameDirectory>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Plugin.cs" />
+    <Compile Include="Lifecycle.cs" />
     <Compile Include="PortalResolver.cs" />
     <Compile Include="PortalHints.cs" />
     <Compile Include="EntranceResolver.cs" />

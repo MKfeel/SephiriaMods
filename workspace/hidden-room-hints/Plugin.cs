@@ -12,7 +12,7 @@ using Object = UnityEngine.Object;
 
 namespace SephiriaHiddenRoomHints
 {
-    [BepInPlugin(Guid, "Sephiria Hidden Room Hints", "0.7.1")]
+    [BepInPlugin(Guid, "Sephiria Hidden Room Hints", "0.7.3")]
     public sealed partial class HiddenRoomHintPlugin : BaseUnityPlugin
     {
         internal const string Guid = "codex.sephiria.hidden-room-hints";
@@ -20,13 +20,18 @@ namespace SephiriaHiddenRoomHints
         ConfigEntry<bool> enableTestMode, forceHiddenRoomOnFirstFloor;
         ConfigEntry<KeyCode> instantKillKey;
         ConfigEntry<bool> showSystemMessage, showMapMarker, showWallMarker, showScreenNotice, showRouteMarker;
-        ConfigEntry<float> scanInterval;
         readonly Dictionary<int, Hint> hints = new Dictionary<int, Hint>();
         readonly HashSet<int> announced = new HashSet<int>();
         Harmony harmony;
-        float nextScanTime, nextErrorTime;
+        float nextErrorTime;
         string currentFloor = "", screenNotice = "";
         float screenNoticeUntil;
+        bool hintsDirty = true;
+        readonly HashSet<HiddenRoomTriggerCollider> registeredWalls = new HashSet<HiddenRoomTriggerCollider>();
+        readonly HashSet<BreakableProp_HiddenPortal> registeredPortals = new HashSet<BreakableProp_HiddenPortal>();
+        readonly HashSet<int> activeWalls = new HashSet<int>();
+        readonly List<int> staleHints = new List<int>();
+        readonly HashSet<UI_WorldMapStageElement> routeElements = new HashSet<UI_WorldMapStageElement>();
 
         sealed class Hint
         {
@@ -36,6 +41,9 @@ namespace SephiriaHiddenRoomHints
             internal Vector3? Position;
             internal RectTransform MapMarker;
             internal UI_Map Map;
+            internal UnityEngine.Tilemaps.Tilemap PositionMap;
+            internal Vector3 LocalPosition;
+            internal float PositionHp;
             internal void Destroy()
             {
                 if (Pointer) Object.Destroy(Pointer.gameObject);
@@ -54,10 +62,10 @@ namespace SephiriaHiddenRoomHints
             showWallMarker = Config.Bind("Display", "ShowWallMarker", true, "隐藏墙和传送石入口统一显示黄色感叹号。");
             showScreenNotice = Config.Bind("Display", "ShowScreenNotice", true, "屏幕左上角显示短暂提示。");
             showRouteMarker = Config.Bind("Display", "ShowRouteMarker", true, "在路线选择节点标记已安排隐藏房的区域。");
-            scanInterval = Config.Bind("Performance", "ScanIntervalSeconds", 0.25f, "隐藏入口补漏扫描间隔（秒）。");
+            Config.SettingChanged += HandleSettingChanged;
             harmony = new Harmony(Guid);
             harmony.PatchAll(typeof(HiddenRoomHintPlugin).Assembly);
-            Logger.LogInfo("Sephiria Hidden Room Hints 0.7.1 loaded: connected portal stones / unified yellow exclamation markers.");
+            Logger.LogInfo("Sephiria Hidden Room Hints 0.7.3 loaded: event-driven entrance registration / no scene discovery scans.");
         }
 
         void Update()
@@ -69,10 +77,6 @@ namespace SephiriaHiddenRoomHints
                     ForceFirstFloorHiddenRoom();
                     if (WasInstantKillPressed()) InstantKillAllEnemies();
                 }
-                if (Time.unscaledTime < nextScanTime) return;
-                nextScanTime = Time.unscaledTime + Mathf.Clamp(scanInterval.Value, 0.1f, 2f);
-                Scan();
-                foreach (var element in Object.FindObjectsByType<UI_WorldMapStageElement>(FindObjectsSortMode.None)) RefreshRoute(element);
             }
             catch (Exception error) { Report(error); }
         }
@@ -84,20 +88,25 @@ namespace SephiriaHiddenRoomHints
             Logger.LogError(error);
         }
 
-        void Scan()
+        void RefreshHints()
         {
             var local = NetworkClient.localPlayer ? NetworkClient.localPlayer.GetComponent<PlayerAvatar>() : null;
             string floorGuid = local ? local.currentFloorGuid : "";
             if (currentFloor != floorGuid) { currentFloor = floorGuid; announced.Clear(); screenNotice = ""; }
-            var triggers = Object.FindObjectsByType<HiddenRoomTriggerCollider>(FindObjectsSortMode.None);
-            var active = new HashSet<int>(triggers.Where(t => t && t.hp > 0).Select(t => t.GetInstanceID()));
-            foreach (int key in hints.Keys.ToArray())
+            var triggers = registeredWalls;
+            var active = activeWalls;
+            active.Clear();
+            foreach (var trigger in triggers)
+                if (trigger && trigger.isActiveAndEnabled && trigger.hp > 0) active.Add(trigger.GetInstanceID());
+            staleHints.Clear();
+            foreach (int key in hints.Keys)
                 if (!active.Contains(key) || !hints[key].Trigger)
-                { hints[key].Destroy(); hints.Remove(key); announced.Remove(key); }
-            var floors = Object.FindObjectsByType<FloorGenerator>(FindObjectsSortMode.None);
+                    staleHints.Add(key);
+            foreach (int key in staleHints) { hints[key].Destroy(); hints.Remove(key); announced.Remove(key); }
+            var floors = FloorGenerator.FloorGenerators.ToArray();
             foreach (var trigger in triggers)
             {
-                if (!trigger || trigger.hp <= 0) continue;
+                if (!trigger || !trigger.isActiveAndEnabled || trigger.hp <= 0) continue;
                 int id = trigger.GetInstanceID();
                 if (!hints.TryGetValue(id, out var hint))
                 { hint = new Hint { Trigger = trigger }; hints.Add(id, hint); }
@@ -112,20 +121,31 @@ namespace SephiriaHiddenRoomHints
                 UpdateMap(hint);
             }
             // Count only the local player's floor, once the full scan has completed.
-            var localHints = hints.Values.Where(h => h.Entrance != null && h.Entrance.Generator
-                && h.Entrance.Generator.guid == floorGuid && !string.IsNullOrEmpty(floorGuid)).ToArray();
             bool newHint = false;
-            foreach (var hint in localHints) newHint |= announced.Add(hint.Trigger.GetInstanceID());
-            ScanPortals(floors);
-            var localPortals = portals.Values.Where(p => p.Entrance != null && p.Entrance.Generator
-                && p.Entrance.Generator.guid == floorGuid && !string.IsNullOrEmpty(floorGuid)).ToArray();
-            foreach (var hint in localPortals) newHint |= announced.Add(hint.Stone.GetInstanceID());
-            if (newHint) ShowTestNotice($"本层存在隐藏入口（{localHints.Length + localPortals.Length}处）", Color.yellow);
+            int localCount = 0;
+            foreach (var hint in hints.Values)
+                if (hint.Entrance != null && hint.Entrance.Generator && !string.IsNullOrEmpty(floorGuid)
+                    && hint.Entrance.Generator.guid == floorGuid)
+                { localCount++; newHint |= announced.Add(hint.Trigger.GetInstanceID()); }
+            RefreshPortals(floors);
+            foreach (var hint in portals.Values)
+                if (hint.Entrance != null && hint.Entrance.Generator && !string.IsNullOrEmpty(floorGuid)
+                    && hint.Entrance.Generator.guid == floorGuid)
+                { localCount++; newHint |= announced.Add(hint.Stone.GetInstanceID()); }
+            if (newHint) ShowTestNotice($"本层存在隐藏入口（{localCount}处）", Color.yellow);
         }
 
         void UpdateWall(Hint hint)
         {
+            var floor = hint.Entrance?.Generator as TileFloorGenerator;
+            if (hint.Position.HasValue && floor && floor.GenerateSuccess && floor.wall
+                && hint.PositionMap == floor.wall && hint.PositionHp == hint.Trigger.hp)
+            {
+                hint.Position = floor.wall.transform.TransformPoint(hint.LocalPosition);
+                return;
+            }
             hint.Position = null;
+            if (!showWallMarker.Value) return;
             if (!OpeningTiles.TryGet(hint.Entrance, out var map, out var cells) || cells.Count == 0) return;
             // Select the connected-room-facing edge of the exact opening cells, never a collider guess.
             Vector2 direction = hint.Entrance.Direction;
@@ -134,7 +154,13 @@ namespace SephiriaHiddenRoomHints
             foreach(var cell in cells)
                 if(Mathf.Abs(cell.X*direction.x+cell.Y*direction.y-front)<0.01f)
                 { sum += map.GetCellCenterWorld(new Vector3Int(cell.X,cell.Y,0));count++; }
-            if(count>0)hint.Position=sum/count;
+            if(count>0)
+            {
+                hint.Position=sum/count;
+                hint.PositionMap=map;
+                hint.LocalPosition=map.transform.InverseTransformPoint(hint.Position.Value);
+                hint.PositionHp=hint.Trigger.hp;
+            }
         }
 
         void UpdateMap(Hint hint)
@@ -144,6 +170,7 @@ namespace SephiriaHiddenRoomHints
             if (hint.MapMarker && (!showMapMarker.Value || map != hint.Map))
             { Object.Destroy(hint.MapMarker.gameObject); hint.MapMarker = null; }
             if (!showMapMarker.Value || !map || !map.contentsChild || map.rooms == null) return;
+
             UI_Map_Room icon = null;
             foreach (var room in map.rooms)
             {
@@ -156,23 +183,23 @@ namespace SephiriaHiddenRoomHints
             {
                 hint.MapMarker = CreateEntranceMarker(map.contentsChild,new Vector2(12,22));
                 hint.Map = map;
+                hint.MapMarker.SetAsLastSibling();
             }
             Vector2 size = icon.GetRoomIconSize();
             hint.MapMarker.anchoredPosition = icon.GetIconCenterAnchoredPosition()
                 + Vector2.Scale(entry.Direction, new Vector2(Mathf.Max(0, size.x / 2 - 5), Mathf.Max(0, size.y / 2 - 5)));
-            hint.MapMarker.SetAsLastSibling();
         }
 
         internal void RefreshRoute(UI_WorldMapStageElement element)
         {
             if (!element) return;
+            routeElements.Add(element);
             var label = element.transform.Find("HiddenRoomRouteBadge");
             bool show = showRouteMarker.Value && element.floor != null && HintRules.HasPlannedRoom(element.floor.hiddenRoomCount);
-            if (!show) { if (label) label.gameObject.SetActive(false); return; }
+            if (!show) { if (label && label.gameObject.activeSelf) label.gameObject.SetActive(false); return; }
             if (!label)
             {
-                var template = element.GetComponentInChildren<TMP_Text>(true)
-                    ?? Object.FindObjectsByType<TMP_Text>(FindObjectsSortMode.None).FirstOrDefault(t => t.font);
+                var template = element.GetComponentInChildren<TMP_Text>(true);
                 var go = new GameObject("HiddenRoomRouteBadge", typeof(RectTransform));
                 var rect = go.GetComponent<RectTransform>();
                 rect.SetParent(element.transform, false);
@@ -197,8 +224,7 @@ namespace SephiriaHiddenRoomHints
                 text.raycastTarget = false;
                 label = rect;
             }
-            label.gameObject.SetActive(true);
-            label.SetAsLastSibling();
+            if (!label.gameObject.activeSelf) label.gameObject.SetActive(true);
         }
 
         void OnGUI()
@@ -214,12 +240,13 @@ namespace SephiriaHiddenRoomHints
 
         void OnDestroy()
         {
+            Config.SettingChanged -= HandleSettingChanged;
             harmony?.UnpatchSelf();
             DestroyPortals();
             foreach (var hint in hints.Values) hint.Destroy();
             hints.Clear();
-            foreach (var element in Object.FindObjectsByType<UI_WorldMapStageElement>(FindObjectsInactive.Include, FindObjectsSortMode.None))
-            { var badge = element.transform.Find("HiddenRoomRouteBadge"); if (badge) Object.Destroy(badge.gameObject); }
+            foreach (var element in routeElements)
+            { if (!element) continue; var badge = element.transform.Find("HiddenRoomRouteBadge"); if (badge) Object.Destroy(badge.gameObject); }
             if (Instance == this) Instance = null;
         }
     }

@@ -16,7 +16,7 @@
 | 背包整理 | 2.5.4 | 启用 | F8；收藏同步、分层整理；沿用原插件 ID | `SephiriaBackpackOrganizer/SephiriaBackpackOrganizer.dll` |
 | 弩自动上弹 | 1.1.0 | 启用 | 设置 → 游戏性；支持原版与自动上弹模式 | `SephiriaCrossbowAutoReload/SephiriaCrossbowAutoReload.dll` |
 | 困难模式奖励解锁 | 1.0.0 | 启用 | 根据已通关难度补齐不高于该难度的奖励；无配置界面 | `SephiriaHardModeUnlocker/SephiriaHardModeUnlocker.dll` |
-| 隐藏房间提示 | 0.7.1 | 启用 | 路线预告；读取已连接的沙漠传送石与原生破墙入口，场景和完整地图统一黄色感叹号；测试模式关闭 | `SephiriaHiddenRoomHints/SephiriaHiddenRoomHints.dll` |
+| 隐藏房间提示 | 0.7.3 | 启用 | 路线预告；读取已连接的沙漠传送石与原生破墙入口，场景和完整地图统一黄色感叹号；测试模式关闭 | `SephiriaHiddenRoomHints/SephiriaHiddenRoomHints.dll` |
 | Item Lab（Cheat Lab） | 1.0.1 | 启用 | O 打开原生物品箱及调试工具；写操作限单人／本地主机条件 | `SephiriaItemLab/SephiriaItemLab.dll` |
 | Item Lab 面板扩展 | 1.1.0 | 启用 | 神器满附魔／还原、蓝宝石、角色页额外天赋点；内置 SPMod 天赋兼容 | `SephiriaItemLabTweaks/SephiriaItemLabTweaks.dll` |
 | 天赋效果修改 | 0.2.1 | 启用 | 生存20：每10最大生命值增加1%伤害放大；智慧10：迷你Boss1个骰子、Boss2个，移除旧神器效果 | `SephiriaTalentEffects/SephiriaTalentEffects.dll` |
@@ -61,3 +61,5 @@ ModSettings 1.0.11 为本地未安装开发项目，不计入当前安装数量�
 
 本表版本采用 BepInPlugin／AddOn 元数据，不能仅凭程序集文件版本判断。游戏内显示、输入和联机行为由使用者验证。
 
+
+- 2026-09-22：隐藏房间提示 **0.7.3** 发布。事件驱动替代定时全局扫描；源码、DLL 和管理器包同步。48 项模拟回归及生命周期契约检查通过，游戏内与联机待验收。

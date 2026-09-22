@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 using Object = UnityEngine.Object;
@@ -10,8 +9,7 @@ namespace SephiriaHiddenRoomHints
     {
         readonly Dictionary<int, PortalHint> portals = new Dictionary<int, PortalHint>();
         RectTransform pointerCanvas;
-        float nextPortalDiagnostic;
-        string portalDiagnostic = "";
+        readonly HashSet<int> activePortals = new HashSet<int>();
         sealed class PortalHint
         {
             internal BreakableProp_HiddenPortal Stone;
@@ -25,13 +23,14 @@ namespace SephiriaHiddenRoomHints
             }
         }
 
-        void ScanPortals(FloorGenerator[] floors)
+        void RefreshPortals(FloorGenerator[] floors)
         {
-            var stones = Object.FindObjectsByType<BreakableProp_HiddenPortal>(FindObjectsSortMode.None);
-            var active = new HashSet<int>();
+            var stones = registeredPortals;
+            var active = activePortals;
+            active.Clear();
             foreach (var stone in stones)
             {
-                if (!PortalResolver.IsCandidate(stone)) continue;
+                if (!stone || !stone.gameObject.activeInHierarchy || !PortalResolver.IsCandidate(stone)) continue;
                 int id = stone.GetInstanceID(); active.Add(id);
                 if (!portals.TryGetValue(id, out var hint))
                 { hint = new PortalHint { Stone = stone }; portals.Add(id, hint); }
@@ -43,26 +42,25 @@ namespace SephiriaHiddenRoomHints
                     }
                 UpdatePortalMap(hint);
             }
-            foreach (int id in portals.Keys.ToArray())
-                if (!active.Contains(id)) { portals[id].Destroy(); portals.Remove(id); announced.Remove(id); }
-            string state = $"floor={currentFloor}, portalObjects={stones.Length}, unopenedConnected={active.Count}, resolved={portals.Values.Count(p => p.Entrance != null)}, wallTriggers={hints.Count}";
-            if (state != portalDiagnostic && Time.unscaledTime >= nextPortalDiagnostic)
-            { portalDiagnostic = state; nextPortalDiagnostic = Time.unscaledTime + 5; Logger.LogInfo("Hidden entrance scan: " + state); }
+            staleHints.Clear();
+            foreach (int id in portals.Keys) if (!active.Contains(id)) staleHints.Add(id);
+            foreach (int id in staleHints) { portals[id].Destroy(); portals.Remove(id); announced.Remove(id); }
         }
 
         void LateUpdate()
         {
             try
             {
+                ProcessEvents();
                 foreach (var hint in portals.Values)
                 {
                     Vector3? position = null;
-                    if (PortalResolver.IsCandidate(hint.Stone))
+                    if (showWallMarker.Value && hint.Stone && hint.Stone.gameObject.activeInHierarchy && PortalResolver.IsCandidate(hint.Stone))
                     { var p = hint.Stone.GetExitPosition(); position = new Vector3(p.x,p.y,hint.Stone.transform.position.z); }
                     TrackMarker(ref hint.Pointer, hint.Entrance, position);
                 }
                 foreach (var hint in hints.Values)
-                    TrackMarker(ref hint.Pointer, hint.Entrance, hint.Trigger && hint.Trigger.hp > 0 ? hint.Position : null);
+                    TrackMarker(ref hint.Pointer, hint.Entrance, hint.Trigger && hint.Trigger.isActiveAndEnabled && hint.Trigger.hp > 0 ? hint.Position : null);
             }
             catch (System.Exception error) { Report(error); }
         }
@@ -73,13 +71,15 @@ namespace SephiriaHiddenRoomHints
             var camera = gameCamera ? gameCamera.Camera : null;
             bool visible = showWallMarker.Value && camera && position.HasValue && entry != null && entry.Generator
                 && gameCamera.CurrentSeeingFloor == entry.Generator;
-            if (pointer) pointer.gameObject.SetActive(visible);
+            Vector3 screen = Vector3.zero;
+            if (visible)
+            {
+                screen = camera.WorldToScreenPoint(position.Value);
+                visible = screen.z > 0 && camera.pixelRect.Contains(new Vector2(screen.x, screen.y));
+            }
+            if (pointer && pointer.gameObject.activeSelf != visible) pointer.gameObject.SetActive(visible);
             if (!visible) return;
-            var screen = camera.WorldToScreenPoint(position.Value);
             // A marker denotes an exact visible entrance; no off-screen clamped marker or arrow.
-            var viewport = camera.pixelRect;
-            if (screen.z <= 0 || !viewport.Contains(new Vector2(screen.x,screen.y)))
-            { if (pointer) pointer.gameObject.SetActive(false); return; }
             if (!pointerCanvas)
             {
                 var go = new GameObject("Hidden Entrance Overlay", typeof(RectTransform), typeof(Canvas), typeof(CanvasScaler));
@@ -91,7 +91,6 @@ namespace SephiriaHiddenRoomHints
             if (!pointer) { pointer = CreateEntranceMarker(pointerCanvas, new Vector2(20,38)); pointer.pivot = new Vector2(0.5f,0); }
             RectTransformUtility.ScreenPointToLocalPointInRectangle(pointerCanvas, screen, null, out var point);
             pointer.anchoredPosition = point + new Vector2(0,8);
-            pointer.gameObject.SetActive(true);
         }
 
         static RectTransform CreateEntranceMarker(Transform parent, Vector2 size)
@@ -109,12 +108,14 @@ namespace SephiriaHiddenRoomHints
             var map=entry!=null && entry.Generator ? entry.Generator.mapInstance : null;
             if(hint.MapMarker && (!showMapMarker.Value || hint.Map!=map)) {Object.Destroy(hint.MapMarker.gameObject);hint.MapMarker=null;}
             if(!showMapMarker.Value || !map || !map.contentsChild || map.rooms==null || !(entry.Room is LibraryFloorRoomInstance room))return;
-            var icon=map.rooms.OfType<UI_Map_LibraryProceduralDungeonRoom>().FirstOrDefault(i=>ReferenceEquals(i.Room,room));
+
+            UI_Map_LibraryProceduralDungeonRoom icon=null;
+            foreach(var candidate in map.rooms)
+                if(candidate is UI_Map_LibraryProceduralDungeonRoom library && ReferenceEquals(library.Room,room)) {icon=library;break;}
             if(!icon)return;
             if(!hint.MapMarker) { hint.MapMarker=CreateEntranceMarker(map.contentsChild,new Vector2(12,22)); hint.Map=map; }
             Vector2 local=hint.Stone.GetExitPosition()-(Vector2)entry.Generator.transform.position-(Vector2)room.pos;
             hint.MapMarker.anchoredPosition=icon.GetIconCenterAnchoredPosition()-icon.GetRoomIconSize()*0.5f+local*2+Vector2.one*2;
-            hint.MapMarker.SetAsLastSibling();
         }
         void DestroyPortals()
         {
