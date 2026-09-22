@@ -1168,5 +1168,65 @@
     "Origin": "workspace",
     "Bytes": 258,
     "SHA256": "2C268433F339429738C17DDB0D802BF9CDA27F2F43FC25DEEB0451650EFC5E78"
+  },
+  {
+    "Path": "workspace/hold-special/Plugin.cs",
+    "Origin": "workspace",
+    "Bytes": 17124,
+    "SHA256": "49D2C82D3DAD8132C109634661B9D60DCA759F013C4616459D7F4301C81A0A41"
+  },
+  {
+    "Path": "workspace/hold-special/RepeatCycle.cs",
+    "Origin": "workspace",
+    "Bytes": 1732,
+    "SHA256": "CC4592BA75CBB61CB75A28F8C80EA184F4605F0D18759081F572D6991E690A43"
+  },
+  {
+    "Path": "workspace/hold-special/SephiriaHoldSpecial.csproj",
+    "Origin": "workspace",
+    "Bytes": 2176,
+    "SHA256": "8930B51E7248C02DC7A887E463D1768A1F0324C165962C6385BA50055E87397D"
+  },
+  {
+    "Path": "workspace/hold-special/README.md",
+    "Origin": "workspace",
+    "Bytes": 4074,
+    "SHA256": "851551637870AC6E06F5D009B9DFD2FA920DEFBD641280EAFFA7C72F3E2BC3AA"
+  },
+  {
+    "Path": "workspace/hold-special/build.ps1",
+    "Origin": "workspace",
+    "Bytes": 2321,
+    "SHA256": "146D1FA66AE390E2D964D39F1814B7DACF88D6F08CCA326AA3978C47AC4E5732"
+  },
+  {
+    "Path": "workspace/hold-special/Tests/Program.cs",
+    "Origin": "workspace",
+    "Bytes": 2281,
+    "SHA256": "1AC81A3D6DE7385A924CEEF5AA56B1FF6513484B521E3651F54DA3BFA53C10CA"
+  },
+  {
+    "Path": "workspace/hold-special/Tests/RepeatCycle.Tests.csproj",
+    "Origin": "workspace",
+    "Bytes": 325,
+    "SHA256": "FBD44461394F03DEF77BAD764C48CD2D7C25ABDC11A1ACFC25B3A16C883203A6"
+  },
+  {
+    "Path": "workspace/hold-special/Tests/Verify-GameContract.ps1",
+    "Origin": "workspace",
+    "Bytes": 5793,
+    "SHA256": "235CAD31BF77CDBA39A37269E34E1497F4AA4D15103141FF951E8AF98590F3C9"
+  },
+  {
+    "Path": "installed/BepInEx/plugins/SephiriaHoldSpecial/SephiriaHoldSpecial.dll",
+    "Origin": "installed",
+    "Bytes": 15872,
+    "SHA256": "019DBF4ECB4A8BC5A2A1BA6708D5B4073A49D435B976AE571EDAC7BECFE741B1"
+  },
+  {
+    "Path": "installed/BepInEx/plugins/SephiriaHoldSpecial/README.md",
+    "Origin": "installed",
+    "Bytes": 4074,
+    "SHA256": "851551637870AC6E06F5D009B9DFD2FA920DEFBD641280EAFFA7C72F3E2BC3AA"
   }
 ]

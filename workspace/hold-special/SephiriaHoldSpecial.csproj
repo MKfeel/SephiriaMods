@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
+    <LangVersion>9.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Version>1.0.1</Version>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <GameRoot Condition="'$(GameRoot)' == ''">D:\GAMES\Steam\steamapps\common\Sephiria</GameRoot>
+    <ManagedDir>$(GameRoot)\Sephiria_Data\Managed</ManagedDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Tests\**" />
+    <Reference Include="mscorlib" HintPath="$(ManagedDir)\mscorlib.dll" Private="false" />
+    <Reference Include="netstandard" HintPath="$(ManagedDir)\netstandard.dll" Private="false" />
+    <Reference Include="System" HintPath="$(ManagedDir)\System.dll" Private="false" />
+    <Reference Include="System.Core" HintPath="$(ManagedDir)\System.Core.dll" Private="false" />
+    <Reference Include="BepInEx" HintPath="$(GameRoot)\BepInEx\core\BepInEx.dll" Private="false" />
+    <Reference Include="0Harmony" HintPath="$(GameRoot)\BepInEx\core\0Harmony.dll" Private="false" />
+    <Reference Include="Assembly-CSharp" HintPath="$(ManagedDir)\Assembly-CSharp.dll" Private="false" />
+    <Reference Include="Mirror" HintPath="$(ManagedDir)\Mirror.dll" Private="false" />
+    <Reference Include="UnityEngine" HintPath="$(ManagedDir)\UnityEngine.dll" Private="false" />
+    <Reference Include="UnityEngine.CoreModule" HintPath="$(ManagedDir)\UnityEngine.CoreModule.dll" Private="false" />
+    <Reference Include="UnityEngine.AnimationModule" HintPath="$(ManagedDir)\UnityEngine.AnimationModule.dll" Private="false" />
+    <Reference Include="Unity.InputSystem" HintPath="$(ManagedDir)\Unity.InputSystem.dll" Private="false" />
+  </ItemGroup>
+  <Target Name="Package" AfterTargets="Build">
+    <MakeDir Directories="$(MSBuildProjectDirectory)\package\BepInEx\plugins\SephiriaHoldSpecial" />
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(MSBuildProjectDirectory)\package\BepInEx\plugins\SephiriaHoldSpecial" />
+  </Target>
+</Project>

@@ -266,6 +266,23 @@
           "compatibility": "Sephiria / BepInEx 5；需要完全退出游戏后安装；UDP 端口须可达；游戏内与双机验证待完成"
         }
       ]
+    },
+    {
+      "id": "feel.sephiria.holdspecial",
+      "name": "按住特殊攻击",
+      "loader": "BepInEx",
+      "description": "按住按武器机制连续释放；剑盾双键横扫，放血和重新组装保留原生手动操作。",
+      "versions": [
+        {
+          "version": "1.0.1",
+          "channel": "stable",
+          "notes": "2026-09-22：大剑满蓄释放，区分弩、匕首、长棍及太刀机制；剑盾仅双键连续横扫。放血和重新组装不自动释放、松键或重复。编译、21项生命周期测试及原生接口检查通过；游戏内与联机待验收。",
+          "url": "https://raw.githubusercontent.com/MKfeel/SephiriaMods/main/packages/feel.sephiria.holdspecial/1.0.1-3f9c835e9d2b.zip",
+          "size": 10534,
+          "sha256": "3F9C835E9D2B7CFAEA985139BFE8F39AF7D0D93716186EB58A53B1DA5E553448",
+          "compatibility": "Sephiria / BepInEx 5；完全退出游戏后安装；2026-09-22本机程序集静态验证，游戏内与联机待验收"
+        }
+      ]
     }
   ]
 }
