@@ -1,6 +1,6 @@
 {
   "modName": "Star's SephiriaMod Mod",
-  "modVersion": "2.5.3",
+  "modVersion": "2.6.1",
   "modAuthor": "裂星",
   "dllFile": "SPMod.dll",
   "entryClass": "StarSephiriaMod"

@@ -1,0 +1,7 @@
+{
+  "modName": "根之进",
+  "modVersion": "1.1.0",
+  "modAuthor": "Natsuki",
+  "dllFile": "NegativeRoots.dll",
+  "entryClass": "NegativeRoots.Core"
+}

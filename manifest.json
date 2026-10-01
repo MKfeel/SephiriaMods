@@ -1,5 +1,845 @@
 [
   {
+    "Path": "installed/AddOns/BodyForge/0Harmony.dll",
+    "Origin": "installed",
+    "Bytes": 204800,
+    "SHA256": "1A21CC03424FC82C3DD1346905D16494536B9595AE4162228D99FB7C285C1031"
+  },
+  {
+    "Path": "installed/AddOns/BodyForge/使用说明.md",
+    "Origin": "installed",
+    "Bytes": 31473,
+    "SHA256": "CACAF12F2356BFD24DD8C7801803E35077B57505B236D1E32697564AF9FDDC6B"
+  },
+  {
+    "Path": "installed/AddOns/BodyForge/BodyForge.dll",
+    "Origin": "installed",
+    "Bytes": 161792,
+    "SHA256": "53999EBC1E16D1C118A7FB83489B903EAC93D97FBE3FC75BAB1669F5C1ACC1C2"
+  },
+  {
+    "Path": "installed/AddOns/BodyForge/config.json",
+    "Origin": "installed",
+    "Bytes": 50,
+    "SHA256": "457699AA77616E823A573ED67BE149A3FCFE466EA68EEC8BF3AD82065F13E117"
+  },
+  {
+    "Path": "installed/AddOns/BodyForge/metadata.json",
+    "Origin": "installed",
+    "Bytes": 152,
+    "SHA256": "407B9E280BA0C4162D95F41935B7A848055C8D0D5A3AF522FA80EBFCF4822308"
+  },
+  {
+    "Path": "installed/AddOns/BodyForge/Mono.Cecil.dll",
+    "Origin": "installed",
+    "Bytes": 339456,
+    "SHA256": "7AE470288FFF4A402899C254D0A76CEFEF55877F5C54F96E83C797CC5BB6E2F6"
+  },
+  {
+    "Path": "installed/AddOns/BodyForge/Mono.Cecil.Mdb.dll",
+    "Origin": "installed",
+    "Bytes": 43008,
+    "SHA256": "5896D1898F616701FFF18F3B2C71E6B844D2390EF9F41E1C5FCCCE8CB27C698E"
+  },
+  {
+    "Path": "installed/AddOns/BodyForge/Mono.Cecil.Pdb.dll",
+    "Origin": "installed",
+    "Bytes": 86528,
+    "SHA256": "174DB44A067F58561510AF746F3CAEB032037762C57A31C8D9EE32DB25174984"
+  },
+  {
+    "Path": "installed/AddOns/BodyForge/Mono.Cecil.Rocks.dll",
+    "Origin": "installed",
+    "Bytes": 27648,
+    "SHA256": "54AC539FB5DDC8B44C0E9ACD0FCB7324F89D1A072EDF8EBC1B06DD691E3D3927"
+  },
+  {
+    "Path": "installed/AddOns/BodyForge/MonoMod.RuntimeDetour.dll",
+    "Origin": "installed",
+    "Bytes": 105984,
+    "SHA256": "40E49BB314391CD7BDDC2644F8553EEBA92C194B940836B103DF16955C464E0C"
+  },
+  {
+    "Path": "installed/AddOns/BodyForge/MonoMod.Utils.dll",
+    "Origin": "installed",
+    "Bytes": 187904,
+    "SHA256": "9D1495F147AC93C4F81F84538C1A326E8F8A6AEFC78D6289D798F3CE1162C5E9"
+  },
+  {
+    "Path": "installed/AddOns/BodyForge/readme.md",
+    "Origin": "installed",
+    "Bytes": 6428,
+    "SHA256": "CAEC32D7A6F1049CD1B73EE61D87FBE269637C2FC20EEECCF73E24AACFE28604"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/武器-弓扩展 说明.txt",
+    "Origin": "installed",
+    "Bytes": 488,
+    "SHA256": "E28699D3CF3C5E81FE9831846A42A50F4E5B917464B2B63A5FEF873CC56B4EDE"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/BowWeapon.dll",
+    "Origin": "installed",
+    "Bytes": 251904,
+    "SHA256": "C4BDD33ECADFE5AFB5092806512327D919A5906926213CDE97DCA0FD73260CB6"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/Libs/0Harmony.dll",
+    "Origin": "installed",
+    "Bytes": 264704,
+    "SHA256": "9846EB9EDF64A5E2473342C75B8C5AB37293FB4C27418BC7A5B9A156AA0D7214"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/Libs/Mono.Cecil.dll",
+    "Origin": "installed",
+    "Bytes": 339456,
+    "SHA256": "7AE470288FFF4A402899C254D0A76CEFEF55877F5C54F96E83C797CC5BB6E2F6"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/Libs/Mono.Cecil.Mdb.dll",
+    "Origin": "installed",
+    "Bytes": 43008,
+    "SHA256": "5896D1898F616701FFF18F3B2C71E6B844D2390EF9F41E1C5FCCCE8CB27C698E"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/Libs/Mono.Cecil.Pdb.dll",
+    "Origin": "installed",
+    "Bytes": 86528,
+    "SHA256": "174DB44A067F58561510AF746F3CAEB032037762C57A31C8D9EE32DB25174984"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/Libs/Mono.Cecil.Rocks.dll",
+    "Origin": "installed",
+    "Bytes": 27648,
+    "SHA256": "54AC539FB5DDC8B44C0E9ACD0FCB7324F89D1A072EDF8EBC1B06DD691E3D3927"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/Libs/MonoMod.RuntimeDetour.dll",
+    "Origin": "installed",
+    "Bytes": 105984,
+    "SHA256": "40E49BB314391CD7BDDC2644F8553EEBA92C194B940836B103DF16955C464E0C"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/Libs/MonoMod.Utils.dll",
+    "Origin": "installed",
+    "Bytes": 187904,
+    "SHA256": "9D1495F147AC93C4F81F84538C1A326E8F8A6AEFC78D6289D798F3CE1162C5E9"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/metadata.json",
+    "Origin": "installed",
+    "Bytes": 141,
+    "SHA256": "FB2FF21B1202D8338B43627A2775451738EEA37086A4505EFB482823BEBF4612"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/1ji/gong/gong -1.png",
+    "Origin": "installed",
+    "Bytes": 231,
+    "SHA256": "B857CFE3A96413C441CA19E2BD089083C8DD48C995DB51CE9FB3EFDC6C7E0679"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/1ji/gong/gong 1.png",
+    "Origin": "installed",
+    "Bytes": 319,
+    "SHA256": "3D145F48454758B992956F1173CFB0F2E0B3ED94278E58F815BC2B10A7711CA9"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/1ji/gong/gong 2.png",
+    "Origin": "installed",
+    "Bytes": 324,
+    "SHA256": "49238BE47CA802B9BC305B799C2011760577CE6B475B6F417853915B18B93A57"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/1ji/gong/gong 3.png",
+    "Origin": "installed",
+    "Bytes": 336,
+    "SHA256": "A1FF3544C51EAED350DAC317A353480F450C9002335FC48A72AA190A14A57C53"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/1ji/gong/gong.png",
+    "Origin": "installed",
+    "Bytes": 291,
+    "SHA256": "B94DC3D81B6D857F04073C1B4473B253CDAAD211B761FAADA9CD9C025C125152"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/2ji/benleisuo/gong -1.png",
+    "Origin": "installed",
+    "Bytes": 311,
+    "SHA256": "47CB699C90B97E7A627A811DC63E1AC4800D92FDEA4C254B28ADDFF345A3C7DC"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/2ji/benleisuo/gong 1.png",
+    "Origin": "installed",
+    "Bytes": 501,
+    "SHA256": "4A51DA9198D6B5B41C124DF60F642AEF923D49C97929B1A49AC5B442AC8F3784"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/2ji/benleisuo/gong 2.png",
+    "Origin": "installed",
+    "Bytes": 506,
+    "SHA256": "4C52FD251EA4CABF247E8C8EB1ADD4568B53EDBF82FE8CD6FAF3545D6B8D14F4"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/2ji/benleisuo/gong 3.png",
+    "Origin": "installed",
+    "Bytes": 506,
+    "SHA256": "6E05AA1CA4C843E4A84067C049EF41DB882F7417456D875AD29447E621E9982D"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/2ji/benleisuo/gong.png",
+    "Origin": "installed",
+    "Bytes": 485,
+    "SHA256": "6B26BBD52066BDBB2C4F89E24AB1B8994028C0E90EDB545A6E01F84095A53FE4"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/2ji/hanchuansulv/gong -1.png",
+    "Origin": "installed",
+    "Bytes": 313,
+    "SHA256": "E3B7852EECA3E8B3760278EFC6A257CDE459C607381CD640F29512B64CD8FBDF"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/2ji/hanchuansulv/gong 1.png",
+    "Origin": "installed",
+    "Bytes": 441,
+    "SHA256": "95C7B57BD6F97AD14B45609EEFCF9C7C73D72BBFBEFFF6641C09FF0870E6C690"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/2ji/hanchuansulv/gong 2.png",
+    "Origin": "installed",
+    "Bytes": 454,
+    "SHA256": "89086D298FE70AED6CBBC5D90394956A7EB4982BE87D068E2DA6818EDEF08565"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/2ji/hanchuansulv/gong 3.png",
+    "Origin": "installed",
+    "Bytes": 455,
+    "SHA256": "2F7D3EAD81C8C1F7DF9D3A1EBBB5CE4195EB31986B04D21F5465F98F3A85C4CB"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/2ji/hanchuansulv/gong.png",
+    "Origin": "installed",
+    "Bytes": 404,
+    "SHA256": "3566D473093058FB5ECFABE63C954C059B271825A59C8A1924FB5BA006032585"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/2ji/jiefanglian/gong -1.png",
+    "Origin": "installed",
+    "Bytes": 254,
+    "SHA256": "E258D7F1A8B04645AB8076B80A884A826A456B3D223EDA26C447809DBE6EFEDE"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/2ji/jiefanglian/gong 1.png",
+    "Origin": "installed",
+    "Bytes": 355,
+    "SHA256": "0A59175436632A38038557AA7DC7D871B02E27575064C97BA024DE7671AA5579"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/2ji/jiefanglian/gong 2.png",
+    "Origin": "installed",
+    "Bytes": 335,
+    "SHA256": "784A1FD2419CA5F790CFE1F808422F5AE37EAD49DA29CE81EF8A11B05100299C"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/2ji/jiefanglian/gong 3.png",
+    "Origin": "installed",
+    "Bytes": 388,
+    "SHA256": "B917EADF2C5DAB415660275895D053BE2957A889099B4500549E5ACE46F2FC7B"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/2ji/jiefanglian/gong.png",
+    "Origin": "installed",
+    "Bytes": 309,
+    "SHA256": "3EF8D1EB2F8F34CDAFFA94BC939CC88372C8327327970E9958BBA07B2C4E5700"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/2ji/jiefanglian/liandao.png",
+    "Origin": "installed",
+    "Bytes": 483,
+    "SHA256": "996FA1E953CC86C5DA8C357B3D7F266110777725D6AFD307695A69924907834E"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/2ji/jifengge/gong -1.png",
+    "Origin": "installed",
+    "Bytes": 310,
+    "SHA256": "6D6A43848216EAE44483806978E6712150B78655EF89EF9F70E2FCB1345CFAE7"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/2ji/jifengge/gong 1.png",
+    "Origin": "installed",
+    "Bytes": 389,
+    "SHA256": "447E9B3CD0919F8C064E7DD730C79D8D7350D54631A9E94D740305954CED8558"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/2ji/jifengge/gong 2.png",
+    "Origin": "installed",
+    "Bytes": 364,
+    "SHA256": "7EF9D7F8F207F7FE7B30AC0D8109C3356C2B497F77C10D0B280B7A807F5C0A2E"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/2ji/jifengge/gong 3.png",
+    "Origin": "installed",
+    "Bytes": 398,
+    "SHA256": "6BB895F80568A5EE15985825BC806334C3933274F2D85AF39D8BB4D95787E41B"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/2ji/jifengge/gong.png",
+    "Origin": "installed",
+    "Bytes": 357,
+    "SHA256": "0848292C8B2ABE62736B1D2B7CA3F60CDCC5B5604542B11644204FC71ED2DEF3"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/2ji/tiegong/2-1tiegong  -1.png",
+    "Origin": "installed",
+    "Bytes": 237,
+    "SHA256": "07D54E13F06B0F1F4C8F1EAD55F70A22853E5B5CC81ADDACFA5F477B811BDEF4"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/2ji/tiegong/2-1tiegong 1.png",
+    "Origin": "installed",
+    "Bytes": 293,
+    "SHA256": "05638C5BAEAEBEB279A021DCFEB996F2FC3383E39BD783BA3DC2FDA5CCF874EC"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/2ji/tiegong/2-1tiegong 2.png",
+    "Origin": "installed",
+    "Bytes": 300,
+    "SHA256": "E3C811906F2F82D294806E59E74BBAF8ACE706D176CC872E67C15C2C9BD7E47B"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/2ji/tiegong/2-1tiegong 3.png",
+    "Origin": "installed",
+    "Bytes": 302,
+    "SHA256": "CFDE3DBF09566559E03E4F169B9A111F355F0EA6151FC67740E2D9D91639841D"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/2ji/tiegong/2-1tiegong.png",
+    "Origin": "installed",
+    "Bytes": 272,
+    "SHA256": "E8B8D14EB880524FCF5F8C2F7FA6C46517D28CF061B6BBE53A8D625E33751A69"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/2ji/yemanxinsheng/gong -1.png",
+    "Origin": "installed",
+    "Bytes": 275,
+    "SHA256": "1F225E2D47BB9A573CA5A249556F6F2C3007381DDF8C7E1E8361950C7CB7F6D1"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/2ji/yemanxinsheng/gong 1.png",
+    "Origin": "installed",
+    "Bytes": 456,
+    "SHA256": "435FB78E6AF50A887D84CB2AF1DFFC44FA04B2C602F51E597DD82A969F3174AF"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/2ji/yemanxinsheng/gong 2.png",
+    "Origin": "installed",
+    "Bytes": 434,
+    "SHA256": "4D6AACA832BA1F46BE243691E29760D499A90B397B18C8214FFF08E89968DB21"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/2ji/yemanxinsheng/gong 3.png",
+    "Origin": "installed",
+    "Bytes": 411,
+    "SHA256": "A8EFFC47CD8F460DF24FB01FDB57DEB186259AF57A9E753697A6895372307CA3"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/2ji/yemanxinsheng/gong.png",
+    "Origin": "installed",
+    "Bytes": 412,
+    "SHA256": "045AFE063AFD595F1B7FC279CA3EA72F46FDCE79A03D7E678F7D75E5A2FF02C9"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/2ji/yujinliaosi/gong -1.png",
+    "Origin": "installed",
+    "Bytes": 299,
+    "SHA256": "11FFD3B921379E5BDA51512F015D2E35A44FF48959FB6261D995B862D1FBB425"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/2ji/yujinliaosi/gong 1.png",
+    "Origin": "installed",
+    "Bytes": 425,
+    "SHA256": "2E7854BCA7521292543CE2D0866B3783502D667B5927AB2863CAC3AEF095F7B7"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/2ji/yujinliaosi/gong 2.png",
+    "Origin": "installed",
+    "Bytes": 420,
+    "SHA256": "D63E5B53B66514521FD75D70EC50F1CB437396166D4612406FD3037A83CDBB6A"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/2ji/yujinliaosi/gong 3.png",
+    "Origin": "installed",
+    "Bytes": 422,
+    "SHA256": "58F3684CB297CB261839505FF35DCB6C2BEA5E1192BC9D935EB82EFF40ECC922"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/2ji/yujinliaosi/gong.png",
+    "Origin": "installed",
+    "Bytes": 397,
+    "SHA256": "68DE4263835222FDC3E6854F5FB29B9781AB25E02BB8719669FEEF04263DAAA0"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/amosidehuihen/gong -1.png",
+    "Origin": "installed",
+    "Bytes": 382,
+    "SHA256": "E0E83C3913AA8F3902E05D7C8239BB72D3B8FF783DAFD80A15ADDE6482A9E279"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/amosidehuihen/gong 1.png",
+    "Origin": "installed",
+    "Bytes": 579,
+    "SHA256": "2140B88E39DE0488D47FA30DA20043E4947CCD0A5EC7007791BDF9E80CF2E8B7"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/amosidehuihen/gong 2.png",
+    "Origin": "installed",
+    "Bytes": 551,
+    "SHA256": "1205FB00F35E4121F9153D8B77681C66B60BA3E836349A936D03FC14713BF679"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/amosidehuihen/gong 3.png",
+    "Origin": "installed",
+    "Bytes": 595,
+    "SHA256": "4E992FE0BEB916B07CDFF546C73E11885B7E3329FC19D41076DDBE6704BA862D"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/amosidehuihen/gong.png",
+    "Origin": "installed",
+    "Bytes": 557,
+    "SHA256": "0E6875AEADEE32BA1A2A462558DCED80112DD9A60513F70F980058F05553CFF4"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/asikadedebugan/gong -1.png",
+    "Origin": "installed",
+    "Bytes": 264,
+    "SHA256": "2553D1215067E95CCD3D01F4096873F4BB60C398E4A089EAD047F3C3A575824B"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/asikadedebugan/gong 1.png",
+    "Origin": "installed",
+    "Bytes": 448,
+    "SHA256": "814153C8C63F2EE54E5B416255A697A95455F258CD4BD594524CD7E5A3B7EAF2"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/asikadedebugan/gong 2.png",
+    "Origin": "installed",
+    "Bytes": 442,
+    "SHA256": "09DD9127F2EBC2FCF399B64E4010496FB431B9971BD2A48ECB4289FDB2B3E5B3"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/asikadedebugan/gong 3.png",
+    "Origin": "installed",
+    "Bytes": 446,
+    "SHA256": "43C15DEEA96E2C8A524C39C20BD1D4C2FF0226454731CB699235FCBBFDD137FB"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/asikadedebugan/gong.png",
+    "Origin": "installed",
+    "Bytes": 388,
+    "SHA256": "2E0AC235AD4902FB45E3043739D152B0512F8E1247E6C44CC533DC952B532333"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/asikadedebugan/liandao.png",
+    "Origin": "installed",
+    "Bytes": 625,
+    "SHA256": "F354732C38795D30A77921B47D311B278FFF738CC2D768D1E0DA54B129C325A3"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/baofengxueyindaozhe/gong -1.png",
+    "Origin": "installed",
+    "Bytes": 305,
+    "SHA256": "B8648527B74B54E1CBBCEAE767A56AE63A0EC9E205F41BA95754FB36DEE4F1AD"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/baofengxueyindaozhe/gong 1.png",
+    "Origin": "installed",
+    "Bytes": 472,
+    "SHA256": "2F726428B3A416D2A546B1F54E05A5588468AC059F4DB5B0E4BB9B8BC35C9542"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/baofengxueyindaozhe/gong 2.png",
+    "Origin": "installed",
+    "Bytes": 491,
+    "SHA256": "95CF26FE0B921EF5CC551976E43BC8BBF75D3C698A8CB82DFE228C65FAEED999"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/baofengxueyindaozhe/gong 3.png",
+    "Origin": "installed",
+    "Bytes": 514,
+    "SHA256": "A3C22E5AEB1444DC43B486CB3C0D127B424B750FF6A38D6D172CD0B2A9B34BC2"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/baofengxueyindaozhe/gong.png",
+    "Origin": "installed",
+    "Bytes": 455,
+    "SHA256": "6F971FD92EF860E8405E9125ED5E09D78AB742290FE89FABF84FF374B07F47CE"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/fenghuanglieyan/gong -1.png",
+    "Origin": "installed",
+    "Bytes": 349,
+    "SHA256": "98616C730CD4BB8763BD80F530E450A40C22C8E49DE6FD4A03BCE4E43B8F86CB"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/fenghuanglieyan/gong 1.png",
+    "Origin": "installed",
+    "Bytes": 539,
+    "SHA256": "1591CD419019812564276C256AC7CA96AE16C404DCABB6973B8D6ADD00D204BD"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/fenghuanglieyan/gong 2.png",
+    "Origin": "installed",
+    "Bytes": 536,
+    "SHA256": "C55A0DC90E8811FD06EBF323E70860EA17A7739D0D617F11BE54DBA304A384FA"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/fenghuanglieyan/gong 3.png",
+    "Origin": "installed",
+    "Bytes": 556,
+    "SHA256": "FCEF68946594BC35BBB272E88711110C62E298A1202D1E204E8B884D1E7553B5"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/fenghuanglieyan/gong.png",
+    "Origin": "installed",
+    "Bytes": 485,
+    "SHA256": "2E04D39FA0929B5254231C307AB3DB41E31270A746CCAC72CB2100B81039D0FB"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/gangzhixin/gong -1.png",
+    "Origin": "installed",
+    "Bytes": 283,
+    "SHA256": "87C643D647152C7479CA0F2A345CE2029CCC21725FA2835AF924BC3862482381"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/gangzhixin/gong 1.png",
+    "Origin": "installed",
+    "Bytes": 414,
+    "SHA256": "09B936101DA49CFDF71C83707BDDE7D26D6D4BE9A003376E646FB602FDEC4032"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/gangzhixin/gong 2.png",
+    "Origin": "installed",
+    "Bytes": 379,
+    "SHA256": "A16237DE08D4257393EEE31731DD5EE316A0382CDDE1AEC3CDF7D3627AB5D386"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/gangzhixin/gong 3.png",
+    "Origin": "installed",
+    "Bytes": 396,
+    "SHA256": "6F9F3FD45697E2DAEE017701294861D3866F38300C54FC40104668B4D8FB1A6C"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/gangzhixin/gong.png",
+    "Origin": "installed",
+    "Bytes": 375,
+    "SHA256": "4B8025EB917B722107B71016CD204DF444DA034569EB5B2E5A2D992D7C52C8E7"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/genshendigu/gong -1.png",
+    "Origin": "installed",
+    "Bytes": 277,
+    "SHA256": "4E627B688AF6A48B018B8C0A8769A067B75525EBA7C8C6264B3FC36F0306E100"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/genshendigu/gong 1.png",
+    "Origin": "installed",
+    "Bytes": 463,
+    "SHA256": "DD6AD3E627FD358BE4416EEB4EB3A496ABBAE8674D7ED5EAEC8881FD46E41E55"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/genshendigu/gong 2.png",
+    "Origin": "installed",
+    "Bytes": 471,
+    "SHA256": "7DBF34C80C79682BDB3DD7A833C4182610DC4A050793767EC65D69476E7651B7"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/genshendigu/gong 3.png",
+    "Origin": "installed",
+    "Bytes": 490,
+    "SHA256": "32035E115B2B82B9CEFD83BA580942CF9096FC528667E7781303EF7B509B3FC9"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/genshendigu/gong.png",
+    "Origin": "installed",
+    "Bytes": 458,
+    "SHA256": "F9C1E90264A5DD2838CF98FE9EED903983C9A6BFBF65E255ADD3EF484E491D8D"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/jifengge/gong -1.png",
+    "Origin": "installed",
+    "Bytes": 310,
+    "SHA256": "6D6A43848216EAE44483806978E6712150B78655EF89EF9F70E2FCB1345CFAE7"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/jifengge/gong 1.png",
+    "Origin": "installed",
+    "Bytes": 389,
+    "SHA256": "447E9B3CD0919F8C064E7DD730C79D8D7350D54631A9E94D740305954CED8558"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/jifengge/gong 2.png",
+    "Origin": "installed",
+    "Bytes": 364,
+    "SHA256": "7EF9D7F8F207F7FE7B30AC0D8109C3356C2B497F77C10D0B280B7A807F5C0A2E"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/jifengge/gong 3.png",
+    "Origin": "installed",
+    "Bytes": 398,
+    "SHA256": "6BB895F80568A5EE15985825BC806334C3933274F2D85AF39D8BB4D95787E41B"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/jifengge/gong.png",
+    "Origin": "installed",
+    "Bytes": 357,
+    "SHA256": "0848292C8B2ABE62736B1D2B7CA3F60CDCC5B5604542B11644204FC71ED2DEF3"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/jifengzhouyu/gong -1.png",
+    "Origin": "installed",
+    "Bytes": 313,
+    "SHA256": "BD98DA7B527BE13272ACD4E7DD5D81F12BAF8F0E123E1EF9FFCDFDB4BBA9FDA7"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/jifengzhouyu/gong 1.png",
+    "Origin": "installed",
+    "Bytes": 379,
+    "SHA256": "14D1B8E51682D76152077224C2920D7155FDF288F2AE5B5FE41F7EC14FB0CDD2"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/jifengzhouyu/gong 2.png",
+    "Origin": "installed",
+    "Bytes": 366,
+    "SHA256": "5B765DB59114B62678FDD711363F10A0FA27037D560375F2E677D372B5CDB55F"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/jifengzhouyu/gong 3.png",
+    "Origin": "installed",
+    "Bytes": 395,
+    "SHA256": "1A2E199E061886252929093F50F55F5EFF100A5C2110435DDD3C24C5846402F0"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/jifengzhouyu/gong.png",
+    "Origin": "installed",
+    "Bytes": 360,
+    "SHA256": "35500E13C19284433052C2BD876C2AC5908A646374B50B49CA6546E206A1B235"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/jijiangriluozhishi/gong -1.png",
+    "Origin": "installed",
+    "Bytes": 376,
+    "SHA256": "69F9F930881A4F182F5C68C46A21BC62C865363E03B1A4B17C3DB010B4EADD49"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/jijiangriluozhishi/gong 1.png",
+    "Origin": "installed",
+    "Bytes": 527,
+    "SHA256": "9837504910BDE976110D51A360E9DD5A17BB321544CC0EBE732F2466B7E20A46"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/jijiangriluozhishi/gong 2.png",
+    "Origin": "installed",
+    "Bytes": 544,
+    "SHA256": "E1CEC1E3EF950A9FDAE515E5C88EA8B449178D442FB5E6F6C4E85C4DFD3A433F"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/jijiangriluozhishi/gong 3.png",
+    "Origin": "installed",
+    "Bytes": 598,
+    "SHA256": "22742BF83FD226091BD2F5D496830423F325D68E7752FA0E15B87F0C52884228"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/jijiangriluozhishi/gong.png",
+    "Origin": "installed",
+    "Bytes": 509,
+    "SHA256": "D9769F23D0CB4F518FA5CF16F15A7992826F6681A117DD63F57F7D9CB9611DCD"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/leigongderennai/gong -1.png",
+    "Origin": "installed",
+    "Bytes": 357,
+    "SHA256": "6E1720B9BA981999CDCDE60196561FEC86C8309DE4CC42B8DE8E3FA961092D53"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/leigongderennai/gong 1.png",
+    "Origin": "installed",
+    "Bytes": 509,
+    "SHA256": "494243EF86960BB1E56401EF5FD3F68C602D891DF0FF59F6072BF321B49A1B7C"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/leigongderennai/gong 2.png",
+    "Origin": "installed",
+    "Bytes": 523,
+    "SHA256": "32B30199B5669FBB4F2D6707E71907C071D578B53E348D445BC4D12EC3F2F7EB"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/leigongderennai/gong 3.png",
+    "Origin": "installed",
+    "Bytes": 438,
+    "SHA256": "B7222CE6F5D2A5FB97AE9E8F4D7587358DE6823F9FF8D0FBED2AB7DCC2E286FA"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/leigongderennai/gong.png",
+    "Origin": "installed",
+    "Bytes": 483,
+    "SHA256": "1A42CD087DAC5546450D000D0763532AC3351A2D3CEB2E0C791F422156DC541E"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/lvyexingzong/gong -1.png",
+    "Origin": "installed",
+    "Bytes": 301,
+    "SHA256": "75E53141162AA3AC07BF604570DA51AFDECD3A07E25BA7C59B02545EF43D6237"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/lvyexingzong/gong 1.png",
+    "Origin": "installed",
+    "Bytes": 510,
+    "SHA256": "2EBF16E92A4E362133D7EAB3BDDECCC55BB2AD318844D49ED3B97A19BAED1F8E"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/lvyexingzong/gong 2.png",
+    "Origin": "installed",
+    "Bytes": 509,
+    "SHA256": "EB188F80004BFC7181813923506D0989011EB512D41B7E38CFD9FEDE5B73E901"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/lvyexingzong/gong 3.png",
+    "Origin": "installed",
+    "Bytes": 513,
+    "SHA256": "2BD2AAF4F388DA1E815A513D301022A0D2223B2FEB85E865F9013BFD1084517F"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/lvyexingzong/gong.png",
+    "Origin": "installed",
+    "Bytes": 429,
+    "SHA256": "F810BE7E4A202E9A25A02D0B0C3B674677BF0C365EE32BB66366D76AC3FD1312"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/shendujiefang/gong -1.png",
+    "Origin": "installed",
+    "Bytes": 319,
+    "SHA256": "049CF9D0382F22C363A919EB17E663301D4701BBDAE29768C6AA64D57DD97CF2"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/shendujiefang/gong 1.png",
+    "Origin": "installed",
+    "Bytes": 406,
+    "SHA256": "2D86EBEE8BB0548DA3C3857D4E447B9BFF1A9B93082C5929C656A6A9D4829E9E"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/shendujiefang/gong 2.png",
+    "Origin": "installed",
+    "Bytes": 466,
+    "SHA256": "A4E486B958831EA7EEA7C3D8429CAB89046F8C1DB8CF9F5F4FF991F71135C156"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/shendujiefang/gong 3.png",
+    "Origin": "installed",
+    "Bytes": 424,
+    "SHA256": "6E5D84AF5721C95DE4BE5E460073285D517BB1B59B016D18867053D2A3A95087"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/shendujiefang/gong.png",
+    "Origin": "installed",
+    "Bytes": 358,
+    "SHA256": "B69D74A1C60C81AD020E7209400A3DA1349277ECA8E2686513256EADE48531E4"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/shendujiefang/liandao.png",
+    "Origin": "installed",
+    "Bytes": 483,
+    "SHA256": "996FA1E953CC86C5DA8C357B3D7F266110777725D6AFD307695A69924907834E"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/tiegong-kuozhan/3-1-1tiegongkuozhan -1.png",
+    "Origin": "installed",
+    "Bytes": 250,
+    "SHA256": "28FADA3D6E465861B47BF8D90E698F1B77D0FEEB0090607D5370A596B313A7FA"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/tiegong-kuozhan/3-1-1tiegongkuozhan 1.png",
+    "Origin": "installed",
+    "Bytes": 362,
+    "SHA256": "62CB429115D46606A7EC009C36EDB3D0A0B1F2105921E7C4370C945E06A88ABC"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/tiegong-kuozhan/3-1-1tiegongkuozhan 2.png",
+    "Origin": "installed",
+    "Bytes": 394,
+    "SHA256": "DF716B4CEF49C5D4576F534DBF2F76E057A6F4F110E1E5BFF69940E7FA69A16E"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/tiegong-kuozhan/3-1-1tiegongkuozhan 3.png",
+    "Origin": "installed",
+    "Bytes": 398,
+    "SHA256": "66DAED411AA54B6F07C4E22A798D17B978CACBF95B9E10A641A0B8FC81DB6548"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/tiegong-kuozhan/3-1-1tiegongkuozhan.png",
+    "Origin": "installed",
+    "Bytes": 312,
+    "SHA256": "3C2D2185AA3E14528DFCE6E7B9BA32E9C3F310F96679AF4BF8C3CD26D6CC93B7"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/xueyouer/gong -1.png",
+    "Origin": "installed",
+    "Bytes": 329,
+    "SHA256": "961C8F376D08A6F3629D5AF0983A26E9C4FC7697396FFF85DC7A4967580963A6"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/xueyouer/gong 1.png",
+    "Origin": "installed",
+    "Bytes": 572,
+    "SHA256": "6EE303546D6F5678DB545F5A653DF576128B3B81E595B99418008309FB39569D"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/xueyouer/gong 2.png",
+    "Origin": "installed",
+    "Bytes": 600,
+    "SHA256": "786E7444F0237ECB341FB6C39E8DFA8FF40964DAEC4489ECD754E5C91F55B119"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/xueyouer/gong 3.png",
+    "Origin": "installed",
+    "Bytes": 582,
+    "SHA256": "940FE682495BA00BC7411905D170DD72C356FA5BA1FF576785645EB2E6E54CE9"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/xueyouer/gong.png",
+    "Origin": "installed",
+    "Bytes": 518,
+    "SHA256": "C236C6AB091A545CF0A49410154F553C77075AF1477507F1D37BAF609F7BA48B"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/yinleishi/gong -1.png",
+    "Origin": "installed",
+    "Bytes": 308,
+    "SHA256": "8BB94417588D36EE125CA60C226D5929E39FC9E8C2B13BA114AB67EAB7C86F07"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/yinleishi/gong 1.png",
+    "Origin": "installed",
+    "Bytes": 518,
+    "SHA256": "EAFF3D3FD44A225240DF51B15C9EE63ED31C8B08EEB217087FFFB7B6F6E0DDA4"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/yinleishi/gong 2.png",
+    "Origin": "installed",
+    "Bytes": 516,
+    "SHA256": "F33EEE609E43B6022CFE9C6534BD6E9EB81EEDD68998492519AC8483D8FF9630"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/yinleishi/gong 3.png",
+    "Origin": "installed",
+    "Bytes": 530,
+    "SHA256": "BEBCBE06AB67C33EB4A95E2DF91BA283D4EC9F8444C1014EAE21E3C5D9F7E77F"
+  },
+  {
+    "Path": "installed/AddOns/BowWeapon/tietu/3ji/yinleishi/gong.png",
+    "Origin": "installed",
+    "Bytes": 491,
+    "SHA256": "E77C33395BE63698FB7942E1D61467A4529132020B24D185ECC98318109159BE"
+  },
+  {
     "Path": "installed/AddOns/ModManager/metadata.json",
     "Origin": "installed",
     "Bytes": 169,
@@ -10,6 +850,102 @@
     "Origin": "installed",
     "Bytes": 21504,
     "SHA256": "41BC3C564E1E3B0EB0873CB07C83F8186C0CA2F7FC07559D00B5F7134702B5CC"
+  },
+  {
+    "Path": "installed/AddOns/NegativeRoots/0Harmony.dll",
+    "Origin": "installed",
+    "Bytes": 2461696,
+    "SHA256": "D8701D817751CC23D79CFECB4A239597238B468E7A5AAEDC29E1021CD0C35C5B"
+  },
+  {
+    "Path": "installed/AddOns/NegativeRoots/Assets/PigskinBackpack.png",
+    "Origin": "installed",
+    "Bytes": 566,
+    "SHA256": "286A3978386764229B590E801F1084D76455C3A27E63C31A36C1BBD48B51483C"
+  },
+  {
+    "Path": "installed/AddOns/NegativeRoots/Assets/TreasureMap.png",
+    "Origin": "installed",
+    "Bytes": 567,
+    "SHA256": "01C0A02912BB51F63470307C482CA1BED575DC6CD4DD0D3B059A1775B97D995B"
+  },
+  {
+    "Path": "installed/AddOns/NegativeRoots/Harmony-LICENSE.txt",
+    "Origin": "installed",
+    "Bytes": 1094,
+    "SHA256": "407DDD98200C9F17F49942B5A7791E288A2BD553B59BF2F462DB87DBB21C50BC"
+  },
+  {
+    "Path": "installed/AddOns/NegativeRoots/metadata.json",
+    "Origin": "installed",
+    "Bytes": 152,
+    "SHA256": "00ABE1F452B4E9C62C5246760566EEADD27DA83870943E5808E772A0898CA905"
+  },
+  {
+    "Path": "installed/AddOns/NegativeRoots/NegativeRoots.dll",
+    "Origin": "installed",
+    "Bytes": 111104,
+    "SHA256": "71E0CD73B82A042C6A72A4ADEDA9B7EE7634E3C2E0AC90C5E275F22E5B4E1F64"
+  },
+  {
+    "Path": "installed/AddOns/SPMod/0Harmony.dll",
+    "Origin": "installed",
+    "Bytes": 204800,
+    "SHA256": "1A21CC03424FC82C3DD1346905D16494536B9595AE4162228D99FB7C285C1031"
+  },
+  {
+    "Path": "installed/AddOns/SPMod/config.json",
+    "Origin": "installed",
+    "Bytes": 783,
+    "SHA256": "E4E62B3C8ACB5EF36A92A65A8EEEAD4A49060D376DD33E725206D42E0D1EA3C9"
+  },
+  {
+    "Path": "installed/AddOns/SPMod/metadata.json",
+    "Origin": "installed",
+    "Bytes": 158,
+    "SHA256": "285FABDF9ED1F46472E36B9B606D5CE48CE26B528044C55B3B173BB2EAA6F3A1"
+  },
+  {
+    "Path": "installed/AddOns/SPMod/Mono.Cecil.dll",
+    "Origin": "installed",
+    "Bytes": 339456,
+    "SHA256": "7AE470288FFF4A402899C254D0A76CEFEF55877F5C54F96E83C797CC5BB6E2F6"
+  },
+  {
+    "Path": "installed/AddOns/SPMod/Mono.Cecil.Mdb.dll",
+    "Origin": "installed",
+    "Bytes": 43008,
+    "SHA256": "5896D1898F616701FFF18F3B2C71E6B844D2390EF9F41E1C5FCCCE8CB27C698E"
+  },
+  {
+    "Path": "installed/AddOns/SPMod/Mono.Cecil.Pdb.dll",
+    "Origin": "installed",
+    "Bytes": 86528,
+    "SHA256": "174DB44A067F58561510AF746F3CAEB032037762C57A31C8D9EE32DB25174984"
+  },
+  {
+    "Path": "installed/AddOns/SPMod/Mono.Cecil.Rocks.dll",
+    "Origin": "installed",
+    "Bytes": 27648,
+    "SHA256": "54AC539FB5DDC8B44C0E9ACD0FCB7324F89D1A072EDF8EBC1B06DD691E3D3927"
+  },
+  {
+    "Path": "installed/AddOns/SPMod/MonoMod.RuntimeDetour.dll",
+    "Origin": "installed",
+    "Bytes": 105984,
+    "SHA256": "40E49BB314391CD7BDDC2644F8553EEBA92C194B940836B103DF16955C464E0C"
+  },
+  {
+    "Path": "installed/AddOns/SPMod/MonoMod.Utils.dll",
+    "Origin": "installed",
+    "Bytes": 187904,
+    "SHA256": "9D1495F147AC93C4F81F84538C1A326E8F8A6AEFC78D6289D798F3CE1162C5E9"
+  },
+  {
+    "Path": "installed/AddOns/SPMod/SPMod.dll",
+    "Origin": "installed",
+    "Bytes": 935936,
+    "SHA256": "A0B4D651C1CECBF76890626C78B777ADA03A1037C42A9DFC1B7E24732E7C6A7A"
   },
   {
     "Path": "installed/BepInEx/config/BepInEx.cfg",
@@ -108,6 +1044,18 @@
     "SHA256": "F439E0D629A1234D8C2924D46F116DA9E1D7F0082FD6B4C5DE7D6960A687D233"
   },
   {
+    "Path": "installed/BepInEx/plugins/SephiriaBackpackOrganizer/LICENSE",
+    "Origin": "installed",
+    "Bytes": 1093,
+    "SHA256": "51AA4C90B8C78DB73495A2C153BAD7A0D2D01AE184FC0F45D92B55B08DE08AC5"
+  },
+  {
+    "Path": "installed/BepInEx/plugins/SephiriaBackpackOrganizer/README.md",
+    "Origin": "installed",
+    "Bytes": 7228,
+    "SHA256": "221E46FFDEBE719FAD7816501272ED55E4F1EF32EDBF4B67586C07546DD682C4"
+  },
+  {
     "Path": "installed/BepInEx/plugins/SephiriaBackpackOrganizer/SephiriaBackpackOrganizer.dll",
     "Origin": "installed",
     "Bytes": 136704,
@@ -144,6 +1092,18 @@
     "SHA256": "01F4D7B5D745CF0D38A2B5208F1FA72F744A75A57BC37ECD563161AEA6DDF743"
   },
   {
+    "Path": "installed/BepInEx/plugins/SephiriaDirectConnect/README.md",
+    "Origin": "installed",
+    "Bytes": 4504,
+    "SHA256": "8CEB2ABD2A0E6F80EA1F9BD0211BAF506608F7AB8C7BAF4175154A4756CD5C62"
+  },
+  {
+    "Path": "installed/BepInEx/plugins/SephiriaDirectConnect/SephiriaDirectConnect.dll",
+    "Origin": "installed",
+    "Bytes": 47616,
+    "SHA256": "9AC0FD64B9098BDDE7537C7F0B3B46229D0B6188EA8BEB8665B6292DB5E5BFFD"
+  },
+  {
     "Path": "installed/BepInEx/plugins/SephiriaHardModeUnlocker/CHANGELOG.txt",
     "Origin": "installed",
     "Bytes": 435,
@@ -172,6 +1132,18 @@
     "Origin": "installed",
     "Bytes": 34304,
     "SHA256": "63CE71CE7E6605C447FF0CDD28394FB35538EA55B3CA3DB261524A3F45FEE05D"
+  },
+  {
+    "Path": "installed/BepInEx/plugins/SephiriaHoldSpecial/README.md",
+    "Origin": "installed",
+    "Bytes": 4074,
+    "SHA256": "851551637870AC6E06F5D009B9DFD2FA920DEFBD641280EAFFA7C72F3E2BC3AA"
+  },
+  {
+    "Path": "installed/BepInEx/plugins/SephiriaHoldSpecial/SephiriaHoldSpecial.dll",
+    "Origin": "installed",
+    "Bytes": 15872,
+    "SHA256": "019DBF4ECB4A8BC5A2A1BA6708D5B4073A49D435B976AE571EDAC7BECFE741B1"
   },
   {
     "Path": "installed/BepInEx/plugins/SephiriaItemLab/CHANGELOG.txt",
@@ -206,14 +1178,14 @@
   {
     "Path": "installed/BepInEx/plugins/SephiriaItemLabTweaks/README.md",
     "Origin": "installed",
-    "Bytes": 1402,
-    "SHA256": "C7247D2AE9B5CE46FA6B28B9DD0A800D8896AF86AD1508CFFCF85CBF30336870"
+    "Bytes": 4290,
+    "SHA256": "F35D6A4F29578E1B4F502386BC31E5D8AB3BA560D696D498259D4B132931FD5B"
   },
   {
     "Path": "installed/BepInEx/plugins/SephiriaItemLabTweaks/SephiriaItemLabTweaks.dll",
     "Origin": "installed",
-    "Bytes": 25600,
-    "SHA256": "57B02169461BAB9084A1DB69F3953C323415DA1D2E823B67B940D96C8953AF65"
+    "Bytes": 32256,
+    "SHA256": "E03170109E89DD4A3B32B990701AB4487F05414A2AC3EAAC81F2CBF04E1ABF1A"
   },
   {
     "Path": "installed/BepInEx/plugins/SephiriaTalentCustomizer/SephiriaTalentCustomizer.dll",
@@ -322,6 +1294,120 @@
     "Origin": "workspace",
     "Bytes": 24,
     "SHA256": "FCC4771F73223821AA4E742369B745321ED4FDA6D3645E064F8C674328A73F4B"
+  },
+  {
+    "Path": "workspace/backpack-organizer-own/HybridSearch.cs",
+    "Origin": "workspace",
+    "Bytes": 9545,
+    "SHA256": "81E0D47BDDDEF71980B9151A03EB990DA942CB242F61BBA6A92A3C15EC377587"
+  },
+  {
+    "Path": "workspace/backpack-organizer-own/Install.ps1",
+    "Origin": "workspace",
+    "Bytes": 2832,
+    "SHA256": "363A0E3FE5E83F6CA9B5617337D9F3D1BA73970EFE792F5758FBF077F7B7EF79"
+  },
+  {
+    "Path": "workspace/backpack-organizer-own/InventoryObserver.cs",
+    "Origin": "workspace",
+    "Bytes": 1629,
+    "SHA256": "795901E02631958017A618AFC3D7ACFC2BC415FF8000E88AB4994A850B581B5A"
+  },
+  {
+    "Path": "workspace/backpack-organizer-own/InventoryScope.cs",
+    "Origin": "workspace",
+    "Bytes": 505,
+    "SHA256": "713F81EF4DB948A913E90831DF9A19A3CBC74E84E0DD95106EC0EB7F2C4511EB"
+  },
+  {
+    "Path": "workspace/backpack-organizer-own/LICENSE",
+    "Origin": "workspace",
+    "Bytes": 1093,
+    "SHA256": "51AA4C90B8C78DB73495A2C153BAD7A0D2D01AE184FC0F45D92B55B08DE08AC5"
+  },
+  {
+    "Path": "workspace/backpack-organizer-own/MarkArrow.cs",
+    "Origin": "workspace",
+    "Bytes": 1856,
+    "SHA256": "678F3580627D5E3075DD8E83BEB68AC1F7694D22F9640B94BD66C49CE49877C4"
+  },
+  {
+    "Path": "workspace/backpack-organizer-own/MarkRules.cs",
+    "Origin": "workspace",
+    "Bytes": 4473,
+    "SHA256": "C14C96906957C3CBB736C4D2230AEE299CD02D6BA2BD6556A40374FAEA0A11E5"
+  },
+  {
+    "Path": "workspace/backpack-organizer-own/Marks.cs",
+    "Origin": "workspace",
+    "Bytes": 5233,
+    "SHA256": "B8D8A6E0DDA1DEF9D8FC7C825C8C0ED0BBC1D766118D60664652841A5CCEDE7D"
+  },
+  {
+    "Path": "workspace/backpack-organizer-own/Organizer.cs",
+    "Origin": "workspace",
+    "Bytes": 176863,
+    "SHA256": "E685364D93091F71E093B6883EAD5D0C4FF8EA1C476647447DBD4F307C44063B"
+  },
+  {
+    "Path": "workspace/backpack-organizer-own/README.md",
+    "Origin": "workspace",
+    "Bytes": 7228,
+    "SHA256": "221E46FFDEBE719FAD7816501272ED55E4F1EF32EDBF4B67586C07546DD682C4"
+  },
+  {
+    "Path": "workspace/backpack-organizer-own/reference/API-NOTES.md",
+    "Origin": "workspace",
+    "Bytes": 1240,
+    "SHA256": "0625787A309262BBC1F754398A83E69D3AB77EA2BB8A1CB353CD8CA9AA358893"
+  },
+  {
+    "Path": "workspace/backpack-organizer-own/Rollback.ps1",
+    "Origin": "workspace",
+    "Bytes": 1839,
+    "SHA256": "79684306B839E6A4FCC3E8630BCA98D1E96FB166BAC658E28D4ED617BDA8A27E"
+  },
+  {
+    "Path": "workspace/backpack-organizer-own/search-tests/Program.cs",
+    "Origin": "workspace",
+    "Bytes": 3863,
+    "SHA256": "398A9A160074D317B79310C0BAA620583A24264A59D687EDB7B663F215311869"
+  },
+  {
+    "Path": "workspace/backpack-organizer-own/search-tests/SearchTests.csproj",
+    "Origin": "workspace",
+    "Bytes": 380,
+    "SHA256": "153F7F55DAEF39CBBBF6A8BB64FDE6E71FB3C2F150A6ACCAEB48196DD5BE89B7"
+  },
+  {
+    "Path": "workspace/backpack-organizer-own/SephiriaBackpackOrganizer.Own.csproj",
+    "Origin": "workspace",
+    "Bytes": 4075,
+    "SHA256": "3F6375035E7F860C04AC60295CA4D3D70247E2CBD8A44259A424021C01A6047A"
+  },
+  {
+    "Path": "workspace/backpack-organizer-own/SortDiagnostics.cs",
+    "Origin": "workspace",
+    "Bytes": 4506,
+    "SHA256": "D059B739EAE55B87DBDA9B5B3E6A32C7D1AE7B7FEAFC1B42CB19A9B479C9DF63"
+  },
+  {
+    "Path": "workspace/backpack-organizer-own/SortRequests.cs",
+    "Origin": "workspace",
+    "Bytes": 6735,
+    "SHA256": "1F2B0F573BAE7386487B696FA9D38658595A7B485969263BA124D6AAB729C34A"
+  },
+  {
+    "Path": "workspace/backpack-organizer-own/tests/Program.cs",
+    "Origin": "workspace",
+    "Bytes": 6981,
+    "SHA256": "20783E5B58D0B1F871084566CEA1CEF8E380B00243C86D86F6AC02EE6D1CD98D"
+  },
+  {
+    "Path": "workspace/backpack-organizer-own/tests/RulesTests.csproj",
+    "Origin": "workspace",
+    "Bytes": 390,
+    "SHA256": "28558F7B5EB749F5B16A6BBE0DA62D81E56424D314E36BC7480C6105347DA259"
   },
   {
     "Path": "workspace/backpack-organizer-performance/.baseline-v2.5.3/com.sephiria.backpack-organizer.cfg",
@@ -444,6 +1530,54 @@
     "SHA256": "9FB4F49455AF559FAD213EDC3C22746B647E1D7F6099255F431D8DAF9CBC51AF"
   },
   {
+    "Path": "workspace/direct-connect/Install-Local.ps1",
+    "Origin": "workspace",
+    "Bytes": 1903,
+    "SHA256": "A99A4F12BDA1DAF03958AC973D45CE5FC17941ACF54C2D605B4EFAB1E2764CFF"
+  },
+  {
+    "Path": "workspace/direct-connect/Plugin.cs",
+    "Origin": "workspace",
+    "Bytes": 41881,
+    "SHA256": "7A3C873D68303890C5F9193225AE2E45630FF434B8B11CC16E71D3D066F352C3"
+  },
+  {
+    "Path": "workspace/direct-connect/README.md",
+    "Origin": "workspace",
+    "Bytes": 4398,
+    "SHA256": "6A320ADD78D859CBF7B3126411D3CE161F1E910891736FB36E954850A8F40BD0"
+  },
+  {
+    "Path": "workspace/direct-connect/SephiriaDirectConnect.csproj",
+    "Origin": "workspace",
+    "Bytes": 2989,
+    "SHA256": "525B0C3C867D7688E28B5C393B991311C156A3BDBCC0629909F5AC2F94A9298E"
+  },
+  {
+    "Path": "workspace/direct-connect/SessionFlow.cs",
+    "Origin": "workspace",
+    "Bytes": 15226,
+    "SHA256": "A19AED7D867013EA57D8EBF1FE30948CFE39D55F87D3ADD66E3B08D99AA997D9"
+  },
+  {
+    "Path": "workspace/direct-connect/SessionOperation.cs",
+    "Origin": "workspace",
+    "Bytes": 2689,
+    "SHA256": "00983B73B60819760A590C7C67B0FCFDCE5AB9ABD3293FA476F3B99ED1E1D480"
+  },
+  {
+    "Path": "workspace/direct-connect/tests/Program.cs",
+    "Origin": "workspace",
+    "Bytes": 4672,
+    "SHA256": "23F5B1D53601BDC80985FFB4CBE6CCC01813E3577CDE743F7C933E24BE619C93"
+  },
+  {
+    "Path": "workspace/direct-connect/tests/Regression.csproj",
+    "Origin": "workspace",
+    "Bytes": 258,
+    "SHA256": "2C268433F339429738C17DDB0D802BF9CDA27F2F43FC25DEEB0451650EFC5E78"
+  },
+  {
     "Path": "workspace/dist/SephiriaBondArtifactWishes.dll",
     "Origin": "workspace",
     "Bytes": 18432,
@@ -454,6 +1588,240 @@
     "Origin": "workspace",
     "Bytes": 7756,
     "SHA256": "58E9B36E941D8736A084827D70776DAAFC2DDE267DCCD6E2528FDFBA9F31D95E"
+  },
+  {
+    "Path": "workspace/hidden-room-hints/analysis/floor-prefabs.json",
+    "Origin": "workspace",
+    "Bytes": 5699,
+    "SHA256": "69DAA713024779897EF0F13C3130FD522E4C1E3EA0343D8AD115C9F52CAB0171"
+  },
+  {
+    "Path": "workspace/hidden-room-hints/analysis/inspect_floor_assets.py",
+    "Origin": "workspace",
+    "Bytes": 1138,
+    "SHA256": "51EA0E73D73B2EC349983DBDCDDE628E6EDA09B49BA60664A9BC30D09BB78E82"
+  },
+  {
+    "Path": "workspace/hidden-room-hints/EntranceResolver.cs",
+    "Origin": "workspace",
+    "Bytes": 5699,
+    "SHA256": "99BAC5C651496DCE08B378DDFE2625965BE5B59D6B71971BFBA878876023C2DB"
+  },
+  {
+    "Path": "workspace/hidden-room-hints/HintRules.cs",
+    "Origin": "workspace",
+    "Bytes": 867,
+    "SHA256": "AAE06E8A431406F12966BF493EEC4AE28F834AF531ECC609F32A49DBA1086764"
+  },
+  {
+    "Path": "workspace/hidden-room-hints/Install.ps1",
+    "Origin": "workspace",
+    "Bytes": 2149,
+    "SHA256": "E41DDDE500179A9EA14AEA94426FE3A65B40D03F6306391B8770E7B503A7EA70"
+  },
+  {
+    "Path": "workspace/hidden-room-hints/Lifecycle.cs",
+    "Origin": "workspace",
+    "Bytes": 5844,
+    "SHA256": "963B3AFC4FDD5DE10E636140BC80E2D7981B783503C39F86097F389E0E778464"
+  },
+  {
+    "Path": "workspace/hidden-room-hints/OpeningGeometry.cs",
+    "Origin": "workspace",
+    "Bytes": 3445,
+    "SHA256": "0532DBE29F74E9899A08C94378EB0B1759D5687370061BD23720AAA2BF6F575D"
+  },
+  {
+    "Path": "workspace/hidden-room-hints/OpeningTiles.cs",
+    "Origin": "workspace",
+    "Bytes": 4405,
+    "SHA256": "A0D33A19872094A6BD9A67CBBD0A62DB7289141CE9EE2C90B5AC09706D3294BB"
+  },
+  {
+    "Path": "workspace/hidden-room-hints/Plugin.cs",
+    "Origin": "workspace",
+    "Bytes": 13199,
+    "SHA256": "92AA21F4ED160A0FAEE711D6CF906A392C487F633ED7FA4B6A94ECCB978B2F22"
+  },
+  {
+    "Path": "workspace/hidden-room-hints/PortalHints.cs",
+    "Origin": "workspace",
+    "Bytes": 7997,
+    "SHA256": "CD20E20C9B13C21748C60711ECABF3765E00147CBFEDE4B71CE67958E68F0262"
+  },
+  {
+    "Path": "workspace/hidden-room-hints/PortalResolver.cs",
+    "Origin": "workspace",
+    "Bytes": 2978,
+    "SHA256": "841D891ED6F65C1359CF4D3FB4C5BF5A56544D0814CA62E2D141429018FFC16B"
+  },
+  {
+    "Path": "workspace/hidden-room-hints/README.md",
+    "Origin": "workspace",
+    "Bytes": 5880,
+    "SHA256": "0918806236DA4E2CF7657016FFEF43F53655BF0308408EA2A6D4586A1676D94A"
+  },
+  {
+    "Path": "workspace/hidden-room-hints/SephiriaHiddenRoomHints.csproj",
+    "Origin": "workspace",
+    "Bytes": 2331,
+    "SHA256": "3DD5B75AE8E48F57E5C4676D70480968ED31AE4955D468B1753083B99E1A7FD4"
+  },
+  {
+    "Path": "workspace/hidden-room-hints/Test-GameContract.ps1",
+    "Origin": "workspace",
+    "Bytes": 6878,
+    "SHA256": "C1F17BBAA81D3F74A4023EA9D3C26140FA9EF3263C35C5EB5C6E3AB7CD1D8B8F"
+  },
+  {
+    "Path": "workspace/hidden-room-hints/Testing.cs",
+    "Origin": "workspace",
+    "Bytes": 3621,
+    "SHA256": "A18C11B86818797895E06067AC0CD69B901E8C37F2C9523F8D757F10A7C8E167"
+  },
+  {
+    "Path": "workspace/hidden-room-hints/tests/OpeningRegression.cs",
+    "Origin": "workspace",
+    "Bytes": 3344,
+    "SHA256": "8238281CE6A9DF19834A9F87B31B66D5A6772F5A77FDBA0F57EA0FC8FBABDEB9"
+  },
+  {
+    "Path": "workspace/hidden-room-hints/tests/PortalRegression.cs",
+    "Origin": "workspace",
+    "Bytes": 2906,
+    "SHA256": "47BA856E95CEE80CE892D4CAF2E78E138F3C87F069170006B0AF1AC99D36069E"
+  },
+  {
+    "Path": "workspace/hidden-room-hints/tests/Regression.cs",
+    "Origin": "workspace",
+    "Bytes": 3552,
+    "SHA256": "0C3EBD2A3CAC5F07FA777DA5D6F3C15CB603F35F1F1AF0EA1E3EA8F9CE6DCF25"
+  },
+  {
+    "Path": "workspace/hidden-room-hints/tests/Regression.csproj",
+    "Origin": "workspace",
+    "Bytes": 692,
+    "SHA256": "DEBAF8C93CE597D2A9D825B4AD1C870E4750592B488B4FD1F7E0E2C5157A924B"
+  },
+  {
+    "Path": "workspace/hidden-room-hints/tests/ResolverStubs.cs",
+    "Origin": "workspace",
+    "Bytes": 4476,
+    "SHA256": "5F6213CF67E3832176286DFB1E3DE9B6394ED1198C1660F5A619CBC3146E18BD"
+  },
+  {
+    "Path": "workspace/hold-special/build.ps1",
+    "Origin": "workspace",
+    "Bytes": 2321,
+    "SHA256": "146D1FA66AE390E2D964D39F1814B7DACF88D6F08CCA326AA3978C47AC4E5732"
+  },
+  {
+    "Path": "workspace/hold-special/Plugin.cs",
+    "Origin": "workspace",
+    "Bytes": 17124,
+    "SHA256": "49D2C82D3DAD8132C109634661B9D60DCA759F013C4616459D7F4301C81A0A41"
+  },
+  {
+    "Path": "workspace/hold-special/README.md",
+    "Origin": "workspace",
+    "Bytes": 4074,
+    "SHA256": "851551637870AC6E06F5D009B9DFD2FA920DEFBD641280EAFFA7C72F3E2BC3AA"
+  },
+  {
+    "Path": "workspace/hold-special/RepeatCycle.cs",
+    "Origin": "workspace",
+    "Bytes": 1732,
+    "SHA256": "CC4592BA75CBB61CB75A28F8C80EA184F4605F0D18759081F572D6991E690A43"
+  },
+  {
+    "Path": "workspace/hold-special/SephiriaHoldSpecial.csproj",
+    "Origin": "workspace",
+    "Bytes": 2176,
+    "SHA256": "8930B51E7248C02DC7A887E463D1768A1F0324C165962C6385BA50055E87397D"
+  },
+  {
+    "Path": "workspace/hold-special/Tests/Program.cs",
+    "Origin": "workspace",
+    "Bytes": 2281,
+    "SHA256": "1AC81A3D6DE7385A924CEEF5AA56B1FF6513484B521E3651F54DA3BFA53C10CA"
+  },
+  {
+    "Path": "workspace/hold-special/Tests/RepeatCycle.Tests.csproj",
+    "Origin": "workspace",
+    "Bytes": 325,
+    "SHA256": "FBD44461394F03DEF77BAD764C48CD2D7C25ABDC11A1ACFC25B3A16C883203A6"
+  },
+  {
+    "Path": "workspace/hold-special/Tests/Verify-GameContract.ps1",
+    "Origin": "workspace",
+    "Bytes": 5793,
+    "SHA256": "235CAD31BF77CDBA39A37269E34E1497F4AA4D15103141FF951E8AF98590F3C9"
+  },
+  {
+    "Path": "workspace/item-lab-tweaks/Install-Consolidated.ps1",
+    "Origin": "workspace",
+    "Bytes": 6298,
+    "SHA256": "D2DE4434D2864B52AA8A0F0AE6DBD923CD74A9F2419DF6F496C4E0C52DEC399B"
+  },
+  {
+    "Path": "workspace/item-lab-tweaks/Install.ps1",
+    "Origin": "workspace",
+    "Bytes": 1895,
+    "SHA256": "D223A7E7D47080364A98EE8E6D39D567B6BB4DD711A2743BC226315FFF3129A5"
+  },
+  {
+    "Path": "workspace/item-lab-tweaks/INSTALLATION-1.1.0.md",
+    "Origin": "workspace",
+    "Bytes": 2013,
+    "SHA256": "2E1599267ACF3A4A081069BD7BF8B463DA5BEE5B4DDC8919B601455CF8E065D0"
+  },
+  {
+    "Path": "workspace/item-lab-tweaks/Plugin.cs",
+    "Origin": "workspace",
+    "Bytes": 25418,
+    "SHA256": "B28C4848765C9D1925C8AC59ADBBD506CB770E310FA22B3A31D811F82E72FD0A"
+  },
+  {
+    "Path": "workspace/item-lab-tweaks/README.md",
+    "Origin": "workspace",
+    "Bytes": 4290,
+    "SHA256": "F35D6A4F29578E1B4F502386BC31E5D8AB3BA560D696D498259D4B132931FD5B"
+  },
+  {
+    "Path": "workspace/item-lab-tweaks/SephiriaItemLabTweaks.csproj",
+    "Origin": "workspace",
+    "Bytes": 1546,
+    "SHA256": "0343CB26DE28FAFCFF292D81E9910A4B24A6FC92DEA48F72658C6101BA7EA5F8"
+  },
+  {
+    "Path": "workspace/item-lab-tweaks/TalentPanel.cs",
+    "Origin": "workspace",
+    "Bytes": 3847,
+    "SHA256": "2735F4090C9468D3B1472DF8CC70C673EFA9AB07CA1A4F95C290C68B0D64F7B1"
+  },
+  {
+    "Path": "workspace/item-lab-tweaks/TalentService.cs",
+    "Origin": "workspace",
+    "Bytes": 4682,
+    "SHA256": "89E58E282E7639F0CCE921FF29A4C8683EBDA4B6B1138451A9BC5AC1BBC013CA"
+  },
+  {
+    "Path": "workspace/item-lab-tweaks/TalentSPCompat.cs",
+    "Origin": "workspace",
+    "Bytes": 3029,
+    "SHA256": "E48513C823F92930E277E09D317EA7B02415466760C7C157C1B77C90769F2233"
+  },
+  {
+    "Path": "workspace/item-lab-tweaks/Test-Integration.ps1",
+    "Origin": "workspace",
+    "Bytes": 3645,
+    "SHA256": "866B86A92A5DB3CA78B7E4B36640AC75449AAAD82A3F16E31C9B03A3CCDB9D9C"
+  },
+  {
+    "Path": "workspace/item-lab-tweaks/Test-Talents.ps1",
+    "Origin": "workspace",
+    "Bytes": 6383,
+    "SHA256": "1713C0107501D7A304B19C546B1DE2AD1D6866215C6474466878EF50ADCE1106"
   },
   {
     "Path": "workspace/mod-settings/.gitignore",
@@ -492,6 +1860,12 @@
     "SHA256": "C33AEEC0EBCBFB33DDBDFF327F6CF557FBEA38C883B966379ED16C1A582CBED0"
   },
   {
+    "Path": "workspace/MODS.md",
+    "Origin": "workspace",
+    "Bytes": 3673,
+    "SHA256": "03B5E8BCE8A9CC2066644AF24D20CC5ECFACA4820B3B16C330E37E1A6EFD6189"
+  },
+  {
     "Path": "workspace/NuGet.Config",
     "Origin": "workspace",
     "Bytes": 126,
@@ -506,8 +1880,8 @@
   {
     "Path": "workspace/README.md",
     "Origin": "workspace",
-    "Bytes": 44370,
-    "SHA256": "39FF76CA69B7F94A6E941A700151E79D1F35C8EDD694B798CD2E1CEA2424853C"
+    "Bytes": 45000,
+    "SHA256": "5287500822B1178948641A0DBABEF8B3DA284D833099F85168D7C56DA0F33DB9"
   },
   {
     "Path": "workspace/SephiriaBackpackOrganizer-fork/.gitignore",
@@ -596,8 +1970,8 @@
   {
     "Path": "workspace/SephiriaBondArtifactWishes.csproj",
     "Origin": "workspace",
-    "Bytes": 2142,
-    "SHA256": "D2A3C8FC48DABF5BC8ED9AA9AE20105531903858CDBBC65541F1125B892A321C"
+    "Bytes": 2435,
+    "SHA256": "F3126FF3BAB3CF71498468BB5C405CC4C62EDF4CD1F4992694AC06C0888468A3"
   },
   {
     "Path": "workspace/talent-effects/bin/Release/net471/SephiriaTalentEffects.dll",
@@ -662,8 +2036,8 @@
   {
     "Path": "workspace/talent-spmod-compat/README.md",
     "Origin": "workspace",
-    "Bytes": 2181,
-    "SHA256": "EF331753EDE0A7396D4DC5B87F9F9990CE3656E4D534513061103909AA52B9F7"
+    "Bytes": 2431,
+    "SHA256": "6A7F6B00720ABE8E17BA5B2635209916456BCBCDA8B1578C699365834E8C2BCA"
   },
   {
     "Path": "workspace/talent-spmod-compat/SephiriaTalentSPCompat.csproj",
@@ -736,503 +2110,5 @@
     "Origin": "workspace",
     "Bytes": 7815,
     "SHA256": "23FC670FF6145E8B39D9A3ABBB9A16EBEFD4E84138535BC42104E932316F0C73"
-  },
-  {
-    "Path": "installed/BepInEx/plugins/SephiriaBackpackOrganizer/LICENSE",
-    "Origin": "installed",
-    "Bytes": 1093,
-    "SHA256": "51AA4C90B8C78DB73495A2C153BAD7A0D2D01AE184FC0F45D92B55B08DE08AC5"
-  },
-  {
-    "Path": "installed/BepInEx/plugins/SephiriaBackpackOrganizer/README.md",
-    "Origin": "installed",
-    "Bytes": 7228,
-    "SHA256": "221E46FFDEBE719FAD7816501272ED55E4F1EF32EDBF4B67586C07546DD682C4"
-  },
-  {
-    "Path": "workspace/backpack-organizer-own/HybridSearch.cs",
-    "Origin": "workspace",
-    "Bytes": 9545,
-    "SHA256": "81E0D47BDDDEF71980B9151A03EB990DA942CB242F61BBA6A92A3C15EC377587"
-  },
-  {
-    "Path": "workspace/backpack-organizer-own/Install.ps1",
-    "Origin": "workspace",
-    "Bytes": 2832,
-    "SHA256": "363A0E3FE5E83F6CA9B5617337D9F3D1BA73970EFE792F5758FBF077F7B7EF79"
-  },
-  {
-    "Path": "workspace/backpack-organizer-own/InventoryObserver.cs",
-    "Origin": "workspace",
-    "Bytes": 1629,
-    "SHA256": "795901E02631958017A618AFC3D7ACFC2BC415FF8000E88AB4994A850B581B5A"
-  },
-  {
-    "Path": "workspace/backpack-organizer-own/LICENSE",
-    "Origin": "workspace",
-    "Bytes": 1093,
-    "SHA256": "51AA4C90B8C78DB73495A2C153BAD7A0D2D01AE184FC0F45D92B55B08DE08AC5"
-  },
-  {
-    "Path": "workspace/backpack-organizer-own/MarkArrow.cs",
-    "Origin": "workspace",
-    "Bytes": 1856,
-    "SHA256": "678F3580627D5E3075DD8E83BEB68AC1F7694D22F9640B94BD66C49CE49877C4"
-  },
-  {
-    "Path": "workspace/backpack-organizer-own/MarkRules.cs",
-    "Origin": "workspace",
-    "Bytes": 4473,
-    "SHA256": "C14C96906957C3CBB736C4D2230AEE299CD02D6BA2BD6556A40374FAEA0A11E5"
-  },
-  {
-    "Path": "workspace/backpack-organizer-own/Marks.cs",
-    "Origin": "workspace",
-    "Bytes": 5233,
-    "SHA256": "B8D8A6E0DDA1DEF9D8FC7C825C8C0ED0BBC1D766118D60664652841A5CCEDE7D"
-  },
-  {
-    "Path": "workspace/backpack-organizer-own/Organizer.cs",
-    "Origin": "workspace",
-    "Bytes": 176863,
-    "SHA256": "E685364D93091F71E093B6883EAD5D0C4FF8EA1C476647447DBD4F307C44063B"
-  },
-  {
-    "Path": "workspace/backpack-organizer-own/README.md",
-    "Origin": "workspace",
-    "Bytes": 7228,
-    "SHA256": "221E46FFDEBE719FAD7816501272ED55E4F1EF32EDBF4B67586C07546DD682C4"
-  },
-  {
-    "Path": "workspace/backpack-organizer-own/Rollback.ps1",
-    "Origin": "workspace",
-    "Bytes": 1839,
-    "SHA256": "79684306B839E6A4FCC3E8630BCA98D1E96FB166BAC658E28D4ED617BDA8A27E"
-  },
-  {
-    "Path": "workspace/backpack-organizer-own/SephiriaBackpackOrganizer.Own.csproj",
-    "Origin": "workspace",
-    "Bytes": 4075,
-    "SHA256": "3F6375035E7F860C04AC60295CA4D3D70247E2CBD8A44259A424021C01A6047A"
-  },
-  {
-    "Path": "workspace/backpack-organizer-own/SortRequests.cs",
-    "Origin": "workspace",
-    "Bytes": 6735,
-    "SHA256": "1F2B0F573BAE7386487B696FA9D38658595A7B485969263BA124D6AAB729C34A"
-  },
-  {
-    "Path": "workspace/backpack-organizer-own/reference/API-NOTES.md",
-    "Origin": "workspace",
-    "Bytes": 1240,
-    "SHA256": "0625787A309262BBC1F754398A83E69D3AB77EA2BB8A1CB353CD8CA9AA358893"
-  },
-  {
-    "Path": "workspace/backpack-organizer-own/tests/Program.cs",
-    "Origin": "workspace",
-    "Bytes": 6981,
-    "SHA256": "20783E5B58D0B1F871084566CEA1CEF8E380B00243C86D86F6AC02EE6D1CD98D"
-  },
-  {
-    "Path": "workspace/backpack-organizer-own/tests/RulesTests.csproj",
-    "Origin": "workspace",
-    "Bytes": 390,
-    "SHA256": "28558F7B5EB749F5B16A6BBE0DA62D81E56424D314E36BC7480C6105347DA259"
-  },
-  {
-    "Path": "workspace/hidden-room-hints/EntranceResolver.cs",
-    "Origin": "workspace",
-    "Bytes": 5699,
-    "SHA256": "99BAC5C651496DCE08B378DDFE2625965BE5B59D6B71971BFBA878876023C2DB"
-  },
-  {
-    "Path": "workspace/hidden-room-hints/HintRules.cs",
-    "Origin": "workspace",
-    "Bytes": 867,
-    "SHA256": "AAE06E8A431406F12966BF493EEC4AE28F834AF531ECC609F32A49DBA1086764"
-  },
-  {
-    "Path": "workspace/hidden-room-hints/Install.ps1",
-    "Origin": "workspace",
-    "Bytes": 2149,
-    "SHA256": "E41DDDE500179A9EA14AEA94426FE3A65B40D03F6306391B8770E7B503A7EA70"
-  },
-  {
-    "Path": "workspace/hidden-room-hints/OpeningGeometry.cs",
-    "Origin": "workspace",
-    "Bytes": 3445,
-    "SHA256": "0532DBE29F74E9899A08C94378EB0B1759D5687370061BD23720AAA2BF6F575D"
-  },
-  {
-    "Path": "workspace/hidden-room-hints/OpeningTiles.cs",
-    "Origin": "workspace",
-    "Bytes": 4405,
-    "SHA256": "A0D33A19872094A6BD9A67CBBD0A62DB7289141CE9EE2C90B5AC09706D3294BB"
-  },
-  {
-    "Path": "workspace/hidden-room-hints/Plugin.cs",
-    "Origin": "workspace",
-    "Bytes": 13199,
-    "SHA256": "92AA21F4ED160A0FAEE711D6CF906A392C487F633ED7FA4B6A94ECCB978B2F22"
-  },
-  {
-    "Path": "workspace/hidden-room-hints/PortalHints.cs",
-    "Origin": "workspace",
-    "Bytes": 7997,
-    "SHA256": "CD20E20C9B13C21748C60711ECABF3765E00147CBFEDE4B71CE67958E68F0262"
-  },
-  {
-    "Path": "workspace/hidden-room-hints/PortalResolver.cs",
-    "Origin": "workspace",
-    "Bytes": 2978,
-    "SHA256": "841D891ED6F65C1359CF4D3FB4C5BF5A56544D0814CA62E2D141429018FFC16B"
-  },
-  {
-    "Path": "workspace/hidden-room-hints/README.md",
-    "Origin": "workspace",
-    "Bytes": 5880,
-    "SHA256": "0918806236DA4E2CF7657016FFEF43F53655BF0308408EA2A6D4586A1676D94A"
-  },
-  {
-    "Path": "workspace/hidden-room-hints/SephiriaHiddenRoomHints.csproj",
-    "Origin": "workspace",
-    "Bytes": 2331,
-    "SHA256": "3DD5B75AE8E48F57E5C4676D70480968ED31AE4955D468B1753083B99E1A7FD4"
-  },
-  {
-    "Path": "workspace/hidden-room-hints/Test-GameContract.ps1",
-    "Origin": "workspace",
-    "Bytes": 6878,
-    "SHA256": "C1F17BBAA81D3F74A4023EA9D3C26140FA9EF3263C35C5EB5C6E3AB7CD1D8B8F"
-  },
-  {
-    "Path": "workspace/hidden-room-hints/Testing.cs",
-    "Origin": "workspace",
-    "Bytes": 3621,
-    "SHA256": "A18C11B86818797895E06067AC0CD69B901E8C37F2C9523F8D757F10A7C8E167"
-  },
-  {
-    "Path": "workspace/hidden-room-hints/analysis/floor-prefabs.json",
-    "Origin": "workspace",
-    "Bytes": 5699,
-    "SHA256": "69DAA713024779897EF0F13C3130FD522E4C1E3EA0343D8AD115C9F52CAB0171"
-  },
-  {
-    "Path": "workspace/hidden-room-hints/analysis/inspect_floor_assets.py",
-    "Origin": "workspace",
-    "Bytes": 1138,
-    "SHA256": "51EA0E73D73B2EC349983DBDCDDE628E6EDA09B49BA60664A9BC30D09BB78E82"
-  },
-  {
-    "Path": "workspace/hidden-room-hints/tests/OpeningRegression.cs",
-    "Origin": "workspace",
-    "Bytes": 3344,
-    "SHA256": "8238281CE6A9DF19834A9F87B31B66D5A6772F5A77FDBA0F57EA0FC8FBABDEB9"
-  },
-  {
-    "Path": "workspace/hidden-room-hints/tests/PortalRegression.cs",
-    "Origin": "workspace",
-    "Bytes": 2906,
-    "SHA256": "47BA856E95CEE80CE892D4CAF2E78E138F3C87F069170006B0AF1AC99D36069E"
-  },
-  {
-    "Path": "workspace/hidden-room-hints/tests/Regression.cs",
-    "Origin": "workspace",
-    "Bytes": 3552,
-    "SHA256": "0C3EBD2A3CAC5F07FA777DA5D6F3C15CB603F35F1F1AF0EA1E3EA8F9CE6DCF25"
-  },
-  {
-    "Path": "workspace/hidden-room-hints/tests/Regression.csproj",
-    "Origin": "workspace",
-    "Bytes": 692,
-    "SHA256": "DEBAF8C93CE597D2A9D825B4AD1C870E4750592B488B4FD1F7E0E2C5157A924B"
-  },
-  {
-    "Path": "workspace/hidden-room-hints/tests/ResolverStubs.cs",
-    "Origin": "workspace",
-    "Bytes": 4476,
-    "SHA256": "5F6213CF67E3832176286DFB1E3DE9B6394ED1198C1660F5A619CBC3146E18BD"
-  },
-  {
-    "Path": "workspace/backpack-organizer-own/InventoryScope.cs",
-    "Origin": "workspace",
-    "Bytes": 505,
-    "SHA256": "713F81EF4DB948A913E90831DF9A19A3CBC74E84E0DD95106EC0EB7F2C4511EB"
-  },
-  {
-    "Path": "workspace/backpack-organizer-own/SortDiagnostics.cs",
-    "Origin": "workspace",
-    "Bytes": 4506,
-    "SHA256": "D059B739EAE55B87DBDA9B5B3E6A32C7D1AE7B7FEAFC1B42CB19A9B479C9DF63"
-  },
-  {
-    "Path": "workspace/backpack-organizer-own/search-tests/Program.cs",
-    "Origin": "workspace",
-    "Bytes": 3863,
-    "SHA256": "398A9A160074D317B79310C0BAA620583A24264A59D687EDB7B663F215311869"
-  },
-  {
-    "Path": "workspace/backpack-organizer-own/search-tests/SearchTests.csproj",
-    "Origin": "workspace",
-    "Bytes": 380,
-    "SHA256": "153F7F55DAEF39CBBBF6A8BB64FDE6E71FB3C2F150A6ACCAEB48196DD5BE89B7"
-  },
-  {
-    "Path": "installed/AddOns/BodyForge/0Harmony.dll",
-    "Origin": "installed",
-    "Bytes": 204800,
-    "SHA256": "1A21CC03424FC82C3DD1346905D16494536B9595AE4162228D99FB7C285C1031"
-  },
-  {
-    "Path": "installed/AddOns/BodyForge/使用说明.md",
-    "Origin": "installed",
-    "Bytes": 25022,
-    "SHA256": "F00CCE1C54C72BDAC68A30A827BA1641DD0C4694D88571E66323008EC582BEFA"
-  },
-  {
-    "Path": "installed/AddOns/BodyForge/BodyForge.dll",
-    "Origin": "installed",
-    "Bytes": 134656,
-    "SHA256": "48978058398A0F19659138690EC90A981E575BADC6EA5B4DFF4BD03ECF7086C1"
-  },
-  {
-    "Path": "installed/AddOns/BodyForge/config.json",
-    "Origin": "installed",
-    "Bytes": 50,
-    "SHA256": "457699AA77616E823A573ED67BE149A3FCFE466EA68EEC8BF3AD82065F13E117"
-  },
-  {
-    "Path": "installed/AddOns/BodyForge/metadata.json",
-    "Origin": "installed",
-    "Bytes": 152,
-    "SHA256": "C1202956AF8052A0DC107F6416244B4C50600C969B95A757E6690AC28D60D1AC"
-  },
-  {
-    "Path": "installed/AddOns/BodyForge/Mono.Cecil.dll",
-    "Origin": "installed",
-    "Bytes": 339456,
-    "SHA256": "7AE470288FFF4A402899C254D0A76CEFEF55877F5C54F96E83C797CC5BB6E2F6"
-  },
-  {
-    "Path": "installed/AddOns/BodyForge/Mono.Cecil.Mdb.dll",
-    "Origin": "installed",
-    "Bytes": 43008,
-    "SHA256": "5896D1898F616701FFF18F3B2C71E6B844D2390EF9F41E1C5FCCCE8CB27C698E"
-  },
-  {
-    "Path": "installed/AddOns/BodyForge/Mono.Cecil.Pdb.dll",
-    "Origin": "installed",
-    "Bytes": 86528,
-    "SHA256": "174DB44A067F58561510AF746F3CAEB032037762C57A31C8D9EE32DB25174984"
-  },
-  {
-    "Path": "installed/AddOns/BodyForge/Mono.Cecil.Rocks.dll",
-    "Origin": "installed",
-    "Bytes": 27648,
-    "SHA256": "54AC539FB5DDC8B44C0E9ACD0FCB7324F89D1A072EDF8EBC1B06DD691E3D3927"
-  },
-  {
-    "Path": "installed/AddOns/BodyForge/MonoMod.RuntimeDetour.dll",
-    "Origin": "installed",
-    "Bytes": 105984,
-    "SHA256": "40E49BB314391CD7BDDC2644F8553EEBA92C194B940836B103DF16955C464E0C"
-  },
-  {
-    "Path": "installed/AddOns/BodyForge/MonoMod.Utils.dll",
-    "Origin": "installed",
-    "Bytes": 187904,
-    "SHA256": "9D1495F147AC93C4F81F84538C1A326E8F8A6AEFC78D6289D798F3CE1162C5E9"
-  },
-  {
-    "Path": "installed/AddOns/BodyForge/readme.md",
-    "Origin": "installed",
-    "Bytes": 1368,
-    "SHA256": "89B93AF16BC51C0E8BE15C7C3E22775C9E33DBE7340B9CFA47719E827D741407"
-  },
-  {
-    "Path": "installed/AddOns/SPMod/0Harmony.dll",
-    "Origin": "installed",
-    "Bytes": 204800,
-    "SHA256": "1A21CC03424FC82C3DD1346905D16494536B9595AE4162228D99FB7C285C1031"
-  },
-  {
-    "Path": "installed/AddOns/SPMod/config.json",
-    "Origin": "installed",
-    "Bytes": 783,
-    "SHA256": "E4E62B3C8ACB5EF36A92A65A8EEEAD4A49060D376DD33E725206D42E0D1EA3C9"
-  },
-  {
-    "Path": "installed/AddOns/SPMod/metadata.json",
-    "Origin": "installed",
-    "Bytes": 158,
-    "SHA256": "A457C9DC6D7B336B9157E3DAE5F5FE6825E5E914EE564165E97850E870051DE3"
-  },
-  {
-    "Path": "installed/AddOns/SPMod/Mono.Cecil.dll",
-    "Origin": "installed",
-    "Bytes": 339456,
-    "SHA256": "7AE470288FFF4A402899C254D0A76CEFEF55877F5C54F96E83C797CC5BB6E2F6"
-  },
-  {
-    "Path": "installed/AddOns/SPMod/Mono.Cecil.Mdb.dll",
-    "Origin": "installed",
-    "Bytes": 43008,
-    "SHA256": "5896D1898F616701FFF18F3B2C71E6B844D2390EF9F41E1C5FCCCE8CB27C698E"
-  },
-  {
-    "Path": "installed/AddOns/SPMod/Mono.Cecil.Pdb.dll",
-    "Origin": "installed",
-    "Bytes": 86528,
-    "SHA256": "174DB44A067F58561510AF746F3CAEB032037762C57A31C8D9EE32DB25174984"
-  },
-  {
-    "Path": "installed/AddOns/SPMod/Mono.Cecil.Rocks.dll",
-    "Origin": "installed",
-    "Bytes": 27648,
-    "SHA256": "54AC539FB5DDC8B44C0E9ACD0FCB7324F89D1A072EDF8EBC1B06DD691E3D3927"
-  },
-  {
-    "Path": "installed/AddOns/SPMod/MonoMod.RuntimeDetour.dll",
-    "Origin": "installed",
-    "Bytes": 105984,
-    "SHA256": "40E49BB314391CD7BDDC2644F8553EEBA92C194B940836B103DF16955C464E0C"
-  },
-  {
-    "Path": "installed/AddOns/SPMod/MonoMod.Utils.dll",
-    "Origin": "installed",
-    "Bytes": 187904,
-    "SHA256": "9D1495F147AC93C4F81F84538C1A326E8F8A6AEFC78D6289D798F3CE1162C5E9"
-  },
-  {
-    "Path": "installed/AddOns/SPMod/SPMod.dll",
-    "Origin": "installed",
-    "Bytes": 880128,
-    "SHA256": "42285787D6D89F3D5F2E4C5396E04CF92A7875B0B8FB189BF0488BDF842D5A22"
-  },
-  {
-    "Path": "installed/BepInEx/plugins/SephiriaDirectConnect/README.md",
-    "Origin": "installed",
-    "Bytes": 4504,
-    "SHA256": "8CEB2ABD2A0E6F80EA1F9BD0211BAF506608F7AB8C7BAF4175154A4756CD5C62"
-  },
-  {
-    "Path": "installed/BepInEx/plugins/SephiriaDirectConnect/SephiriaDirectConnect.dll",
-    "Origin": "installed",
-    "Bytes": 47616,
-    "SHA256": "9AC0FD64B9098BDDE7537C7F0B3B46229D0B6188EA8BEB8665B6292DB5E5BFFD"
-  },
-  {
-    "Path": "workspace/direct-connect/Install-Local.ps1",
-    "Origin": "workspace",
-    "Bytes": 1903,
-    "SHA256": "A99A4F12BDA1DAF03958AC973D45CE5FC17941ACF54C2D605B4EFAB1E2764CFF"
-  },
-  {
-    "Path": "workspace/direct-connect/Plugin.cs",
-    "Origin": "workspace",
-    "Bytes": 41881,
-    "SHA256": "7A3C873D68303890C5F9193225AE2E45630FF434B8B11CC16E71D3D066F352C3"
-  },
-  {
-    "Path": "workspace/direct-connect/README.md",
-    "Origin": "workspace",
-    "Bytes": 4504,
-    "SHA256": "8CEB2ABD2A0E6F80EA1F9BD0211BAF506608F7AB8C7BAF4175154A4756CD5C62"
-  },
-  {
-    "Path": "workspace/direct-connect/SephiriaDirectConnect.csproj",
-    "Origin": "workspace",
-    "Bytes": 2989,
-    "SHA256": "525B0C3C867D7688E28B5C393B991311C156A3BDBCC0629909F5AC2F94A9298E"
-  },
-  {
-    "Path": "workspace/direct-connect/SessionFlow.cs",
-    "Origin": "workspace",
-    "Bytes": 15226,
-    "SHA256": "A19AED7D867013EA57D8EBF1FE30948CFE39D55F87D3ADD66E3B08D99AA997D9"
-  },
-  {
-    "Path": "workspace/direct-connect/SessionOperation.cs",
-    "Origin": "workspace",
-    "Bytes": 2689,
-    "SHA256": "00983B73B60819760A590C7C67B0FCFDCE5AB9ABD3293FA476F3B99ED1E1D480"
-  },
-  {
-    "Path": "workspace/direct-connect/tests/Program.cs",
-    "Origin": "workspace",
-    "Bytes": 4672,
-    "SHA256": "23F5B1D53601BDC80985FFB4CBE6CCC01813E3577CDE743F7C933E24BE619C93"
-  },
-  {
-    "Path": "workspace/direct-connect/tests/Regression.csproj",
-    "Origin": "workspace",
-    "Bytes": 258,
-    "SHA256": "2C268433F339429738C17DDB0D802BF9CDA27F2F43FC25DEEB0451650EFC5E78"
-  },
-  {
-    "Path": "workspace/hold-special/Plugin.cs",
-    "Origin": "workspace",
-    "Bytes": 17124,
-    "SHA256": "49D2C82D3DAD8132C109634661B9D60DCA759F013C4616459D7F4301C81A0A41"
-  },
-  {
-    "Path": "workspace/hold-special/RepeatCycle.cs",
-    "Origin": "workspace",
-    "Bytes": 1732,
-    "SHA256": "CC4592BA75CBB61CB75A28F8C80EA184F4605F0D18759081F572D6991E690A43"
-  },
-  {
-    "Path": "workspace/hold-special/SephiriaHoldSpecial.csproj",
-    "Origin": "workspace",
-    "Bytes": 2176,
-    "SHA256": "8930B51E7248C02DC7A887E463D1768A1F0324C165962C6385BA50055E87397D"
-  },
-  {
-    "Path": "workspace/hold-special/README.md",
-    "Origin": "workspace",
-    "Bytes": 4074,
-    "SHA256": "851551637870AC6E06F5D009B9DFD2FA920DEFBD641280EAFFA7C72F3E2BC3AA"
-  },
-  {
-    "Path": "workspace/hold-special/build.ps1",
-    "Origin": "workspace",
-    "Bytes": 2321,
-    "SHA256": "146D1FA66AE390E2D964D39F1814B7DACF88D6F08CCA326AA3978C47AC4E5732"
-  },
-  {
-    "Path": "workspace/hold-special/Tests/Program.cs",
-    "Origin": "workspace",
-    "Bytes": 2281,
-    "SHA256": "1AC81A3D6DE7385A924CEEF5AA56B1FF6513484B521E3651F54DA3BFA53C10CA"
-  },
-  {
-    "Path": "workspace/hold-special/Tests/RepeatCycle.Tests.csproj",
-    "Origin": "workspace",
-    "Bytes": 325,
-    "SHA256": "FBD44461394F03DEF77BAD764C48CD2D7C25ABDC11A1ACFC25B3A16C883203A6"
-  },
-  {
-    "Path": "workspace/hold-special/Tests/Verify-GameContract.ps1",
-    "Origin": "workspace",
-    "Bytes": 5793,
-    "SHA256": "235CAD31BF77CDBA39A37269E34E1497F4AA4D15103141FF951E8AF98590F3C9"
-  },
-  {
-    "Path": "installed/BepInEx/plugins/SephiriaHoldSpecial/SephiriaHoldSpecial.dll",
-    "Origin": "installed",
-    "Bytes": 15872,
-    "SHA256": "019DBF4ECB4A8BC5A2A1BA6708D5B4073A49D435B976AE571EDAC7BECFE741B1"
-  },
-  {
-    "Path": "installed/BepInEx/plugins/SephiriaHoldSpecial/README.md",
-    "Origin": "installed",
-    "Bytes": 4074,
-    "SHA256": "851551637870AC6E06F5D009B9DFD2FA920DEFBD641280EAFFA7C72F3E2BC3AA"
-  },
-  {
-    "Path": "workspace/hidden-room-hints/Lifecycle.cs",
-    "Origin": "workspace",
-    "Bytes": 5844,
-    "SHA256": "963B3AFC4FDD5DE10E636140BC80E2D7981B783503C39F86097F389E0E778464"
   }
 ]

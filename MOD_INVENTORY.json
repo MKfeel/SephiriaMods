@@ -1,0 +1,1156 @@
+{
+  "CapturedAt": "2026-10-01T17:10:08.1708524+08:00",
+  "StatusMeaning": "Static on-disk inventory, not in-game acceptance. Repository defaults enabled.",
+  "Mods": [
+    {
+      "Id": "addon:BodyForgeMod",
+      "Version": "2.8.37",
+      "Loader": "AddOn",
+      "DefaultEnabled": true,
+      "Files": [
+        {
+          "source": "AddOns/BodyForge/0Harmony.dll",
+          "target": "AddOns/BodyForge/0Harmony.dll",
+          "sha256": "1A21CC03424FC82C3DD1346905D16494536B9595AE4162228D99FB7C285C1031",
+          "config": false
+        },
+        {
+          "source": "AddOns/BodyForge/BodyForge.dll",
+          "target": "AddOns/BodyForge/BodyForge.dll",
+          "sha256": "53999EBC1E16D1C118A7FB83489B903EAC93D97FBE3FC75BAB1669F5C1ACC1C2",
+          "config": false
+        },
+        {
+          "source": "AddOns/BodyForge/metadata.json",
+          "target": "AddOns/BodyForge/metadata.json",
+          "sha256": "407B9E280BA0C4162D95F41935B7A848055C8D0D5A3AF522FA80EBFCF4822308",
+          "config": false
+        },
+        {
+          "source": "AddOns/BodyForge/Mono.Cecil.dll",
+          "target": "AddOns/BodyForge/Mono.Cecil.dll",
+          "sha256": "7AE470288FFF4A402899C254D0A76CEFEF55877F5C54F96E83C797CC5BB6E2F6",
+          "config": false
+        },
+        {
+          "source": "AddOns/BodyForge/Mono.Cecil.Mdb.dll",
+          "target": "AddOns/BodyForge/Mono.Cecil.Mdb.dll",
+          "sha256": "5896D1898F616701FFF18F3B2C71E6B844D2390EF9F41E1C5FCCCE8CB27C698E",
+          "config": false
+        },
+        {
+          "source": "AddOns/BodyForge/Mono.Cecil.Pdb.dll",
+          "target": "AddOns/BodyForge/Mono.Cecil.Pdb.dll",
+          "sha256": "174DB44A067F58561510AF746F3CAEB032037762C57A31C8D9EE32DB25174984",
+          "config": false
+        },
+        {
+          "source": "AddOns/BodyForge/Mono.Cecil.Rocks.dll",
+          "target": "AddOns/BodyForge/Mono.Cecil.Rocks.dll",
+          "sha256": "54AC539FB5DDC8B44C0E9ACD0FCB7324F89D1A072EDF8EBC1B06DD691E3D3927",
+          "config": false
+        },
+        {
+          "source": "AddOns/BodyForge/MonoMod.RuntimeDetour.dll",
+          "target": "AddOns/BodyForge/MonoMod.RuntimeDetour.dll",
+          "sha256": "40E49BB314391CD7BDDC2644F8553EEBA92C194B940836B103DF16955C464E0C",
+          "config": false
+        },
+        {
+          "source": "AddOns/BodyForge/MonoMod.Utils.dll",
+          "target": "AddOns/BodyForge/MonoMod.Utils.dll",
+          "sha256": "9D1495F147AC93C4F81F84538C1A326E8F8A6AEFC78D6289D798F3CE1162C5E9",
+          "config": false
+        },
+        {
+          "source": "AddOns/BodyForge/readme.md",
+          "target": "AddOns/BodyForge/readme.md",
+          "sha256": "CAEC32D7A6F1049CD1B73EE61D87FBE269637C2FC20EEECCF73E24AACFE28604",
+          "config": false
+        },
+        {
+          "source": "AddOns/BodyForge/使用说明.md",
+          "target": "AddOns/BodyForge/使用说明.md",
+          "sha256": "CACAF12F2356BFD24DD8C7801803E35077B57505B236D1E32697564AF9FDDC6B",
+          "config": false
+        }
+      ]
+    },
+    {
+      "Id": "addon:NegativeRoots.Core",
+      "Version": "1.1.0",
+      "Loader": "AddOn",
+      "DefaultEnabled": true,
+      "Files": [
+        {
+          "source": "AddOns/NegativeRoots/0Harmony.dll",
+          "target": "AddOns/NegativeRoots/0Harmony.dll",
+          "sha256": "D8701D817751CC23D79CFECB4A239597238B468E7A5AAEDC29E1021CD0C35C5B",
+          "config": false
+        },
+        {
+          "source": "AddOns/NegativeRoots/Assets/PigskinBackpack.png",
+          "target": "AddOns/NegativeRoots/Assets/PigskinBackpack.png",
+          "sha256": "286A3978386764229B590E801F1084D76455C3A27E63C31A36C1BBD48B51483C",
+          "config": false
+        },
+        {
+          "source": "AddOns/NegativeRoots/Assets/TreasureMap.png",
+          "target": "AddOns/NegativeRoots/Assets/TreasureMap.png",
+          "sha256": "01C0A02912BB51F63470307C482CA1BED575DC6CD4DD0D3B059A1775B97D995B",
+          "config": false
+        },
+        {
+          "source": "AddOns/NegativeRoots/Harmony-LICENSE.txt",
+          "target": "AddOns/NegativeRoots/Harmony-LICENSE.txt",
+          "sha256": "407DDD98200C9F17F49942B5A7791E288A2BD553B59BF2F462DB87DBB21C50BC",
+          "config": false
+        },
+        {
+          "source": "AddOns/NegativeRoots/metadata.json",
+          "target": "AddOns/NegativeRoots/metadata.json",
+          "sha256": "00ABE1F452B4E9C62C5246760566EEADD27DA83870943E5808E772A0898CA905",
+          "config": false
+        },
+        {
+          "source": "AddOns/NegativeRoots/NegativeRoots.dll",
+          "target": "AddOns/NegativeRoots/NegativeRoots.dll",
+          "sha256": "71E0CD73B82A042C6A72A4ADEDA9B7EE7634E3C2E0AC90C5E275F22E5B4E1F64",
+          "config": false
+        }
+      ]
+    },
+    {
+      "Id": "addon:BowWeapon.Core",
+      "Version": "1.0.0",
+      "Loader": "AddOn",
+      "DefaultEnabled": true,
+      "Files": [
+        {
+          "source": "AddOns/BowWeapon/BowWeapon.dll",
+          "target": "AddOns/BowWeapon/BowWeapon.dll",
+          "sha256": "C4BDD33ECADFE5AFB5092806512327D919A5906926213CDE97DCA0FD73260CB6",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/Libs/0Harmony.dll",
+          "target": "AddOns/BowWeapon/Libs/0Harmony.dll",
+          "sha256": "9846EB9EDF64A5E2473342C75B8C5AB37293FB4C27418BC7A5B9A156AA0D7214",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/Libs/Mono.Cecil.dll",
+          "target": "AddOns/BowWeapon/Libs/Mono.Cecil.dll",
+          "sha256": "7AE470288FFF4A402899C254D0A76CEFEF55877F5C54F96E83C797CC5BB6E2F6",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/Libs/Mono.Cecil.Mdb.dll",
+          "target": "AddOns/BowWeapon/Libs/Mono.Cecil.Mdb.dll",
+          "sha256": "5896D1898F616701FFF18F3B2C71E6B844D2390EF9F41E1C5FCCCE8CB27C698E",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/Libs/Mono.Cecil.Pdb.dll",
+          "target": "AddOns/BowWeapon/Libs/Mono.Cecil.Pdb.dll",
+          "sha256": "174DB44A067F58561510AF746F3CAEB032037762C57A31C8D9EE32DB25174984",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/Libs/Mono.Cecil.Rocks.dll",
+          "target": "AddOns/BowWeapon/Libs/Mono.Cecil.Rocks.dll",
+          "sha256": "54AC539FB5DDC8B44C0E9ACD0FCB7324F89D1A072EDF8EBC1B06DD691E3D3927",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/Libs/MonoMod.RuntimeDetour.dll",
+          "target": "AddOns/BowWeapon/Libs/MonoMod.RuntimeDetour.dll",
+          "sha256": "40E49BB314391CD7BDDC2644F8553EEBA92C194B940836B103DF16955C464E0C",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/Libs/MonoMod.Utils.dll",
+          "target": "AddOns/BowWeapon/Libs/MonoMod.Utils.dll",
+          "sha256": "9D1495F147AC93C4F81F84538C1A326E8F8A6AEFC78D6289D798F3CE1162C5E9",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/metadata.json",
+          "target": "AddOns/BowWeapon/metadata.json",
+          "sha256": "FB2FF21B1202D8338B43627A2775451738EEA37086A4505EFB482823BEBF4612",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/1ji/gong/gong -1.png",
+          "target": "AddOns/BowWeapon/tietu/1ji/gong/gong -1.png",
+          "sha256": "B857CFE3A96413C441CA19E2BD089083C8DD48C995DB51CE9FB3EFDC6C7E0679",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/1ji/gong/gong 1.png",
+          "target": "AddOns/BowWeapon/tietu/1ji/gong/gong 1.png",
+          "sha256": "3D145F48454758B992956F1173CFB0F2E0B3ED94278E58F815BC2B10A7711CA9",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/1ji/gong/gong 2.png",
+          "target": "AddOns/BowWeapon/tietu/1ji/gong/gong 2.png",
+          "sha256": "49238BE47CA802B9BC305B799C2011760577CE6B475B6F417853915B18B93A57",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/1ji/gong/gong 3.png",
+          "target": "AddOns/BowWeapon/tietu/1ji/gong/gong 3.png",
+          "sha256": "A1FF3544C51EAED350DAC317A353480F450C9002335FC48A72AA190A14A57C53",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/1ji/gong/gong.png",
+          "target": "AddOns/BowWeapon/tietu/1ji/gong/gong.png",
+          "sha256": "B94DC3D81B6D857F04073C1B4473B253CDAAD211B761FAADA9CD9C025C125152",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/2ji/benleisuo/gong -1.png",
+          "target": "AddOns/BowWeapon/tietu/2ji/benleisuo/gong -1.png",
+          "sha256": "47CB699C90B97E7A627A811DC63E1AC4800D92FDEA4C254B28ADDFF345A3C7DC",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/2ji/benleisuo/gong 1.png",
+          "target": "AddOns/BowWeapon/tietu/2ji/benleisuo/gong 1.png",
+          "sha256": "4A51DA9198D6B5B41C124DF60F642AEF923D49C97929B1A49AC5B442AC8F3784",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/2ji/benleisuo/gong 2.png",
+          "target": "AddOns/BowWeapon/tietu/2ji/benleisuo/gong 2.png",
+          "sha256": "4C52FD251EA4CABF247E8C8EB1ADD4568B53EDBF82FE8CD6FAF3545D6B8D14F4",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/2ji/benleisuo/gong 3.png",
+          "target": "AddOns/BowWeapon/tietu/2ji/benleisuo/gong 3.png",
+          "sha256": "6E05AA1CA4C843E4A84067C049EF41DB882F7417456D875AD29447E621E9982D",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/2ji/benleisuo/gong.png",
+          "target": "AddOns/BowWeapon/tietu/2ji/benleisuo/gong.png",
+          "sha256": "6B26BBD52066BDBB2C4F89E24AB1B8994028C0E90EDB545A6E01F84095A53FE4",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/2ji/hanchuansulv/gong -1.png",
+          "target": "AddOns/BowWeapon/tietu/2ji/hanchuansulv/gong -1.png",
+          "sha256": "E3B7852EECA3E8B3760278EFC6A257CDE459C607381CD640F29512B64CD8FBDF",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/2ji/hanchuansulv/gong 1.png",
+          "target": "AddOns/BowWeapon/tietu/2ji/hanchuansulv/gong 1.png",
+          "sha256": "95C7B57BD6F97AD14B45609EEFCF9C7C73D72BBFBEFFF6641C09FF0870E6C690",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/2ji/hanchuansulv/gong 2.png",
+          "target": "AddOns/BowWeapon/tietu/2ji/hanchuansulv/gong 2.png",
+          "sha256": "89086D298FE70AED6CBBC5D90394956A7EB4982BE87D068E2DA6818EDEF08565",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/2ji/hanchuansulv/gong 3.png",
+          "target": "AddOns/BowWeapon/tietu/2ji/hanchuansulv/gong 3.png",
+          "sha256": "2F7D3EAD81C8C1F7DF9D3A1EBBB5CE4195EB31986B04D21F5465F98F3A85C4CB",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/2ji/hanchuansulv/gong.png",
+          "target": "AddOns/BowWeapon/tietu/2ji/hanchuansulv/gong.png",
+          "sha256": "3566D473093058FB5ECFABE63C954C059B271825A59C8A1924FB5BA006032585",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/2ji/jiefanglian/gong -1.png",
+          "target": "AddOns/BowWeapon/tietu/2ji/jiefanglian/gong -1.png",
+          "sha256": "E258D7F1A8B04645AB8076B80A884A826A456B3D223EDA26C447809DBE6EFEDE",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/2ji/jiefanglian/gong 1.png",
+          "target": "AddOns/BowWeapon/tietu/2ji/jiefanglian/gong 1.png",
+          "sha256": "0A59175436632A38038557AA7DC7D871B02E27575064C97BA024DE7671AA5579",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/2ji/jiefanglian/gong 2.png",
+          "target": "AddOns/BowWeapon/tietu/2ji/jiefanglian/gong 2.png",
+          "sha256": "784A1FD2419CA5F790CFE1F808422F5AE37EAD49DA29CE81EF8A11B05100299C",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/2ji/jiefanglian/gong 3.png",
+          "target": "AddOns/BowWeapon/tietu/2ji/jiefanglian/gong 3.png",
+          "sha256": "B917EADF2C5DAB415660275895D053BE2957A889099B4500549E5ACE46F2FC7B",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/2ji/jiefanglian/gong.png",
+          "target": "AddOns/BowWeapon/tietu/2ji/jiefanglian/gong.png",
+          "sha256": "3EF8D1EB2F8F34CDAFFA94BC939CC88372C8327327970E9958BBA07B2C4E5700",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/2ji/jiefanglian/liandao.png",
+          "target": "AddOns/BowWeapon/tietu/2ji/jiefanglian/liandao.png",
+          "sha256": "996FA1E953CC86C5DA8C357B3D7F266110777725D6AFD307695A69924907834E",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/2ji/jifengge/gong -1.png",
+          "target": "AddOns/BowWeapon/tietu/2ji/jifengge/gong -1.png",
+          "sha256": "6D6A43848216EAE44483806978E6712150B78655EF89EF9F70E2FCB1345CFAE7",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/2ji/jifengge/gong 1.png",
+          "target": "AddOns/BowWeapon/tietu/2ji/jifengge/gong 1.png",
+          "sha256": "447E9B3CD0919F8C064E7DD730C79D8D7350D54631A9E94D740305954CED8558",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/2ji/jifengge/gong 2.png",
+          "target": "AddOns/BowWeapon/tietu/2ji/jifengge/gong 2.png",
+          "sha256": "7EF9D7F8F207F7FE7B30AC0D8109C3356C2B497F77C10D0B280B7A807F5C0A2E",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/2ji/jifengge/gong 3.png",
+          "target": "AddOns/BowWeapon/tietu/2ji/jifengge/gong 3.png",
+          "sha256": "6BB895F80568A5EE15985825BC806334C3933274F2D85AF39D8BB4D95787E41B",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/2ji/jifengge/gong.png",
+          "target": "AddOns/BowWeapon/tietu/2ji/jifengge/gong.png",
+          "sha256": "0848292C8B2ABE62736B1D2B7CA3F60CDCC5B5604542B11644204FC71ED2DEF3",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/2ji/tiegong/2-1tiegong  -1.png",
+          "target": "AddOns/BowWeapon/tietu/2ji/tiegong/2-1tiegong  -1.png",
+          "sha256": "07D54E13F06B0F1F4C8F1EAD55F70A22853E5B5CC81ADDACFA5F477B811BDEF4",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/2ji/tiegong/2-1tiegong 1.png",
+          "target": "AddOns/BowWeapon/tietu/2ji/tiegong/2-1tiegong 1.png",
+          "sha256": "05638C5BAEAEBEB279A021DCFEB996F2FC3383E39BD783BA3DC2FDA5CCF874EC",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/2ji/tiegong/2-1tiegong 2.png",
+          "target": "AddOns/BowWeapon/tietu/2ji/tiegong/2-1tiegong 2.png",
+          "sha256": "E3C811906F2F82D294806E59E74BBAF8ACE706D176CC872E67C15C2C9BD7E47B",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/2ji/tiegong/2-1tiegong 3.png",
+          "target": "AddOns/BowWeapon/tietu/2ji/tiegong/2-1tiegong 3.png",
+          "sha256": "CFDE3DBF09566559E03E4F169B9A111F355F0EA6151FC67740E2D9D91639841D",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/2ji/tiegong/2-1tiegong.png",
+          "target": "AddOns/BowWeapon/tietu/2ji/tiegong/2-1tiegong.png",
+          "sha256": "E8B8D14EB880524FCF5F8C2F7FA6C46517D28CF061B6BBE53A8D625E33751A69",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/2ji/yemanxinsheng/gong -1.png",
+          "target": "AddOns/BowWeapon/tietu/2ji/yemanxinsheng/gong -1.png",
+          "sha256": "1F225E2D47BB9A573CA5A249556F6F2C3007381DDF8C7E1E8361950C7CB7F6D1",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/2ji/yemanxinsheng/gong 1.png",
+          "target": "AddOns/BowWeapon/tietu/2ji/yemanxinsheng/gong 1.png",
+          "sha256": "435FB78E6AF50A887D84CB2AF1DFFC44FA04B2C602F51E597DD82A969F3174AF",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/2ji/yemanxinsheng/gong 2.png",
+          "target": "AddOns/BowWeapon/tietu/2ji/yemanxinsheng/gong 2.png",
+          "sha256": "4D6AACA832BA1F46BE243691E29760D499A90B397B18C8214FFF08E89968DB21",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/2ji/yemanxinsheng/gong 3.png",
+          "target": "AddOns/BowWeapon/tietu/2ji/yemanxinsheng/gong 3.png",
+          "sha256": "A8EFFC47CD8F460DF24FB01FDB57DEB186259AF57A9E753697A6895372307CA3",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/2ji/yemanxinsheng/gong.png",
+          "target": "AddOns/BowWeapon/tietu/2ji/yemanxinsheng/gong.png",
+          "sha256": "045AFE063AFD595F1B7FC279CA3EA72F46FDCE79A03D7E678F7D75E5A2FF02C9",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/2ji/yujinliaosi/gong -1.png",
+          "target": "AddOns/BowWeapon/tietu/2ji/yujinliaosi/gong -1.png",
+          "sha256": "11FFD3B921379E5BDA51512F015D2E35A44FF48959FB6261D995B862D1FBB425",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/2ji/yujinliaosi/gong 1.png",
+          "target": "AddOns/BowWeapon/tietu/2ji/yujinliaosi/gong 1.png",
+          "sha256": "2E7854BCA7521292543CE2D0866B3783502D667B5927AB2863CAC3AEF095F7B7",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/2ji/yujinliaosi/gong 2.png",
+          "target": "AddOns/BowWeapon/tietu/2ji/yujinliaosi/gong 2.png",
+          "sha256": "D63E5B53B66514521FD75D70EC50F1CB437396166D4612406FD3037A83CDBB6A",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/2ji/yujinliaosi/gong 3.png",
+          "target": "AddOns/BowWeapon/tietu/2ji/yujinliaosi/gong 3.png",
+          "sha256": "58F3684CB297CB261839505FF35DCB6C2BEA5E1192BC9D935EB82EFF40ECC922",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/2ji/yujinliaosi/gong.png",
+          "target": "AddOns/BowWeapon/tietu/2ji/yujinliaosi/gong.png",
+          "sha256": "68DE4263835222FDC3E6854F5FB29B9781AB25E02BB8719669FEEF04263DAAA0",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/amosidehuihen/gong -1.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/amosidehuihen/gong -1.png",
+          "sha256": "E0E83C3913AA8F3902E05D7C8239BB72D3B8FF783DAFD80A15ADDE6482A9E279",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/amosidehuihen/gong 1.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/amosidehuihen/gong 1.png",
+          "sha256": "2140B88E39DE0488D47FA30DA20043E4947CCD0A5EC7007791BDF9E80CF2E8B7",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/amosidehuihen/gong 2.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/amosidehuihen/gong 2.png",
+          "sha256": "1205FB00F35E4121F9153D8B77681C66B60BA3E836349A936D03FC14713BF679",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/amosidehuihen/gong 3.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/amosidehuihen/gong 3.png",
+          "sha256": "4E992FE0BEB916B07CDFF546C73E11885B7E3329FC19D41076DDBE6704BA862D",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/amosidehuihen/gong.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/amosidehuihen/gong.png",
+          "sha256": "0E6875AEADEE32BA1A2A462558DCED80112DD9A60513F70F980058F05553CFF4",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/asikadedebugan/gong -1.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/asikadedebugan/gong -1.png",
+          "sha256": "2553D1215067E95CCD3D01F4096873F4BB60C398E4A089EAD047F3C3A575824B",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/asikadedebugan/gong 1.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/asikadedebugan/gong 1.png",
+          "sha256": "814153C8C63F2EE54E5B416255A697A95455F258CD4BD594524CD7E5A3B7EAF2",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/asikadedebugan/gong 2.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/asikadedebugan/gong 2.png",
+          "sha256": "09DD9127F2EBC2FCF399B64E4010496FB431B9971BD2A48ECB4289FDB2B3E5B3",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/asikadedebugan/gong 3.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/asikadedebugan/gong 3.png",
+          "sha256": "43C15DEEA96E2C8A524C39C20BD1D4C2FF0226454731CB699235FCBBFDD137FB",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/asikadedebugan/gong.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/asikadedebugan/gong.png",
+          "sha256": "2E0AC235AD4902FB45E3043739D152B0512F8E1247E6C44CC533DC952B532333",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/asikadedebugan/liandao.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/asikadedebugan/liandao.png",
+          "sha256": "F354732C38795D30A77921B47D311B278FFF738CC2D768D1E0DA54B129C325A3",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/baofengxueyindaozhe/gong -1.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/baofengxueyindaozhe/gong -1.png",
+          "sha256": "B8648527B74B54E1CBBCEAE767A56AE63A0EC9E205F41BA95754FB36DEE4F1AD",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/baofengxueyindaozhe/gong 1.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/baofengxueyindaozhe/gong 1.png",
+          "sha256": "2F726428B3A416D2A546B1F54E05A5588468AC059F4DB5B0E4BB9B8BC35C9542",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/baofengxueyindaozhe/gong 2.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/baofengxueyindaozhe/gong 2.png",
+          "sha256": "95CF26FE0B921EF5CC551976E43BC8BBF75D3C698A8CB82DFE228C65FAEED999",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/baofengxueyindaozhe/gong 3.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/baofengxueyindaozhe/gong 3.png",
+          "sha256": "A3C22E5AEB1444DC43B486CB3C0D127B424B750FF6A38D6D172CD0B2A9B34BC2",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/baofengxueyindaozhe/gong.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/baofengxueyindaozhe/gong.png",
+          "sha256": "6F971FD92EF860E8405E9125ED5E09D78AB742290FE89FABF84FF374B07F47CE",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/fenghuanglieyan/gong -1.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/fenghuanglieyan/gong -1.png",
+          "sha256": "98616C730CD4BB8763BD80F530E450A40C22C8E49DE6FD4A03BCE4E43B8F86CB",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/fenghuanglieyan/gong 1.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/fenghuanglieyan/gong 1.png",
+          "sha256": "1591CD419019812564276C256AC7CA96AE16C404DCABB6973B8D6ADD00D204BD",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/fenghuanglieyan/gong 2.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/fenghuanglieyan/gong 2.png",
+          "sha256": "C55A0DC90E8811FD06EBF323E70860EA17A7739D0D617F11BE54DBA304A384FA",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/fenghuanglieyan/gong 3.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/fenghuanglieyan/gong 3.png",
+          "sha256": "FCEF68946594BC35BBB272E88711110C62E298A1202D1E204E8B884D1E7553B5",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/fenghuanglieyan/gong.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/fenghuanglieyan/gong.png",
+          "sha256": "2E04D39FA0929B5254231C307AB3DB41E31270A746CCAC72CB2100B81039D0FB",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/gangzhixin/gong -1.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/gangzhixin/gong -1.png",
+          "sha256": "87C643D647152C7479CA0F2A345CE2029CCC21725FA2835AF924BC3862482381",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/gangzhixin/gong 1.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/gangzhixin/gong 1.png",
+          "sha256": "09B936101DA49CFDF71C83707BDDE7D26D6D4BE9A003376E646FB602FDEC4032",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/gangzhixin/gong 2.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/gangzhixin/gong 2.png",
+          "sha256": "A16237DE08D4257393EEE31731DD5EE316A0382CDDE1AEC3CDF7D3627AB5D386",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/gangzhixin/gong 3.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/gangzhixin/gong 3.png",
+          "sha256": "6F9F3FD45697E2DAEE017701294861D3866F38300C54FC40104668B4D8FB1A6C",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/gangzhixin/gong.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/gangzhixin/gong.png",
+          "sha256": "4B8025EB917B722107B71016CD204DF444DA034569EB5B2E5A2D992D7C52C8E7",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/genshendigu/gong -1.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/genshendigu/gong -1.png",
+          "sha256": "4E627B688AF6A48B018B8C0A8769A067B75525EBA7C8C6264B3FC36F0306E100",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/genshendigu/gong 1.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/genshendigu/gong 1.png",
+          "sha256": "DD6AD3E627FD358BE4416EEB4EB3A496ABBAE8674D7ED5EAEC8881FD46E41E55",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/genshendigu/gong 2.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/genshendigu/gong 2.png",
+          "sha256": "7DBF34C80C79682BDB3DD7A833C4182610DC4A050793767EC65D69476E7651B7",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/genshendigu/gong 3.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/genshendigu/gong 3.png",
+          "sha256": "32035E115B2B82B9CEFD83BA580942CF9096FC528667E7781303EF7B509B3FC9",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/genshendigu/gong.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/genshendigu/gong.png",
+          "sha256": "F9C1E90264A5DD2838CF98FE9EED903983C9A6BFBF65E255ADD3EF484E491D8D",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/jifengge/gong -1.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/jifengge/gong -1.png",
+          "sha256": "6D6A43848216EAE44483806978E6712150B78655EF89EF9F70E2FCB1345CFAE7",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/jifengge/gong 1.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/jifengge/gong 1.png",
+          "sha256": "447E9B3CD0919F8C064E7DD730C79D8D7350D54631A9E94D740305954CED8558",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/jifengge/gong 2.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/jifengge/gong 2.png",
+          "sha256": "7EF9D7F8F207F7FE7B30AC0D8109C3356C2B497F77C10D0B280B7A807F5C0A2E",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/jifengge/gong 3.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/jifengge/gong 3.png",
+          "sha256": "6BB895F80568A5EE15985825BC806334C3933274F2D85AF39D8BB4D95787E41B",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/jifengge/gong.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/jifengge/gong.png",
+          "sha256": "0848292C8B2ABE62736B1D2B7CA3F60CDCC5B5604542B11644204FC71ED2DEF3",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/jifengzhouyu/gong -1.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/jifengzhouyu/gong -1.png",
+          "sha256": "BD98DA7B527BE13272ACD4E7DD5D81F12BAF8F0E123E1EF9FFCDFDB4BBA9FDA7",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/jifengzhouyu/gong 1.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/jifengzhouyu/gong 1.png",
+          "sha256": "14D1B8E51682D76152077224C2920D7155FDF288F2AE5B5FE41F7EC14FB0CDD2",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/jifengzhouyu/gong 2.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/jifengzhouyu/gong 2.png",
+          "sha256": "5B765DB59114B62678FDD711363F10A0FA27037D560375F2E677D372B5CDB55F",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/jifengzhouyu/gong 3.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/jifengzhouyu/gong 3.png",
+          "sha256": "1A2E199E061886252929093F50F55F5EFF100A5C2110435DDD3C24C5846402F0",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/jifengzhouyu/gong.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/jifengzhouyu/gong.png",
+          "sha256": "35500E13C19284433052C2BD876C2AC5908A646374B50B49CA6546E206A1B235",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/jijiangriluozhishi/gong -1.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/jijiangriluozhishi/gong -1.png",
+          "sha256": "69F9F930881A4F182F5C68C46A21BC62C865363E03B1A4B17C3DB010B4EADD49",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/jijiangriluozhishi/gong 1.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/jijiangriluozhishi/gong 1.png",
+          "sha256": "9837504910BDE976110D51A360E9DD5A17BB321544CC0EBE732F2466B7E20A46",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/jijiangriluozhishi/gong 2.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/jijiangriluozhishi/gong 2.png",
+          "sha256": "E1CEC1E3EF950A9FDAE515E5C88EA8B449178D442FB5E6F6C4E85C4DFD3A433F",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/jijiangriluozhishi/gong 3.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/jijiangriluozhishi/gong 3.png",
+          "sha256": "22742BF83FD226091BD2F5D496830423F325D68E7752FA0E15B87F0C52884228",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/jijiangriluozhishi/gong.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/jijiangriluozhishi/gong.png",
+          "sha256": "D9769F23D0CB4F518FA5CF16F15A7992826F6681A117DD63F57F7D9CB9611DCD",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/leigongderennai/gong -1.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/leigongderennai/gong -1.png",
+          "sha256": "6E1720B9BA981999CDCDE60196561FEC86C8309DE4CC42B8DE8E3FA961092D53",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/leigongderennai/gong 1.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/leigongderennai/gong 1.png",
+          "sha256": "494243EF86960BB1E56401EF5FD3F68C602D891DF0FF59F6072BF321B49A1B7C",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/leigongderennai/gong 2.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/leigongderennai/gong 2.png",
+          "sha256": "32B30199B5669FBB4F2D6707E71907C071D578B53E348D445BC4D12EC3F2F7EB",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/leigongderennai/gong 3.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/leigongderennai/gong 3.png",
+          "sha256": "B7222CE6F5D2A5FB97AE9E8F4D7587358DE6823F9FF8D0FBED2AB7DCC2E286FA",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/leigongderennai/gong.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/leigongderennai/gong.png",
+          "sha256": "1A42CD087DAC5546450D000D0763532AC3351A2D3CEB2E0C791F422156DC541E",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/lvyexingzong/gong -1.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/lvyexingzong/gong -1.png",
+          "sha256": "75E53141162AA3AC07BF604570DA51AFDECD3A07E25BA7C59B02545EF43D6237",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/lvyexingzong/gong 1.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/lvyexingzong/gong 1.png",
+          "sha256": "2EBF16E92A4E362133D7EAB3BDDECCC55BB2AD318844D49ED3B97A19BAED1F8E",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/lvyexingzong/gong 2.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/lvyexingzong/gong 2.png",
+          "sha256": "EB188F80004BFC7181813923506D0989011EB512D41B7E38CFD9FEDE5B73E901",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/lvyexingzong/gong 3.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/lvyexingzong/gong 3.png",
+          "sha256": "2BD2AAF4F388DA1E815A513D301022A0D2223B2FEB85E865F9013BFD1084517F",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/lvyexingzong/gong.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/lvyexingzong/gong.png",
+          "sha256": "F810BE7E4A202E9A25A02D0B0C3B674677BF0C365EE32BB66366D76AC3FD1312",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/shendujiefang/gong -1.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/shendujiefang/gong -1.png",
+          "sha256": "049CF9D0382F22C363A919EB17E663301D4701BBDAE29768C6AA64D57DD97CF2",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/shendujiefang/gong 1.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/shendujiefang/gong 1.png",
+          "sha256": "2D86EBEE8BB0548DA3C3857D4E447B9BFF1A9B93082C5929C656A6A9D4829E9E",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/shendujiefang/gong 2.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/shendujiefang/gong 2.png",
+          "sha256": "A4E486B958831EA7EEA7C3D8429CAB89046F8C1DB8CF9F5F4FF991F71135C156",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/shendujiefang/gong 3.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/shendujiefang/gong 3.png",
+          "sha256": "6E5D84AF5721C95DE4BE5E460073285D517BB1B59B016D18867053D2A3A95087",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/shendujiefang/gong.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/shendujiefang/gong.png",
+          "sha256": "B69D74A1C60C81AD020E7209400A3DA1349277ECA8E2686513256EADE48531E4",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/shendujiefang/liandao.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/shendujiefang/liandao.png",
+          "sha256": "996FA1E953CC86C5DA8C357B3D7F266110777725D6AFD307695A69924907834E",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/tiegong-kuozhan/3-1-1tiegongkuozhan -1.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/tiegong-kuozhan/3-1-1tiegongkuozhan -1.png",
+          "sha256": "28FADA3D6E465861B47BF8D90E698F1B77D0FEEB0090607D5370A596B313A7FA",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/tiegong-kuozhan/3-1-1tiegongkuozhan 1.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/tiegong-kuozhan/3-1-1tiegongkuozhan 1.png",
+          "sha256": "62CB429115D46606A7EC009C36EDB3D0A0B1F2105921E7C4370C945E06A88ABC",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/tiegong-kuozhan/3-1-1tiegongkuozhan 2.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/tiegong-kuozhan/3-1-1tiegongkuozhan 2.png",
+          "sha256": "DF716B4CEF49C5D4576F534DBF2F76E057A6F4F110E1E5BFF69940E7FA69A16E",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/tiegong-kuozhan/3-1-1tiegongkuozhan 3.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/tiegong-kuozhan/3-1-1tiegongkuozhan 3.png",
+          "sha256": "66DAED411AA54B6F07C4E22A798D17B978CACBF95B9E10A641A0B8FC81DB6548",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/tiegong-kuozhan/3-1-1tiegongkuozhan.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/tiegong-kuozhan/3-1-1tiegongkuozhan.png",
+          "sha256": "3C2D2185AA3E14528DFCE6E7B9BA32E9C3F310F96679AF4BF8C3CD26D6CC93B7",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/xueyouer/gong -1.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/xueyouer/gong -1.png",
+          "sha256": "961C8F376D08A6F3629D5AF0983A26E9C4FC7697396FFF85DC7A4967580963A6",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/xueyouer/gong 1.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/xueyouer/gong 1.png",
+          "sha256": "6EE303546D6F5678DB545F5A653DF576128B3B81E595B99418008309FB39569D",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/xueyouer/gong 2.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/xueyouer/gong 2.png",
+          "sha256": "786E7444F0237ECB341FB6C39E8DFA8FF40964DAEC4489ECD754E5C91F55B119",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/xueyouer/gong 3.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/xueyouer/gong 3.png",
+          "sha256": "940FE682495BA00BC7411905D170DD72C356FA5BA1FF576785645EB2E6E54CE9",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/xueyouer/gong.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/xueyouer/gong.png",
+          "sha256": "C236C6AB091A545CF0A49410154F553C77075AF1477507F1D37BAF609F7BA48B",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/yinleishi/gong -1.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/yinleishi/gong -1.png",
+          "sha256": "8BB94417588D36EE125CA60C226D5929E39FC9E8C2B13BA114AB67EAB7C86F07",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/yinleishi/gong 1.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/yinleishi/gong 1.png",
+          "sha256": "EAFF3D3FD44A225240DF51B15C9EE63ED31C8B08EEB217087FFFB7B6F6E0DDA4",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/yinleishi/gong 2.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/yinleishi/gong 2.png",
+          "sha256": "F33EEE609E43B6022CFE9C6534BD6E9EB81EEDD68998492519AC8483D8FF9630",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/yinleishi/gong 3.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/yinleishi/gong 3.png",
+          "sha256": "BEBCBE06AB67C33EB4A95E2DF91BA283D4EC9F8444C1014EAE21E3C5D9F7E77F",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/tietu/3ji/yinleishi/gong.png",
+          "target": "AddOns/BowWeapon/tietu/3ji/yinleishi/gong.png",
+          "sha256": "E77C33395BE63698FB7942E1D61467A4529132020B24D185ECC98318109159BE",
+          "config": false
+        },
+        {
+          "source": "AddOns/BowWeapon/武器-弓扩展 说明.txt",
+          "target": "AddOns/BowWeapon/武器-弓扩展 说明.txt",
+          "sha256": "E28699D3CF3C5E81FE9831846A42A50F4E5B917464B2B63A5FEF873CC56B4EDE",
+          "config": false
+        }
+      ]
+    },
+    {
+      "Id": "com.sephiria.backpack-organizer",
+      "Version": "2.5.4",
+      "Loader": "BepInEx",
+      "DefaultEnabled": true,
+      "Files": [
+        {
+          "source": "BepInEx/plugins/SephiriaBackpackOrganizer/SephiriaBackpackOrganizer.dll",
+          "target": "BepInEx/plugins/SephiriaBackpackOrganizer/SephiriaBackpackOrganizer.dll",
+          "sha256": "481EC3AEB607E632D114BF4655446DDCBA4D84B11F3BEB18F57F4825AA8B25AB",
+          "config": false
+        }
+      ]
+    },
+    {
+      "Id": "com.codex.sephiria.bondartifactwishes",
+      "Version": "0.2.0",
+      "Loader": "BepInEx",
+      "DefaultEnabled": true,
+      "Files": [
+        {
+          "source": "BepInEx/plugins/SephiriaBondArtifactWishes/SephiriaBondArtifactWishes.dll",
+          "target": "BepInEx/plugins/SephiriaBondArtifactWishes/SephiriaBondArtifactWishes.dll",
+          "sha256": "ADEEC09CAC38A7E3C5EEEED3B2D67AD0D9987ACF777C8070DDB781B53F26C81B",
+          "config": false
+        }
+      ]
+    },
+    {
+      "Id": "com.sephiria.itemlab",
+      "Version": "1.0.1",
+      "Loader": "BepInEx",
+      "DefaultEnabled": true,
+      "Files": [
+        {
+          "source": "BepInEx/plugins/SephiriaItemLab/CHANGELOG.txt",
+          "target": "BepInEx/plugins/SephiriaItemLab/CHANGELOG.txt",
+          "sha256": "FD8D858B03EC394361D0C428C8819B2A72F1EC4E481EEAF48743603540CE667F",
+          "config": false
+        },
+        {
+          "source": "BepInEx/plugins/SephiriaItemLab/LICENSE.txt",
+          "target": "BepInEx/plugins/SephiriaItemLab/LICENSE.txt",
+          "sha256": "3DB75E1324D4205612E058AB8C309AE2AFF0DB3238D97EDE8FA5D76B8B7075DF",
+          "config": false
+        },
+        {
+          "source": "BepInEx/plugins/SephiriaItemLab/Localization/TRANSLATION_TEMPLATE.xml",
+          "target": "BepInEx/plugins/SephiriaItemLab/Localization/TRANSLATION_TEMPLATE.xml",
+          "sha256": "AD2A9031DCA7D0D8FAA870CFA358557441CAC4F90FD18E087BA45EBC405A8E8C",
+          "config": false
+        },
+        {
+          "source": "BepInEx/plugins/SephiriaItemLab/README.txt",
+          "target": "BepInEx/plugins/SephiriaItemLab/README.txt",
+          "sha256": "1D466FB5BC75918AC43B8DBE9ACAEB5476A7267EAD08259B8D7C2B44183A3B98",
+          "config": false
+        },
+        {
+          "source": "BepInEx/plugins/SephiriaItemLab/SephiriaItemLab.dll",
+          "target": "BepInEx/plugins/SephiriaItemLab/SephiriaItemLab.dll",
+          "sha256": "A374A06E4181231D3AA25B63798F5298D421CD00067229026088D29C61227266",
+          "config": false
+        }
+      ]
+    },
+    {
+      "Id": "com.sephiria.crossbow-auto-reload",
+      "Version": "1.1.0",
+      "Loader": "BepInEx",
+      "DefaultEnabled": true,
+      "Files": [
+        {
+          "source": "BepInEx/plugins/SephiriaCrossbowAutoReload/SephiriaCrossbowAutoReload.dll",
+          "target": "BepInEx/plugins/SephiriaCrossbowAutoReload/SephiriaCrossbowAutoReload.dll",
+          "sha256": "9FB4F49455AF559FAD213EDC3C22746B647E1D7F6099255F431D8DAF9CBC51AF",
+          "config": false
+        }
+      ]
+    },
+    {
+      "Id": "dev.dreamyao.sephiria.directconnect",
+      "Version": "0.4.0",
+      "Loader": "BepInEx",
+      "DefaultEnabled": true,
+      "Files": [
+        {
+          "source": "BepInEx/plugins/SephiriaDirectConnect/SephiriaDirectConnect.dll",
+          "target": "BepInEx/plugins/SephiriaDirectConnect/SephiriaDirectConnect.dll",
+          "sha256": "9AC0FD64B9098BDDE7537C7F0B3B46229D0B6188EA8BEB8665B6292DB5E5BFFD",
+          "config": false
+        }
+      ]
+    },
+    {
+      "Id": "com.sephiria.hardmoderewardunlocker",
+      "Version": "1.0.0",
+      "Loader": "BepInEx",
+      "DefaultEnabled": true,
+      "Files": [
+        {
+          "source": "BepInEx/plugins/SephiriaHardModeUnlocker/CHANGELOG.txt",
+          "target": "BepInEx/plugins/SephiriaHardModeUnlocker/CHANGELOG.txt",
+          "sha256": "5B24AC29E3526ECD606DF1B3B3B3E2685DB025674733789E2C92DF2E09CD10B2",
+          "config": false
+        },
+        {
+          "source": "BepInEx/plugins/SephiriaHardModeUnlocker/LICENSE.txt",
+          "target": "BepInEx/plugins/SephiriaHardModeUnlocker/LICENSE.txt",
+          "sha256": "AFE0A6B36FE4DE2EEBA741A654855520D99B0D245446B597F59EA3079575DEB4",
+          "config": false
+        },
+        {
+          "source": "BepInEx/plugins/SephiriaHardModeUnlocker/README.txt",
+          "target": "BepInEx/plugins/SephiriaHardModeUnlocker/README.txt",
+          "sha256": "074576F2235CDCE4A2199DDE3D551AB2C97FE00D165193CB8BC414457403C505",
+          "config": false
+        },
+        {
+          "source": "BepInEx/plugins/SephiriaHardModeUnlocker/SephiriaHardModeUnlocker.dll",
+          "target": "BepInEx/plugins/SephiriaHardModeUnlocker/SephiriaHardModeUnlocker.dll",
+          "sha256": "5BCF8B01894AFD9DE32A8621FF4FAE68E19D1B44A31E1BEB5FE92C9E9A454111",
+          "config": false
+        }
+      ]
+    },
+    {
+      "Id": "codex.sephiria.hidden-room-hints",
+      "Version": "0.7.3",
+      "Loader": "BepInEx",
+      "DefaultEnabled": true,
+      "Files": [
+        {
+          "source": "BepInEx/plugins/SephiriaHiddenRoomHints/SephiriaHiddenRoomHints.dll",
+          "target": "BepInEx/plugins/SephiriaHiddenRoomHints/SephiriaHiddenRoomHints.dll",
+          "sha256": "63CE71CE7E6605C447FF0CDD28394FB35538EA55B3CA3DB261524A3F45FEE05D",
+          "config": false
+        }
+      ]
+    },
+    {
+      "Id": "feel.sephiria.holdspecial",
+      "Version": "1.0.1",
+      "Loader": "BepInEx",
+      "DefaultEnabled": true,
+      "Files": [
+        {
+          "source": "BepInEx/plugins/SephiriaHoldSpecial/README.md",
+          "target": "BepInEx/plugins/SephiriaHoldSpecial/README.md",
+          "sha256": "851551637870AC6E06F5D009B9DFD2FA920DEFBD641280EAFFA7C72F3E2BC3AA",
+          "config": false
+        },
+        {
+          "source": "BepInEx/plugins/SephiriaHoldSpecial/SephiriaHoldSpecial.dll",
+          "target": "BepInEx/plugins/SephiriaHoldSpecial/SephiriaHoldSpecial.dll",
+          "sha256": "019DBF4ECB4A8BC5A2A1BA6708D5B4073A49D435B976AE571EDAC7BECFE741B1",
+          "config": false
+        }
+      ]
+    },
+    {
+      "Id": "com.codex.sephiria.itemlab-tweaks",
+      "Version": "1.1.0",
+      "Loader": "BepInEx",
+      "DefaultEnabled": true,
+      "Files": [
+        {
+          "source": "BepInEx/plugins/SephiriaItemLabTweaks/README.md",
+          "target": "BepInEx/plugins/SephiriaItemLabTweaks/README.md",
+          "sha256": "F35D6A4F29578E1B4F502386BC31E5D8AB3BA560D696D498259D4B132931FD5B",
+          "config": false
+        },
+        {
+          "source": "BepInEx/plugins/SephiriaItemLabTweaks/SephiriaItemLabTweaks.dll",
+          "target": "BepInEx/plugins/SephiriaItemLabTweaks/SephiriaItemLabTweaks.dll",
+          "sha256": "E03170109E89DD4A3B32B990701AB4487F05414A2AC3EAAC81F2CBF04E1ABF1A",
+          "config": false
+        }
+      ]
+    },
+    {
+      "Id": "com.codex.sephiria.talent-effects",
+      "Version": "0.2.1",
+      "Loader": "BepInEx",
+      "DefaultEnabled": true,
+      "Files": [
+        {
+          "source": "BepInEx/plugins/SephiriaTalentEffects/SephiriaTalentEffects.dll",
+          "target": "BepInEx/plugins/SephiriaTalentEffects/SephiriaTalentEffects.dll",
+          "sha256": "89862F1CDE00038DC7A3AA1B131350C2E18CCDECC73798CD973A945921E90DEB",
+          "config": false
+        }
+      ]
+    },
+    {
+      "Id": "addon:StarSephiriaMod",
+      "Version": "2.6.1",
+      "Loader": "AddOn",
+      "DefaultEnabled": true,
+      "Files": [
+        {
+          "source": "AddOns/SPMod/0Harmony.dll",
+          "target": "AddOns/SPMod/0Harmony.dll",
+          "sha256": "1A21CC03424FC82C3DD1346905D16494536B9595AE4162228D99FB7C285C1031",
+          "config": false
+        },
+        {
+          "source": "AddOns/SPMod/metadata.json",
+          "target": "AddOns/SPMod/metadata.json",
+          "sha256": "285FABDF9ED1F46472E36B9B606D5CE48CE26B528044C55B3B173BB2EAA6F3A1",
+          "config": false
+        },
+        {
+          "source": "AddOns/SPMod/Mono.Cecil.dll",
+          "target": "AddOns/SPMod/Mono.Cecil.dll",
+          "sha256": "7AE470288FFF4A402899C254D0A76CEFEF55877F5C54F96E83C797CC5BB6E2F6",
+          "config": false
+        },
+        {
+          "source": "AddOns/SPMod/Mono.Cecil.Mdb.dll",
+          "target": "AddOns/SPMod/Mono.Cecil.Mdb.dll",
+          "sha256": "5896D1898F616701FFF18F3B2C71E6B844D2390EF9F41E1C5FCCCE8CB27C698E",
+          "config": false
+        },
+        {
+          "source": "AddOns/SPMod/Mono.Cecil.Pdb.dll",
+          "target": "AddOns/SPMod/Mono.Cecil.Pdb.dll",
+          "sha256": "174DB44A067F58561510AF746F3CAEB032037762C57A31C8D9EE32DB25174984",
+          "config": false
+        },
+        {
+          "source": "AddOns/SPMod/Mono.Cecil.Rocks.dll",
+          "target": "AddOns/SPMod/Mono.Cecil.Rocks.dll",
+          "sha256": "54AC539FB5DDC8B44C0E9ACD0FCB7324F89D1A072EDF8EBC1B06DD691E3D3927",
+          "config": false
+        },
+        {
+          "source": "AddOns/SPMod/MonoMod.RuntimeDetour.dll",
+          "target": "AddOns/SPMod/MonoMod.RuntimeDetour.dll",
+          "sha256": "40E49BB314391CD7BDDC2644F8553EEBA92C194B940836B103DF16955C464E0C",
+          "config": false
+        },
+        {
+          "source": "AddOns/SPMod/MonoMod.Utils.dll",
+          "target": "AddOns/SPMod/MonoMod.Utils.dll",
+          "sha256": "9D1495F147AC93C4F81F84538C1A326E8F8A6AEFC78D6289D798F3CE1162C5E9",
+          "config": false
+        },
+        {
+          "source": "AddOns/SPMod/SPMod.dll",
+          "target": "AddOns/SPMod/SPMod.dll",
+          "sha256": "A0B4D651C1CECBF76890626C78B777ADA03A1037C42A9DFC1B7E24732E7C6A7A",
+          "config": false
+        }
+      ]
+    }
+  ]
+}

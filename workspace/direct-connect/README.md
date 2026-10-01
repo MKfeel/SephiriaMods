@@ -34,17 +34,20 @@ dotnet run --project .\direct-connect\tests\Regression.csproj -c Release
 
 已通过 Release 构建（0 警告、0 错误）与 10 项离线回归，覆盖阶段超时、取消、保留认证拒绝原因、恢复超时、嵌套协程异常传播与 finally 清理。测试不启动 Unity，也不建立实际网络连接。
 
-## 安装与回滚
+## 部署与回滚
 
-推荐在模组管理器中从 `MKfeel/SephiriaMods` 的 `catalog/mods.json` 安装“IP 直连”0.4.0。也可下载标准安装包，完全退出游戏后将其中的 `BepInEx` 目录合并到游戏目录。需要 BepInEx 5；安装前备份原来的 DLL，回滚时退出游戏并恢复备份。不要同时保留两个同 GUID 的插件 DLL。
+已在游戏关闭时安装到：
 
-DLL SHA-256：`9AC0FD64B9098BDDE7537C7F0B3B46229D0B6188EA8BEB8665B6292DB5E5BFFD`。
+`E:\steam\steamapps\common\Sephiria\BepInEx\plugins\SephiriaDirectConnect\SephiriaDirectConnect.dll`
 
-`Install-Local.ps1` 是原开发电脑的安装辅助脚本，只接受已核对的 0.3.9 基线；其他电脑推荐使用管理器。仓库不包含私人连接配置和开发电脑的回滚备份。构建时可用 `-p:GameDirectory=你的游戏目录` 指定引用路径。
+0.4.0 SHA-256：`9AC0FD64B9098BDDE7537C7F0B3B46229D0B6188EA8BEB8665B6292DB5E5BFFD`
+
+原 0.3.9 备份：`backups/20260921-183529/SephiriaDirectConnect.dll`，SHA-256：`1FFCBE13E5A6AC796392571841A91DFA7436FF47A56CCC19103BF0474A74BBF6`。安装记录见 `deployment.json`。
+
+回滚时完全退出游戏，再将上述备份 DLL 覆盖安装路径。`Install-Local.ps1` 会检查游戏进程、核对被替换版本、备份和校验安装结果；未上传远端仓库。
 
 ## 待游戏验收
 
 尚未启动或控制游戏。双机运行仍需确认：正常创建与加入；地址不可达时取消和超时后返回标题；版本不一致的具体提示；旧玩家途中重连与新玩家被拒绝；从 Steam 房间切换到 IP 后无残留成员；端口占用与换端口后可重新加入；返回标题后普通 Steam 联机仍可用。
 
 同步原版方法在主线程执行期间不能被点击取消强行中断；超时与取消针对各异步等待阶段。原版返回标题协程内部的延时没有改动。
-

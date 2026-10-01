@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net471</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>annotations</Nullable>
+    <Version>1.1.0</Version>
+    <AssemblyName>SephiriaItemLabTweaks</AssemblyName>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <GameDirectory Condition="'$(GameDirectory)' == ''">E:\steam\steamapps\common\Sephiria</GameDirectory>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Plugin.cs" />
+    <Compile Include="TalentPanel.cs" />
+    <Compile Include="TalentService.cs" />
+    <Compile Include="TalentSPCompat.cs" />
+    <Reference Include="$(GameDirectory)\BepInEx\core\BepInEx.dll" Private="false" />
+    <Reference Include="$(GameDirectory)\BepInEx\core\0Harmony.dll" Private="false" />
+    <Reference Include="$(GameDirectory)\Sephiria_Data\Managed\Assembly-CSharp.dll" Private="false" />
+    <Reference Include="$(GameDirectory)\Sephiria_Data\Managed\Mirror.dll" Private="false" />
+    <Reference Include="$(GameDirectory)\Sephiria_Data\Managed\UnityEngine.dll" Private="false" />
+    <Reference Include="$(GameDirectory)\Sephiria_Data\Managed\UnityEngine.CoreModule.dll" Private="false" />
+    <Reference Include="$(GameDirectory)\Sephiria_Data\Managed\UnityEngine.UI.dll" Private="false" />
+    <Reference Include="$(GameDirectory)\Sephiria_Data\Managed\UnityEngine.UIModule.dll" Private="false" />
+    <Reference Include="$(GameDirectory)\Sephiria_Data\Managed\Unity.TextMeshPro.dll" Private="false" />
+  </ItemGroup>
+</Project>

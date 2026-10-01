@@ -14,6 +14,12 @@
 
   <ItemGroup>
     <Compile Remove="direct-connect\**\*.cs" />
+    <Compile Remove="backpack-organizer-own\**\*.cs" />
+    <Compile Remove="docs\**\*.cs" />
+    <Compile Remove="talent-effects\**\*.cs" />
+    <Compile Remove="windows-mod-manager\**\*.cs" />
+    <Compile Remove="hidden-room-hints\**\*.cs" />
+    <Compile Remove="item-lab-tweaks\**\*.cs" />
     <Compile Remove="unified-mod-panel\**\*.cs" />
     <Compile Remove="talent-spmod-compat\**\*.cs" />
     <Reference Include="BepInEx">
@@ -51,4 +57,3 @@
     <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(MSBuildProjectDirectory)\dist" />
   </Target>
 </Project>
-

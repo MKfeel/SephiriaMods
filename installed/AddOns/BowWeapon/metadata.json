@@ -1,0 +1,7 @@
+{
+  "modName": "BowWeapon",
+  "modVersion": "1.0.0",
+  "modAuthor": "maxcc",
+  "dllFile": "BowWeapon.dll",
+  "entryClass": "BowWeapon.Core"
+}

@@ -1,5 +1,7 @@
 # SPMod 与 Talent Customizer 兼容补丁 1.0.0
 
+> 2026-09-12：本独立插件已卸载，逻辑整合进 `item-lab-tweaks/TalentSPCompat.cs`，由 Item Lab 扩展 1.1.0 的点数服务接管。此目录仅保留历史源码与产物；以下是旧版本记录，不应与整合版同时安装。
+
 适配本机 SPMod 2.4.3、Sephiria Talent Customizer 1.0.2、BepInEx 5。
 
 SPMod 的 `SPMod.StarSephiriaPatches+PlayerAvatar_Patches.UpdateMaxPassivePoint` 在更新中将上限写为 `50 + SPMod奖励`，随后重置超过上限的加点。这会覆盖 Talent Customizer 的额外点数，且不受 `ModifyPassive` 开关控制。
