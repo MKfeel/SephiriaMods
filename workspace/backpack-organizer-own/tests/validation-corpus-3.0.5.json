@@ -1,0 +1,774 @@
+{
+  "tag": "3.0.5",
+  "oldEngine": "dist/SephiriaBackpackOrganizer-3.0.4/model",
+  "newEngine": "dist/SephiriaBackpackOrganizer-3.0.5/model",
+  "rounds": 3,
+  "scope": "Three recorded game bags and nine independent synthetic bags. Sequential isolated Node processes, full eight-start search; exact final diagnostics and candidate counts. Timings include process startup, loading and snapshot preparation; no live Unity application.",
+  "rows": [
+    {
+      "id": "real-sparse-9",
+      "origin": "recorded-game",
+      "capacity": 32,
+      "items": 9,
+      "profile": "auto",
+      "beforeMedianMs": 593.4259999999999,
+      "afterMedianMs": 569.0590000000002,
+      "reductionPercent": 4.106156454216658,
+      "evaluations": 144488,
+      "starts": 8,
+      "exactResult": true,
+      "freeGains": {
+        "checks": 24,
+        "moves": [
+          {
+            "uid": "1430207549",
+            "id": 1073,
+            "from": 15,
+            "to": 31,
+            "levelBefore": 0,
+            "levelAfter": 1,
+            "statsBefore": {
+              "DEFENSE": 0,
+              "EVASION": 500,
+              "MP_REGEN": 18,
+              "MP_STEAL": 5
+            },
+            "statsAfter": {
+              "DEFENSE": 0,
+              "EVASION": 500,
+              "MP_REGEN": 21,
+              "MP_STEAL": 5
+            }
+          }
+        ],
+        "ms": 5
+      },
+      "runs": [
+        {
+          "version": "old",
+          "round": 0,
+          "wallMs": 606.1079,
+          "searchMs": 489,
+          "freeGainMs": 4
+        },
+        {
+          "version": "new",
+          "round": 0,
+          "wallMs": 593.2197000000001,
+          "searchMs": 477,
+          "freeGainMs": 5
+        },
+        {
+          "version": "new",
+          "round": 1,
+          "wallMs": 569.0590000000002,
+          "searchMs": 453,
+          "freeGainMs": 3
+        },
+        {
+          "version": "old",
+          "round": 1,
+          "wallMs": 593.4259999999999,
+          "searchMs": 477,
+          "freeGainMs": 4
+        },
+        {
+          "version": "old",
+          "round": 2,
+          "wallMs": 593.3836000000001,
+          "searchMs": 477,
+          "freeGainMs": 4
+        },
+        {
+          "version": "new",
+          "round": 2,
+          "wallMs": 566.3162000000002,
+          "searchMs": 451,
+          "freeGainMs": 5
+        }
+      ]
+    },
+    {
+      "id": "real-lightning-25",
+      "origin": "recorded-game",
+      "capacity": 36,
+      "items": 25,
+      "profile": "auto",
+      "beforeMedianMs": 2199.8967999999995,
+      "afterMedianMs": 1966.6441000000013,
+      "reductionPercent": 10.602892826608878,
+      "evaluations": 145437,
+      "starts": 8,
+      "exactResult": true,
+      "freeGains": {
+        "checks": 54,
+        "moves": [],
+        "ms": 10
+      },
+      "runs": [
+        {
+          "version": "old",
+          "round": 0,
+          "wallMs": 2199.8967999999995,
+          "searchMs": 2083,
+          "freeGainMs": 10
+        },
+        {
+          "version": "new",
+          "round": 0,
+          "wallMs": 1978.1852,
+          "searchMs": 1860,
+          "freeGainMs": 11
+        },
+        {
+          "version": "new",
+          "round": 1,
+          "wallMs": 1939.766700000001,
+          "searchMs": 1819,
+          "freeGainMs": 10
+        },
+        {
+          "version": "old",
+          "round": 1,
+          "wallMs": 2270.0342999999993,
+          "searchMs": 2155,
+          "freeGainMs": 11
+        },
+        {
+          "version": "old",
+          "round": 2,
+          "wallMs": 2198.8577999999998,
+          "searchMs": 2082,
+          "freeGainMs": 10
+        },
+        {
+          "version": "new",
+          "round": 2,
+          "wallMs": 1966.6441000000013,
+          "searchMs": 1849,
+          "freeGainMs": 10
+        }
+      ]
+    },
+    {
+      "id": "real-lightning-31",
+      "origin": "recorded-game",
+      "capacity": 38,
+      "items": 31,
+      "profile": "auto",
+      "beforeMedianMs": 2691.275600000001,
+      "afterMedianMs": 2420.6592999999993,
+      "reductionPercent": 10.055317262936637,
+      "evaluations": 145756,
+      "starts": 8,
+      "exactResult": true,
+      "freeGains": {
+        "checks": 85,
+        "moves": [],
+        "ms": 18
+      },
+      "runs": [
+        {
+          "version": "old",
+          "round": 0,
+          "wallMs": 2683.4510999999984,
+          "searchMs": 2541,
+          "freeGainMs": 14
+        },
+        {
+          "version": "new",
+          "round": 0,
+          "wallMs": 2420.6592999999993,
+          "searchMs": 2226,
+          "freeGainMs": 17
+        },
+        {
+          "version": "new",
+          "round": 1,
+          "wallMs": 2439.6336999999985,
+          "searchMs": 2310,
+          "freeGainMs": 19
+        },
+        {
+          "version": "old",
+          "round": 1,
+          "wallMs": 2732.8417999999983,
+          "searchMs": 2616,
+          "freeGainMs": 15
+        },
+        {
+          "version": "old",
+          "round": 2,
+          "wallMs": 2691.275600000001,
+          "searchMs": 2575,
+          "freeGainMs": 16
+        },
+        {
+          "version": "new",
+          "round": 2,
+          "wallMs": 2382.565999999999,
+          "searchMs": 2261,
+          "freeGainMs": 18
+        }
+      ]
+    },
+    {
+      "id": "synthetic-physical-sword-24",
+      "origin": "synthetic",
+      "capacity": 24,
+      "items": 22,
+      "profile": "physical-sword",
+      "beforeMedianMs": 2481.9519999999975,
+      "afterMedianMs": 2053.6132,
+      "reductionPercent": 17.25814197857163,
+      "evaluations": 145040,
+      "starts": 8,
+      "exactResult": true,
+      "freeGains": {
+        "checks": 0,
+        "moves": [],
+        "ms": 1
+      },
+      "runs": [
+        {
+          "version": "old",
+          "round": 0,
+          "wallMs": 2482.0420999999988,
+          "searchMs": 2375,
+          "freeGainMs": 0
+        },
+        {
+          "version": "new",
+          "round": 0,
+          "wallMs": 2081.123799999994,
+          "searchMs": 1972,
+          "freeGainMs": 0
+        },
+        {
+          "version": "new",
+          "round": 1,
+          "wallMs": 2053.6132,
+          "searchMs": 1935,
+          "freeGainMs": 0
+        },
+        {
+          "version": "old",
+          "round": 1,
+          "wallMs": 2481.9519999999975,
+          "searchMs": 2374,
+          "freeGainMs": 0
+        },
+        {
+          "version": "old",
+          "round": 2,
+          "wallMs": 2476.728900000002,
+          "searchMs": 2371,
+          "freeGainMs": 1
+        },
+        {
+          "version": "new",
+          "round": 2,
+          "wallMs": 2051.907699999996,
+          "searchMs": 1924,
+          "freeGainMs": 1
+        }
+      ]
+    },
+    {
+      "id": "synthetic-plasma-32",
+      "origin": "synthetic",
+      "capacity": 32,
+      "items": 29,
+      "profile": "plasma",
+      "beforeMedianMs": 3140.4535000000033,
+      "afterMedianMs": 2663.620999999999,
+      "reductionPercent": 15.183555496045509,
+      "evaluations": 146065,
+      "starts": 8,
+      "exactResult": true,
+      "freeGains": {
+        "checks": 14,
+        "moves": [],
+        "ms": 3
+      },
+      "runs": [
+        {
+          "version": "old",
+          "round": 0,
+          "wallMs": 3168.3933000000034,
+          "searchMs": 3008,
+          "freeGainMs": 3
+        },
+        {
+          "version": "new",
+          "round": 0,
+          "wallMs": 2689.0280000000057,
+          "searchMs": 2503,
+          "freeGainMs": 2
+        },
+        {
+          "version": "new",
+          "round": 1,
+          "wallMs": 2663.620999999999,
+          "searchMs": 2479,
+          "freeGainMs": 3
+        },
+        {
+          "version": "old",
+          "round": 1,
+          "wallMs": 3139.6316000000006,
+          "searchMs": 2981,
+          "freeGainMs": 3
+        },
+        {
+          "version": "old",
+          "round": 2,
+          "wallMs": 3140.4535000000033,
+          "searchMs": 2980,
+          "freeGainMs": 3
+        },
+        {
+          "version": "new",
+          "round": 2,
+          "wallMs": 2656.2004000000015,
+          "searchMs": 2471,
+          "freeGainMs": 3
+        }
+      ]
+    },
+    {
+      "id": "synthetic-planet-38",
+      "origin": "synthetic",
+      "capacity": 38,
+      "items": 32,
+      "profile": "planet",
+      "beforeMedianMs": 3606.743100000007,
+      "afterMedianMs": 3086.799600000013,
+      "reductionPercent": 14.41587286879381,
+      "evaluations": 147249,
+      "starts": 8,
+      "exactResult": true,
+      "freeGains": {
+        "checks": 0,
+        "moves": [],
+        "ms": 0
+      },
+      "runs": [
+        {
+          "version": "old",
+          "round": 0,
+          "wallMs": 3613.1384000000035,
+          "searchMs": 3476,
+          "freeGainMs": 1
+        },
+        {
+          "version": "new",
+          "round": 0,
+          "wallMs": 3122.582699999999,
+          "searchMs": 2969,
+          "freeGainMs": 1
+        },
+        {
+          "version": "new",
+          "round": 1,
+          "wallMs": 3086.799600000013,
+          "searchMs": 2922,
+          "freeGainMs": 0
+        },
+        {
+          "version": "old",
+          "round": 1,
+          "wallMs": 3564.0515999999916,
+          "searchMs": 3432,
+          "freeGainMs": 1
+        },
+        {
+          "version": "old",
+          "round": 2,
+          "wallMs": 3606.743100000007,
+          "searchMs": 3474,
+          "freeGainMs": 1
+        },
+        {
+          "version": "new",
+          "round": 2,
+          "wallMs": 3047.6598999999987,
+          "searchMs": 2884,
+          "freeGainMs": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-companion-cloud-42",
+      "origin": "synthetic",
+      "capacity": 42,
+      "items": 36,
+      "profile": "companion-cloud",
+      "beforeMedianMs": 4011.2223000000085,
+      "afterMedianMs": 3459.8050999999978,
+      "reductionPercent": 13.74686214723152,
+      "evaluations": 146528,
+      "starts": 8,
+      "exactResult": true,
+      "freeGains": {
+        "checks": 34,
+        "moves": [],
+        "ms": 8
+      },
+      "runs": [
+        {
+          "version": "old",
+          "round": 0,
+          "wallMs": 4014.873800000001,
+          "searchMs": 3858,
+          "freeGainMs": 6
+        },
+        {
+          "version": "new",
+          "round": 0,
+          "wallMs": 3459.8050999999978,
+          "searchMs": 3269,
+          "freeGainMs": 7
+        },
+        {
+          "version": "new",
+          "round": 1,
+          "wallMs": 3446.7725000000064,
+          "searchMs": 3257,
+          "freeGainMs": 7
+        },
+        {
+          "version": "old",
+          "round": 1,
+          "wallMs": 3963.6603999999934,
+          "searchMs": 3808,
+          "freeGainMs": 6
+        },
+        {
+          "version": "old",
+          "round": 2,
+          "wallMs": 4011.2223000000085,
+          "searchMs": 3857,
+          "freeGainMs": 6
+        },
+        {
+          "version": "new",
+          "round": 2,
+          "wallMs": 3518.6929999999993,
+          "searchMs": 3335,
+          "freeGainMs": 8
+        }
+      ]
+    },
+    {
+      "id": "synthetic-double-lightning-48",
+      "origin": "synthetic",
+      "capacity": 48,
+      "items": 42,
+      "profile": "double-lightning",
+      "beforeMedianMs": 4345.215500000006,
+      "afterMedianMs": 3832.707300000009,
+      "reductionPercent": 11.794770593080962,
+      "evaluations": 149288,
+      "starts": 8,
+      "exactResult": true,
+      "freeGains": {
+        "checks": 54,
+        "moves": [],
+        "ms": 14
+      },
+      "runs": [
+        {
+          "version": "old",
+          "round": 0,
+          "wallMs": 6756.9637000000075,
+          "searchMs": 6640,
+          "freeGainMs": 14
+        },
+        {
+          "version": "new",
+          "round": 0,
+          "wallMs": 3790.677199999991,
+          "searchMs": 3675,
+          "freeGainMs": 11
+        },
+        {
+          "version": "new",
+          "round": 1,
+          "wallMs": 3832.707300000009,
+          "searchMs": 3717,
+          "freeGainMs": 12
+        },
+        {
+          "version": "old",
+          "round": 1,
+          "wallMs": 4321.9228,
+          "searchMs": 4207,
+          "freeGainMs": 11
+        },
+        {
+          "version": "old",
+          "round": 2,
+          "wallMs": 4345.215500000006,
+          "searchMs": 4228,
+          "freeGainMs": 14
+        },
+        {
+          "version": "new",
+          "round": 2,
+          "wallMs": 3876.082500000004,
+          "searchMs": 3760,
+          "freeGainMs": 14
+        }
+      ]
+    },
+    {
+      "id": "synthetic-fusion-sun-60",
+      "origin": "synthetic",
+      "capacity": 60,
+      "items": 50,
+      "profile": "fusion-sun",
+      "beforeMedianMs": 5071.515600000013,
+      "afterMedianMs": 4295.5013000000035,
+      "reductionPercent": 15.301427841413084,
+      "evaluations": 151448,
+      "starts": 8,
+      "exactResult": true,
+      "freeGains": {
+        "checks": 234,
+        "moves": [],
+        "ms": 53
+      },
+      "runs": [
+        {
+          "version": "old",
+          "round": 0,
+          "wallMs": 5056.206999999995,
+          "searchMs": 4924,
+          "freeGainMs": 54
+        },
+        {
+          "version": "new",
+          "round": 0,
+          "wallMs": 4312.0141,
+          "searchMs": 4102,
+          "freeGainMs": 54
+        },
+        {
+          "version": "new",
+          "round": 1,
+          "wallMs": 4252.508600000001,
+          "searchMs": 4047,
+          "freeGainMs": 55
+        },
+        {
+          "version": "old",
+          "round": 1,
+          "wallMs": 5125.442999999999,
+          "searchMs": 5000,
+          "freeGainMs": 57
+        },
+        {
+          "version": "old",
+          "round": 2,
+          "wallMs": 5071.515600000013,
+          "searchMs": 4920,
+          "freeGainMs": 53
+        },
+        {
+          "version": "new",
+          "round": 2,
+          "wallMs": 4295.5013000000035,
+          "searchMs": 4088,
+          "freeGainMs": 53
+        }
+      ]
+    },
+    {
+      "id": "synthetic-guardian-wind-36",
+      "origin": "synthetic",
+      "capacity": 36,
+      "items": 28,
+      "profile": "guardian-wind",
+      "beforeMedianMs": 3007.962099999975,
+      "afterMedianMs": 2558.443100000004,
+      "reductionPercent": 14.9443039857442,
+      "evaluations": 146097,
+      "starts": 8,
+      "exactResult": true,
+      "freeGains": {
+        "checks": 0,
+        "moves": [],
+        "ms": 0
+      },
+      "runs": [
+        {
+          "version": "old",
+          "round": 0,
+          "wallMs": 3007.962099999975,
+          "searchMs": 2839,
+          "freeGainMs": 0
+        },
+        {
+          "version": "new",
+          "round": 0,
+          "wallMs": 2558.443100000004,
+          "searchMs": 2360,
+          "freeGainMs": 1
+        },
+        {
+          "version": "new",
+          "round": 1,
+          "wallMs": 2554.6772000000055,
+          "searchMs": 2357,
+          "freeGainMs": 0
+        },
+        {
+          "version": "old",
+          "round": 1,
+          "wallMs": 3003.5190000000002,
+          "searchMs": 2840,
+          "freeGainMs": 1
+        },
+        {
+          "version": "old",
+          "round": 2,
+          "wallMs": 3059.0616000000155,
+          "searchMs": 2889,
+          "freeGainMs": 0
+        },
+        {
+          "version": "new",
+          "round": 2,
+          "wallMs": 2578.6019999999844,
+          "searchMs": 2386,
+          "freeGainMs": 0
+        }
+      ]
+    },
+    {
+      "id": "synthetic-needle-chain-18",
+      "origin": "synthetic",
+      "capacity": 18,
+      "items": 9,
+      "profile": "planet",
+      "beforeMedianMs": 491.0560000000114,
+      "afterMedianMs": 478.0834999999788,
+      "reductionPercent": 2.6417557264410307,
+      "evaluations": 144170,
+      "starts": 8,
+      "exactResult": true,
+      "freeGains": {
+        "checks": 0,
+        "moves": [],
+        "ms": 7
+      },
+      "runs": [
+        {
+          "version": "old",
+          "round": 0,
+          "wallMs": 496.47849999999744,
+          "searchMs": 394,
+          "freeGainMs": 7
+        },
+        {
+          "version": "new",
+          "round": 0,
+          "wallMs": 477.7088999999978,
+          "searchMs": 375,
+          "freeGainMs": 7
+        },
+        {
+          "version": "new",
+          "round": 1,
+          "wallMs": 478.0834999999788,
+          "searchMs": 378,
+          "freeGainMs": 8
+        },
+        {
+          "version": "old",
+          "round": 1,
+          "wallMs": 485.32750000001397,
+          "searchMs": 388,
+          "freeGainMs": 7
+        },
+        {
+          "version": "old",
+          "round": 2,
+          "wallMs": 491.0560000000114,
+          "searchMs": 390,
+          "freeGainMs": 7
+        },
+        {
+          "version": "new",
+          "round": 2,
+          "wallMs": 482.1963000000105,
+          "searchMs": 378,
+          "freeGainMs": 7
+        }
+      ]
+    },
+    {
+      "id": "synthetic-paper-row-pins-24",
+      "origin": "synthetic",
+      "capacity": 24,
+      "items": 11,
+      "profile": "magic-lightning",
+      "beforeMedianMs": 974.4126999999862,
+      "afterMedianMs": 737.1290000000154,
+      "reductionPercent": 24.351458062890007,
+      "evaluations": 144376,
+      "starts": 8,
+      "exactResult": true,
+      "freeGains": {
+        "checks": 0,
+        "moves": [],
+        "ms": 1
+      },
+      "runs": [
+        {
+          "version": "old",
+          "round": 0,
+          "wallMs": 1018.983499999973,
+          "searchMs": 917,
+          "freeGainMs": 0
+        },
+        {
+          "version": "new",
+          "round": 0,
+          "wallMs": 737.1290000000154,
+          "searchMs": 633,
+          "freeGainMs": 0
+        },
+        {
+          "version": "new",
+          "round": 1,
+          "wallMs": 732.9492999999784,
+          "searchMs": 631,
+          "freeGainMs": 1
+        },
+        {
+          "version": "old",
+          "round": 1,
+          "wallMs": 951.6063999999897,
+          "searchMs": 849,
+          "freeGainMs": 0
+        },
+        {
+          "version": "old",
+          "round": 2,
+          "wallMs": 974.4126999999862,
+          "searchMs": 871,
+          "freeGainMs": 0
+        },
+        {
+          "version": "new",
+          "round": 2,
+          "wallMs": 746.7483999999822,
+          "searchMs": 644,
+          "freeGainMs": 1
+        }
+      ]
+    }
+  ]
+}

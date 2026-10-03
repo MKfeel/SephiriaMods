@@ -1,0 +1,758 @@
+[
+  {
+    "id": "ARRANGEMENT_BONUS",
+    "className": "StatusInstance_Custom/ArrangementBonus"
+  },
+  {
+    "id": "ATTACK_DASH",
+    "className": "StatusInstance_Custom/AttackDash"
+  },
+  {
+    "id": "ATTACK_SPEED",
+    "className": "StatusInstance_AttackSpeed"
+  },
+  {
+    "id": "BASIC_ATTACK_DAMAGE",
+    "className": "StatusInstance_BasicAttackDamage"
+  },
+  {
+    "id": "BLUE_BURN_CHANGE",
+    "className": "StatusInstance_Custom/BlueBurnChange"
+  },
+  {
+    "id": "BOLT_MAGIC_HOMING",
+    "className": "StatusInstance_Custom/BoltMagicHoming"
+  },
+  {
+    "id": "BOSS_REWARD_DICE",
+    "className": "StatusInstance_Custom/BossRewardDice"
+  },
+  {
+    "id": "BUFF_DURATION",
+    "className": "StatusInstance_BuffDuration"
+  },
+  {
+    "id": "BURN_ADD",
+    "className": "StatusInstance_Custom/BurnAdd"
+  },
+  {
+    "id": "BURN_DAMAGE",
+    "className": "StatusInstance_Custom/BurnDamage"
+  },
+  {
+    "id": "BURN_DURATION",
+    "className": "StatusInstance_Custom/BurnDuration"
+  },
+  {
+    "id": "BURN_EVO",
+    "className": "StatusInstance_Custom/BurnEvo"
+  },
+  {
+    "id": "BURN_IGNITE",
+    "className": "StatusInstance_Custom/BurnIgnite"
+  },
+  {
+    "id": "BURN_SPEED",
+    "className": "StatusInstance_Custom/BurnSpeed"
+  },
+  {
+    "id": "BURN_STACK",
+    "className": "StatusInstance_Custom/BurnStack"
+  },
+  {
+    "id": "CHARGING_CHARM_AMPLIFY",
+    "className": "StatusInstance_Custom/ChargingCharmAmplify"
+  },
+  {
+    "id": "CHARGING_CHARM_BONUS",
+    "className": "StatusInstance_ChargingCharmBonus"
+  },
+  {
+    "id": "CHARGING_CHARM_RETRIGGER_BY_ATTACKSPEED",
+    "className": "StatusInstance_Custom/ChargingCharmRetriggerByAttackSpeed"
+  },
+  {
+    "id": "CHARM_DAMAGE_BONUS",
+    "className": "StatusInstance_Custom/CharmDamageBonus"
+  },
+  {
+    "id": "CHIM_DAMAGE_BONUS",
+    "className": "StatusInstance_Custom/ChimDamageBonus"
+  },
+  {
+    "id": "COMBO_BONUS_DAMAGE",
+    "className": "StatusInstance_Custom/ComboBonusDamage"
+  },
+  {
+    "id": "COOLDOWN_RECOVERY_SPEED",
+    "className": "StatusInstance_CooldownRecoverySpeed"
+  },
+  {
+    "id": "CRITICAL",
+    "className": "StatusInstance_Critical"
+  },
+  {
+    "id": "CRITICAL_DAMAGE_RATE",
+    "className": "StatusInstance_CriticalDamageRate"
+  },
+  {
+    "id": "CRITICAL_RESIST",
+    "className": "StatusInstance_Custom/CriticalResist"
+  },
+  {
+    "id": "CROSSBOW_ADDITIONAL_MAGAZINE",
+    "className": "StatusInstance_Custom/CrossbowAdditionalMagazine"
+  },
+  {
+    "id": "CROSSBOWAMMO",
+    "className": "StatusInstance_Custom/CrossbowAmmo"
+  },
+  {
+    "id": "CROSSBOWFIRESPEED",
+    "className": "StatusInstance_AttackSpeed"
+  },
+  {
+    "id": "CROSSBOW_RELOADSPEED",
+    "className": "StatusInstance_Custom/CrossbowReloadSpeed"
+  },
+  {
+    "id": "CUSTOM",
+    "className": "StatusInstance_Custom"
+  },
+  {
+    "id": "DAGGER_TRANCE_BONUS",
+    "className": "StatusInstance_Custom/DaggerTranceBonus"
+  },
+  {
+    "id": "DARK_CLOUD_DAMAGE",
+    "className": "StatusInstance_Custom/DarkCloudDamage"
+  },
+  {
+    "id": "DARK_CLOUD_ICE",
+    "className": "StatusInstance_Custom/DarkCloudIce"
+  },
+  {
+    "id": "DARK_CLOUD_KEEP",
+    "className": "StatusInstance_Custom/DarkCloudKeep"
+  },
+  {
+    "id": "DARK_CLOUD_LUCK",
+    "className": "StatusInstance_Custom/DarkCloudLuck"
+  },
+  {
+    "id": "DARK_CLOUD_MULTISHOT",
+    "className": "StatusInstance_Custom/DarkCloudMultishot"
+  },
+  {
+    "id": "DARK_CLOUD_RESTORE_DURING_BATTLE",
+    "className": "StatusInstance_Custom/DarkCloudRestoreDuringBattle"
+  },
+  {
+    "id": "DARK_CLOUD_SPEED",
+    "className": "StatusInstance_Custom/DarkCloudSpeed"
+  },
+  {
+    "id": "DASH_ATTACK_DAMAGE",
+    "className": "StatusInstance_DashAttackDamage"
+  },
+  {
+    "id": "DASH_COUNT",
+    "className": "StatusInstance_DashCount"
+  },
+  {
+    "id": "DASH_DISABLE",
+    "className": "StatusInstance_Custom/DashDisable"
+  },
+  {
+    "id": "DASH_EVASION",
+    "className": "StatusInstance_Custom/DashEvasion"
+  },
+  {
+    "id": "DASH_INVINCIBLE_TIME_BONUS",
+    "className": "StatusInstance_Custom/DashInvincibleTimeBonus"
+  },
+  {
+    "id": "DASH_RECOVERY_SPEED",
+    "className": "StatusInstance_DashRecoverySpeed"
+  },
+  {
+    "id": "DASH_SPEED",
+    "className": "StatusInstance_DashSpeed"
+  },
+  {
+    "id": "DEBUFF_DAMAGE",
+    "className": "StatusInstance_Custom/DebuffDamage"
+  },
+  {
+    "id": "DEBUFF_DURATION",
+    "className": "StatusInstance_DebuffDuration"
+  },
+  {
+    "id": "DEFENSE",
+    "className": "StatusInstance_Defense"
+  },
+  {
+    "id": "DEFENSE_TO_ATTACK",
+    "className": "StatusInstance_Custom/DefenseToAttack"
+  },
+  {
+    "id": "DIMENSION_POCKET",
+    "className": "StatusInstance_DimensionPocket"
+  },
+  {
+    "id": "DIRECT_ATTACK_BURN",
+    "className": "StatusInstance_Custom/DirectAttackBurn"
+  },
+  {
+    "id": "DIRECT_ATTACK_ELECTRIC",
+    "className": "StatusInstance_Custom/DirectAttackElectric"
+  },
+  {
+    "id": "DIRECT_ATTACK_FROSTBITE",
+    "className": "StatusInstance_Custom/DirectAttackFrostbite"
+  },
+  {
+    "id": "DISABLE_DUAL_ARTIFACT",
+    "className": "StatusInstance_Custom/DisableDualArtifact"
+  },
+  {
+    "id": "EXP_DROP",
+    "className": "StatusInstance_EXPDrop"
+  },
+  {
+    "id": "ELECTRIC_DAMAGE",
+    "className": "StatusInstance_Custom/ElectricDamage"
+  },
+  {
+    "id": "ELECTRIC_LUCK",
+    "className": "StatusInstance_Custom/ElectricLuck"
+  },
+  {
+    "id": "ELECTRIC_QUICKNESS",
+    "className": "StatusInstance_Custom/ElectricQuickness"
+  },
+  {
+    "id": "ELECTRIC_STACK",
+    "className": "StatusInstance_Custom/ElectricStack"
+  },
+  {
+    "id": "ELITE_DAMAGE",
+    "className": "StatusInstance_Custom/EliteDamage"
+  },
+  {
+    "id": "EVASION",
+    "className": "StatusInstance_Evasion"
+  },
+  {
+    "id": "ABSOLUTE_EVASION",
+    "className": "StatusInstance_Custom/AbsoluteEvasion"
+  },
+  {
+    "id": "EVASION_COOLDOWN",
+    "className": "StatusInstance_Custom/EvasionCooldown"
+  },
+  {
+    "id": "EVASION_DISABLE",
+    "className": "StatusInstance_Custom/EvasionDisable"
+  },
+  {
+    "id": "EXTRA_ITEM_CHOICES",
+    "className": "StatusInstance_Custom/ExtraItemChoices"
+  },
+  {
+    "id": "EXTRA_LIFE",
+    "className": "StatusInstance_ExtraLife"
+  },
+  {
+    "id": "EXTRA_MIRACLE_CHOICES",
+    "className": "StatusInstance_Custom/ExtraMiracleChoices"
+  },
+  {
+    "id": "EXTRA_WEAPON_CHOICES",
+    "className": "StatusInstance_Custom/ExtraWeaponChoices"
+  },
+  {
+    "id": "FINAL_AP",
+    "className": "StatusInstance_FinalAP"
+  },
+  {
+    "id": "FINAL_DAMAGE",
+    "className": "StatusInstance_FinalDamage"
+  },
+  {
+    "id": "FINAL_HP",
+    "className": "StatusInstance_FinalHP"
+  },
+  {
+    "id": "FINAL_MP",
+    "className": "StatusInstance_FinalMP"
+  },
+  {
+    "id": "FINAL_WEAPONDAMAGE",
+    "className": "StatusInstance_FinalWeaponDamage"
+  },
+  {
+    "id": "FIRE_DAMAGE",
+    "className": "StatusInstance_FireDamage"
+  },
+  {
+    "id": "FIRE_DAMAGE_AMP",
+    "className": "StatusInstance_CustomAmp/FireDamage"
+  },
+  {
+    "id": "FIRE_DEFENSE",
+    "className": "StatusInstance_Custom/FireDefense"
+  },
+  {
+    "id": "FIXED_DASH",
+    "className": "StatusInstance_Custom/FixedDash"
+  },
+  {
+    "id": "FLAMEGROUND_DAMAGE",
+    "className": "StatusInstance_FlameGround_Damage"
+  },
+  {
+    "id": "FLAMEGROUND_DURATION",
+    "className": "StatusInstance_FlameGround_Duration"
+  },
+  {
+    "id": "FLAMEGROUND_RANGE",
+    "className": "StatusInstance_FlameGround_Range"
+  },
+  {
+    "id": "FLAME_SWORD_ADDITIONAL_ATTACK_FROM_MAGIC",
+    "className": "StatusInstance_Custom/FlameSwordAdditionalAttackFromMagic"
+  },
+  {
+    "id": "FLAME_SWORD_ADDITIONAL_ATTACK_FROM_WEAPON",
+    "className": "StatusInstance_Custom/FlameSwordAdditionalAttackFromWeapon"
+  },
+  {
+    "id": "FLAME_SWORD_CALLBACK_FROST",
+    "className": "StatusInstance_Custom/FlameSwordCallbackFrost"
+  },
+  {
+    "id": "FLAME_SWORD_CRITICAL",
+    "className": "StatusInstance_Custom/FlameSwordCritical"
+  },
+  {
+    "id": "FLAME_SWORD_DAMAGE",
+    "className": "StatusInstance_Custom/FlameSwordDamage"
+  },
+  {
+    "id": "FLAME_SWORD_FAST_FALL",
+    "className": "StatusInstance_Custom/FlameSwordFastFall"
+  },
+  {
+    "id": "FLAME_SWORD_IGNORE_DEFENSE",
+    "className": "StatusInstance_Custom/FlameSwordIgnoreDefense"
+  },
+  {
+    "id": "FLAME_SWORD_LUCK",
+    "className": "StatusInstance_Custom/FlameSwordLuck"
+  },
+  {
+    "id": "FLAME_SWORD_MAGIC_DAMAGE",
+    "className": "StatusInstance_Custom/FlameSwordMagicDamage"
+  },
+  {
+    "id": "FLAME_SWORD_MAX",
+    "className": "StatusInstance_Custom/FlameSwordMax"
+  },
+  {
+    "id": "FLAME_SWORD_PICK_BONUS",
+    "className": "StatusInstance_Custom/FlameSwordPickBonus"
+  },
+  {
+    "id": "FOLLOWER_ATTACK_SPEED",
+    "className": "StatusInstance_Custom/FollowerAttackSpeed"
+  },
+  {
+    "id": "FOLLOWER_CRITICAL",
+    "className": "StatusInstance_Custom/FollowerCritical"
+  },
+  {
+    "id": "FOLLOWER_CRITICAL_CONTRIBUTE",
+    "className": "StatusInstance_Custom/FollowerCriticalContribute"
+  },
+  {
+    "id": "FOLLOWER_DAMAGE",
+    "className": "StatusInstance_Custom/FollowerDamage"
+  },
+  {
+    "id": "FOLLOWER_DEFENSE",
+    "className": "StatusInstance_Custom/FollowerDefense"
+  },
+  {
+    "id": "FOLLOWER_REVIVE",
+    "className": "StatusInstance_Custom/FollowerRevive"
+  },
+  {
+    "id": "FREE_ITEM_REROLL",
+    "className": "StatusInstance_Custom/FreeItemReroll"
+  },
+  {
+    "id": "FREEZE_CLOUD",
+    "className": "StatusInstance_Custom/FreezeCloud"
+  },
+  {
+    "id": "FREEZE_DAMAGE",
+    "className": "StatusInstance_Custom/FreezeDamage"
+  },
+  {
+    "id": "FREEZE_THRESHOLD",
+    "className": "StatusInstance_Custom/FreezeThreshold"
+  },
+  {
+    "id": "FROST_RELIC_DAMAGE",
+    "className": "StatusInstance_Custom/FrostRelicDamage"
+  },
+  {
+    "id": "FROST_RELIC_MP_DAMAGE",
+    "className": "StatusInstance_Custom/FrostRelicMPDamage"
+  },
+  {
+    "id": "FROST_RELIC_MP_MAXMP_DAMAGE",
+    "className": "StatusInstance_Custom/FrostRelicMPMaxMPDamage"
+  },
+  {
+    "id": "FROSTBITE_DAMAGE",
+    "className": "StatusInstance_Custom/FrostbiteDamage"
+  },
+  {
+    "id": "FRUIT_COUNT",
+    "className": "StatusInstance_Custom/FruitCount"
+  },
+  {
+    "id": "FURY_INVINCIBLE_TIME",
+    "className": "StatusInstance_Custom/FuryInvincibleTime"
+  },
+  {
+    "id": "GIVE_UP_REWARD_DICE",
+    "className": "StatusInstance_Custom/GiveUpRewardDice"
+  },
+  {
+    "id": "GOLD_HAND",
+    "className": "StatusInstance_Custom/GoldHand"
+  },
+  {
+    "id": "GOLD_HAND_UNLIMIT",
+    "className": "StatusInstance_Custom/GoldHandUnlimit"
+  },
+  {
+    "id": "HP_CURSE",
+    "className": "StatusInstance_HPCurse"
+  },
+  {
+    "id": "HPDAMAGERESTORE",
+    "className": "StatusInstance_Custom/HPDamageRestore"
+  },
+  {
+    "id": "HP_POTION_BONUS",
+    "className": "StatusInstance_HPPotionBonus"
+  },
+  {
+    "id": "HP_REGEN",
+    "className": "StatusInstance_HPRegen"
+  },
+  {
+    "id": "HP_STEAL",
+    "className": "StatusInstance_HPSteal"
+  },
+  {
+    "id": "HARDMODE_HEALING_PENALTY",
+    "className": "StatusInstance_Custom/HardModeHealingPenalty"
+  },
+  {
+    "id": "HARDMODEUNLOCK",
+    "className": "StatusInstance_Custom/HardModeUnlock"
+  },
+  {
+    "id": "HEALING_PENALTY",
+    "className": "StatusInstance_Custom/HealingPenalty"
+  },
+  {
+    "id": "HIGHEST_ELEMENTAL_DAMAGE",
+    "className": "StatusInstance_HighestElementalDamage"
+  },
+  {
+    "id": "ICE_DAMAGE",
+    "className": "StatusInstance_IceDamage"
+  },
+  {
+    "id": "ICE_DAMAGE_AMP",
+    "className": "StatusInstance_CustomAmp/IceDamage"
+  },
+  {
+    "id": "ICE_DEFENSE",
+    "className": "StatusInstance_Custom/IceDefense"
+  },
+  {
+    "id": "IGNORE_DEFENSE",
+    "className": "StatusInstance_Custom/IgnoreDefense"
+  },
+  {
+    "id": "IGNORE_EVASION",
+    "className": "StatusInstance_Custom/IgnoreEvasion"
+  },
+  {
+    "id": "IGNORE_SUPER_ARMOR",
+    "className": "StatusInstance_Custom/IgnoreSuperArmor"
+  },
+  {
+    "id": "INFINITY_DASH",
+    "className": "StatusInstance_Custom/InfinityDash"
+  },
+  {
+    "id": "INFINITY_MP",
+    "className": "StatusInstance_Custom/InfinityMp"
+  },
+  {
+    "id": "INVENTORY_SLOT",
+    "className": "StatusInstance_InventorySlot"
+  },
+  {
+    "id": "LAST_BASIC_ATTACK_DAMAGE",
+    "className": "StatusInstance_Custom/LastBasicAttackDamage"
+  },
+  {
+    "id": "LEAF_DROP",
+    "className": "StatusInstance_LeafDrop"
+  },
+  {
+    "id": "LEVEL_UP_HEAL",
+    "className": "StatusInstance_LevelUpHeal"
+  },
+  {
+    "id": "LEVEL_UP_INVENTORY_SLOT",
+    "className": "StatusInstance_LevelUpInventorySlot"
+  },
+  {
+    "id": "LIGHTNING_DAMAGE",
+    "className": "StatusInstance_LightningDamage"
+  },
+  {
+    "id": "LIGHTNING_DAMAGE_AMP",
+    "className": "StatusInstance_CustomAmp/LightningDamage"
+  },
+  {
+    "id": "LIGHTNING_DEFENSE",
+    "className": "StatusInstance_Custom/LightningDefense"
+  },
+  {
+    "id": "LUCK",
+    "className": "StatusInstance_Luck"
+  },
+  {
+    "id": "MP_POTION_BONUS",
+    "className": "StatusInstance_MPPotionBonus"
+  },
+  {
+    "id": "MP_REGEN",
+    "className": "StatusInstance_MPRegen"
+  },
+  {
+    "id": "MP_REGEN_KILL",
+    "className": "StatusInstance_Custom/MPRegenKill"
+  },
+  {
+    "id": "MP_REGEN_MULTIPLE",
+    "className": "StatusInstance_Custom/MPRegenMultiple"
+  },
+  {
+    "id": "MP_RESONANCE",
+    "className": "StatusInstance_Custom/MPResonance"
+  },
+  {
+    "id": "MP_SHIELD",
+    "className": "StatusInstance_Custom/MPShield"
+  },
+  {
+    "id": "MP_SKILL_DAMAGE",
+    "className": "StatusInstance_Custom/MPSkillDamage"
+  },
+  {
+    "id": "MP_STEAL",
+    "className": "StatusInstance_MPSteal"
+  },
+  {
+    "id": "MAGIC_COST_REDUCE",
+    "className": "StatusInstance_Custom/MagicCostReduce"
+  },
+  {
+    "id": "MAGIC_CRITICAL",
+    "className": "StatusInstance_MagicCritical"
+  },
+  {
+    "id": "MAGIC_CRITICAL_DAMAGE_RATE",
+    "className": "StatusInstance_MagicCriticalDamageRate"
+  },
+  {
+    "id": "MAGIC_DAMAGE_BONUS",
+    "className": "StatusInstance_Custom/MagicDamageBonus"
+  },
+  {
+    "id": "MAGIC_MP",
+    "className": "StatusInstance_Custom/MagicMP"
+  },
+  {
+    "id": "MAGIC_QUICK_CAST",
+    "className": "StatusInstance_Custom/MagicQuickCast"
+  },
+  {
+    "id": "MAX_DICE",
+    "className": "StatusInstance_MaxDice"
+  },
+  {
+    "id": "MAX_HP",
+    "className": "StatusInstance_MaxHP"
+  },
+  {
+    "id": "MAX_HP_NORATIO",
+    "className": "StatusInstance_MaxHPNoRatio"
+  },
+  {
+    "id": "MAX_MP",
+    "className": "StatusInstance_MaxMP"
+  },
+  {
+    "id": "MIN_DARK_CLOUD",
+    "className": "StatusInstance_MinDarkCloud"
+  },
+  {
+    "id": "MOVE_SPEED",
+    "className": "StatusInstance_MoveSpeed"
+  },
+  {
+    "id": "NEGOTIATION",
+    "className": "StatusInstance_Negotiation"
+  },
+  {
+    "id": "NO_DASH_INVINCIBLE",
+    "className": "StatusInstance_Custom/NoDashInvincible"
+  },
+  {
+    "id": "NO_MAGIC_COST",
+    "className": "StatusInstance_Custom/NoMagicCost"
+  },
+  {
+    "id": "PARTY_BUFF",
+    "className": "StatusInstance_Custom/PartyBuff"
+  },
+  {
+    "id": "PHYSICAL_DAMAGE",
+    "className": "StatusInstance_PhysicalDamage"
+  },
+  {
+    "id": "PHYSICAL_DAMAGE_AMP",
+    "className": "StatusInstance_CustomAmp/PhysicalDamage"
+  },
+  {
+    "id": "PHYSICAL_DEFENSE",
+    "className": "StatusInstance_Custom/PhysicalDefense"
+  },
+  {
+    "id": "PHYSICAL_TO_FIRE",
+    "className": "StatusInstance_Custom/PhysicalToFire"
+  },
+  {
+    "id": "PHYSICAL_TO_ICE",
+    "className": "StatusInstance_Custom/PhysicalToIce"
+  },
+  {
+    "id": "PHYSICAL_TO_LIGHTNING",
+    "className": "StatusInstance_Custom/PhysicalToLightning"
+  },
+  {
+    "id": "PLANET_ATTACK_SPEED",
+    "className": "StatusInstance_Custom/PlanetAttackSpeed"
+  },
+  {
+    "id": "PLANET_DAMAGE",
+    "className": "StatusInstance_Custom/PlanetDamage"
+  },
+  {
+    "id": "PLASMA_ACTIVE",
+    "className": "StatusInstance_Custom/PlasmaActive"
+  },
+  {
+    "id": "PLASMA_DAMAGE",
+    "className": "StatusInstance_Custom/PlasmaDamage"
+  },
+  {
+    "id": "POTION_SLOT",
+    "className": "StatusInstance_PotionSlot"
+  },
+  {
+    "id": "REPLENISHMENT",
+    "className": "StatusInstance_Custom/Replenishment"
+  },
+  {
+    "id": "REVIVE_PLAYER_HASTE",
+    "className": "StatusInstance_Custom/RevivePlayerHaste"
+  },
+  {
+    "id": "SAPPHIREBONUS",
+    "className": "StatusInstance_Custom/SapphireBonus"
+  },
+  {
+    "id": "SPECIAL_ATTACK_COST_REDUCTION",
+    "className": "StatusInstance_Custom/SpecialAttackCostReduction"
+  },
+  {
+    "id": "SPECIAL_ATTACK_DAMAGE",
+    "className": "StatusInstance_SpecialAttackDamage"
+  },
+  {
+    "id": "STARTING_MONEY",
+    "className": "StatusInstance_Custom/StartingMoney"
+  },
+  {
+    "id": "SUB_BAG_SLOT",
+    "className": "StatusInstance_SubBagSlot"
+  },
+  {
+    "id": "SUPERPLANET",
+    "className": "StatusInstance_Custom/SuperPlanet"
+  },
+  {
+    "id": "SWEEP_COST_REDUCTION",
+    "className": "StatusInstance_SweepCostReduction"
+  },
+  {
+    "id": "TABLET",
+    "className": "StatusInstance_Custom/Tablet"
+  },
+  {
+    "id": "TABLET_ENGRAVING",
+    "className": "StatusInstance_TabletEngraving"
+  },
+  {
+    "id": "THORNS",
+    "className": "StatusInstance_Thorns"
+  },
+  {
+    "id": "TOUGHNESS",
+    "className": "StatusInstance_Custom/Toughness"
+  },
+  {
+    "id": "TRUE_DAMAGE",
+    "className": "StatusInstance_TrueDamage"
+  },
+  {
+    "id": "UNIQUE_PAIR",
+    "className": "StatusInstance_UniquePair"
+  },
+  {
+    "id": "UNLIMITED_COMBO",
+    "className": "StatusInstance_Custom/UnlimitedCombo"
+  },
+  {
+    "id": "WEAPON_CRITICAL",
+    "className": "StatusInstance_Custom/WeaponCritical"
+  },
+  {
+    "id": "WEAPON_RANGE",
+    "className": "StatusInstance_Custom/WeaponRange"
+  }
+]

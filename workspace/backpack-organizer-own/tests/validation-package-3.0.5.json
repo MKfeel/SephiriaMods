@@ -1,0 +1,78 @@
+{
+  "version": "3.0.5",
+  "checks": 79,
+  "packageFiles": 17,
+  "rows": [
+    {
+      "items": 31,
+      "baselineMs": 10096.5493,
+      "wallMs": 2515.3643,
+      "searchMs": 2339,
+      "evaluations": 145756,
+      "completedStarts": 8,
+      "exactLayout": true,
+      "samePrimary": true,
+      "freeGains": {
+        "checks": 85,
+        "moves": [],
+        "ms": 18
+      }
+    },
+    {
+      "items": 25,
+      "baselineMs": 8212.1411,
+      "wallMs": 2014.5587999999998,
+      "searchMs": 1887,
+      "evaluations": 145437,
+      "completedStarts": 8,
+      "exactLayout": true,
+      "samePrimary": true,
+      "freeGains": {
+        "checks": 54,
+        "moves": [],
+        "ms": 10
+      }
+    },
+    {
+      "items": 9,
+      "wallMs": 572.8492999999999,
+      "searchMs": 449,
+      "evaluations": 144488,
+      "completedStarts": 8,
+      "exactLayout": false,
+      "samePrimary": true,
+      "freeGains": {
+        "checks": 24,
+        "moves": [
+          {
+            "uid": "1430207549",
+            "id": 1073,
+            "from": 15,
+            "to": 31,
+            "levelBefore": 0,
+            "levelAfter": 1,
+            "statsBefore": {
+              "DEFENSE": 0,
+              "EVASION": 500,
+              "MP_REGEN": 18,
+              "MP_STEAL": 5
+            },
+            "statsAfter": {
+              "DEFENSE": 0,
+              "EVASION": 500,
+              "MP_REGEN": 21,
+              "MP_STEAL": 5
+            }
+          }
+        ],
+        "ms": 4
+      }
+    }
+  ],
+  "resonance": {
+    "predictedSpeed": 140,
+    "evaluations": 258,
+    "changedCells": 19
+  },
+  "scope": "Packaged Node worker, complete recorded-bag replays and synthetic movement fixture. No live Unity activation or application validation."
+}

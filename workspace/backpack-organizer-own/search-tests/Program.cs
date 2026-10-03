@@ -8,13 +8,14 @@ namespace SephiriaBackpackOrganizer {
   class Slot { public bool hasItem; public int instanceID, rotation; public object charm; }
   class Info { public bool isCharm,isStele,tabletRotatable,isHourglass,isRayShard,isWhitePaper,isMagicBook; public int enchant,maxLevel,manualPriorityRank; public bool weaponOk=true; }
   class Chain { public List<int> instanceIDs=new(); }
-  class SearchContext { public List<Slot> original; public Dictionary<int,Info> itemByInstance=new(); public int[] cellLevel=new int[6],mysticFactor={1,1,1,1,1,1}; public bool[] disabled=new bool[6],ignore=new bool[6]; public bool cancelled,searchBudgetReached; public int width=3,annealEvaluations,annealStarts,annealStartsCompleted; public List<Chain> compassChains=new(); }
+  class SearchContext { public PaperLockRules paperLocks=new() {Width=3}; public List<Slot> original; public Dictionary<int,Info> itemByInstance=new(); public int[] cellLevel=new int[6],mysticFactor={1,1,1,1,1,1}; public bool[] disabled=new bool[6],ignore=new bool[6]; public bool cancelled,searchBudgetReached; public int width=3,annealEvaluations,annealStarts,annealStartsCompleted; public List<Chain> compassChains=new(); }
   Settings plugin=new();
   static List<Slot> CloneSlots(List<Slot> a) { var b=new List<Slot>(); foreach(var s in a)b.Add(new Slot {hasItem=s.hasItem,instanceID=s.instanceID,rotation=s.rotation,charm=s.charm}); return b; }
   static void CopySlots(List<Slot>a,List<Slot>b) { var copy=CloneSlots(a); b.Clear(); b.AddRange(copy); }
   static void SwapSlots(List<Slot>a,int i,int j) {(a[i],a[j])=(a[j],a[i]);}
   static bool CriteriaSatisfied(SearchContext c,Info i,List<Slot>s,bool b,int n)=>true;
   static bool RestoreCompassBindings(SearchContext c,List<Slot>s)=>true;
+  static bool PaperLocksSatisfied(SearchContext c,List<Slot>s) => c.paperLocks.Matches(s.ConvertAll(x=>x.hasItem?x.instanceID:0));
   static bool CompassBindingsSatisfied(SearchContext c,List<Slot>s)=>true;
   static long CreateSearchDeadline(int ms)=>ms<=0?0:Stopwatch.GetTimestamp()+ms*Stopwatch.Frequency/1000;
   static bool SearchDeadlineReached(long d)=>d>0 && Stopwatch.GetTimestamp()>=d;
@@ -42,7 +43,18 @@ namespace SephiriaBackpackOrganizer {
     c.cancelled=false; sorter.plugin.SearchTimeBudgetMs.ValueField=1;
     sorter.RunHybridSearch(c,c.original,out before,out after); Check(c.searchBudgetReached,"positive budget ignored");
    }
-   Console.WriteLine("PASS 18 actual-search harness checks; synthetic model, not game validation");
+   var lockedSorter=new InventorySorter();var locked=new SearchContext();
+   locked.original=new();foreach(int id in new[]{4,3,5,2,1,0})locked.original.Add(new Slot{hasItem=id>0,instanceID=id,charm=id>1?new object():null});
+   for(int id=1;id<=5;id++) {
+    locked.itemByInstance[id]=new Info {isCharm=id>1,isStele=id==1,tabletRotatable=id==1,isWhitePaper=id==3,maxLevel=5,manualPriorityRank=id==2?1:0};
+    locked.paperLocks.Items[id]=new PaperCategoryItem {Charm=id>1,Paper=id==3,Categories=id>=4?new[]{"A"}:Array.Empty<string>()};
+   }
+   locked.paperLocks.Targets.Add(new PaperComboLock {Instance=3,Categories=new[]{"A"}});
+   var protectedResult=lockedSorter.RunHybridSearch(locked,locked.original,out _,out _);
+   Check(PaperLocksSatisfied(locked,protectedResult),"higher marked score destroyed locked paper combo");
+   Check(locked.annealStartsCompleted==8,"invalid shuffled starts did not fall back and search");
+   Check(locked.original[0].instanceID==4&&locked.original[1].instanceID==3,"paper search mutated original snapshot");
+   Console.WriteLine("PASS 21 actual-search harness checks; synthetic model, not game validation");
   }
  }
 }

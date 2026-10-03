@@ -5,7 +5,7 @@
       "id": "com.sephiria.backpack-organizer",
       "name": "背包整理",
       "loader": "BepInEx",
-      "description": "F8 背包整理；max/↑/-/↓ 标记、日志收藏自动 max、分层优化与组合重排。",
+      "description": "F8 流派收益背包整理；按当前武器自动识别构筑，保留箭头标记与完整搜索，支持共鸣石成长准备和同分无损提升；自带离线模型及 Node.js。",
       "versions": [
         {
           "version": "2.5.3",
@@ -24,6 +24,15 @@
           "size": 82345,
           "sha256": "B17DF762F2BC13331EDBE896E43582D745506B23A48808BD4EBA5DC1A0A0CCDD",
           "compatibility": "Sephiria / BepInEx 5；完整重启后生效；已装2.5.4请执行同版本修复或重新安装以获取新包"
+        },
+        {
+          "version": "3.0.5",
+          "channel": "stable",
+          "notes": "2026-10-04：发布 3.0.5 流派收益整理；F8 根据武器和构筑自动识别 59 个模型分支，支持沉闷共鸣石成长准备、同分无损属性提升及完整 8 起点搜索。3 份真实快照、9 份合成背包三轮对照均保持结果一致，离线耗时降低 2.6%–24.4%。自带 Node.js；安装需完整模型目录。3.0.5 游戏内验收待完成，视频收益实验未接入。",
+          "url": "https://raw.githubusercontent.com/MKfeel/SephiriaMods/main/packages/com.sephiria.backpack-organizer/3.0.5-29eb69c0152a.zip",
+          "size": 32985933,
+          "sha256": "29EB69C0152AB1C6C4CF9F84DF696F82F4C0F4E9B0F871CA4A41C7BEA58D1268",
+          "compatibility": "Windows x64 / Sephiria / BepInEx 5；游戏程序集 SHA-256 C57A0DAEAB8E8D0AF7066A344133EEC4C57D8F303FD9E25DA9410FBFC4CF1510；完整重启后生效。"
         }
       ]
     },

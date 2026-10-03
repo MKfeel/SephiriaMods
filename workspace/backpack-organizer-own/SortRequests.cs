@@ -10,6 +10,7 @@ namespace SephiriaBackpackOrganizer
         public void Sort()
         {
             if (busy || requestPending) return;
+            resonanceAttempted = false;
             requestPending = true;
             requestedAt = Time.unscaledTime;
             lastWaitReason = null;
@@ -79,7 +80,8 @@ namespace SephiriaBackpackOrganizer
             state.ctx.cancelled = true;
             pendingEnhanced = null; pendingSearch = null; busy = false;
             requestPending = true; readySnapshot = null;
-            lastWaitReason = "搜索期间背包或标记变化，重新取快照";
+            requestedAt = Time.unscaledTime;
+            lastWaitReason = "整理期间武器、背包或标记变化，重新取快照";
             Plugin.Log.LogInfo("整理等待：" + lastWaitReason);
         }
 

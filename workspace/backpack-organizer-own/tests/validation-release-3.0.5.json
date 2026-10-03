@@ -1,0 +1,22 @@
+{
+  "Version": "3.0.5",
+  "PublishedOn": "2026-10-04",
+  "Repository": "MKfeel/SephiriaMods",
+  "Package": "packages/com.sephiria.backpack-organizer/3.0.5-29eb69c0152a.zip",
+  "PackageBytes": 32985933,
+  "PackageSha256": "29EB69C0152AB1C6C4CF9F84DF696F82F4C0F4E9B0F871CA4A41C7BEA58D1268",
+  "InstalledDllSha256": "53435656128E91D8A9C41B8F553B39FADA8FDE3E87F0E99DD5159D82FE4C3289",
+  "PayloadFiles": 15,
+  "CatalogMods": 15,
+  "CatalogVersionsValidated": 25,
+  "ManagerIsolatedInstallPassed": true,
+  "SameVersionRepairPassed": true,
+  "DisabledStatePreserved": true,
+  "ConfigurationPreserved": true,
+  "RollbackPassed": true,
+  "ManagerInstalledWorkerMatchesTestedPackage": true,
+  "ManagerWorkerFullStarts": 8,
+  "ManagerWorkerEvaluations": 144488,
+  "GameRuntimeValidated": false,
+  "Scope": "Release packaging, static identity, hashes and isolated manager operations; no game launch."
+}

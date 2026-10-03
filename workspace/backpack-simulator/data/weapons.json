@@ -1,0 +1,4063 @@
+[
+  {
+    "id": 8,
+    "name": "归来守护",
+    "nameKey": "Weapon_0008_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_SwordAndShield",
+        "weaponType": 0,
+        "attackWeightPerSwing": 0.20000000298023224
+      },
+      {
+        "class": "WeaponAddon_SweepDamage",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddon_ShieldThrowing",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "极简主义",
+    "nameKey": "Weapon_0013_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_GreatSword",
+        "weaponType": 1,
+        "attackWeightPerSwing": 0.30000001192092896
+      },
+      {
+        "class": "WeaponAddonGreatsword_OutsideBonus",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "第二次",
+    "nameKey": "Weapon_0018_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_GreatSword",
+        "weaponType": 1,
+        "attackWeightPerSwing": 0.30000001192092896
+      },
+      {
+        "class": "WeaponAddonGreatsword_OutsideBonus",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonGreatsword_DoubleWhirlwind",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "顺从的姿态",
+    "nameKey": "Weapon_0019_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_GreatSword",
+        "weaponType": 1,
+        "attackWeightPerSwing": 0.30000001192092896
+      },
+      {
+        "class": "WeaponAddonGreatsword_OutsideBonus",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 107,
+    "name": "重型弩：双轨",
+    "nameKey": "Weapon_0107_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Crossbow",
+        "weaponType": 3,
+        "attackWeightPerSwing": 0.23999999463558197
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 119,
+    "name": "卡古梅德",
+    "nameKey": "Weapon_0119_Name",
+    "enhanceFromId": 100,
+    "components": [
+      {
+        "class": "WeaponSimple_Crossbow",
+        "weaponType": 3,
+        "attackWeightPerSwing": 0.23999999463558197
+      },
+      {
+        "class": "WeaponAddonCommon_DebuffAttack",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 120,
+    "name": "卡里姆的形象",
+    "nameKey": "Weapon_0120_Name",
+    "enhanceFromId": 119,
+    "components": [
+      {
+        "class": "WeaponSimple_Crossbow",
+        "weaponType": 3,
+        "attackWeightPerSwing": 0.23999999463558197
+      },
+      {
+        "class": "WeaponAddonCommon_DebuffAttack",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_Jellyfish",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 121,
+    "name": "紫甲蜂弩",
+    "nameKey": "Weapon_0121_Name",
+    "enhanceFromId": 119,
+    "components": [
+      {
+        "class": "WeaponSimple_Crossbow",
+        "weaponType": 3,
+        "attackWeightPerSwing": 0.23999999463558197
+      },
+      {
+        "class": "WeaponAddonCommon_DebuffAttack",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 122,
+    "name": "M-9199",
+    "nameKey": "Weapon_0122_Name",
+    "enhanceFromId": 100,
+    "components": [
+      {
+        "class": "WeaponSimple_Crossbow",
+        "weaponType": 3,
+        "attackWeightPerSwing": 0.23999999463558197
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 123,
+    "name": "XRA-9",
+    "nameKey": "Weapon_0123_Name",
+    "enhanceFromId": 122,
+    "components": [
+      {
+        "class": "WeaponSimple_Crossbow",
+        "weaponType": 3,
+        "attackWeightPerSwing": 0.23999999463558197
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCrossbow_FinalComboDecreaseCooldown",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 124,
+    "name": "索利斯·尤巴尔",
+    "nameKey": "Weapon_0124_Name",
+    "enhanceFromId": 108,
+    "components": [
+      {
+        "class": "WeaponSimple_Crossbow",
+        "weaponType": 3,
+        "attackWeightPerSwing": 0.23999999463558197
+      },
+      {
+        "class": "WeaponAddonCommon_ElementalBased",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 125,
+    "name": "赏金猎人",
+    "nameKey": "Weapon_125_Name",
+    "enhanceFromId": 101,
+    "components": [
+      {
+        "class": "WeaponSimple_Crossbow",
+        "weaponType": 3,
+        "attackWeightPerSwing": 0.23999999463558197
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 126,
+    "name": "迷你机枪",
+    "nameKey": "Weapon_126_Name",
+    "enhanceFromId": 110,
+    "components": [
+      {
+        "class": "WeaponSimple_Crossbow",
+        "weaponType": 3,
+        "attackWeightPerSwing": 0.23999999463558197
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 127,
+    "name": "藤壶",
+    "nameKey": "Weapon_127_Name",
+    "enhanceFromId": 104,
+    "components": [
+      {
+        "class": "WeaponSimple_Crossbow",
+        "weaponType": 3,
+        "attackWeightPerSwing": 0.23999999463558197
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_C4Bomb",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 128,
+    "name": "M-9200",
+    "nameKey": "Weapon_0128_Name",
+    "enhanceFromId": 122,
+    "components": [
+      {
+        "class": "WeaponSimple_Crossbow",
+        "weaponType": 3,
+        "attackWeightPerSwing": 0.23999999463558197
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 200,
+    "name": "四节棍",
+    "nameKey": "Weapon_0200_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Staff",
+        "weaponType": 4,
+        "attackWeightPerSwing": 0.33000001311302185
+      }
+    ]
+  },
+  {
+    "id": 404,
+    "name": "电击刀“布朗特”",
+    "nameKey": "Weapon_0404_Name",
+    "enhanceFromId": 400,
+    "components": [
+      {
+        "class": "WeaponSimple_Katana",
+        "weaponType": 5,
+        "attackWeightPerSwing": 0.16500000655651093
+      },
+      {
+        "class": "WeaponAddonCommon_ElementalBased",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 405,
+    "name": "电光一刻",
+    "nameKey": "Weapon_0405_Name",
+    "enhanceFromId": 404,
+    "components": [
+      {
+        "class": "WeaponSimple_Katana",
+        "weaponType": 5,
+        "attackWeightPerSwing": 0.16500000655651093
+      },
+      {
+        "class": "WeaponAddonCommon_ElementalBased",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 422,
+    "name": "索利斯·叶克里",
+    "nameKey": "Weapon_0422_Name",
+    "enhanceFromId": 406,
+    "components": [
+      {
+        "class": "WeaponSimple_Katana",
+        "weaponType": 5,
+        "attackWeightPerSwing": 0.16500000655651093
+      },
+      {
+        "class": "WeaponAddonCommon_AdditionalElementalDamage",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonKatana_FlameSword_Eclipse",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 423,
+    "name": "碎甲之刃",
+    "nameKey": "Weapon_0423_Name",
+    "enhanceFromId": 400,
+    "components": [
+      {
+        "class": "WeaponSimple_Katana",
+        "weaponType": 5,
+        "attackWeightPerSwing": 0.16500000655651093
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 424,
+    "name": "破甲刀",
+    "nameKey": "Weapon_0424_Name",
+    "enhanceFromId": 423,
+    "components": [
+      {
+        "class": "WeaponSimple_Katana",
+        "weaponType": 5,
+        "attackWeightPerSwing": 0.16500000655651093
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddon",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 425,
+    "name": "苍云刀“阿尔格斯”",
+    "nameKey": "Weapon_0425_Name",
+    "enhanceFromId": 404,
+    "components": [
+      {
+        "class": "WeaponSimple_Katana",
+        "weaponType": 5,
+        "attackWeightPerSwing": 0.16500000655651093
+      },
+      {
+        "class": "WeaponAddonCommon_ElementalBased",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonKatana_CloudSlash",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 501,
+    "name": "花棍棒",
+    "nameKey": "Weapon_0501_Name",
+    "enhanceFromId": 500,
+    "components": [
+      {
+        "class": "WeaponSimple_QuartterStaff",
+        "weaponType": 7,
+        "attackWeightPerSwing": 0.18000000715255737
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 502,
+    "name": "大力棍",
+    "nameKey": "Weapon_0502_Name",
+    "enhanceFromId": 501,
+    "components": [
+      {
+        "class": "WeaponSimple_QuartterStaff",
+        "weaponType": 7,
+        "attackWeightPerSwing": 0.18000000715255737
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 503,
+    "name": "精灵融合杖伊洛妮卡",
+    "nameKey": "Weapon_0503_Name",
+    "enhanceFromId": 501,
+    "components": [
+      {
+        "class": "WeaponSimple_QuartterStaff",
+        "weaponType": 7,
+        "attackWeightPerSwing": 0.18000000715255737
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 504,
+    "name": "……",
+    "nameKey": "...",
+    "enhanceFromId": 501,
+    "components": [
+      {
+        "class": "WeaponSimple_QuartterStaff",
+        "weaponType": 7,
+        "attackWeightPerSwing": 0.18000000715255737
+      }
+    ]
+  },
+  {
+    "id": 505,
+    "name": "神珍铁棍",
+    "nameKey": "Weapon_0505_Name",
+    "enhanceFromId": 500,
+    "components": [
+      {
+        "class": "WeaponSimple_QuartterStaff",
+        "weaponType": 7,
+        "attackWeightPerSwing": 0.18000000715255737
+      },
+      {
+        "class": "WeaponAddonCommon_AttackBuff",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 506,
+    "name": "海之锚",
+    "nameKey": "Weapon_0506_Name",
+    "enhanceFromId": 505,
+    "components": [
+      {
+        "class": "WeaponSimple_QuartterStaff",
+        "weaponType": 7,
+        "attackWeightPerSwing": 0.18000000715255737
+      },
+      {
+        "class": "WeaponAddonCommon_AttackBuff",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_GuardBuff",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 507,
+    "name": "无环锡杖",
+    "nameKey": "Weapon_0507_Name",
+    "enhanceFromId": 505,
+    "components": [
+      {
+        "class": "WeaponSimple_QuartterStaff",
+        "weaponType": 7,
+        "attackWeightPerSwing": 0.18000000715255737
+      },
+      {
+        "class": "WeaponAddonCommon_AttackBuff",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_ConditionalStat",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 508,
+    "name": "……",
+    "nameKey": "...",
+    "enhanceFromId": 505,
+    "components": [
+      {
+        "class": "WeaponSimple_QuartterStaff",
+        "weaponType": 7,
+        "attackWeightPerSwing": 0.18000000715255737
+      }
+    ]
+  },
+  {
+    "id": 509,
+    "name": "远方的星光",
+    "nameKey": "Weapon_0509_Name",
+    "enhanceFromId": 500,
+    "components": [
+      {
+        "class": "WeaponSimple_QuartterStaff",
+        "weaponType": 7,
+        "attackWeightPerSwing": 0.18000000715255737
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 510,
+    "name": "圣海碎片",
+    "nameKey": "Weapon_0510_Name",
+    "enhanceFromId": 509,
+    "components": [
+      {
+        "class": "WeaponSimple_QuartterStaff",
+        "weaponType": 7,
+        "attackWeightPerSwing": 0.18000000715255737
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_ChangeWeaponAction",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 511,
+    "name": "星云之心",
+    "nameKey": "Weapon_0511_Name",
+    "enhanceFromId": 509,
+    "components": [
+      {
+        "class": "WeaponSimple_QuartterStaff",
+        "weaponType": 7,
+        "attackWeightPerSwing": 0.18000000715255737
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 512,
+    "name": "……",
+    "nameKey": "...",
+    "enhanceFromId": 509,
+    "components": [
+      {
+        "class": "WeaponSimple_QuartterStaff",
+        "weaponType": 7,
+        "attackWeightPerSwing": 0.18000000715255737
+      }
+    ]
+  },
+  {
+    "id": 513,
+    "name": "突击枪矛基奥罗伊德",
+    "nameKey": "Weapon_0513_Name",
+    "enhanceFromId": 500,
+    "components": [
+      {
+        "class": "WeaponSimple_QuartterStaff",
+        "weaponType": 7,
+        "attackWeightPerSwing": 0.18000000715255737
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 514,
+    "name": "突击枪卢阿施蕾娅",
+    "nameKey": "Weapon_0514_Name",
+    "enhanceFromId": 513,
+    "components": [
+      {
+        "class": "WeaponSimple_QuartterStaff",
+        "weaponType": 7,
+        "attackWeightPerSwing": 0.18000000715255737
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 515,
+    "name": "突击枪普阿尔斯卡",
+    "nameKey": "Weapon_0515_Name",
+    "enhanceFromId": 513,
+    "components": [
+      {
+        "class": "WeaponSimple_QuartterStaff",
+        "weaponType": 7,
+        "attackWeightPerSwing": 0.18000000715255737
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 516,
+    "name": "……",
+    "nameKey": "...",
+    "enhanceFromId": 513,
+    "components": [
+      {
+        "class": "WeaponSimple_QuartterStaff",
+        "weaponType": 7,
+        "attackWeightPerSwing": 0.18000000715255737
+      }
+    ]
+  },
+  {
+    "id": 517,
+    "name": "余烬之棒",
+    "nameKey": "Weapon_0517_Name",
+    "enhanceFromId": 500,
+    "components": [
+      {
+        "class": "WeaponSimple_QuartterStaff",
+        "weaponType": 7,
+        "attackWeightPerSwing": 0.18000000715255737
+      },
+      {
+        "class": "WeaponAddonCommon_ElementalBased",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 518,
+    "name": "皮亚奥拉议事槌",
+    "nameKey": "Weapon_0518_Name",
+    "enhanceFromId": 517,
+    "components": [
+      {
+        "class": "WeaponSimple_QuartterStaff",
+        "weaponType": 7,
+        "attackWeightPerSwing": 0.18000000715255737
+      },
+      {
+        "class": "WeaponAddonCommon_ElementalBased",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_BurnRing",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 519,
+    "name": "索利斯·布拉卡",
+    "nameKey": "Weapon_0519_Name",
+    "enhanceFromId": 517,
+    "components": [
+      {
+        "class": "WeaponSimple_QuartterStaff",
+        "weaponType": 7,
+        "attackWeightPerSwing": 0.18000000715255737
+      },
+      {
+        "class": "WeaponAddonCommon_ElementalBased",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_ChangeWeaponAction",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 520,
+    "name": "……",
+    "nameKey": "...",
+    "enhanceFromId": 517,
+    "components": [
+      {
+        "class": "WeaponSimple_QuartterStaff",
+        "weaponType": 7,
+        "attackWeightPerSwing": 0.18000000715255737
+      },
+      {
+        "class": "WeaponAddonCommon_ElementalBased",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 521,
+    "name": "白霜之杖",
+    "nameKey": "Weapon_0521_Name",
+    "enhanceFromId": 500,
+    "components": [
+      {
+        "class": "WeaponSimple_QuartterStaff",
+        "weaponType": 7,
+        "attackWeightPerSwing": 0.18000000715255737
+      },
+      {
+        "class": "WeaponAddonCommon_ElementalBased",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 522,
+    "name": "巫女的预言",
+    "nameKey": "Weapon_0522_Name",
+    "enhanceFromId": 521,
+    "components": [
+      {
+        "class": "WeaponSimple_QuartterStaff",
+        "weaponType": 7,
+        "attackWeightPerSwing": 0.18000000715255737
+      },
+      {
+        "class": "WeaponAddonCommon_ElementalBased",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 523,
+    "name": "马拉斯皮纳",
+    "nameKey": "Weapon_0523_Name",
+    "enhanceFromId": 521,
+    "components": [
+      {
+        "class": "WeaponSimple_QuartterStaff",
+        "weaponType": 7,
+        "attackWeightPerSwing": 0.18000000715255737
+      },
+      {
+        "class": "WeaponAddonCommon_ElementalBased",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_DebuffAttack",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 524,
+    "name": "……",
+    "nameKey": "...",
+    "enhanceFromId": 521,
+    "components": [
+      {
+        "class": "WeaponSimple_QuartterStaff",
+        "weaponType": 7,
+        "attackWeightPerSwing": 0.18000000715255737
+      },
+      {
+        "class": "WeaponAddonCommon_ElementalBased",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 525,
+    "name": "雷霆之杖",
+    "nameKey": "Weapon_0525_Name",
+    "enhanceFromId": 500,
+    "components": [
+      {
+        "class": "WeaponSimple_QuartterStaff",
+        "weaponType": 7,
+        "attackWeightPerSwing": 0.18000000715255737
+      },
+      {
+        "class": "WeaponAddonCommon_ElementalBased",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 526,
+    "name": "比杜卡",
+    "nameKey": "Weapon_0526_Name",
+    "enhanceFromId": 525,
+    "components": [
+      {
+        "class": "WeaponSimple_QuartterStaff",
+        "weaponType": 7,
+        "attackWeightPerSwing": 0.18000000715255737
+      },
+      {
+        "class": "WeaponAddonCommon_ElementalBased",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 527,
+    "name": "Weapon_0527_Name",
+    "nameKey": "Weapon_0527_Name",
+    "enhanceFromId": 525,
+    "components": [
+      {
+        "class": "WeaponSimple_QuartterStaff",
+        "weaponType": 7,
+        "attackWeightPerSwing": 0.18000000715255737
+      },
+      {
+        "class": "WeaponAddonCommon_ElementalBased",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_LowCloud",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 528,
+    "name": "内波拉克斯",
+    "nameKey": "Weapon_0528_Name",
+    "enhanceFromId": 525,
+    "components": [
+      {
+        "class": "WeaponSimple_QuartterStaff",
+        "weaponType": 7,
+        "attackWeightPerSwing": 0.18000000715255737
+      },
+      {
+        "class": "WeaponAddonCommon_ElementalBased",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_ChangeWeaponAction",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 529,
+    "name": "投枪",
+    "nameKey": "Weapon_0529_Name",
+    "enhanceFromId": 500,
+    "components": [
+      {
+        "class": "WeaponSimple_QuartterStaff",
+        "weaponType": 7,
+        "attackWeightPerSwing": 0.18000000715255737
+      },
+      {
+        "class": "WeaponAddonStaff_ThrowingSpear",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 530,
+    "name": "神圣之壶",
+    "nameKey": "Weapon_0530_Name",
+    "enhanceFromId": 529,
+    "components": [
+      {
+        "class": "WeaponSimple_QuartterStaff",
+        "weaponType": 7,
+        "attackWeightPerSwing": 0.18000000715255737
+      },
+      {
+        "class": "WeaponAddonStaff_ThrowingSpear",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddomCommon_BasicAttackWithFollowerDamage",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 531,
+    "name": "无形之舞",
+    "nameKey": "Weapon_0531_Name",
+    "enhanceFromId": 529,
+    "components": [
+      {
+        "class": "WeaponSimple_QuartterStaff",
+        "weaponType": 7,
+        "attackWeightPerSwing": 0.18000000715255737
+      },
+      {
+        "class": "WeaponAddonStaff_ThrowingSpear",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 532,
+    "name": "继承者",
+    "nameKey": "Weapon_0532_Name",
+    "enhanceFromId": 529,
+    "components": [
+      {
+        "class": "WeaponSimple_QuartterStaff",
+        "weaponType": 7,
+        "attackWeightPerSwing": 0.18000000715255737
+      },
+      {
+        "class": "WeaponAddonStaff_ThrowingSpear",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_DebuffAttack",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1002,
+    "name": "战争锤",
+    "nameKey": "Weapon_Hammer_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_SwordAndShield",
+        "weaponType": 0,
+        "attackWeightPerSwing": 0.20000000298023224
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1003,
+    "name": "古代锤",
+    "nameKey": "Weapon_DragonHammer_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_SwordAndShield",
+        "weaponType": 0,
+        "attackWeightPerSwing": 0.20000000298023224
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1008,
+    "name": "火焰凝视",
+    "nameKey": "Weapon_FireWand_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_SwordAndShield",
+        "weaponType": 0,
+        "attackWeightPerSwing": 0.20000000298023224
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1009,
+    "name": "冰之呼吸",
+    "nameKey": "Weapon_IceWand_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_SwordAndShield",
+        "weaponType": 0,
+        "attackWeightPerSwing": 0.20000000298023224
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1010,
+    "name": "雷电之翼",
+    "nameKey": "Weapon_LightningWand_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_SwordAndShield",
+        "weaponType": 0,
+        "attackWeightPerSwing": 0.20000000298023224
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1020,
+    "name": "岩石剑",
+    "nameKey": "Weapon_SwordAndShieldDefense_Name",
+    "enhanceFromId": 1,
+    "components": [
+      {
+        "class": "WeaponSimple_SwordAndShield",
+        "weaponType": 0,
+        "attackWeightPerSwing": 0.20000000298023224
+      },
+      {
+        "class": "WeaponAddon_GuardResist",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_ChangeWeaponAction",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1021,
+    "name": "小小破坏",
+    "nameKey": "Weapon_0003_Name",
+    "enhanceFromId": 0,
+    "components": [
+      {
+        "class": "WeaponSimple_SwordAndShield",
+        "weaponType": 0,
+        "attackWeightPerSwing": 0.20000000298023224
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1022,
+    "name": "收紧的恐惧",
+    "nameKey": "Weapon_0009_Name",
+    "enhanceFromId": 1021,
+    "components": [
+      {
+        "class": "WeaponSimple_SwordAndShield",
+        "weaponType": 0,
+        "attackWeightPerSwing": 0.20000000298023224
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddon",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1023,
+    "name": "归来守护",
+    "nameKey": "Weapon_0008_Name",
+    "enhanceFromId": 3,
+    "components": [
+      {
+        "class": "WeaponSimple_SwordAndShield",
+        "weaponType": 0,
+        "attackWeightPerSwing": 0.20000000298023224
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddon_ShieldThrowing",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1024,
+    "name": "因森迪乌姆",
+    "nameKey": "Weapon_Incendium_Name",
+    "enhanceFromId": 0,
+    "components": [
+      {
+        "class": "WeaponSimple_SwordAndShield",
+        "weaponType": 0,
+        "attackWeightPerSwing": 0.20000000298023224
+      },
+      {
+        "class": "WeaponAddonCommon_ElementalBased",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1025,
+    "name": "索利斯使命",
+    "nameKey": "Weapon_SolisMissio_Name",
+    "enhanceFromId": 1024,
+    "components": [
+      {
+        "class": "WeaponSimple_SwordAndShield",
+        "weaponType": 0,
+        "attackWeightPerSwing": 0.20000000298023224
+      },
+      {
+        "class": "WeaponAddonCommon_ElementalBased",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddon",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1026,
+    "name": "食火獬豸",
+    "nameKey": "Weapon_Haetae_Name",
+    "enhanceFromId": 1024,
+    "components": [
+      {
+        "class": "WeaponSimple_SwordAndShield",
+        "weaponType": 0,
+        "attackWeightPerSwing": 0.20000000298023224
+      },
+      {
+        "class": "WeaponAddonCommon_ElementalBased",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddon",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1028,
+    "name": "耀目的寂静",
+    "nameKey": "Weapon_1028_Name",
+    "enhanceFromId": 1016,
+    "components": [
+      {
+        "class": "WeaponSimple_SwordAndShield",
+        "weaponType": 0,
+        "attackWeightPerSwing": 0.20000000298023224
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1029,
+    "name": "霜针花园",
+    "nameKey": "Weapon_1029_Name",
+    "enhanceFromId": 1013,
+    "components": [
+      {
+        "class": "WeaponSimple_SwordAndShield",
+        "weaponType": 0,
+        "attackWeightPerSwing": 0.20000000298023224
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1030,
+    "name": "棱镜法杖",
+    "nameKey": "Weapon_AllElementalWand_Name",
+    "enhanceFromId": 1004,
+    "components": [
+      {
+        "class": "WeaponSimple_SwordAndShield",
+        "weaponType": 0,
+        "attackWeightPerSwing": 0.20000000298023224
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1111,
+    "name": "黑铁戟",
+    "nameKey": "WeaponGreatsword_Halberd_Black_Name",
+    "enhanceFromId": 11,
+    "components": [
+      {
+        "class": "WeaponSimple_GreatSword",
+        "weaponType": 1,
+        "attackWeightPerSwing": 0.30000001192092896
+      },
+      {
+        "class": "WeaponAddonGreatsword_Quick",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonGreatsword_OutsideBonus",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1116,
+    "name": "破坏者",
+    "nameKey": "WeaponGreatsword_RedClub_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_GreatSword",
+        "weaponType": 1,
+        "attackWeightPerSwing": 0.30000001192092896
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_DebuffAttack",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1121,
+    "name": "放血机关剑",
+    "nameKey": "WeaponGreatsword_BoneBlood_Name",
+    "enhanceFromId": 1102,
+    "components": [
+      {
+        "class": "WeaponSimple_GreatSword",
+        "weaponType": 1,
+        "attackWeightPerSwing": 0.30000001192092896
+      },
+      {
+        "class": "WeaponAddonGreatsword_BasicAttackFaster",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonGreatsword_BoneBlood",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1202,
+    "name": "燃烧之牙",
+    "nameKey": "Weapon_FireDaggerBurn_Name",
+    "enhanceFromId": -1,
+    "components": []
+  },
+  {
+    "id": 1210,
+    "name": "黑幕",
+    "nameKey": "Weapon_Dagger_Tier3_ThrowComp_Name",
+    "enhanceFromId": 1206,
+    "components": [
+      {
+        "class": "WeaponSimple_Dagger",
+        "weaponType": 2,
+        "attackWeightPerSwing": 0.13750000298023224
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_AttackBuff",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1211,
+    "name": "模仿之书",
+    "nameKey": "Weapon_Dagger_Tier3_Magic_Name",
+    "enhanceFromId": 1212,
+    "components": [
+      {
+        "class": "WeaponSimple_Dagger",
+        "weaponType": 2,
+        "attackWeightPerSwing": 0.13750000298023224
+      },
+      {
+        "class": "WeaponAddonDagger_FreeParry",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_ChangeWeaponAction",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1212,
+    "name": "学院魔法剑",
+    "nameKey": "Weapon_Dagger_FreeParry_Name",
+    "enhanceFromId": 20,
+    "components": [
+      {
+        "class": "WeaponSimple_Dagger",
+        "weaponType": 2,
+        "attackWeightPerSwing": 0.13750000298023224
+      },
+      {
+        "class": "WeaponAddonDagger_FreeParry",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1213,
+    "name": "学院魔法剑-解放",
+    "nameKey": "Weapon_Dagger_FreeParry_MP_Name",
+    "enhanceFromId": 1212,
+    "components": [
+      {
+        "class": "WeaponSimple_Dagger",
+        "weaponType": 2,
+        "attackWeightPerSwing": 0.13750000298023224
+      },
+      {
+        "class": "WeaponAddonDagger_FreeParry",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_ChangeWeaponAction",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1214,
+    "name": "索利斯·因贝尔",
+    "nameKey": "Weapon_FireDaggerFlameSword_Name",
+    "enhanceFromId": 1200,
+    "components": [
+      {
+        "class": "WeaponSimple_Dagger",
+        "weaponType": 2,
+        "attackWeightPerSwing": 0.13750000298023224
+      },
+      {
+        "class": "WeaponAddonCommon_AdditionalElementalDamage",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1215,
+    "name": "沉眠之霜",
+    "nameKey": "Weapon_1215_Name",
+    "enhanceFromId": 20,
+    "components": [
+      {
+        "class": "WeaponSimple_Dagger",
+        "weaponType": 2,
+        "attackWeightPerSwing": 0.13750000298023224
+      },
+      {
+        "class": "WeaponAddonCommon_ElementalBased",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1216,
+    "name": "冷冻公鱼",
+    "nameKey": "Weapon_1216_Name",
+    "enhanceFromId": 1215,
+    "components": [
+      {
+        "class": "WeaponSimple_Dagger",
+        "weaponType": 2,
+        "attackWeightPerSwing": 0.13750000298023224
+      },
+      {
+        "class": "WeaponAddonCommon_ElementalBased",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_DebuffAttack_OnlySpecialAttack",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1217,
+    "name": "德里法",
+    "nameKey": "Weapon_1217_Name",
+    "enhanceFromId": 1215,
+    "components": [
+      {
+        "class": "WeaponSimple_Dagger",
+        "weaponType": 2,
+        "attackWeightPerSwing": 0.13750000298023224
+      },
+      {
+        "class": "WeaponAddonCommon_ElementalBased",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 9000,
+    "name": "魔像核心",
+    "nameKey": "Weapon_Golem_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Golem",
+        "weaponType": 6,
+        "attackWeightPerSwing": 0.33000001311302185
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "name": "安全的开始",
+    "nameKey": "Weapon_0021_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Dagger",
+        "weaponType": 2,
+        "attackWeightPerSwing": 0.13750000298023224
+      },
+      {
+        "class": "WeaponAddonDagger_WideParry",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "name": "希望的影子",
+    "nameKey": "Weapon_0024_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Dagger",
+        "weaponType": 2,
+        "attackWeightPerSwing": 0.13750000298023224
+      },
+      {
+        "class": "WeaponAddonDagger_WideParry",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonDagger_ParryHeal",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "name": "白色微笑",
+    "nameKey": "Weapon_0025_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Dagger",
+        "weaponType": 2,
+        "attackWeightPerSwing": 0.13750000298023224
+      },
+      {
+        "class": "WeaponAddonDagger_WideParry",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonDagger_EasyParry",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1005,
+    "name": "修行之杖",
+    "nameKey": "Weapon_CooldownWand_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_SwordAndShield",
+        "weaponType": 0,
+        "attackWeightPerSwing": 0.20000000298023224
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1011,
+    "name": "鲁比戈",
+    "nameKey": "Weapon_Corrosion2_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_SwordAndShield",
+        "weaponType": 0,
+        "attackWeightPerSwing": 0.20000000298023224
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1012,
+    "name": "奥克拉·鲁比戈",
+    "nameKey": "Weapon_Corrosion3_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_SwordAndShield",
+        "weaponType": 0,
+        "attackWeightPerSwing": 0.20000000298023224
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1110,
+    "name": "戟",
+    "nameKey": "WeaponGreatsword_Halberd_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_GreatSword",
+        "weaponType": 1,
+        "attackWeightPerSwing": 0.30000001192092896
+      }
+    ]
+  },
+  {
+    "id": 1001,
+    "name": "魔法弓",
+    "nameKey": "Weapon_1001_Name",
+    "enhanceFromId": -1,
+    "components": []
+  },
+  {
+    "id": 0,
+    "name": "标准剑盾",
+    "nameKey": "Weapon_0000_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_SwordAndShield",
+        "weaponType": 0,
+        "attackWeightPerSwing": 0.20000000298023224
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "name": "绒毛的守护",
+    "nameKey": "Weapon_0001_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_SwordAndShield",
+        "weaponType": 0,
+        "attackWeightPerSwing": 0.20000000298023224
+      },
+      {
+        "class": "WeaponAddon_GuardResist",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "攻守一体",
+    "nameKey": "Weapon_0002_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_SwordAndShield",
+        "weaponType": 0,
+        "attackWeightPerSwing": 0.20000000298023224
+      },
+      {
+        "class": "WeaponAddon_OppositeAttackGuard",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "小小破坏",
+    "nameKey": "Weapon_0003_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_SwordAndShield",
+        "weaponType": 0,
+        "attackWeightPerSwing": 0.20000000298023224
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "星光闪烁",
+    "nameKey": "Weapon_0004_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_SwordAndShield",
+        "weaponType": 0,
+        "attackWeightPerSwing": 0.20000000298023224
+      },
+      {
+        "class": "WeaponAddon_GuardResist",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "冰冷愤怒",
+    "nameKey": "Weapon_0005_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_SwordAndShield",
+        "weaponType": 0,
+        "attackWeightPerSwing": 0.20000000298023224
+      },
+      {
+        "class": "WeaponAddon_GuardResist",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddon_PerfectGuardBuff",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "灰烬飘扬",
+    "nameKey": "Weapon_0006_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_SwordAndShield",
+        "weaponType": 0,
+        "attackWeightPerSwing": 0.20000000298023224
+      },
+      {
+        "class": "WeaponAddon_OppositeAttackGuard",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddon_DashAttack",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "无垠原野",
+    "nameKey": "Weapon_0007_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_SwordAndShield",
+        "weaponType": 0,
+        "attackWeightPerSwing": 0.20000000298023224
+      },
+      {
+        "class": "WeaponAddon_OppositeAttackGuard",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddon_BasicAttack",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "收紧的恐惧",
+    "nameKey": "Weapon_0009_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_SwordAndShield",
+        "weaponType": 0,
+        "attackWeightPerSwing": 0.20000000298023224
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddon",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "钢铁巨剑",
+    "nameKey": "Weapon_0010_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_GreatSword",
+        "weaponType": 1,
+        "attackWeightPerSwing": 0.30000001192092896
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "过敏性",
+    "nameKey": "Weapon_0011_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_GreatSword",
+        "weaponType": 1,
+        "attackWeightPerSwing": 0.30000001192092896
+      },
+      {
+        "class": "WeaponAddonGreatsword_Quick",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "聚集的阴影",
+    "nameKey": "Weapon_0012_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_GreatSword",
+        "weaponType": 1,
+        "attackWeightPerSwing": 0.30000001192092896
+      },
+      {
+        "class": "WeaponAddonGreatsword_BasicAttack",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "无视",
+    "nameKey": "Weapon_0014_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_GreatSword",
+        "weaponType": 1,
+        "attackWeightPerSwing": 0.30000001192092896
+      },
+      {
+        "class": "WeaponAddonGreatsword_Quick",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonGreatsword_SuperQuick",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "爱的眼神",
+    "nameKey": "Weapon_0015_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_GreatSword",
+        "weaponType": 1,
+        "attackWeightPerSwing": 0.30000001192092896
+      },
+      {
+        "class": "WeaponAddonGreatsword_Quick",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonGreatsword_RapidWhirlwind",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "短暂自责",
+    "nameKey": "Weapon_0016_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_GreatSword",
+        "weaponType": 1,
+        "attackWeightPerSwing": 0.30000001192092896
+      },
+      {
+        "class": "WeaponAddonGreatsword_BasicAttack",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonGreatsword_TripleCombo",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "不便的喜悦",
+    "nameKey": "Weapon_0017_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_GreatSword",
+        "weaponType": 1,
+        "attackWeightPerSwing": 0.33000001311302185
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "匕首",
+    "nameKey": "Weapon_0020_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Dagger",
+        "weaponType": 2,
+        "attackWeightPerSwing": 0.13750000298023224
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "name": "跨越门槛",
+    "nameKey": "Weapon_0022_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Dagger",
+        "weaponType": 2,
+        "attackWeightPerSwing": 0.13750000298023224
+      },
+      {
+        "class": "WeaponAddonDagger_BasicAttackFinal",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "name": "干燥的风",
+    "nameKey": "Weapon_0023_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Dagger",
+        "weaponType": 2,
+        "attackWeightPerSwing": 0.13750000298023224
+      },
+      {
+        "class": "WeaponAddonDagger_PassFury",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "name": "无光之刃",
+    "nameKey": "Weapon_0026_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Dagger",
+        "weaponType": 2,
+        "attackWeightPerSwing": 0.13750000298023224
+      },
+      {
+        "class": "WeaponAddonDagger_BasicAttackFinal",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonDagger_EnhancedDashAttack",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "name": "绝对向往",
+    "nameKey": "Weapon_0027_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Dagger",
+        "weaponType": 2,
+        "attackWeightPerSwing": 0.13750000298023224
+      },
+      {
+        "class": "WeaponAddonDagger_BasicAttackFinal",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonDagger_NewBasicAttack",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "name": "爬行的绝望",
+    "nameKey": "Weapon_0028_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Dagger",
+        "weaponType": 2,
+        "attackWeightPerSwing": 0.13750000298023224
+      },
+      {
+        "class": "WeaponAddonDagger_PassFury",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonDagger_DoubleFury",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "name": "艰难实验",
+    "nameKey": "Weapon_0029_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Dagger",
+        "weaponType": 2,
+        "attackWeightPerSwing": 0.13750000298023224
+      },
+      {
+        "class": "WeaponAddonDagger_PassFury",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonDagger_CritFury",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "name": "重型弩",
+    "nameKey": "Weapon_0100_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Crossbow",
+        "weaponType": 3,
+        "attackWeightPerSwing": 0.23999999463558197
+      }
+    ]
+  },
+  {
+    "id": 101,
+    "name": "重型弩：装填装置",
+    "nameKey": "Weapon_0101_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Crossbow",
+        "weaponType": 3,
+        "attackWeightPerSwing": 0.23999999463558197
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 102,
+    "name": "重型弩：加速核心",
+    "nameKey": "Weapon_0102_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Crossbow",
+        "weaponType": 3,
+        "attackWeightPerSwing": 0.23999999463558197
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 103,
+    "name": "弩：双子",
+    "nameKey": "Weapon_0103_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Crossbow",
+        "weaponType": 3,
+        "attackWeightPerSwing": 0.23999999463558197
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 104,
+    "name": "重型弩：散射发射器",
+    "nameKey": "Weapon_0104_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Crossbow",
+        "weaponType": 3,
+        "attackWeightPerSwing": 0.23999999463558197
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 105,
+    "name": "重型弩：火药合成",
+    "nameKey": "Weapon_0105_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Crossbow",
+        "weaponType": 3,
+        "attackWeightPerSwing": 0.23999999463558197
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 106,
+    "name": "重型弩：特殊箭增强",
+    "nameKey": "Weapon_0106_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Crossbow",
+        "weaponType": 3,
+        "attackWeightPerSwing": 0.23999999463558197
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 108,
+    "name": "重型弩：火焰地雷",
+    "nameKey": "Weapon_0108_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Crossbow",
+        "weaponType": 3,
+        "attackWeightPerSwing": 0.23999999463558197
+      },
+      {
+        "class": "WeaponAddonCommon_ElementalBased",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 109,
+    "name": "重型弩：配备制导模块",
+    "nameKey": "Weapon_0109_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Crossbow",
+        "weaponType": 3,
+        "attackWeightPerSwing": 0.23999999463558197
+      },
+      {
+        "class": "WeaponAddonCommon_ElementalBased",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 110,
+    "name": "重型弩：不稳定的闪电印记",
+    "nameKey": "Weapon_0110_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Crossbow",
+        "weaponType": 3,
+        "attackWeightPerSwing": 0.23999999463558197
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 111,
+    "name": "重型弩：标记稳定化",
+    "nameKey": "Weapon_0111_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Crossbow",
+        "weaponType": 3,
+        "attackWeightPerSwing": 0.23999999463558197
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 112,
+    "name": "重型弩：霜之帷幕",
+    "nameKey": "Weapon_0112_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Crossbow",
+        "weaponType": 3,
+        "attackWeightPerSwing": 0.23999999463558197
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 113,
+    "name": "重型弩：速冻结晶",
+    "nameKey": "Weapon_0113_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Crossbow",
+        "weaponType": 3,
+        "attackWeightPerSwing": 0.23999999463558197
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 114,
+    "name": "重型弩：扩展装置",
+    "nameKey": "Weapon_0114_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Crossbow",
+        "weaponType": 3,
+        "attackWeightPerSwing": 0.23999999463558197
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 115,
+    "name": "重型弩：聚云者",
+    "nameKey": "Weapon_0115_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Crossbow",
+        "weaponType": 3,
+        "attackWeightPerSwing": 0.23999999463558197
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 116,
+    "name": "重型弩：爆炸装置",
+    "nameKey": "Weapon_0116_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Crossbow",
+        "weaponType": 3,
+        "attackWeightPerSwing": 0.23999999463558197
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 117,
+    "name": "重型弩：连发装置",
+    "nameKey": "Weapon_0117_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Crossbow",
+        "weaponType": 3,
+        "attackWeightPerSwing": 0.23999999463558197
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 118,
+    "name": "迷你加农炮",
+    "nameKey": "Weapon_0118_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Crossbow",
+        "weaponType": 3,
+        "attackWeightPerSwing": 0.23999999463558197
+      },
+      {
+        "class": "WeaponAddonCommon_ElementalBased",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 300,
+    "name": "……",
+    "nameKey": "...",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Bow",
+        "weaponType": 0,
+        "attackWeightPerSwing": 0.33000001311302185
+      }
+    ]
+  },
+  {
+    "id": 400,
+    "name": "刀",
+    "nameKey": "Weapon_0400_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Katana",
+        "weaponType": 5,
+        "attackWeightPerSwing": 0.16500000655651093
+      }
+    ]
+  },
+  {
+    "id": 401,
+    "name": "太刀「小野原」",
+    "nameKey": "Weapon_0401_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Katana",
+        "weaponType": 5,
+        "attackWeightPerSwing": 0.16500000655651093
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 402,
+    "name": "名刀「村正」",
+    "nameKey": "Weapon_0402_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Katana",
+        "weaponType": 5,
+        "attackWeightPerSwing": 0.16500000655651093
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonKatana_DefaultSheath",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 403,
+    "name": "怪刀「毫羽」",
+    "nameKey": "Weapon_0403_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Katana",
+        "weaponType": 5,
+        "attackWeightPerSwing": 0.16500000655651093
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 406,
+    "name": "赫尔巴尼斯",
+    "nameKey": "Weapon_0406_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Katana",
+        "weaponType": 5,
+        "attackWeightPerSwing": 0.16500000655651093
+      },
+      {
+        "class": "WeaponAddonCommon_AdditionalElementalDamage",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 407,
+    "name": "炽焰赫尔巴努斯",
+    "nameKey": "Weapon_0407_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Katana",
+        "weaponType": 5,
+        "attackWeightPerSwing": 0.16500000655651093
+      },
+      {
+        "class": "WeaponAddonCommon_AdditionalElementalDamage",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 408,
+    "name": "海蒂",
+    "nameKey": "Weapon_0408_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Katana",
+        "weaponType": 5,
+        "attackWeightPerSwing": 0.16500000655651093
+      },
+      {
+        "class": "WeaponAddonCommon_AdditionalElementalDamage",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 409,
+    "name": "剑斩刀：天光削",
+    "nameKey": "Weapon_0409_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Katana",
+        "weaponType": 5,
+        "attackWeightPerSwing": 0.16500000655651093
+      },
+      {
+        "class": "WeaponAddonKatana_QuickDraw",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 410,
+    "name": "剑斩刀：飞柳",
+    "nameKey": "Weapon_0410_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Katana",
+        "weaponType": 5,
+        "attackWeightPerSwing": 0.16500000655651093
+      },
+      {
+        "class": "WeaponAddonKatana_QuickDraw",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 411,
+    "name": "剑斩刀：破舞",
+    "nameKey": "Weapon_0411_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Katana",
+        "weaponType": 5,
+        "attackWeightPerSwing": 0.16500000655651093
+      },
+      {
+        "class": "WeaponAddonKatana_QuickDraw",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 412,
+    "name": "等待的碧蓝刃",
+    "nameKey": "Weapon_0412_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Katana",
+        "weaponType": 5,
+        "attackWeightPerSwing": 0.16500000655651093
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 413,
+    "name": "优衣的短匕首",
+    "nameKey": "Weapon_0413_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Katana",
+        "weaponType": 5,
+        "attackWeightPerSwing": 0.16500000655651093
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 414,
+    "name": "亚达玛的誓约",
+    "nameKey": "Weapon_0414_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Katana",
+        "weaponType": 5,
+        "attackWeightPerSwing": 0.16500000655651093
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 416,
+    "name": "图书馆幽灵封印研究会第1型",
+    "nameKey": "Weapon_0416_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Katana",
+        "weaponType": 5,
+        "attackWeightPerSwing": 0.16500000655651093
+      },
+      {
+        "class": "WeaponAddonKatana_SummonGhost",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 417,
+    "name": "图书馆幽灵封印研究会第2型",
+    "nameKey": "Weapon_0417_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Katana",
+        "weaponType": 5,
+        "attackWeightPerSwing": 0.16500000655651093
+      },
+      {
+        "class": "WeaponAddonKatana_SummonGhost",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 419,
+    "name": "冬季铁匠的草图剑",
+    "nameKey": "Weapon_0419_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Katana",
+        "weaponType": 5,
+        "attackWeightPerSwing": 0.16500000655651093
+      },
+      {
+        "class": "WeaponAddonKatana_Deflecting",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 420,
+    "name": "永霜的沉默",
+    "nameKey": "Weapon_0420_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Katana",
+        "weaponType": 5,
+        "attackWeightPerSwing": 0.16500000655651093
+      },
+      {
+        "class": "WeaponAddonKatana_Deflecting",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 421,
+    "name": "纳斯特朗的碎片",
+    "nameKey": "Weapon_0421_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Katana",
+        "weaponType": 5,
+        "attackWeightPerSwing": 0.16500000655651093
+      },
+      {
+        "class": "WeaponAddonKatana_Deflecting",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonKatana_Nastrond",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 500,
+    "name": "长棍",
+    "nameKey": "Weapon_0500_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_QuartterStaff",
+        "weaponType": 7,
+        "attackWeightPerSwing": 0.18000000715255737
+      }
+    ]
+  },
+  {
+    "id": 10000,
+    "name": "赤鼬巨剑",
+    "nameKey": "Weapon_WeaselKnightsGreatSword_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_GreatSword",
+        "weaponType": 1,
+        "attackWeightPerSwing": 0.33000001311302185
+      }
+    ]
+  },
+  {
+    "id": 10001,
+    "name": "……",
+    "nameKey": "...",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_GreatSword",
+        "weaponType": 1,
+        "attackWeightPerSwing": 0.33000001311302185
+      }
+    ]
+  },
+  {
+    "id": 1000,
+    "name": "胡萝卜剑",
+    "nameKey": "Weapon_CarrotSword_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_SwordAndShield",
+        "weaponType": 0,
+        "attackWeightPerSwing": 0.20000000298023224
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1001,
+    "name": "胡萝卜剑",
+    "nameKey": "Weapon_Carrotcalibur_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_SwordAndShield",
+        "weaponType": 0,
+        "attackWeightPerSwing": 0.20000000298023224
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_EnhancedAttackSpeed",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1004,
+    "name": "法杖",
+    "nameKey": "Weapon_MagicalWand_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_SwordAndShield",
+        "weaponType": 0,
+        "attackWeightPerSwing": 0.20000000298023224
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1006,
+    "name": "细剑",
+    "nameKey": "Weapon_Rapier_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_SwordAndShield",
+        "weaponType": 0,
+        "attackWeightPerSwing": 0.20000000298023224
+      },
+      {
+        "class": "WeaponAddon_Rapier",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1007,
+    "name": "闪光的细剑",
+    "nameKey": "Weapon_RapierWide_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_SwordAndShield",
+        "weaponType": 0,
+        "attackWeightPerSwing": 0.20000000298023224
+      },
+      {
+        "class": "WeaponAddon_Rapier",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1013,
+    "name": "霜之碎片",
+    "nameKey": "Weapon_Ice2_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_SwordAndShield",
+        "weaponType": 0,
+        "attackWeightPerSwing": 0.20000000298023224
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1014,
+    "name": "冰川之刃",
+    "nameKey": "Weapon_Ice3_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_SwordAndShield",
+        "weaponType": 0,
+        "attackWeightPerSwing": 0.20000000298023224
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1015,
+    "name": "暴风雪的前奏",
+    "nameKey": "Weapon_Hammer_Ice_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_SwordAndShield",
+        "weaponType": 0,
+        "attackWeightPerSwing": 0.20000000298023224
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1016,
+    "name": "导体",
+    "nameKey": "Weapon_LightningSwordAndShield_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_SwordAndShield",
+        "weaponType": 0,
+        "attackWeightPerSwing": 0.20000000298023224
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1017,
+    "name": "弩炮剑",
+    "nameKey": "Weapon_LightningSwordAndShield_T3MB_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_SwordAndShield",
+        "weaponType": 0,
+        "attackWeightPerSwing": 0.20000000298023224
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_MiniBallista",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1018,
+    "name": "超导体",
+    "nameKey": "Weapon_LightningSwordAndShield_T3S_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_SwordAndShield",
+        "weaponType": 0,
+        "attackWeightPerSwing": 0.20000000298023224
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddon_DarkCloudSweep",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1019,
+    "name": "葱根剑",
+    "nameKey": "Weapon_GreenOnionSword_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_SwordAndShield",
+        "weaponType": 0,
+        "attackWeightPerSwing": 0.20000000298023224
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1100,
+    "name": "木制棍棒",
+    "nameKey": "WeaponGreatsword_Club_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_GreatSword",
+        "weaponType": 1,
+        "attackWeightPerSwing": 0.30000001192092896
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1101,
+    "name": "荆棘棒",
+    "nameKey": "WeaponGreatsword_SpikeClub_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_GreatSword",
+        "weaponType": 1,
+        "attackWeightPerSwing": 0.30000001192092896
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonGreatsword_FireNeedleBullet",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1102,
+    "name": "骨之机关剑",
+    "nameKey": "WeaponGreatsword_Bone_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_GreatSword",
+        "weaponType": 1,
+        "attackWeightPerSwing": 0.30000001192092896
+      },
+      {
+        "class": "WeaponAddonGreatsword_BasicAttackFaster",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1103,
+    "name": "吱嘎的脊椎",
+    "nameKey": "WeaponGreatsword_Bone2_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_GreatSword",
+        "weaponType": 1,
+        "attackWeightPerSwing": 0.30000001192092896
+      },
+      {
+        "class": "WeaponAddonGreatsword_BasicAttackFaster",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_TransformAttackBonus",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1104,
+    "name": "寒气缭绕的大剑",
+    "nameKey": "WeaponGreatsword_Ice_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_GreatSword",
+        "weaponType": 1,
+        "attackWeightPerSwing": 0.33000001311302185
+      },
+      {
+        "class": "WeaponAddonCommon_AdditionalElementalDamage",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1105,
+    "name": "万年寒霜巨剑",
+    "nameKey": "WeaponGreatsword_Ice2_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_GreatSword",
+        "weaponType": 1,
+        "attackWeightPerSwing": 0.33000001311302185
+      },
+      {
+        "class": "WeaponAddonCommon_AdditionalElementalDamage",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1106,
+    "name": "冰柱剑",
+    "nameKey": "WeaponGreatsword_Ice2_Freeze_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_GreatSword",
+        "weaponType": 1,
+        "attackWeightPerSwing": 0.33000001311302185
+      },
+      {
+        "class": "WeaponAddonCommon_AdditionalElementalDamage",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_DebuffAttack",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1107,
+    "name": "深红之刺",
+    "nameKey": "WeaponGreatsword_Red_Tier2_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_GreatSword",
+        "weaponType": 1,
+        "attackWeightPerSwing": 0.30000001192092896
+      },
+      {
+        "class": "WeaponAddonCommon_DebuffAttack",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1108,
+    "name": "深红漩涡",
+    "nameKey": "WeaponGreatsword_Red_Tier3_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_GreatSword",
+        "weaponType": 1,
+        "attackWeightPerSwing": 0.30000001192092896
+      },
+      {
+        "class": "WeaponAddonCommon_DebuffAttack",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1109,
+    "name": "电击大剑「E3G」",
+    "nameKey": "WeaponGreatsword_LightningT3_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_GreatSword",
+        "weaponType": 1,
+        "attackWeightPerSwing": 0.30000001192092896
+      },
+      {
+        "class": "WeaponAddonCommon_AdditionalElementalDamage",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_AddDarkCloudOnAttack",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1112,
+    "name": "电击大剑「E2G」",
+    "nameKey": "WeaponGreatsword_Lightning_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_GreatSword",
+        "weaponType": 1,
+        "attackWeightPerSwing": 0.30000001192092896
+      },
+      {
+        "class": "WeaponAddonCommon_AdditionalElementalDamage",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1113,
+    "name": "电击大剑「S3G」",
+    "nameKey": "WeaponGreatsword_LightningT3Shock_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_GreatSword",
+        "weaponType": 1,
+        "attackWeightPerSwing": 0.30000001192092896
+      },
+      {
+        "class": "WeaponAddonCommon_AdditionalElementalDamage",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_DebuffAttack",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1114,
+    "name": "驱魔的重剑",
+    "nameKey": "WeaponGreatsword_IceExo_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_GreatSword",
+        "weaponType": 1,
+        "attackWeightPerSwing": 0.33000001311302185
+      },
+      {
+        "class": "WeaponAddonCommon_AdditionalElementalDamage",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1115,
+    "name": "裁判官",
+    "nameKey": "WeaponGreatsword_RedSimple_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_GreatSword",
+        "weaponType": 1,
+        "attackWeightPerSwing": 0.30000001192092896
+      },
+      {
+        "class": "WeaponAddonCommon_DebuffAttack",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1117,
+    "name": "幻术师的遗产",
+    "nameKey": "WeaponGreatsword_PurpleCooldown_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_GreatSword",
+        "weaponType": 1,
+        "attackWeightPerSwing": 0.33000001311302185
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1118,
+    "name": "太初形态",
+    "nameKey": "WeaponGreatsword_PurpleBiglazer_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_GreatSword",
+        "weaponType": 1,
+        "attackWeightPerSwing": 0.33000001311302185
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1119,
+    "name": "顽皮的恶作剧",
+    "nameKey": "WeaponGreatsword_ClubAdvanced_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_GreatSword",
+        "weaponType": 1,
+        "attackWeightPerSwing": 0.33000001311302185
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1120,
+    "name": "拉扎里恩",
+    "nameKey": "WeaponGreatsword_PurpleCompanion_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_GreatSword",
+        "weaponType": 1,
+        "attackWeightPerSwing": 0.33000001311302185
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1122,
+    "name": "余烬巨剑",
+    "nameKey": "Weapon_1122_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_GreatSword",
+        "weaponType": 1,
+        "attackWeightPerSwing": 0.33000001311302185
+      },
+      {
+        "class": "WeaponAddonCommon_AdditionalElementalDamage",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1123,
+    "name": "红蛇碎击",
+    "nameKey": "Weapon_1123_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_GreatSword",
+        "weaponType": 1,
+        "attackWeightPerSwing": 0.33000001311302185
+      },
+      {
+        "class": "WeaponAddonCommon_AdditionalElementalDamage",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1124,
+    "name": "索利斯·西涅里斯",
+    "nameKey": "Weapon_1124_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_GreatSword",
+        "weaponType": 1,
+        "attackWeightPerSwing": 0.33000001311302185
+      },
+      {
+        "class": "WeaponAddonCommon_AdditionalElementalDamage",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1200,
+    "name": "火焰匕首",
+    "nameKey": "Weapon_FireDagger_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Dagger",
+        "weaponType": 2,
+        "attackWeightPerSwing": 0.13750000298023224
+      },
+      {
+        "class": "WeaponAddonCommon_AdditionalElementalDamage",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1201,
+    "name": "炙热之刃",
+    "nameKey": "Weapon_FireDagger2_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Dagger",
+        "weaponType": 2,
+        "attackWeightPerSwing": 0.13750000298023224
+      },
+      {
+        "class": "WeaponAddonCommon_AdditionalElementalDamage",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_SpecialAttackDebuff",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1203,
+    "name": "闪电匕首",
+    "nameKey": "Weapon_Lightning_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Dagger",
+        "weaponType": 2,
+        "attackWeightPerSwing": 0.13750000298023224
+      },
+      {
+        "class": "WeaponAddonCommon_AdditionalElementalDamage",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1204,
+    "name": "笼罩的阴云",
+    "nameKey": "Weapon_Lightning2_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Dagger",
+        "weaponType": 2,
+        "attackWeightPerSwing": 0.13750000298023224
+      },
+      {
+        "class": "WeaponAddonCommon_AdditionalElementalDamage",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1205,
+    "name": "雷电之怒",
+    "nameKey": "Weapon_Lightning3_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Dagger",
+        "weaponType": 2,
+        "attackWeightPerSwing": 0.13750000298023224
+      },
+      {
+        "class": "WeaponAddonCommon_AdditionalElementalDamage",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_DebuffAttack",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1206,
+    "name": "高山雪绒花",
+    "nameKey": "Weapon_Dagger_Tier2_Throw_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Dagger",
+        "weaponType": 2,
+        "attackWeightPerSwing": 0.13750000298023224
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1207,
+    "name": "福寿草",
+    "nameKey": "Weapon_Dagger_Tier3_Throw_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Dagger",
+        "weaponType": 2,
+        "attackWeightPerSwing": 0.13750000298023224
+      },
+      {
+        "class": "WeaponAddonCommon_Status",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1208,
+    "name": "碧玉残影",
+    "nameKey": "Weapon_1208_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Dagger",
+        "weaponType": 2,
+        "attackWeightPerSwing": 0.13750000298023224
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 1209,
+    "name": "无尽沉浸",
+    "nameKey": "Weapon_1209_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Dagger",
+        "weaponType": 2,
+        "attackWeightPerSwing": 0.13750000298023224
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      },
+      {
+        "class": "WeaponAddonCommon_StatusUnsafe",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 9999,
+    "name": "神秘的树枝",
+    "nameKey": "Weapon_9999_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_SwordAndShield",
+        "weaponType": 8,
+        "attackWeightPerSwing": 0.20000000298023224
+      },
+      {
+        "class": "WeaponAddon_RandomWeaponActivator",
+        "weaponType": null,
+        "attackWeightPerSwing": null
+      }
+    ]
+  },
+  {
+    "id": 5000,
+    "name": "建筑用巨型锤",
+    "nameKey": "Weapon_5000_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_GreatSword",
+        "weaponType": 1,
+        "attackWeightPerSwing": 0.33000001311302185
+      }
+    ]
+  },
+  {
+    "id": 5001,
+    "name": "小锄",
+    "nameKey": "Weapon_5001_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_Dagger",
+        "weaponType": 2,
+        "attackWeightPerSwing": 0.13750000298023224
+      }
+    ]
+  },
+  {
+    "id": 5002,
+    "name": "锄头",
+    "nameKey": "Weapon_5002_Name",
+    "enhanceFromId": -1,
+    "components": [
+      {
+        "class": "WeaponSimple_QuartterStaff",
+        "weaponType": 7,
+        "attackWeightPerSwing": 0.18000000715255737
+      }
+    ]
+  },
+  {
+    "id": 1000,
+    "name": "旧弓",
+    "nameKey": "Weapon_1000_Name",
+    "enhanceFromId": -1,
+    "components": []
+  },
+  {
+    "id": 1001,
+    "name": "魔法弓",
+    "nameKey": "Weapon_1001_Name",
+    "enhanceFromId": -1,
+    "components": []
+  },
+  {
+    "id": 1002,
+    "name": "旧弓",
+    "nameKey": "Weapon_1000_Name",
+    "enhanceFromId": -1,
+    "components": []
+  }
+]

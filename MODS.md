@@ -2,13 +2,15 @@
 
 核对日期：2026-10-01。依据本机游戏插件与 AddOn 元数据静态扫描。
 
+2026-10-04 增量核对并更新背包整理 **3.0.5** 的源码、完整安装文件和管理器安装包；其他条目仍以 2026-10-01 的扫描为准。
+
 当前安装共 **14 个 Mod：10 个 BepInEx 插件、4 个 AddOn**，本机均处于允许下次启动加载的磁盘状态。仓库安装文件默认启用；静态扫描不代表游戏内验收。
 
 ## BepInEx 插件
 
 | 模组 | 版本 | 状态 | 当前功能与入口 | 安装路径 |
 | --- | --- | --- | --- | --- |
-| 背包整理 | 2.5.4 | 启用 | F8；收藏同步、分层整理；沿用原插件 ID | `SephiriaBackpackOrganizer/SephiriaBackpackOrganizer.dll` |
+| 背包整理 | 3.0.5 | 启用 | F8；武器/流派识别、收益整理、共鸣石成长准备、同分无损提升；完整模型与 Node.js 随包提供 | `SephiriaBackpackOrganizer/SephiriaBackpackOrganizer.dll` |
 | 羁绊神器许愿泉 | 0.2.0 | 启用 | 许愿泉加入已解锁羁绊神器；费用为 9 | `SephiriaBondArtifactWishes/SephiriaBondArtifactWishes.dll` |
 | 弩自动上弹 | 1.1.0 | 启用 | 设置 → 游戏性；支持原版与自动上弹模式 | `SephiriaCrossbowAutoReload/SephiriaCrossbowAutoReload.dll` |
 | IP 直连 | 0.4.0（本地维护版） | 启用 | 联机石板 IP 创建／加入；超时、取消、认证与进场判断、旧连接清理 | `SephiriaDirectConnect/SephiriaDirectConnect.dll` |

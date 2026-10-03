@@ -898,17 +898,102 @@
     },
     {
       "Id": "com.sephiria.backpack-organizer",
-      "Version": "2.5.4",
+      "Version": "3.0.5",
       "Loader": "BepInEx",
       "DefaultEnabled": true,
       "Files": [
         {
+          "source": "BepInEx/plugins/SephiriaBackpackOrganizer/LICENSE",
+          "target": "BepInEx/plugins/SephiriaBackpackOrganizer/LICENSE",
+          "sha256": "51AA4C90B8C78DB73495A2C153BAD7A0D2D01AE184FC0F45D92B55B08DE08AC5",
+          "config": false
+        },
+        {
+          "source": "BepInEx/plugins/SephiriaBackpackOrganizer/README.md",
+          "target": "BepInEx/plugins/SephiriaBackpackOrganizer/README.md",
+          "sha256": "E2721EE0877A9DADC92D9516020110A59E96B25CD75B5483BF477B2BD46DA2C4",
+          "config": false
+        },
+        {
           "source": "BepInEx/plugins/SephiriaBackpackOrganizer/SephiriaBackpackOrganizer.dll",
           "target": "BepInEx/plugins/SephiriaBackpackOrganizer/SephiriaBackpackOrganizer.dll",
-          "sha256": "481EC3AEB607E632D114BF4655446DDCBA4D84B11F3BEB18F57F4825AA8B25AB",
+          "sha256": "53435656128E91D8A9C41B8F553B39FADA8FDE3E87F0E99DD5159D82FE4C3289",
+          "config": false
+        },
+        {
+          "source": "BepInEx/plugins/SephiriaBackpackOrganizer/model/builds.js",
+          "target": "BepInEx/plugins/SephiriaBackpackOrganizer/model/builds.js",
+          "sha256": "3CADFD79933BF96C036FA6487C5D515AB1978EFDB2CA5A5CF9FC9E16AAEFBFFD",
+          "config": false
+        },
+        {
+          "source": "BepInEx/plugins/SephiriaBackpackOrganizer/model/mechanics.js",
+          "target": "BepInEx/plugins/SephiriaBackpackOrganizer/model/mechanics.js",
+          "sha256": "4D4C0B638B588F532A7E0B0D417DFC8DCE38D29763A730E11A07E7DDD17B60A3",
+          "config": false
+        },
+        {
+          "source": "BepInEx/plugins/SephiriaBackpackOrganizer/model/model.js",
+          "target": "BepInEx/plugins/SephiriaBackpackOrganizer/model/model.js",
+          "sha256": "AB91A3D1D34ED557544DA2CFC627B563F2CBAB6EB34DD6A39F6A55B5C22C0439",
+          "config": false
+        },
+        {
+          "source": "BepInEx/plugins/SephiriaBackpackOrganizer/model/native-query.js",
+          "target": "BepInEx/plugins/SephiriaBackpackOrganizer/model/native-query.js",
+          "sha256": "D2C838DDF2669CB3E327C58E4A6737A3C1756A30CB53331B2D6EBF31A3AE30E4",
+          "config": false
+        },
+        {
+          "source": "BepInEx/plugins/SephiriaBackpackOrganizer/model/resonance-model.js",
+          "target": "BepInEx/plugins/SephiriaBackpackOrganizer/model/resonance-model.js",
+          "sha256": "D67D85328A64D0124F3668E2202758B57859A7A12CE0875212AA58F9910BD68C",
+          "config": false
+        },
+        {
+          "source": "BepInEx/plugins/SephiriaBackpackOrganizer/model/runtime-model.js",
+          "target": "BepInEx/plugins/SephiriaBackpackOrganizer/model/runtime-model.js",
+          "sha256": "97558FA71B7479E30025C35CE17F7202B12FBCCAA955155E909773C397FD2F0C",
+          "config": false
+        },
+        {
+          "source": "BepInEx/plugins/SephiriaBackpackOrganizer/model/worker.cjs",
+          "target": "BepInEx/plugins/SephiriaBackpackOrganizer/model/worker.cjs",
+          "sha256": "B4386F4182F8F369C8755F91B712971A498F5C6907F6E5048BBACF6A8E0346BA",
+          "config": false
+        },
+        {
+          "source": "BepInEx/plugins/SephiriaBackpackOrganizer/model/data/catalog.json",
+          "target": "BepInEx/plugins/SephiriaBackpackOrganizer/model/data/catalog.json",
+          "sha256": "F52FD6BEB310430D7F75AD7C6D6B36BA458B1BFBF478017156B3F512C3638B76",
+          "config": false
+        },
+        {
+          "source": "BepInEx/plugins/SephiriaBackpackOrganizer/model/data/statuses.json",
+          "target": "BepInEx/plugins/SephiriaBackpackOrganizer/model/data/statuses.json",
+          "sha256": "D4D20773288BF10BAF917ECFCFF0482C7396CF43F3CD57F4851CF072BA42A8EA",
+          "config": false
+        },
+        {
+          "source": "BepInEx/plugins/SephiriaBackpackOrganizer/model/data/weapons.json",
+          "target": "BepInEx/plugins/SephiriaBackpackOrganizer/model/data/weapons.json",
+          "sha256": "EF265E6AFA1DC89240B613F7C33366968B0643F0BD76BDBB7BAD7798C86839E8",
+          "config": false
+        },
+        {
+          "source": "BepInEx/plugins/SephiriaBackpackOrganizer/model/runtime/NODE-LICENSE.txt",
+          "target": "BepInEx/plugins/SephiriaBackpackOrganizer/model/runtime/NODE-LICENSE.txt",
+          "sha256": "339C50294DA6A84322DCBE7285B57B248123BD4D9E37A2F72D68D5ABF2574783",
+          "config": false
+        },
+        {
+          "source": "BepInEx/plugins/SephiriaBackpackOrganizer/model/runtime/node.exe",
+          "target": "BepInEx/plugins/SephiriaBackpackOrganizer/model/runtime/node.exe",
+          "sha256": "FDDDBF4581E046B8102815D56208D6A248950BB554570B81519A8A5DACFEE95D",
           "config": false
         }
-      ]
+      ],
+      "VerifiedOn": "2026-10-04"
     },
     {
       "Id": "com.codex.sephiria.bondartifactwishes",
@@ -1152,5 +1237,6 @@
         }
       ]
     }
-  ]
+  ],
+  "LastIncrementalUpdate": "2026-10-04: Backpack Organizer 3.0.5 only; other entries retain the 2026-10-01 capture."
 }

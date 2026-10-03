@@ -232,6 +232,7 @@ namespace SephiriaBackpackOrganizer
 
 		private sealed class SearchContext
 		{
+            public BuildModelRequest buildModel;
             public volatile bool cancelled;
 			public GridInventory inv;
 
@@ -286,6 +287,9 @@ namespace SephiriaBackpackOrganizer
 			public int[] compassRootScratch = new int[0];
 
 			public List<WhitePaperComboTarget> whitePaperTargets = new List<WhitePaperComboTarget>();
+
+            public readonly PaperLockRules paperLocks = new PaperLockRules();
+            public int[] paperCells;
 
 			public int[] whitePaperAssignmentScratch = new int[0];
 
@@ -349,6 +353,9 @@ namespace SephiriaBackpackOrganizer
 
 		private sealed class PendingEnhancedSort
 		{
+            public ResonanceStage resonanceStage;
+            public int resonanceUid, resonanceSourceId, resonanceRewardId;
+            public float resonanceThreshold, resonanceWaitingSince;
             public string diagnosticId = Guid.NewGuid().ToString("N").Substring(0, 12);
             public LayoutObjective diagnosticBefore;
             public int marksRevision;
@@ -360,6 +367,7 @@ namespace SephiriaBackpackOrganizer
 			public SearchContext ctx;
 
 			public float beforeGameScore;
+            public long paperMismatchSince;
 
 			public Stopwatch stopwatch;
 
@@ -904,6 +912,7 @@ namespace SephiriaBackpackOrganizer
 					searchContext.others.Add(itemInfo);
 				}
 			}
+            CapturePaperLocks(searchContext);
 			ConfigureCyclicRowCategories(searchContext);
 			CaptureCompassBindings(searchContext, original);
 			// Natural spell pairs are soft preferences, not locked original neighbors.
@@ -2245,7 +2254,7 @@ namespace SephiriaBackpackOrganizer
 					}
 				}
 			}
-			if (ctx.hasBelt && plugin.BeltRowBonus.Value > 0f)
+			if (ctx.hasBelt && (plugin.BeltRowBonus.Value > 0f || plugin.BeltFullRowBonus.Value > 0f))
 			{
 				for (int num39 = 0; num39 < num; num39++)
 				{
@@ -2255,16 +2264,18 @@ namespace SephiriaBackpackOrganizer
 						continue;
 					}
 					int num40 = 0;
+                    int topCharms = 0;
 					int num41 = Math.Min(num, ctx.width);
 					for (int num42 = 0; num42 < num41; num42++)
 					{
 						Slot slot15 = slots[num42];
-						if (slot15 != null && slot15.hasItem && slot15.charm is not null && ctx.itemByInstance.TryGetValue(slot15.instanceID, out var value16) && value16 != null && !value16.isBurden)
+						if (slot15 != null && slot15.hasItem && slot15.charm is not null && ctx.itemByInstance.TryGetValue(slot15.instanceID, out var value16) && value16 != null)
 						{
-							num40++;
+                            topCharms++;
+                            if (!value16.isBurden) num40++;
 						}
 					}
-					num2 += (double)(plugin.BeltRowBonus.Value * (float)num40);
+					num2 += BeltRewards.Score(true, ctx.width, num, num40, topCharms, plugin.BeltRowBonus.Value, plugin.BeltFullRowBonus.Value);
 					break;
 				}
 			}
@@ -3637,7 +3648,7 @@ namespace SephiriaBackpackOrganizer
 				}
 				else if (pendingSearch != null)
 				{
-					if (pendingEnhancedSort.inventoryRevision != ManualPriorityManager.InventoryRevision || pendingEnhancedSort.marksRevision != ManualPriorityManager.Revision || IsDragging() || !LayoutsEquivalent(CaptureState(pendingEnhancedSort.inv), pendingEnhancedSort.original)) pendingEnhancedSort.ctx.cancelled = true;
+					if (!BuildWeaponUnchanged(pendingEnhancedSort.ctx) || pendingEnhancedSort.inventoryRevision != ManualPriorityManager.InventoryRevision || pendingEnhancedSort.marksRevision != ManualPriorityManager.Revision || IsDragging() || !LayoutsEquivalent(CaptureState(pendingEnhancedSort.inv), pendingEnhancedSort.original)) pendingEnhancedSort.ctx.cancelled = true;
                     if (pendingSearch.IsCompleted)
 					{
 						Task<SearchOutcome> task = pendingSearch;
@@ -3647,6 +3658,10 @@ namespace SephiriaBackpackOrganizer
                         else BeginApplyEnhanced(pendingEnhancedSort, outcome);
 					}
 				}
+                else if (pendingEnhancedSort.resonanceStage == ResonanceStage.Waiting)
+                {
+                    PollResonance(pendingEnhancedSort);
+                }
 				else if (pendingEnhancedSort.applying)
 				{
 					AdvanceApplyEnhanced(pendingEnhancedSort);
@@ -3689,6 +3704,7 @@ namespace SephiriaBackpackOrganizer
 
         private List<Slot> ComputeBestLayout(List<Slot> original, SearchContext ctx, out double beforeScore, out double bestScore)
         {
+            if (ctx.buildModel != null) return RunBuildModel(ctx, original, out beforeScore, out bestScore);
             return RunHybridSearch(ctx, original, out beforeScore, out bestScore);
         }
 
@@ -3702,6 +3718,7 @@ namespace SephiriaBackpackOrganizer
 				return false;
 			}
 			SearchContext ctx = BuildContext(inv, original);
+            CaptureBuildModel(ctx);
 			if (plugin.VerboseDiagnostics.Value)
 			{
 				LogItemIdentification(ctx);
@@ -3747,7 +3764,7 @@ namespace SephiriaBackpackOrganizer
 			GridInventory inv = state.inv;
 			List<Slot> original = state.original;
 			List<Slot> a = CaptureState(inv);
-			if (state.marksRevision != ManualPriorityManager.Revision || !VerifyInventorySnapshot(inv, original) || !LayoutsEquivalent(a, original))
+			if (!BuildWeaponUnchanged(state.ctx) || (state.ctx.buildModel != null && state.ctx.buildModel.InputToken != ModelInputToken(state.ctx)) || state.marksRevision != ManualPriorityManager.Revision || !VerifyInventorySnapshot(inv, original) || !LayoutsEquivalent(a, original) || !NativePaperLocksSatisfied(state.ctx, a))
 			{
 				RestartRequest(state);
 				return;
@@ -3757,13 +3774,19 @@ namespace SephiriaBackpackOrganizer
                 CancelEnhancedSort(state, "整理失败：搜索布局物品集合不一致", true); return;
             }
             state.outcome = outcome;
+            if (!PaperLocksSatisfied(state.ctx, outcome.layout))
+            {
+                CancelEnhancedSort(state, "整理结果违反白纸连击锁定，未应用。", true); return;
+            }
 			state.target = CloneSlots(outcome.layout);
+            StartResonanceApply(state);
 			BeginMovePlan(state, original, state.target, rollingBack: false);
 		}
 
 		private void BeginMovePlan(PendingEnhancedSort state, List<Slot> current, List<Slot> target, bool rollingBack)
 		{
 			state.swaps.Clear();
+            state.paperMismatchSince = 0;
 			state.rotations.Clear();
 			BuildClientOps(current, target, state.swaps, state.rotations);
 			state.expected = CloneSlots(current);
@@ -3783,6 +3806,7 @@ namespace SephiriaBackpackOrganizer
 
 		private void AdvanceApplyEnhanced(PendingEnhancedSort state)
 		{
+            if (ObserveResonanceEvolution(state)) return;
 			if (state.awaitingObservedState)
 			{
 				if (!LayoutsEquivalent(CaptureState(state.inv), state.expected))
@@ -3801,7 +3825,7 @@ namespace SephiriaBackpackOrganizer
 				state.awaitingObservedState = false;
 				state.acknowledgement.Reset();
 			}
-            if (state.marksRevision != ManualPriorityManager.Revision || IsDragging() || !LayoutsEquivalent(CaptureState(state.inv), state.expected))
+            if (!BuildWeaponUnchanged(state.ctx) || state.marksRevision != ManualPriorityManager.Revision || IsDragging() || !LayoutsEquivalent(CaptureState(state.inv), state.expected))
             {
                 RestartRequest(state); return;
             }
@@ -3851,12 +3875,16 @@ namespace SephiriaBackpackOrganizer
 
 		private void CompleteApplyEnhanced(PendingEnhancedSort state)
 		{
+            if (ObserveResonanceEvolution(state)) return;
 			List<Slot> list = CaptureState(state.inv);
-			if (!LayoutsEquivalent(list, state.target))
+            bool layoutMatches = LayoutsEquivalent(list, state.target);
+            bool paperMatches = NativePaperLocksSatisfied(state.ctx, list) && BuildPredictionMatches(state, list);
+            if (layoutMatches && !paperMatches && WaitForPaperSync(state)) return;
+			if (!layoutMatches || !paperMatches)
 			{
 				if (!state.rollingBack && VerifyInventorySnapshot(state.inv, state.original))
 				{
-					Plugin.Log.LogWarning("应用后的物品/旋转布局与搜索目标不一致，正在分帧恢复整理前布局。");
+					Plugin.Log.LogWarning("应用后的布局、神器等级/启用或白纸连击与目标不一致，正在分帧恢复整理前布局。");
 					BeginMovePlan(state, list, state.original, rollingBack: true);
 				}
 				else
@@ -3866,10 +3894,11 @@ namespace SephiriaBackpackOrganizer
 				}
 				return;
 			}
+            if (CompleteResonancePhase(state)) return;
             LogSortDiagnostics(state, list, "结束");
 			float num = SafeScore(state.inv);
-			double num2 = EvaluateLayout(state.ctx, list);
-			if (plugin.VerboseDiagnostics.Value)
+			double num2 = state.ctx.buildModel != null ? (state.rollingBack ? state.ctx.buildModel.Before : state.ctx.buildModel.After) : EvaluateLayout(state.ctx, list);
+			if (plugin.VerboseDiagnostics.Value && state.ctx.buildModel == null)
 			{
 				LogLayoutGrid(state.ctx, list, state.rollingBack ? "回滚" : "整理");
 				LogLayoutAnalysis(state.ctx, list, state.rollingBack ? "回滚" : "整理");
@@ -4420,7 +4449,7 @@ namespace SephiriaBackpackOrganizer
 			for (int i = 0; i < ctx.storage; i++)
 			{
 				Slot slot = slots[i];
-				if (slot != null && slot.hasItem && ctx.itemByInstance.TryGetValue(slot.instanceID, out var value) && value != null && value.isWhitePaper && !ctx.bothLeftByInstance.ContainsKey(slot.instanceID) && !ctx.bothRightByInstance.ContainsKey(slot.instanceID))
+				if (slot != null && slot.hasItem && ctx.itemByInstance.TryGetValue(slot.instanceID, out var value) && value != null && value.isWhitePaper && !ctx.paperLocks.IsLocked(slot.instanceID) && !ctx.bothLeftByInstance.ContainsKey(slot.instanceID) && !ctx.bothRightByInstance.ContainsKey(slot.instanceID))
 				{
 					moveScratchA.Add(i);
 				}
@@ -5007,7 +5036,7 @@ namespace SephiriaBackpackOrganizer
 		}
 	}
 
-	[BepInPlugin("com.sephiria.backpack-organizer", "Sephiria Backpack Organizer", "2.5.4")]
+	[BepInPlugin("com.sephiria.backpack-organizer", "Sephiria Backpack Organizer", PluginInfo.PLUGIN_VERSION)]
 	public class Plugin : BaseUnityPlugin
 	{
 		internal static Plugin Instance;
@@ -5017,6 +5046,9 @@ namespace SephiriaBackpackOrganizer
 		internal ConfigEntry<KeyboardShortcut> Hotkey;
 
 		internal ConfigEntry<SortMode> Mode;
+        internal ConfigEntry<bool> BuildAwareEnabled;
+        internal ConfigEntry<string> BuildProfile;
+        internal ConfigEntry<bool> ExportBuildSnapshot;
 
 		internal ConfigEntry<bool> ShowNotifications;
 
@@ -5130,6 +5162,7 @@ namespace SephiriaBackpackOrganizer
 		internal ConfigEntry<string> BeltItems;
 
 		internal ConfigEntry<float> BeltRowBonus;
+        internal ConfigEntry<float> BeltFullRowBonus;
 
 		internal ConfigEntry<string> BurdenItemKeys;
 
@@ -5170,6 +5203,9 @@ namespace SephiriaBackpackOrganizer
 			RowLockedItems = base.Config.Bind("General", "RowLockedItems", "", "额外需固定在整理前原行的物品 LocalizedString key（逗号分隔）。凯尔萨德尼钥匙无需填写：插件会自动按当前最多的坚固/余烬/冰川/魔法科技羁绊选择周期行");
 			VanillaIterations = base.Config.Bind("Vanilla", "MaxIterations", 30, new ConfigDescription("游戏内置自动排列的最大迭代次数（原版默认 4，越大效果越好但耗时略增）", new AcceptableValueRange<int>(1, 500)));
 			AllowTabletRotation = base.Config.Bind("Vanilla", "AllowTabletRotation", defaultValue: true, "是否允许自动旋转石板以匹配加成覆盖范围");
+            BuildAwareEnabled = base.Config.Bind("BuildModel", "Enabled", true, "F8 使用离线流派模型；false 使用 2.5.5 整理算法。模型不支持当前快照时保留原布局并记录原因。");
+            BuildProfile = base.Config.Bind("BuildModel", "Profile", "auto", "auto 根据原生武器、背包核心组件和连击识别；也可填写模拟器流派 ID。识别依据和候选写入日志。");
+            ExportBuildSnapshot = base.Config.Bind("BuildModel", "ExportLastSnapshot", true, "在插件 model/snapshots 中保留最后一次请求和结果，用于离线复现。覆盖旧记录，不连续累积。");
 			SearchTimeBudgetMs = base.Config.Bind("Enhanced", "SearchTimeBudgetMs", 0, new ConfigDescription("后台搜索时间预算（毫秒）；0=完成多起点搜索及局部精修（默认，质量优先）。正数达到预算后保留最佳方案。快照与预计算不计入预算。", new AcceptableValueRange<int>(0, 1000)));
 			ApplySwapsPerFrame = base.Config.Bind("Apply", "SwapsPerFrame", 2, new ConfigDescription("每帧最多执行的背包交换次数。数值越低越平滑，默认 2", new AcceptableValueRange<int>(1, 10)));
 			ApplyRotationClicksPerFrame = base.Config.Bind("Apply", "RotationClicksPerFrame", 4, new ConfigDescription("每帧最多执行的石板旋转点击次数。默认 4", new AcceptableValueRange<int>(1, 12)));
@@ -5216,6 +5252,7 @@ namespace SephiriaBackpackOrganizer
 			CompassUnpairedFactor = base.Config.Bind("Synergy", "CompassUnpairedFactor", 0.1f, new ConfigDescription("指北针未配对（上方无伤害类/指北针）时其等级分的保留比例。游戏里指北针效果只在配对时生效，未配对等级分应视为虚分（0.1=保留一成）", new AcceptableValueRange<float>(0f, 1f)));
 			BeltItems = base.Config.Bind("Synergy", "BeltItems", "Item_Belt_Name", "多用途腰带类藏品 LocalizedString key（逗号分隔；类识别已覆盖 Charm_WoodenBox，木箱也会命中）。效果：背包最上行(y=0)每有一件神器，效果叠加一次——启用后整理会尽量把神器堆满第一行");
 			BeltRowBonus = base.Config.Bind("Synergy", "BeltRowBonus", 2500f, new ConfigDescription("腰带启用时，第一行每件神器的评分奖励（0=关闭）", new AcceptableValueRange<float>(0f, 50000f)));
+            BeltFullRowBonus = base.Config.Bind("Synergy", "BeltFullRowBonus", 40000f, new ConfigDescription("腰带启用且完整首排全部为神器时的额外奖励，重担也计入填满；每个布局仅奖励一次。", new AcceptableValueRange<float>(0f, 200000f)));
 			BurdenPenalty = base.Config.Bind("Burden", "NegativeCellPenalty", 20000f, new ConfigDescription("负面藏品未待在负等级格子时的扣分（强制塞负格；0=关闭）", new AcceptableValueRange<float>(0f, 100000f)));
 			BurdenItemKeys = base.Config.Bind("Burden", "ItemKeys", "Item_MindBurden_Name", "负面藏品识别：LocalizedString key（逗号分隔多个）。识别到的物品会被塞进背包最差的（负等级）格子。默认心之重担(Item_MindBurden_Name)");
 			MysticEnable = base.Config.Bind("Mystic", "Enable", defaultValue: true, "神秘标签联动：神秘藏品≥2个时 1 个神秘地块等级×2，≥5个时共 4 个地块×2（ComboEffect_Mystic）。启用后插件会优先把高价值护符放到×2地块上");
@@ -5224,7 +5261,7 @@ namespace SephiriaBackpackOrganizer
 			sorter = new InventorySorter(this);
 			harmony = new Harmony("com.sephiria.backpack-organizer");
 			harmony.PatchAll(typeof(Plugin).Assembly);
-			Log.LogInfo("Sephiria Backpack Organizer v2.5.4 已加载。" + $"按 [{Hotkey.Value}] 整理背包（当前模式: {Mode.Value}）");
+			Log.LogInfo($"Sephiria Backpack Organizer v{PluginInfo.PLUGIN_VERSION} 已加载。按 [{Hotkey.Value}] 整理背包（当前模式: {Mode.Value}）");
 		}
 
 		private void Tick()
@@ -5366,7 +5403,7 @@ namespace SephiriaBackpackOrganizer
 
 		public const string PLUGIN_NAME = "Sephiria Backpack Organizer";
 
-		public const string PLUGIN_VERSION = "2.5.4";
+		public const string PLUGIN_VERSION = "3.0.5";
 	}
 }
 

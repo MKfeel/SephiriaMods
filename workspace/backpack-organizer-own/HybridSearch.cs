@@ -27,6 +27,7 @@ namespace SephiriaBackpackOrganizer
 
         private List<Slot> RunHybridSearch(SearchContext ctx, List<Slot> original, out double before, out double after)
         {
+            if (!PaperLocksSatisfied(ctx, original)) throw new InvalidOperationException("整理前白纸锁定校验失败。");
             var best = CloneSlots(original);
             var bestScore = Objective(ctx, best);
             before = bestScore.Ordinary;
@@ -45,7 +46,8 @@ namespace SephiriaBackpackOrganizer
                     for (int i = current.Count - 1; i > 0; i--) SwapSlots(current, i, random.Next(i + 1));
                     ScrambleForSearch(ctx, current, random);
                 }
-                if (!RestoreCompassBindings(ctx, current) || !CompassBindingsSatisfied(ctx, current)) continue;
+                if (!RestoreCompassBindings(ctx, current) || !CompassBindingsSatisfied(ctx, current) || !PaperLocksSatisfied(ctx, current))
+                    current = CloneSlots(original);
                 var currentScore = Objective(ctx, current);
                 if (currentScore.CompareTo(bestScore) > 0) { CopySlots(current, best); bestScore = currentScore; }
                 double observedLoss = 1;
@@ -57,7 +59,7 @@ namespace SephiriaBackpackOrganizer
                     if (move < 20 && TryMoveBoundGroup(ctx, candidate, random)) { }
                     else if (move < 42) ShuffleNeighborhood(ctx, candidate, random);
                     else Mutate(ctx, candidate, random);
-                    if (!RestoreCompassBindings(ctx, candidate) || !CompassBindingsSatisfied(ctx, candidate)) continue;
+                    if (!RestoreCompassBindings(ctx, candidate) || !CompassBindingsSatisfied(ctx, candidate) || !PaperLocksSatisfied(ctx, candidate)) continue;
                     var score = Objective(ctx, candidate);
                     ctx.annealEvaluations++;
                     if (score.CompareTo(bestScore) > 0) { CopySlots(candidate, best); bestScore = score; }
@@ -87,7 +89,7 @@ namespace SephiriaBackpackOrganizer
                             CopySlots(best, candidate);
                             SwapSlots(candidate, i, j);
                             if (rotations == 4) candidate[j].rotation = rotation;
-                            if (!RestoreCompassBindings(ctx, candidate) || !CompassBindingsSatisfied(ctx, candidate)) continue;
+                            if (!RestoreCompassBindings(ctx, candidate) || !CompassBindingsSatisfied(ctx, candidate) || !PaperLocksSatisfied(ctx, candidate)) continue;
                             var score = Objective(ctx, candidate);
                             ctx.annealEvaluations++;
                             if (score.CompareTo(bestScore) <= 0) continue;

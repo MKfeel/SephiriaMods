@@ -15,6 +15,12 @@ namespace SephiriaBackpackOrganizer
             try
             {
                 var ctx = state.ctx;
+                if (ctx.buildModel != null)
+                {
+                    string verification = ctx.buildModel.Result == null ? "待计算" : state.rollingBack ? "回退不比较新方案" : BuildPredictionMatches(state, slots).ToString();
+                    Plugin.Log.LogInfo($"流派整理 #{state.diagnosticId} {phase} 武器={ctx.buildModel.WeaponToken} storage={ctx.storage} 预测落地一致={verification}；详细输入和结果见 model/snapshots。代理评分不等于实战 DPS。");
+                    return;
+                }
                 var predicted = Objective(ctx, slots);
                 var actualMarks = new LayoutObjective();
                 if (phase == "开始") state.diagnosticBefore = predicted;
@@ -44,6 +50,9 @@ namespace SephiriaBackpackOrganizer
                 }
                 Plugin.Log.LogInfo($"整理校验 #{state.diagnosticId} {phase} 原生标记统计[{FormatObjective(actualMarks)}] 预测差异件数={mismatches}；这是当前帧同步值，差异需结合后续快照判断，非最终模型错误结论。原生统计不计算普通分与稳定分。");
                 Plugin.Log.LogInfo($"整理基础格 #{state.diagnosticId} {phase} base=[{string.Join(",", ctx.baseLevel)}] mystic=[{string.Join(",", ctx.mysticFactor)}]");
+                foreach (var target in ctx.paperLocks.Targets)
+                    Plugin.Log.LogInfo($"白纸目标 #{state.diagnosticId} {phase} id={target.Instance} 连击=[{string.Join(",", target.Categories)}] 相邻白纸保护={target.Pinned}");
+                Plugin.Log.LogInfo($"白纸原生校验 #{state.diagnosticId} {phase} 锁定{ctx.paperLocks.Targets.Count}张 一致={NativePaperLocksSatisfied(ctx, slots)}；腰带满排额外奖励={plugin.BeltFullRowBonus.Value}");
             }
             catch (Exception ex)
             {
