@@ -5403,7 +5403,7 @@ namespace SephiriaBackpackOrganizer
 
 		public const string PLUGIN_NAME = "Sephiria Backpack Organizer";
 
-		public const string PLUGIN_VERSION = "3.0.5";
+		public const string PLUGIN_VERSION = "3.0.1";
 	}
 }
 

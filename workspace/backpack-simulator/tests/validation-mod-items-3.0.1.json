@@ -1,0 +1,5 @@
+{
+  "version": "3.0.1",
+  "checks": 31,
+  "scope": "Offline native-shaped inputs; ID 20008, neutral scoring, explicit arrows, geometry and identity"
+}

@@ -105,7 +105,7 @@ function compileContext(catalog,state,defs,profile=null){
  const ids=state.cells.filter(Boolean).map(x=>x.id),uniqueIds=ids.filter(id=>defs.get(id).unique);
  const recordsByUid=new Map();
  const effectClasses=new Set([...evaluate.toString().matchAll(/case '(Charm_[^']+)'/g)].map(m=>m[1]));effectClasses.add('Charm_UpCharmDamage');
- for(const inst of state.cells)if(inst){const d=defs.get(inst.id);if(d.kind==='artifact')recordsByUid.set(inst.uid,{c:0,inst,d,lv:0,active:false,staticPlan:null,
+ for(const inst of state.cells)if(inst){const d=defs.get(inst.id);if(d.kind==='artifact'&&!d.modelIgnored)recordsByUid.set(inst.uid,{c:0,inst,d,lv:0,active:false,staticPlan:null,
   effect:effectClasses.has(d.class),planet:d.class==='Charm_SummonGreenBat',companion:/^Charm_(Summon|Companion)/.test(d.class)&&!['Charm_SummonGreenBat','Charm_CompanionChaos'].includes(d.class)&&!!d.curves.damageByLevel,magic:d.class==='Charm_Magic'});}
  const context={makeStats,combos,recordsByUid,records:[],byId:new Map(),owners:new Map(),activeRecords:[],planets:[],companions:[],magics:[],effects:[],goals:null,aggregate:null,
   distinct:new Set(ids).size===ids.length,distinctUnique:new Set(uniqueIds).size===uniqueIds.length,incremental:false};
@@ -114,7 +114,7 @@ function compileContext(catalog,state,defs,profile=null){
  // Keep combos, conditional effects, external offsets and conversions outside
  // this accumulator: those can be fractional and retain their original order.
  let bound=0;
- for(const x of state.cells)if(x&&defs.get(x.id).kind==='artifact'){
+ for(const x of state.cells)if(x&&defs.get(x.id).kind==='artifact'&&!defs.get(x.id).modelIgnored){
   const d=defs.get(x.id),groups=d.stats||[];
   for(const st of groups){const values=st.valuesByLevel||[];if(values.some(v=>!Number.isSafeInteger(v)))bound=Infinity;else bound+=Math.max(0,...values.map(Math.abs));}
   const levels=Number.isInteger(d.maxLevel)&&d.maxLevel>=0&&d.maxLevel<=64?Array.from({length:d.maxLevel+1},(_,lv)=>groups.map(st=>value(st.valuesByLevel,lv))):[];
@@ -160,7 +160,7 @@ function evaluate(catalog,state,cells,layout,profile,defs,resolvedScenario=null,
   for(const uid of state.uniqueOrder||state.cells.filter(Boolean).map(x=>x.uid)){const x=positions.get(uid);if(x&&activeUids.has(uid)&&!owners.has(x.id))owners.set(x.id,x.uid);}}
  for(let c=0;c<n;c++){
   const inst=cells[c];if(!inst)continue;
-  let record=context?context.recordsByUid.get(inst.uid):null;const d=context?record?.d:defs.get(inst.id);if(d?.kind!=='artifact')continue;
+  let record=context?context.recordsByUid.get(inst.uid):null;const d=context?record?.d:defs.get(inst.id);if(d?.kind!=='artifact'||d.modelIgnored)continue;
   const active=layout.active[c]&&(!d.unique||context?.distinctUnique||owners.get(d.id)===inst.uid);
   if(context){record.c=c;record.inst=inst;record.lv=layout.effective[c];record.active=active;
    if(record.effect&&(active||d.class==='Charm_UpCharmDamage'))context.effects.push(record);

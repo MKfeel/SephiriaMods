@@ -83,11 +83,14 @@ function activation(d,c,cells,defs){
   case '':return true;
   case 'CharmActivateCriteria_TopInInventory':return y===0;
   case 'CharmActivateCriteria_BottomInInventory':return c>=n-6;
+  case 'CharmActivateCriteria_SideEnd':return x===0||x===5;
   case 'CharmActivateCriteria_Outlined':return x===0||x===5||y===0||c>=n-6;
   case 'CharmActivateCriteria_Inside':return x>0&&x<5&&y>0&&c+7<n;
   case 'CharmActivateCriteria_BothSidesAreEmpty':return x>0&&x<5&&c+1<n&&!cells[c-1]&&!cells[c+1];
   case 'CharmActivateCriteria_BothSideCharm':return x>0&&x<5&&!!cells[c-1]&&!!cells[c+1]&&defs.get(cells[c-1].id).kind==='artifact'&&defs.get(cells[c+1].id).kind==='artifact';
-  default:return false;
+  case 'CharmActivateCriteria_NeighborsAreFull':return near8.every(([dx,dy])=>{const k=at(x+dx,y+dy,n);return k>=0&&!!cells[k];});
+  case 'CharmActivateCriteria_Near8MagicBook':return near8.some(([dx,dy])=>{const k=at(x+dx,y+dy,n);return k>=0&&cells[k]&&defs.get(cells[k].id).class==='Charm_Magic';});
+  default:return d.modelIgnored?!!cells[c]?.nativeActive:false;
  }
 }
 function pattern(d,c,r,n){

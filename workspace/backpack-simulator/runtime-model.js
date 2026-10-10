@@ -11,7 +11,7 @@ const specialWeapons={judge:[1115],nebolax:[528],'plasma-dagger':[1201],'library
 const physical={0:'sword',1:'greatsword',2:'dagger',3:'crossbow',5:'katana',7:'staff'};
 function identify(snapshot,catalog){
  const defs=new Map(catalog.items.map(d=>[d.id,d]));
- const ids=new Set(snapshot.cells.filter(Boolean).map(x=>x.id));
+ const ids=new Set(snapshot.cells.filter(x=>x&&!defs.get(x.id)?.modelIgnored).map(x=>x.id));
  const counts=snapshot.nativeCounts||{},weapon=snapshot.weapon;
  if(!weapon||!Number.isInteger(weapon.entityId)||!Number.isInteger(weapon.type))throw Error('原生武器尚未就绪');
  const eligible=p=>(p.weapon===undefined||p.weapon===weapon.type)&&
@@ -135,16 +135,28 @@ class RuntimeModel extends M.Model{
   r.objective=q;r.total=q[6];return r;
  }
 }
+function ignoredDefinition(patch){
+ const kind=patch.kind|| (patch.class==='StoneTablet'?'tablet':'artifact');
+ if(!['artifact','tablet','misc'].includes(kind)||!Number.isInteger(patch.id)||!Number.isInteger(patch.maxLevel??0)|| (patch.maxLevel??0)<0)throw Error('无效模组物品定义: '+patch.id);
+ // Keep native geometry and explicit arrows. Never infer the item's damage,
+ // stat curves or custom effects from a mod class or a reused vanilla ID.
+ return {id:patch.id,name:patch.name||String(patch.id),kind,class:'IgnoredModItem',nativeClass:patch.class,
+  modelIgnored:true,rarity:patch.rarity??0,maxLevel:patch.maxLevel??0,unique:!!patch.unique,weapon:patch.weapon??null,
+  criteria:patch.criteria||'',categories:patch.categories||[],rotatable:kind==='tablet'&&!!patch.rotatable,
+  stats:[],effects:[],curves:{},mechanics:{},attackable:false,query:'',condition:''};
+}
 function prepare(snapshot,baseCatalog){
  if(snapshot.protocol!==1||snapshot.width!==6||snapshot.capacity<12||snapshot.capacity>60||snapshot.cells.length!==snapshot.capacity)throw Error('游戏快照格式或背包尺寸不支持');
  const catalog=structuredClone(baseCatalog),defs=new Map(catalog.items.map(d=>[d.id,d]));
- for(const patch of snapshot.definitions||[]){const d=defs.get(patch.id);if(!d||d.class!==patch.class)throw Error('物品类型未建模: '+patch.id);
+ const ignoredItems=[];
+ for(const patch of snapshot.definitions||[]){let d=defs.get(patch.id);
+  if(!d||d.class!==patch.class||patch.modelIgnored){d=ignoredDefinition(patch);const index=catalog.items.findIndex(x=>x.id===patch.id);if(index<0)catalog.items.push(d);else catalog.items[index]=d;defs.set(patch.id,d);ignoredItems.push({id:d.id,name:d.name,class:patch.class,kind:d.kind});continue;}
   for(const key of ['rarity','maxLevel','unique','weapon','criteria','categories','attackable','stats','rotatable','curves','mechanics'])if(Object.hasOwn(patch,key))
    d[key]=key==='curves'||key==='mechanics'?{...d[key],...patch[key]}:structuredClone(patch[key]);
  }
  const seen=new Set(),unique=new Set();
  for(const x of snapshot.cells){if(!x)continue;const d=defs.get(x.id);if(!d||seen.has(x.uid))throw Error('未知物品或重复实例: '+x.id);seen.add(x.uid);
-  if(d.unique&&unique.has(x.id))throw Error('重复唯一神器登记顺序尚不支持，保留原布局: '+d.name);if(d.unique)unique.add(x.id);
+  if(d.unique&&!d.modelIgnored&&unique.has(x.id))throw Error('重复唯一神器登记顺序尚不支持，保留原布局: '+d.name);if(d.unique)unique.add(x.id);
   if(!Number.isInteger(x.enchant)||!Number.isInteger(x.rotation)||x.rotation<0||x.rotation>3)throw Error('无效强化或旋转');
  }
  const detection=identify(snapshot,catalog),state=M.createState(snapshot.capacity);
@@ -181,8 +193,8 @@ function prepare(snapshot,baseCatalog){
  state.runtime.statOffsetEntries=Object.entries(state.runtime.statOffsets||{}).filter(([,value])=>value!==0);
  const before=model.evaluate();
  if(!before.valid)throw Error('原布局约束校验失败');
- for(const e of snapshot.nativeEffects||[]){const c=state.cells.findIndex(x=>x?.uid===e.uid);if(c<0||before.level[c]!==e.level||before.active[c]!==e.active)throw Error('原生启用/等级与模型不一致: '+e.uid);}
- return {catalog,state,model,before,detection,calibrationWarnings};
+ for(const e of snapshot.nativeEffects||[]){const c=state.cells.findIndex(x=>x?.uid===e.uid);if(c<0)throw Error('原生启用/等级与模型不一致: '+e.uid);if(defs.get(state.cells[c].id).modelIgnored)continue;if(before.level[c]!==e.level||before.active[c]!==e.active)throw Error('原生启用/等级与模型不一致: '+e.uid);}
+ return {catalog,state,model,before,detection,calibrationWarnings,ignoredItems};
 }
 function createCombatCache(model,limit=2048){
  // Compile the dependency key once per search. Combat consumes capped levels;

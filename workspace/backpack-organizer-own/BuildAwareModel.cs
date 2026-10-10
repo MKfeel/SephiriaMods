@@ -17,11 +17,13 @@ namespace SephiriaBackpackOrganizer
         private static readonly string ModelDirectory = Path.Combine(Path.GetDirectoryName(typeof(Plugin).Assembly.Location), "model");
         private static readonly Encoding Utf8 = new UTF8Encoding(false);
         private static bool ModelAssemblyVerified;
+        private static Dictionary<int, string> ModelItemClasses;
         private sealed class BuildModelRequest
         {
             internal string Json, RequestId, WeaponToken, InputToken;
             internal JObject Result;
             internal double Before, After;
+            internal readonly HashSet<int> IgnoredItemIds = new HashSet<int>();
         }
         private static WeaponControllerSimple LocalWeaponController(GridInventory inv) => inv != null && inv.UnitAvatar != null ? inv.UnitAvatar.GetComponent<WeaponControllerSimple>() : null;
         private static string WeaponToken(GridInventory inv)
@@ -134,6 +136,7 @@ namespace SephiriaBackpackOrganizer
                 using (var sha = SHA256.Create())
                     if (!string.Equals(BitConverter.ToString(sha.ComputeHash(stream)).Replace("-", ""), (string)catalog["manifest"]["assemblySha256"], StringComparison.OrdinalIgnoreCase))
                         throw new InvalidOperationException("游戏程序集已变化，需更新流派模型数据；保留原布局。");
+                ModelItemClasses = ((JArray)catalog["items"]).ToDictionary(d => (int)d["id"], d => (string)d["class"]);
                 ModelAssemblyVerified = true;
             }
             var controller = LocalWeaponController(ctx.inv); var weapon = controller != null ? controller.currentWeapon : null;
@@ -151,21 +154,27 @@ namespace SephiriaBackpackOrganizer
                 nativeDisable.Add(MatrixValue(ctx.inv.disableMatrix, position)); nativeIgnore.Add(MatrixValue(ctx.inv.ignoreCriteriaMatrix, position));
                 if (!slot.hasItem) { cells.Add(JValue.CreateNull()); continue; }
                 var info = ctx.itemByInstance[slot.instanceID];
-                if (!info.isCharm && !info.isStele) throw new InvalidOperationException("主背包含有模型不支持的物品：" + slot.entityID);
+                string actualClass = info.isCharm ? slot.charm.GetType().Name : info.isStele ? "StoneTablet" : "";
+                bool ignored = !ModelItemClasses.TryGetValue(slot.entityID, out var modeledClass) || modeledClass != actualClass ||
+                    info.isCharm && slot.charm.GetType().Assembly != typeof(Charm_Basic).Assembly ||
+                    info.isStele && slot.tablet.GetType().Assembly != typeof(StoneTablet).Assembly;
+                if (ignored) request.IgnoredItemIds.Add(slot.entityID);
+                if (!ignored && !info.isCharm && !info.isStele) throw new InvalidOperationException("主背包含有模型不支持的物品：" + slot.entityID);
                 int mark = info.manualPriorityRank == 1 ? 2 : info.manualPriorityRank == 2 ? 1 : info.manualPriorityRank;
-                cells.Add(new JObject { ["uid"] = slot.instanceID.ToString(), ["id"] = slot.entityID, ["rotation"] = slot.rotation, ["enchant"] = info.enchant, ["mark"] = mark, ["locked"] = false });
+                cells.Add(new JObject { ["uid"] = slot.instanceID.ToString(), ["id"] = slot.entityID, ["rotation"] = slot.rotation, ["enchant"] = info.enchant, ["mark"] = mark, ["locked"] = false, ["nativeActive"] = info.isCharm && slot.charm.IsEffectEnabled });
                 if (addedDefinitions.Add(slot.entityID))
                 {
-                    var d = new JObject { ["id"] = slot.entityID, ["class"] = info.isCharm ? slot.charm.GetType().Name : "StoneTablet", ["rarity"] = (int)info.rarity };
+                    var d = new JObject { ["id"] = slot.entityID, ["class"] = actualClass, ["rarity"] = (int)info.rarity,
+                        ["kind"] = info.isCharm ? "artifact" : info.isStele ? "tablet" : "misc", ["name"] = slot.charm != null ? slot.charm.name : slot.entityID.ToString(), ["modelIgnored"] = ignored };
                     if (info.isCharm)
                     {
-                        var charm = slot.charm; var primitives = Primitives(charm);
+                        var charm = slot.charm; var primitives = ignored ? new JObject() : Primitives(charm);
                         d["maxLevel"] = charm.maxLevel; d["unique"] = charm.isUniqueEffect; d["weapon"] = charm.isWeaponRelatedCharm ? new JValue((int)charm.relatedWeapon) : JValue.CreateNull();
                         d["criteria"] = charm.criteria != null ? charm.criteria.GetType().Name : "";
                         d["categories"] = new JArray(charm.GetItemCategory()); d["mechanics"] = primitives; d["curves"] = primitives.DeepClone();
                         d["attackable"] = info.isAttackable;
                         var statField = charm.GetType().GetField("stats", BindingFlags.Public | BindingFlags.Instance);
-                        if (statField != null) d["stats"] = JToken.FromObject(statField.GetValue(charm));
+                        if (!ignored && statField != null) d["stats"] = JToken.FromObject(statField.GetValue(charm));
                         effects.Add(new JObject { ["uid"] = slot.instanceID.ToString(), ["level"] = charm.DisplayedLevel, ["active"] = charm.IsEffectEnabled });
                     }
                     else d["rotatable"] = info.tabletRotatable && plugin.AllowTabletRotation.Value;
@@ -210,6 +219,7 @@ namespace SephiriaBackpackOrganizer
                 ["locks"] = new JObject { ["compass"] = compass, ["paper"] = paper, ["pins"] = pins, ["rows"] = rows }
             };
             request.Json = snapshot.ToString(Formatting.None); ctx.buildModel = request;
+            if (request.IgnoredItemIds.Count > 0) Plugin.Log.LogInfo("模组物品不参与流派收益建模；保留占格及手动标记，entity=" + string.Join(",", request.IgnoredItemIds));
         }
         private List<Slot> RunBuildModel(SearchContext ctx, List<Slot> original, out double before, out double after)
         {
@@ -273,6 +283,8 @@ namespace SephiriaBackpackOrganizer
                         Plugin.Log.LogInfo("流派模型 " + phase + " 属性 " + result[phase]["stats"]?.ToString(Formatting.None) + "；MP " + result[phase]["resource"]?.ToString(Formatting.None));
                     if (result["after"]["unsupported"] is JArray unsupported && unsupported.Count > 0)
                         Plugin.Log.LogInfo("流派模型仍未覆盖的动态效果 " + unsupported.ToString(Formatting.None));
+                    if (result["ignoredItems"] is JArray ignoredItems && ignoredItems.Count > 0)
+                        Plugin.Log.LogInfo("已忽略模组物品的自定义收益；按玩家标记整理 " + ignoredItems.ToString(Formatting.None));
                     if (plugin.ExportBuildSnapshot.Value)
                     {
                         try
@@ -294,7 +306,7 @@ namespace SephiriaBackpackOrganizer
             if (result == null || state.rollingBack) return true;
             var prediction = result["after"];
             for (int c = 0; c < layout.Count; c++)
-                if (layout[c].charm != null && (layout[c].charm.DisplayedLevel != (int)prediction["level"][c] || layout[c].charm.IsEffectEnabled != (bool)prediction["active"][c])) return false;
+                if (layout[c].charm != null && !state.ctx.buildModel.IgnoredItemIds.Contains(layout[c].entityID) && (layout[c].charm.DisplayedLevel != (int)prediction["level"][c] || layout[c].charm.IsEffectEnabled != (bool)prediction["active"][c])) return false;
             var counts = prediction["counts"] as JObject;
             if (counts == null) return false;
             foreach (var expected in counts.Properties())

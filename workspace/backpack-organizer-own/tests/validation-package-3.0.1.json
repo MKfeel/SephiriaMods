@@ -1,0 +1,46 @@
+{
+  "version": "3.0.1",
+  "checks": [
+    "packaged worker accepts 20008",
+    "mod identity preserved",
+    "manual max-level mark achieved",
+    "all production starts completed",
+    "vanilla cells unchanged",
+    "vanilla before unchanged",
+    "vanilla after unchanged",
+    "vanilla detection unchanged",
+    "vanilla completedStarts unchanged",
+    "vanilla budgetReached unchanged",
+    "native capture ignores no vanilla items"
+  ],
+  "runtime": "v22.20.0",
+  "mod": {
+    "ignoredItems": [
+      {
+        "id": 20008,
+        "name": "Mod fixture",
+        "class": "SPModCharm",
+        "kind": "artifact"
+      }
+    ],
+    "completedStarts": 8,
+    "level": 3,
+    "timings": {
+      "prepareMs": 12,
+      "activationMs": 1,
+      "searchMs": 48,
+      "workerMs": 63
+    }
+  },
+  "vanilla": {
+    "requestId": "b3dba603f48a49c39dceb84233a54183",
+    "completedStarts": 8,
+    "phase": "normal",
+    "timings": {
+      "prepareMs": 26,
+      "activationMs": 1,
+      "searchMs": 1775,
+      "workerMs": 1804
+    }
+  }
+}

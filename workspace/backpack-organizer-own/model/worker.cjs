@@ -15,5 +15,5 @@ process.stdin.on('end',async()=>{try{
   detection:prepared.detection,phase:activation.needed?'resonance':'normal',resonance:{...activation,result:undefined},cells:result.cells,before:compact(result.before),after:compact(result.after),
   evaluations:result.evaluations,completedStarts:result.completedStarts,budgetReached:result.budgetReached,freeGains:result.freeGains,
   timings:{prepareMs:Math.round(prepareMs),activationMs:Math.round(activationMs),searchMs:result.searchMs||0,workerMs:Math.round(performance.now()-started)},
-  cache:{layout:result.layoutCache,combat:result.cache},calibrationWarnings:prepared.calibrationWarnings}));
+  cache:{layout:result.layoutCache,combat:result.cache},calibrationWarnings:prepared.calibrationWarnings,ignoredItems:prepared.ignoredItems}));
 }catch(e){process.stdout.write(JSON.stringify({protocol:1,ok:false,error:e.message}));process.exitCode=1;}});

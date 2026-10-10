@@ -1,0 +1,10 @@
+{
+  "Version": "3.0.1",
+  "Layout": "Same standard paths as 3.0.5 package",
+  "VerifiedPayloadFiles": 15,
+  "ZipEntries": 16,
+  "ZipBytes": 34117858,
+  "Sha256": "A6E7F596E7D9B5DD8BA2E9770E87CFAEF618BF074DDF0A9A0999CD2539972929",
+  "ModItem20008PreparePassed": true,
+  "CatalogValidatorPassed": true
+}

@@ -1,19 +1,15 @@
-# 3.0.5 源码与发布文件
+# 3.0.1 模组物品兼容修复源码
 
-`*.cs` 与 `SephiriaBackpackOrganizer.Own.csproj` 是 F8 原生桥接和整理器源码；`model/` 包含本版使用的模型、数据、worker 及 Node.js 22.20.0。相邻 `../backpack-simulator/` 保存与 Mod 一致的模型源文件，供 `Build-Package.ps1` 使用。
+本次在现有整理器源码上修改：模组物品不参与自定义战斗收益建模，保留通用布局信息及手动标记。版本号按请求设为 3.0.1。
 
-编译需要 Windows、.NET SDK、.NET Framework 4.7.1 引用程序集，以及本机 Sephiria / BepInEx 5。项目中的 `HintPath` 默认指向 `E:\steam\steamapps\common\Sephiria`，其他位置需相应修改。游戏本体和引用 DLL 由本机游戏安装提供。
+BuildAwareModel.cs 负责采集和应用时的原生校验；相邻 ../backpack-simulator/ 中的模型负责中性物品定义及标记目标。Build-Package.ps1 将模型同步至 model/ 后生成完整安装包。
 
-```powershell
-dotnet build .\SephiriaBackpackOrganizer.Own.csproj -c Release -p:IntermediateOutputPath=obj5\Release\
-New-Item -ItemType Directory -Path build-runtime -Force | Out-Null
-Copy-Item .\model\runtime\node.exe .\build-runtime\node.exe
-Copy-Item .\model\runtime\NODE-LICENSE.txt .\build-runtime\LICENSE
-& .\Build-Package.ps1 -NodePath (Join-Path $PWD 'build-runtime\node.exe')
-dotnet run --project .\tests\RulesTests.csproj -c Release
-& .\model\runtime\node.exe ..\backpack-simulator\tests\runtime.test.cjs
-```
+编译需要 .NET SDK、.NET Framework 4.7.1 引用程序集，以及本机游戏和 BepInEx 5 的引用 DLL。可用 GameDirectory 指定游戏路径：
 
-以上命令复用随包 Node.js，并把打包输入放在单独的 `build-runtime/`，打包完成后可删除该目录。生成的独立安装包位于 `dist/`。管理器标准包使用仓库根目录 `packages/com.sephiria.backpack-organizer/`，可以直接导入管理器；手动安装则把其中 `BepInEx/` 合并至游戏根目录，保留完整 `model/`。
+    dotnet build .\SephiriaBackpackOrganizer.Own.csproj -c Release -p:GameDirectory='D:\GAMES\Steam\steamapps\common\Sephiria' -p:IntermediateOutputPath=obj5\Release\
+    dotnet run --project .\tests\RulesTests.csproj -c Release
+    & .\model\runtime\node.exe ..\backpack-simulator\tests\mod-items.test.cjs
+    & .\model\runtime\node.exe ..\backpack-simulator\tests\runtime.test.cjs
+    & .\Build-Package.ps1
 
-`tests/validation-corpus-3.0.5.json` 记录 12 份背包三轮对照；`validation-package-3.0.5.json` 记录完整 worker 回放，`validation-install-3.0.5.json` 记录隔离安装回退。原始游戏快照及历史对照包保留在开发工作区，汇总中的相对引擎路径说明当时的对照版本。构建、静态检查和离线回放不代表 3.0.5 已通过游戏内验收。
+完整包位于 dist/SephiriaBackpackOrganizer-3.0.1.zip，沿用旧版的管理器标准格式：根目录 mod-manifest.json，全部插件文件位于 BepInEx/plugins/SephiriaBackpackOrganizer/。发布 ZIP 位于 packages/com.sephiria.backpack-organizer/，版本索引位于 catalog/mods.json；installed/ 保留历史备份。
